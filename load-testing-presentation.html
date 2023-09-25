@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Load Testing Presentation - QnA</title>
+    <meta name="description" content="Load Testing Presentation, What is Load Test, , , , PerfMatrix, 2020-01-10T08:33:01.000000Z, 20, A brief introduction to load testing, www.oodlestechnologies.com, 590 x 566, png, , 20, load-testing-presentation, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Load Testing Presentation - QnA" />
+    <meta property="og:description" content="Load Testing Presentation, What is Load Test, , , , PerfMatrix, 2020-01-10T08:33:01.000000Z, 20, A brief introduction to load testing, www.oodlestechnologies.com, 590 x 566, png, , 20, load-testing-presentation, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Load Testing Presentation - QnA" />
+    <meta name="twitter:description" content="Load Testing Presentation, What is Load Test, , , , PerfMatrix, 2020-01-10T08:33:01.000000Z, 20, A brief introduction to load testing, www.oodlestechnologies.com, 590 x 566, png, , 20, load-testing-presentation, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Load Testing Presentation</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">dasekpasigian64</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Load+Testing+Presentation" alt="Load Testing Presentation">
+                    </div>
+                    <p></p>
+                    <p>Activity 1. LOADLet us test your writing skills. Imagine you are repabout how you are doing. Write a note to your human diaquestions.1. What is your most pervading emotion/feeling righmad or excited?)2. What events made you feel that way?3. Is there anyone who caused or contributed to the4. What are your thoughts about your present situat5. What are your realizations about it?​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-1-loadlet-us-test-your-writing-skills-imagine-you-are-repabout-how-you-are-doing-write-a-note-to-your-human-diaquestions-1-what-is-your-most-pervading-emotionfeeling-righmad-or-excited">1.
+                                            Activity 1. LOADLet us test your writing skills. Imagine you are repabout how you are doing. Write a note to your human diaquestions.1. What is your most pervading emotion/feeling righmad or excited?)2. What events made you feel that way?3. Is there anyone who caused or contributed to the4. What are your thoughts about your present situat5. What are your realizations about it?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#english-subject-wag-po-yung-mali-plsgood-answerbrainliest-5-star-rating-50-pointscomplete-answerbrainliest-5-star-rating-50-pointsbad-answerreportnonsensereport%e2%80%8b-let">2.
+                                            ENGLISH SUBJECT!! WAG PO YUNG MALI PLS!
+Good answer=Brainliest + 5 star rating + 50 points
+Complete answer=Brainliest + 5 star rating + 50 points
+Bad answer=Report
+Nonsense=Report​
+-
+Let’s test your knowledge of the information above before moving on. In each blank below, write the tense of the verb in parenthesis.
+1. She ____________ around the living room. (run‐present)
+2. We ____________ our plans for the weekend. (discuss, past)
+3. The boat ______________ as soon as the cargo of machinery is loaded. (sail, future)
+4. Natasha __________ listening to music. (enjoy, past)
+5. He ____________ musical comedies. (like‐present)
+6. I __________ you my new leather jacket. (lend, future)
+7. These arguments _________ you that I am right. (convince, future)
+8. Although the car is old, it __________ well. (run‐present)
+9. The shopper ____________ to see the manager. (ask, past)
+10. The man in the corner ___________ lead guitar in the band. (play, present)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-evaluate-the-sample-short-radio-commentary-below-based-on-content%e2%80%99s-accuracy-evidencearguments-presented-truthfulness-relevancesignificance-to-thecurrent-situation-metro-ma">3.
+                                            Directions: Evaluate the sample short radio commentary below, based on content’s accuracy, evidence/arguments presented, truthfulness, relevance/significance to the
+current situation.
+Metro Manila (CNN Philippines, May 7) — The country's pandemic task force has approved the proposal to wait until the seventh day of quarantine before testing travelers who enter the country, the Department of Health said on Friday.
+Health Undersecretary Maria Rosario Vergeire said the Inter-Agency Task Force also
+mandated travelers who test negative for COVID-19 to stay in a government-approved quarantine facility for 10 days before they can be discharged. They can then move to their respective hometowns or hotels to complete the required 14-day isolation. "This is a process para ma-ensure natin that even though nakakapasok pa rin ang ibang travelers, especially Pilipino, sa ating bansa nasisiguro natin na naiisolate natin sila nang maayos to break the chain of transmission," she said in a media briefing.
+[Translation: This is a process to ensure that even though we allow the entry of some travelers, including Filipinos, we can isolate them properly so we can break the chain of transmission.]
+The revision in testing protocols was recommended by DOH. It cited the findings of experts that waiting for 7 to 8 days after possible exposure is the optimal time since the viral load is at its peak during this period.
+The previous protocol was to confine inbound travelers in a facility for six days before they are tested. If they are negative, they can continue isolation in their hometowns or hotels until the 14-day requirement is met.
+Question:
+1) WHY do think the certain action in the commentary has to be done? 
+2) HOW does the commentary affect the listeners opinion about the presented issue?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pre-testdirections-read-each-item-carefully-then-write-the-letter-of-the-correct-on-theanswer-sheet-on-page-10-of-this-module-1-what-is-a-simple-machine-that-uses-grooved-wheels-and-rope-to-raise-l">4.
+                                            Pre-testDirections: Read each item carefully then write the letter of the correct on theanswer sheet on page 10 of this module.1. What is a simple machine that uses grooved wheels and rope to raise, lower, ormove a load?A. inclined plane B. leverC. pulleyD. wheel and axle-OIS2. In which of the following would you use a pulley for?A. cutting foodC. raising a flag in a flag poleB. holding a piece of plastic together D. all of these3. What simple machine is shown?A. leverB. pulleyC. screwD. wheel and axle4. How would a pulley be used in everyday life?A. lifting objects in construction C. mobile transportB. towing vehicleD. all of these5. What simple machine is presented in a door knob below?A, leverB. pulleyC. screwD. wheel and axlelittp://urwurgoraph/um/forlip-ari/doorpasagot po please​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#multiple-choice-directions-read-the-statement-carefully-and-choose-one-that-best-illustrates-anelectrical-measuring-tool-or-instrument-write-the-letter-of-your-answer-in-your-answer-sheet-1-a-devi">5.
+                                            MULTIPLE CHOICE. Directions: Read the statement carefully and choose one that best illustrates anelectrical measuring tool or instrument. Write the letter of your answer in your answer sheet.1. A device used in geometry, technical drawing, as well as the engineering and construction industries, tomeasure distances or draw straight linesA MicrometerB. RulerC. AmmeterD. Ohmmeter2. An instrument used to measure the amount of electrical current intensity in a circuitA OhmmeterB. AmmeterC Test LightD. Wire Gauge3. It is used to measure current flowing in a conductor and it is clamp or hanged in a conductorA VoltmeterB. Clamp AmmeterC.Test lightD. Micrometer4. The unit of measure used to measure the amount of electrical current intensity in a circuitA VoltB. AmpereC. OhmD Watt5 The unit of measure used to measure electrical pressure or voltage of a circuitA OhmB. AmpereC VoltD. Watt6 It is used to measure the voltage, resistance and current of a circuit.A Volt-Ohmmeter B. MicrometerC. AmmeterD Ohmmeter7. It is used in determining the size of wires/conductorsA Test LightB. Wire GaugeC RulerD Pull-Push Rule8. A measuring tool used to measure the length of an object in centimeter and inchesA MicrometerB. Test LightC Pull-Push Rule D. Wire Gauge9. A pocket size tool used to test the line wire or circuit if there is an electric current in itA Wire GaugeB. MicrometerC. Test LightD. Ruler10 It is an instrument used to measure electrical pressure or voltage of a circuit.A VoltmeterB. MicrometerC AmmeterD Ohmmeter11 Ruler is also called aA Line MeterB. Line GaugeD Line GuideC Line String12. In electrical installation/electrical works, measuring devices are very important because it help to determinetheof electrical quantitiesC valueB importanceD amountA essence13 It is the science of measurementA Meteorology B. MeterologyC. MetorologyD Metiorology14 Another term for clamp ammeter isA Tong TesterB Tong MeterD Tong ClampC Tong Ammeter15 VOM stands forC. Volt-OmeterD Volt-OhmmeterA Volt-OhmeterB Volt-Ommeter16 In using an ammeter, be sure that a is presentCloadD supplyB currentA power17 In electrical installation/electrical works, measuring devices are used to measure the following exceptC wattageD resistanceB. voltageA ampere18 It can measure small and big sizes of wires and cablesD. OhmmeterC AmmeterB MicrometerA VoltmeterAWG19 Wire gauge ranges fromD ( 070Co to 60B. O 10 50A 0 10 40wire at a tim20 In using a clamp ammeter or tong-tester, be sure that there's load present and clampD fourC threeB twoA one​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#name-third-periodical-test-english-8-grade-and-sec-b-telling-only-a-part-of-the-issue-at-hand-c-putting-across-an-unfair-or-one-sided-opinion-directions-read-carefully-and-choose-the-correct-answ">6.
+                                            Name: Third Periodical Test English-8 Grade and Sec: B. telling only a part of the issue at hand C. putting across an unfair or one-sided opinion Directions: Read carefully and choose the correct answer. Write letter only. 1. This refers to an author's expression of his/her own opinion on a particular issue without examining and presenting enough evidences. A. bias B. judgment C. objective D. subjective 2. Which of the following factors influences a person's bias? A. evidences B. experiences C. facts 3. All the following statements are true about bias, EXCEPT: A. presenting both sides of the issue Score: D. reality D. being subjective as opposed to being objective 4. "Fathers are always responsible in making decisions than mothers." Which of the words below makes the statement biased? A. always B. decision C. making D. responsible 5. "Pageants are amazing platforms that promote different advocacies such as women empowerment, child protection, and environmental conservation." Which of the words below makes the statement biased? A. amazing B. conservation C. different D. protection 6. Which of the following statements does NOT manifest bias? A. Filipinos are considered the best English speakers in the world. B. Women leaders are better than men when handling a health crisis. C. Research studies are undertaken to help improve human condition. D. Online games are the main cause of mental health problems among teenagers nowadays. 7. Which of the following statements shows the negative view of the author about social media? A. It breeds cyber bullying and depression. B. It can be an avenue for business opportunities. C. It develops the information and communication (ICT) skills of teenagers. D. It allows people to create online communities and friendship. 8. What should an author do to avoid being biased? The author must... A. present evidences to support personal opinions B. present solid evidences on both sides of an issue C. use words and expressions that appeal to the readers D, use words and expressions to convince readers to take a stand 9. What particular technique is used which is intended to make consumers accept or approve something without looking closely at evidences? A. advertisement B. commercial C. announcement D. propaganda 10. Which propaganda technique presents a negative quality of a person, entity, object, or value to discredit it and make the other option more acceptable? A. loaded words B. plain folks C. simplification D. transfer 11. What propaganda technique is used in the statement, "Things go better with Coke"? A. card stacking B. glittering generalities C. name-calling D. plain folks 12. "I love visiting you folks in the city because people are wholesome, hardworking, and family- -​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-id-the-single-line-diagram-presentation-of-the-entire-electrical-circuit-from-the-service-entrance-up-to-the-smallest-circuit-branch-a-location-mapb-schedule-of-loadsc-riser-diagramdtitle-block2">7.
+                                            1.)It id the single line diagram presentation of the entire electrical circuit from the service entrance up to the smallest circuit branch.a.Location Mapb.Schedule of Loadsc.Riser DiagramdTitle Block2.)Which of the following represents the real world on a much smaller scale. They help you organize information?a.Location Mapb.Schedule of Loadsc.Riser DiagramdTitle Block3.It makes a drawing appear official and important, at a single glancea.Location Mapb.Schedule of Loadsc.Riser DiagramdTitle Block4.It is a plan of a room or floor of a building drawn to scale as if viewed from above.a.Electrical Wiring Planb.Floor Planc.Location Mapd.Wiring Plan5.It refers to power supply to be applied in every house or building that needed electricity, either it will be single phase 2 wires or 3 wires.a.Classification of serviceb.Number of branch circuit and their corresponding sizesc.Supplies materials to be used by the contractord.Type of wiring method6.It refers to type and quality of electrical materials to be installed in the entire electrical wiring system from the service entrance up to the smallest circuit branch.a.Classification of serviceb.Number of branch circuit and their corresponding sizesc.Supplies materials to be used by the contractord.Type of wiring method7.Which of the following tests shall be performed by the contactor upon completion of electrical works.a.Insulation resistance phaseb.Functional testc.Voltage testd.All of the above8.What is the required watts per square meter, based on Philippine Electrical Code?a.10 wattsb.30 wattsc.50 wattsd.70 watts9.)The code requires that at least one circuit is supplied to the laundry outlets. How much ampere is required to laundry outlets?a.10 ampb.15 ampc.20 ampd.25 amp10.Which of the following appliances provide a separate circuit and considered as a special purpose circuit / outlet?a.Air Conditioning Unitb.Electric Fanc.Microwave Ovend.Television11.Which of the following is used nationally as the basis for safeguarding persons, buildings and its contents from hazards that may arise from the use of electricity?a.Civil Code of the Philippinesb.Corporation Code of the Philippinesc.Philippine Electrical Coded.Electrical Code of the Philippines12.It is where the wires connected to the load side of the meter enter the house or building.a.Entrance Serviceb.Service Entrancec.Service Wiresd.Wire Entrance13.How many brand of circuit breaker shall be utilized in the entire project requirement?a.oneb.twoc.threed.four14.it refers to type and quality of electrical materials to be installed in the entire electrical wiring system from the service entrance up to the smallest circuit branch.a.Classification of serviceb.Number of branch circuit and their corresponding sizesc.Supplies materials to be used by the contractord.Type of wiring method15.What is is the minimum size of conductor required for all the convenience outlet?a.Wire no. 10 AWGb.Wire no. 11 AWGc.Wire no. 12 AWGd.Wire no. 13 AWG​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-read-each-sentence-select-the-letter-of-the-correct-answer-and-write-it-in-your-answer-sheet-which-of-the-following-help-you-decide-your-product-design-worth-in-effort-time-and-gathering">8.
+                                            Directions Read each sentence. Select the letter of the correct answer and write it in your Answer Sheet Which of the following help you decide your product design, worth in effort, time and gathering of materials A. Create and test your model C. Present your product design B. Design your product D. Research 2. This is where the product functions A Create and test your model C. Present your product design B Design your product D. Research2 3. Which of the following displays a list of items in your scene It initially loads a camera, a cube and a lamp? A Timeline C. 3D View B. Outliner D. Properties Editor 4. Which of the following windows that is used in animation? A 3D View C. Timeline B. Properties Editor D. Tool Shelf 5. What is consider as the main window in Blender A 3D View C. Timeline B. Properties Editor D Tool Shelf 6. The important information which the costumer can read A Colors B. Materials C. Shape D. Text 7. It shows the variety and relevance to the product's brand. A Colors B. Materials C. Shape D. Text 8. Which of the following Copy and paste keyboard shortcuts? A curic C. Ctrl + X B C + P D. None of the above 9. Which of the following is the function of Ctrl + Z? A Open B. Rede C. Shift D. Undo 10. Which of the following is the function of Col. V? A Find Open B Open C Paste D. Undohelp po plss​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-1-write-true-if-the-statement-is-correct-otherwise-write-false-write-the-answer-on-your-answer-sheet-___________1-every-change-you-make-to-your-bios-structure-is-saved-on-cmos-___________2">9.
+                                            ACTIVITY 1. Write TRUE if the statement is correct otherwise write FALSE. Write the answer on your answer sheet.___________1. Every change you make to your BIOS structure is saved on CMOS.___________2. POST is an acronym for the Power-On Software Test.___________3. BIOS drivers are the many programs stored in your computer’s memory chips.___________4. Windows 10 uses UEFI system.___________5. Newer PCs have replaced the bootstrap loader with an EFI.___________6. CMOS is an acronym for Complementary Meta-Oxide Semiconductor.___________7. The last step in activating BIOS in Windows 10 is selecting 'UEFI Firmware Settings.'___________8. You can change the boot order of the devices under BIOS.___________9. BIOS will not load under windows 7 if you did not press the BIOS hotkey upon opening your PC.___________10. Oftentimes your computer will indicate on the startup screen which key or keys need to be pressed in order to enter BIOS settings.ACTIVITY 2: IdentificationSelect the answer in the box below and write the answer in your answer sheet.__________1. It tests the hardware of your PC and ensures that there is nothing out of order and no errors present with your operating system.__________2. It contain a number of hardware configuration options that can be changed through the setup utility.__________3. It’s the successor to the traditional BIOS. UEFI offers support for boot volumes over 2 TB in size__________4. It is a term that pertains to the way a system is set up.__________5. It is tasked with reading your PC’s hard drive boot sector to move along the complete operating system load.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#choose-the-correct-answer-by-writing-theletter-of-your-choice-before-each-number1-which-is-not-an-observation-in-the-followinga-the-bird-flew-c-he-is-1-in-taller-than-samb-my-gown-is-long-d">10.
+                                            CHOOSE THE CORRECT ANSWER BY WRITING THELETTER OF YOUR CHOICE BEFORE EACH NUMBER:1. Which is NOT an observation in the following:A. The bird flew. C. He is 1 in. taller than SamB. My gown is long. D. If I exposed this liquid underthe sun without cover, it willevaporate.2. Why is there a continuous research being conducted?Because…A. there is a problem C. there is a hypothesisB. there is a fund D. there is an investigation3. Which is a hypothesis statement in the following?A. Coffee needs hot water C. Coffee is bitterB. Coffee is a mixture D. If coffee is dissolved in hotwater, it will dissolve faster4. Which is NOT a qualitative observation in thefollowing?A. The load is heavy C. He is giganticB. Fel is so tall. D. The new phone measures 6in. long and 4 in. wide5. Which is a qualitative observation?A. The substance weighs 1 g D. I am 5 ft. tall.B. Furnitures today are space saving.C. His pair of shoes measures 10 inches long.For 6-7. A scientist conducts an experiment to test thetheory that vitamin C could extend a person’s life-expectancy.A. Amount of vitamin C given to the subjects.B. Life spanC. number of subjects D. number of days6. What is the independent variable in the experiment?7. What is the dependent variable in the experiment?For 8-9. A scientist studies the impact of a drug onCOVID-19 patients.A. administration of the drug - the dosage and thetiming.B. the impact the drug has on COVID-19 patients.C. number of patientsD. age of patients8. What is the independent variable in the study?9. What is the dependent variable in the study?10. What part of the scientific method states the causeand effect of a situation? It includes an “If and then”statement.A. Problem C. ExperimentB. Result D. Hypothesis11. Which variable must only be one to make anexperiment fair?A. Dependent variable C. Independent variableB. Controlled variable D. Responding variable12. Sodium (Na) and Chlorine(Cl2) can combinechemically to form table salt(NaCl). Which is acompound in the reaction?A. Na B. Cl C. Cl2 D. NaCl13. Symbols of elements can be 1 or 2 letters, which ofthe following is an element?A. NO B. CO C. Sn D. OH14. Which is NOT TRUE why some symbols of elementshave different letters from the spelling of their names?The names originated from…A. names of famous people C. the favorite word ofB. the place where the the discovererelement was discovered D. Latin names15. All of the following symbols are taken from the Latinor foreign names of elements EXCEPT…A. Au B. Hg C. Sn D. Mn16. Sulfuric acid (H2SO4) is a compound used inindustries and in homes for certain purposes. Whatelement is NOT found in this compound?A. hydrogen B. sodium C. oxygen D. sulfur17. We know some compounds that we used at homeby their common names. What is the common name ofhydrochloric acid that we use in cleaning toilets?A. acetic acid C. muriatic acidB. citric acid D. sulfuric acid18. What alcohol is present in wines and liquors?A. methyl alcohol C. isopropyl alcoholB. ethyl alcohol D. butyl alcohol19. The following describe mixtures EXCEPT…Mixtures are…A. sometimes homogeneous or heterogeneous.B. made up of two or more kinds of matter.C. with varying boiling and melting point.D. with definite composition and properties.20. The following are examples of a substance, EXCEPT…A. air B. sugar C. water D. Salt21. A compound contains nitrogen and oxygen. Theratio of the nitrogen atom to oxygen atom is 1:3. Whatis the formula of the compound?A. NO3 B. N3O C. NO D. N3O322. Which is NOT a property of a solution?A. it is homogeneousB. It has solute and solventC. It can be heterogeneousD. It cannot be filtered23. Which DOES NOT describe a homogeneous mixture?A. It has only one phaseB. Particles are evenly distributed in the mixtureC. It allows light to pass through easilyD. It can be filtered24. An unknown yellow material in the laboratory washeated. When heated, the material melted and turnedlight brown. The material cooled off and upon cooling, itturned back to yellow color. What could be the natureof the material?A. elements C. mixtureB. compound D. cannot be determined25. An unknown colorless and odorless liquid was boiledfor 15 minutes. It was observed that it has constantboiling point. What could be the nature of the liquid?A. mixture C. mixture of acidB. pure substance D. salt solution26. Vitamin C is taken in to strengthen the immunesystem. Its chemical name is ascorbic acid with aformula, HC6H7O6. What elements comprise vitamin C?A. hydrogen, carbon and oxygenB. helium, carbon and oxygenC. hydrogen, cobalt, oxygenD. hydrogen, carbon and oganesson​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-statements-is-not-true-about-propagandaa-it-is-very-common-in-advertisements-where-they-try-to-make-consumers-patronize-the-products-or-services-they-offerb-it-is-a-communic">11.
+                                            Which of the following statements is NOT true about propaganda?a. It is very common in advertisements, where they try to make consumers patronize the products or services they offerb. It is a communication that is primarily used to influence an audience.c. It is an art of persuasion.d. It can range from claims that the majority of people are using the products/services, approvals from experts or famous personalities, and so on2. Which of the following statements is NOT applicable to recognize bias?a. Watch for stereotypesb. Look for loaded wordsc. Ignore sides of argumentationd. Notice vague language or generalizations3. Which of the following questions is NOT aligned to focus on the audience?a. What is the situation around you when delivering a speech?b. Who are the intended listeners?c. Will the choice of words appropriate to the level of listeners?d. What must be learned and felt in your speech?c.4. Which is not an attribute of an active listener?a. Paying attentionb. Giving prejudicec. Responding appropriatelyd. Providing feedback5. Which purpose do you use the following cohesive devices: thus, hence, thereforea. addition of ideasb. contrasting ideasc. concluding ideasd. introducing ideas6. It is an opinion or prejudice that affects the author's writing and prevents the author from being completely neutral about a topic or issue.a. stereptypesb. biasc. generalizationsd. loaded wordsOption 37. Which among the following statements is NOT true?a. Faulty parallelism happens when patterns of words in a sequence or a list is not parallel orb. Conjunctions are used to join parallel parts in a sentence with similar ideas.c. Parallel structure can be in a pattern of words, phrases and clauses.d. Parallel Structure means using the same pattern of words to show imbalance of ideas.8. It is a kind listening intended to make evaluation or scrutiny of a text.a. Informational Listeningb. Critical Listeningc. Intensive Listeningd. Empathetic Listening9. It is a propaganda technique that is often vague but presents positive ideas like those found in slogan or posters.a. Glittering Generalitiesb. Bandwagonc. Plain Folksd. Testimonial10. Juan is lazy. He does not do his homework or revision well. ___________, he always gets 0 marks in his tests.a. sob. thusc. howeverd. after11. ___________ save the kitten, we took him to the vet immediately.a. sinceb. whenc. in order tod. because12. Maria is a beautiful and smart girl. _________, she is kind. She always takes care of the sick animals. ___________, every one likes her very much.a. However, Sinceb. Moreover, Soc. Therefore, Howeverd. Besides, Therefore13. What kind of listening are you going to employ if you will make a reaction paper?a. Informational Listeningb. Empathetic Listeningc. Critical Listeningd. Therapeutic Listening14. It is a kind of discrimination where a group of people are labelled.a. racialb. generalizationc. biasd. stereotype15. Parallelism can be observed in the pattern of the following EXCEPT ______.a. wordb. textc. phrased. clause16. Although, despite, rather, nevertheless are words that indicate ______.a. Contrastb. Comparisonc. Conclusiond. Introduction17. They can indicate sequence, addition, comparison, contrast, causation, illustration, or emphasisa. Coordinating Conjuntionsb. Signal Wordsc. Transition Markersd. Subordinating Conjunctions18. What type of speech is a eulogy?a. Informative Speechb. Persuasive Speechc. Special Occasion Speechd. Argumentative Speech19. It is a type of speech where the speaker presents points to make the audience side with the case of the speaker or to forward an advocacy.a. Persuasiveb. Informativec. Special Occasiond. Argumentative20. These are words that are expressed with strong emotions that can reveal a person's opinion or bias.a. biasb. prejudicec. stereotyped. loaded words​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#test-1-identify-the-following-statements-choose-your-answer-inside-the-box-____________________________________-omission-placement-photos-names-and-titles-statistics-bandwagon">12.
+                                            test 1. Identify the following statements. choose your answer inside the box.   ____________________________________  (Omission)   (Placement)  (Photos)  (names and titles)   (statistics)  (bandwagon)  (loaded words)   (testimonial)  (name calling)  (plain folks)  (bias)  (propaganda)----------------------------------------------------------------------________1. form of bias in which what is presented first are viewed the most important, those that are placed last are seen to be quite less important. ________2.One of the most techniques of propaganda which uses a strong words that convey strong emotions.________3.form of bias in which certain information is taken out while other details are included.________4.saying a bad name about an opponent is one of the techniques propaganda techniques.________5. A propaganda technique which uses an experts or celebrities are to do persuasion about a certain product.________6. Form of bias which assumes that numbers can be manipulated to create a impression.________7. One of the propaganda techniques that use presentation of images to create a pleasant or unflaterring impresion to the audience._______8. It is persuasive information that is spread for the purpose of promoting a position or cause._______9. Form of bias in which the way the person or scene is described in the text or caption in the visual media can influence the viewer._______10. Propaganda technique in which listeners are persuaded into having or doing something to follow the majority. _______11. It is tendency to favor one side over the other._______12. Propaganda technique in which a person projecting to be an average or ordinary person.it so long to type, plss answer it seriously​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#j1-it-refers-to-a-prejudice-or-unfairness-against-something-an-author-is-writing-abouta-bias-b-negative-traits-c-opinion-d-positive-traits2-which-of-the-following-is-not-a-definition-of-bia">13.
+                                            j1.it refers to a prejudice or unfairness against something an author is writing abouta bias    b. negative traits   c. opinion.   d.positive traits2. which of the following is NOT a definition of biasa.An author letting feeling and emotions cloud his/her objectivity with regard to something he/she is writing aboutb.A prejudice or unfairness against something an author is writing aboutc. favoritism for something an author is writing aboutd. the all teachers about all the positive traits of what he/she is writing about.3. a source of bias in which words that are charged with emotion ( whether positive or negative) convivial an author's opinion about his/her topic.a. loaded words  b. opinions  c.stereotypes  d.vague language4. a source of bias in which the author labels an entire groupa. loaded words  b. opinions  c.stereotypes  d.vague language5. which of the following are used as opinion-marking signalsa. i agree with...    b. i believe...  c. i disagree with... d. all of the choices(a, b, and c)6. a source of bias in which the author isn't using specific languagea. loaded words  b. opinions  c.stereotypes  d.vague language7. it can be based on feelings,emotion,orprejudice, which are not objectivea. loaded words b.one - sided arguments c. opinions d.vague language8. a source of bias in which the author only presents one side of argument.a. loaded words b.one - sided arguments c. opinions d.vague language9. which of the following is a positive character traita. hot tempered b. I'll mannered c.kind d. strict10. all of the following character traits are positive except for one. which one is it?a.good in English b. hot tempered  c.intelligent d. sympathetic11. as a scholar in our institution, my life has been full of changes______, i did not quiver nor surrender; because i am a survivora. and b. because c. despite d.however12. my fellow students,we had our share of many complaints about how difficult the test was______we are here today, probably receiving awards.a. and b. because c.so d. yet13._________our constant disagreements in all our group projects, we remain true friends.a. although b. and c. despite d. unless14. in the middle of the wing our school projects, we lost track of time. sometimes, we need to call our parents_______it was already midnight.a. although b. and c. as d. because15.__________all the sleepless nights we experience to meet the deadline given by our educators, we remain steadfast.a. as b. because c. however d. in spite of16. i left the ceremony_______i need to look back to my experiences here in our school.a.as b. because c. despite d. unless17. people expected me to fall,______here i am, stronger than ever.a. because b. but c. in spite of d. unless18. we toast for the everlasting happiness of the couple_____for there promising future together.a. and b.as c. because d.despite19. before, i have to walk for miles in going to school_______now i have my car.a.as b.because c.but d.however 20. i always weight the pros and cons of the situation______ i decide.a.before b.but c.despite d. unless​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#c-present-your-product-design-c-present-your-product-design-a-timeline-b-outliner-read-each-sentence-select-the-let-write-it-in-your-answer-sheet-1-which-of-the-following-help-you-decide-your-p">14.
+                                            C. Present your product design C. Present your product design A Timeline B. Outliner -Read each sentence. Select the let write it in your answer Sheet. 1. Which of the following help you decide your product design, worth in effort, time and gathering of materials A Create and test your model B. Design your product D. Research 2. This is where the product functions. A Create and test your model B. Design your product D. Research2 3. Which of the following displays a list of items in your scene It initially loads a camera, a cube and a lamp? C. 3D View D. Properties Editor 4. Which of the following windows that is used in animation? A. 3D View C. Timeline B. Properties Editor D. Tool Shelf 5. What is consider as the main window in Blender- A. 3D View C. Timeline B. Properties Editor D. Tool Shelf 6. The important information which the costumer can read. A. Colors B. Materials C. Shape 7. It shows the variety and relevance to the product's brand. A. Colors B. Materials C. Shape D. Text 8. Which of the following Copy and paste keyboard shortcuts? A. Ctrl + C C. Ctrl + X B. Ctrl + P D. None of the above .. Which of the following is the function of Ctrl + Z? A. Open B. Redo C. Shift D. Undo . Which of the following is the function of Ctrl + V? A. Find Open B. Open C. Paste D. Undo D. Textanswer po plss​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7213-which-of-the-following-below-defines-a-functiona-bc-d-x1-214-what-is-the-dependent-variable-on-the-number-of-hours-studied-to-grade-on-test-b-hours-studied-c-grade-on-test-d-the-number-o">15.
+                                            7213. Which of the following below defines a function?A.BC.D.X1 214. What is the dependent variable on "the number of hours studied to grade on test"? B. hours studied C. grade on test D. the number of hours studied 15. The more bread I sell, the more money earn. What is the independent variable in the givenA. testscenario?A. number of breads soldC. amount of money earnedB. cups of flour consumedD. length of time preparing the bread16. What is the set of all possible values which will make the function "work" and will give realy-values?A. domain 17. Which of the following is not a linearB. functionC. rangeD. slopefunction?JLA. f(x) = 3x - 4 B. f(x) = 4x + 1 18. Which of the following is used to graph the inequality 2x - y &gt;5^ primeC. f(x) = 5x + 1 D. f(x) = 3x ^ 2 + 2A. a rayB. a segment C. a solid line D. a dashed line19. What is the inequality model of the statement, "In a week, Jaime's allowance &amp; load() is at least Php 200".for snacks (s)A. s + i = 200B. s + i &lt;20 hat UC. s + i &gt; 200s + i &gt;= 20020. The table shows a person's age and the person's maximum recommended heart rate. Express the relation presented in the table below as a set of ordered pairs.AgeMaximumA. \ (25, 190) , (35, 180), (45, 170) \(in years)recommended HeartB. \ (25, 180) , (35, 190), (45, 170) \Rate (Beats per minute)C. \ ( 35 ,*170), (35, 180), \ 45, 170 )\ \ (45, 190) , (35, 180), (45, 170) \D.y25190351804517021. Which of the following is not a linear function?20 A. f(x) = x + 6B. f(x) = x + 5C. f(x) = x ^ 3 - 5D. f(x) = x + 122. Which of the following is a linear function?20 A. f(x) = 3B. f(x) = x + 3C. f(x) = x ^ 3 - 1D. f(x) = x ^ 2 + x + 123. What is the degree of the function f(x) = 4x + 3 ?A. 1B. 2C. 3D. 424. What is the domain of the function f(x) =x-7?A. D-\ z| x &gt;= 7 \B. D =\ x|x subset R\C. D = \{x &lt; 1\}D. D =\ x|x in mathbb R ,x ne2\25. Which of the following function has a domain of D =\ x|x in R\ ?A: f(x) = 5B. f(x) = x ^ 2 - 2C. f(x) = x / x + 3D. f(x) = 2x26. Which of the following ordered pairs is a solution of x - y &lt; 3 and 2x + y &lt;= 1 ?A. (-1,4)B. (0, 1)C. (1, 2)D. (5, 3)​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="activity-1-loadlet-us-test-your-writing-skills-imagine-you-are-repabout-how-you-are-doing-write-a-note-to-your-human-diaquestions-1-what-is-your-most-pervading-emotionfeeling-righmad-or-excited">
+                            1. Activity 1. LOADLet us test your writing skills. Imagine you are repabout how you are doing. Write a note to your human diaquestions.1. What is your most pervading emotion/feeling righmad or excited?)2. What events made you feel that way?3. Is there anyone who caused or contributed to the4. What are your thoughts about your present situat5. What are your realizations about it?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.When you were a teenager, you might have kept a diary hidden under your mattress. It was a place to confess your struggles and fears without judgment or punishment. It likely felt good to get all of those thoughts and feelings out of your head and down on paper. The world seemed clearer.</p><p>2.When we market our events, we often use these words in conjunction with positive adjectives, with the hope to sell that unique feeling.</p><p>3.Have you ever wondered what causes clinical depression? Perhaps you have been diagnosed with major depression, and that's made you question why some people get depressed but others don't.</p><p>4.The recommended measures of social isolation give the best results in fighting the epidemic, but they also bring changes in routines for all family members. It is natural to feel scared and anxious, that is a normal reaction to the state of crisis and uncertainty.</p><p>5.I have always asked myself whether there is anything that has occurred to me in my life that has opened my eyes. You know, given me a profound realization about life in general and whatnot.</p><p><strong>Explanation:(●'◡'●)(●'◡'●)  ca </strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="english-subject-wag-po-yung-mali-plsgood-answerbrainliest-5-star-rating-50-pointscomplete-answerbrainliest-5-star-rating-50-pointsbad-answerreportnonsensereport%e2%80%8b-let">
+                            2. ENGLISH SUBJECT!! WAG PO YUNG MALI PLS!
+Good answer=Brainliest + 5 star rating + 50 points
+Complete answer=Brainliest + 5 star rating + 50 points
+Bad answer=Report
+Nonsense=Report​
+-
+Let’s test your knowledge of the information above before moving on. In each blank below, write the tense of the verb in parenthesis.
+1. She ____________ around the living room. (run‐present)
+2. We ____________ our plans for the weekend. (discuss, past)
+3. The boat ______________ as soon as the cargo of machinery is loaded. (sail, future)
+4. Natasha __________ listening to music. (enjoy, past)
+5. He ____________ musical comedies. (like‐present)
+6. I __________ you my new leather jacket. (lend, future)
+7. These arguments _________ you that I am right. (convince, future)
+8. Although the car is old, it __________ well. (run‐present)
+9. The shopper ____________ to see the manager. (ask, past)
+10. The man in the corner ___________ lead guitar in the band. (play, present)</h2><br />
+                        1. runs<br />2. discussed <br />3. shall sail<br />4. enjoyed<br />5. likes<br />6. Will lend<br />7. Shall convince <br />8. runs<br />9. Asked<br />10. Plays the<br /><br />Sorry po Kung May wrong correct nyo po ako sa comments<br />
+                                            <h2 class="ez-toc-section" id="directions-evaluate-the-sample-short-radio-commentary-below-based-on-content%e2%80%99s-accuracy-evidencearguments-presented-truthfulness-relevancesignificance-to-thecurrent-situation-metro-ma">
+                            3. Directions: Evaluate the sample short radio commentary below, based on content’s accuracy, evidence/arguments presented, truthfulness, relevance/significance to the
+current situation.
+Metro Manila (CNN Philippines, May 7) — The country's pandemic task force has approved the proposal to wait until the seventh day of quarantine before testing travelers who enter the country, the Department of Health said on Friday.
+Health Undersecretary Maria Rosario Vergeire said the Inter-Agency Task Force also
+mandated travelers who test negative for COVID-19 to stay in a government-approved quarantine facility for 10 days before they can be discharged. They can then move to their respective hometowns or hotels to complete the required 14-day isolation. "This is a process para ma-ensure natin that even though nakakapasok pa rin ang ibang travelers, especially Pilipino, sa ating bansa nasisiguro natin na naiisolate natin sila nang maayos to break the chain of transmission," she said in a media briefing.
+[Translation: This is a process to ensure that even though we allow the entry of some travelers, including Filipinos, we can isolate them properly so we can break the chain of transmission.]
+The revision in testing protocols was recommended by DOH. It cited the findings of experts that waiting for 7 to 8 days after possible exposure is the optimal time since the viral load is at its peak during this period.
+The previous protocol was to confine inbound travelers in a facility for six days before they are tested. If they are negative, they can continue isolation in their hometowns or hotels until the 14-day requirement is met.
+Question:
+1) WHY do think the certain action in the commentary has to be done? 
+2) HOW does the commentary affect the listeners opinion about the presented issue?</h2><br />
+                        <p><strong>Answer:</strong></p><p>6.All the required data is concentrated in a single place i.e. the server. So it is easy to protect the data and provide authorisation and authentication.</p><br />
+                                            <h2 class="ez-toc-section" id="pre-testdirections-read-each-item-carefully-then-write-the-letter-of-the-correct-on-theanswer-sheet-on-page-10-of-this-module-1-what-is-a-simple-machine-that-uses-grooved-wheels-and-rope-to-raise-l">
+                            4. Pre-testDirections: Read each item carefully then write the letter of the correct on theanswer sheet on page 10 of this module.1. What is a simple machine that uses grooved wheels and rope to raise, lower, ormove a load?A. inclined plane B. leverC. pulleyD. wheel and axle-OIS2. In which of the following would you use a pulley for?A. cutting foodC. raising a flag in a flag poleB. holding a piece of plastic together D. all of these3. What simple machine is shown?A. leverB. pulleyC. screwD. wheel and axle4. How would a pulley be used in everyday life?A. lifting objects in construction C. mobile transportB. towing vehicleD. all of these5. What simple machine is presented in a door knob below?A, leverB. pulleyC. screwD. wheel and axlelittp://urwurgoraph/um/forlip-ari/doorpasagot po please​</h2><br />
+                        <p><strong>Answers:</strong></p><strong>C.</strong><strong> </strong><strong>pulley</strong><strong>C.</strong><strong> </strong><strong>raising </strong><strong>a </strong><strong>flag </strong><strong>in </strong><strong>a </strong><strong>pole</strong><strong>B.</strong><strong> </strong><strong>pulley</strong><strong>D.</strong><strong> </strong><strong>all </strong><strong>of </strong><strong>these</strong><strong>D.</strong><strong> </strong><strong>wheel </strong><strong>and </strong><strong>axle</strong><p><strong>Explaination:</strong></p><p>1. — A pulley is a simple machine that uses grooved wheels and a rope to raise, lower or move a load.</p><p>5. — In the case of a doorknob, the knob is the wheel and the central shaft through the door is the axle. The knob requires application of less force to turn the knob than what's needed to turn the shaft by itself.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="multiple-choice-directions-read-the-statement-carefully-and-choose-one-that-best-illustrates-anelectrical-measuring-tool-or-instrument-write-the-letter-of-your-answer-in-your-answer-sheet-1-a-devi">
+                            5. MULTIPLE CHOICE. Directions: Read the statement carefully and choose one that best illustrates anelectrical measuring tool or instrument. Write the letter of your answer in your answer sheet.1. A device used in geometry, technical drawing, as well as the engineering and construction industries, tomeasure distances or draw straight linesA MicrometerB. RulerC. AmmeterD. Ohmmeter2. An instrument used to measure the amount of electrical current intensity in a circuitA OhmmeterB. AmmeterC Test LightD. Wire Gauge3. It is used to measure current flowing in a conductor and it is clamp or hanged in a conductorA VoltmeterB. Clamp AmmeterC.Test lightD. Micrometer4. The unit of measure used to measure the amount of electrical current intensity in a circuitA VoltB. AmpereC. OhmD Watt5 The unit of measure used to measure electrical pressure or voltage of a circuitA OhmB. AmpereC VoltD. Watt6 It is used to measure the voltage, resistance and current of a circuit.A Volt-Ohmmeter B. MicrometerC. AmmeterD Ohmmeter7. It is used in determining the size of wires/conductorsA Test LightB. Wire GaugeC RulerD Pull-Push Rule8. A measuring tool used to measure the length of an object in centimeter and inchesA MicrometerB. Test LightC Pull-Push Rule D. Wire Gauge9. A pocket size tool used to test the line wire or circuit if there is an electric current in itA Wire GaugeB. MicrometerC. Test LightD. Ruler10 It is an instrument used to measure electrical pressure or voltage of a circuit.A VoltmeterB. MicrometerC AmmeterD Ohmmeter11 Ruler is also called aA Line MeterB. Line GaugeD Line GuideC Line String12. In electrical installation/electrical works, measuring devices are very important because it help to determinetheof electrical quantitiesC valueB importanceD amountA essence13 It is the science of measurementA Meteorology B. MeterologyC. MetorologyD Metiorology14 Another term for clamp ammeter isA Tong TesterB Tong MeterD Tong ClampC Tong Ammeter15 VOM stands forC. Volt-OmeterD Volt-OhmmeterA Volt-OhmeterB Volt-Ommeter16 In using an ammeter, be sure that a is presentCloadD supplyB currentA power17 In electrical installation/electrical works, measuring devices are used to measure the following exceptC wattageD resistanceB. voltageA ampere18 It can measure small and big sizes of wires and cablesD. OhmmeterC AmmeterB MicrometerA VoltmeterAWG19 Wire gauge ranges fromD ( 070Co to 60B. O 10 50A 0 10 40wire at a tim20 In using a clamp ammeter or tong-tester, be sure that there's load present and clampD fourC threeB twoA one​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. A</p><p>2.D</p><p>3. D</p><p>4.C</p><p>5. A</p><p>6.B</p><p>7.C</p><p>8-11.C</p><p>12.D</p><p>13. A</p><p>14.C</p><p>15.C</p><p>16.B</p><p>17-20. A</p><p><strong>Explanation:</strong></p><p>that's all I hope it's help </p><p>plss make me BRAINLIEST</p><br />
+                                            <h2 class="ez-toc-section" id="name-third-periodical-test-english-8-grade-and-sec-b-telling-only-a-part-of-the-issue-at-hand-c-putting-across-an-unfair-or-one-sided-opinion-directions-read-carefully-and-choose-the-correct-answ">
+                            6. Name: Third Periodical Test English-8 Grade and Sec: B. telling only a part of the issue at hand C. putting across an unfair or one-sided opinion Directions: Read carefully and choose the correct answer. Write letter only. 1. This refers to an author's expression of his/her own opinion on a particular issue without examining and presenting enough evidences. A. bias B. judgment C. objective D. subjective 2. Which of the following factors influences a person's bias? A. evidences B. experiences C. facts 3. All the following statements are true about bias, EXCEPT: A. presenting both sides of the issue Score: D. reality D. being subjective as opposed to being objective 4. "Fathers are always responsible in making decisions than mothers." Which of the words below makes the statement biased? A. always B. decision C. making D. responsible 5. "Pageants are amazing platforms that promote different advocacies such as women empowerment, child protection, and environmental conservation." Which of the words below makes the statement biased? A. amazing B. conservation C. different D. protection 6. Which of the following statements does NOT manifest bias? A. Filipinos are considered the best English speakers in the world. B. Women leaders are better than men when handling a health crisis. C. Research studies are undertaken to help improve human condition. D. Online games are the main cause of mental health problems among teenagers nowadays. 7. Which of the following statements shows the negative view of the author about social media? A. It breeds cyber bullying and depression. B. It can be an avenue for business opportunities. C. It develops the information and communication (ICT) skills of teenagers. D. It allows people to create online communities and friendship. 8. What should an author do to avoid being biased? The author must... A. present evidences to support personal opinions B. present solid evidences on both sides of an issue C. use words and expressions that appeal to the readers D, use words and expressions to convince readers to take a stand 9. What particular technique is used which is intended to make consumers accept or approve something without looking closely at evidences? A. advertisement B. commercial C. announcement D. propaganda 10. Which propaganda technique presents a negative quality of a person, entity, object, or value to discredit it and make the other option more acceptable? A. loaded words B. plain folks C. simplification D. transfer 11. What propaganda technique is used in the statement, "Things go better with Coke"? A. card stacking B. glittering generalities C. name-calling D. plain folks 12. "I love visiting you folks in the city because people are wholesome, hardworking, and family- -​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A. bias</p><p>B. experiences</p><p>D. being subjective as opposed to being objective</p><p>A. always</p><p>A. amazing</p><p>C. Research studies are undertaken to help improve human condition.</p><p>A. It breeds cyber bullying and depression.</p><p>B. present solid evidences on both sides of an issue</p><p>D. propaganda</p><p>C. simplification</p><p>B. glittering generalities</p><p>D. plain folks</p><br />
+                                            <h2 class="ez-toc-section" id="1-it-id-the-single-line-diagram-presentation-of-the-entire-electrical-circuit-from-the-service-entrance-up-to-the-smallest-circuit-branch-a-location-mapb-schedule-of-loadsc-riser-diagramdtitle-block2">
+                            7. 1.)It id the single line diagram presentation of the entire electrical circuit from the service entrance up to the smallest circuit branch.a.Location Mapb.Schedule of Loadsc.Riser DiagramdTitle Block2.)Which of the following represents the real world on a much smaller scale. They help you organize information?a.Location Mapb.Schedule of Loadsc.Riser DiagramdTitle Block3.It makes a drawing appear official and important, at a single glancea.Location Mapb.Schedule of Loadsc.Riser DiagramdTitle Block4.It is a plan of a room or floor of a building drawn to scale as if viewed from above.a.Electrical Wiring Planb.Floor Planc.Location Mapd.Wiring Plan5.It refers to power supply to be applied in every house or building that needed electricity, either it will be single phase 2 wires or 3 wires.a.Classification of serviceb.Number of branch circuit and their corresponding sizesc.Supplies materials to be used by the contractord.Type of wiring method6.It refers to type and quality of electrical materials to be installed in the entire electrical wiring system from the service entrance up to the smallest circuit branch.a.Classification of serviceb.Number of branch circuit and their corresponding sizesc.Supplies materials to be used by the contractord.Type of wiring method7.Which of the following tests shall be performed by the contactor upon completion of electrical works.a.Insulation resistance phaseb.Functional testc.Voltage testd.All of the above8.What is the required watts per square meter, based on Philippine Electrical Code?a.10 wattsb.30 wattsc.50 wattsd.70 watts9.)The code requires that at least one circuit is supplied to the laundry outlets. How much ampere is required to laundry outlets?a.10 ampb.15 ampc.20 ampd.25 amp10.Which of the following appliances provide a separate circuit and considered as a special purpose circuit / outlet?a.Air Conditioning Unitb.Electric Fanc.Microwave Ovend.Television11.Which of the following is used nationally as the basis for safeguarding persons, buildings and its contents from hazards that may arise from the use of electricity?a.Civil Code of the Philippinesb.Corporation Code of the Philippinesc.Philippine Electrical Coded.Electrical Code of the Philippines12.It is where the wires connected to the load side of the meter enter the house or building.a.Entrance Serviceb.Service Entrancec.Service Wiresd.Wire Entrance13.How many brand of circuit breaker shall be utilized in the entire project requirement?a.oneb.twoc.threed.four14.it refers to type and quality of electrical materials to be installed in the entire electrical wiring system from the service entrance up to the smallest circuit branch.a.Classification of serviceb.Number of branch circuit and their corresponding sizesc.Supplies materials to be used by the contractord.Type of wiring method15.What is is the minimum size of conductor required for all the convenience outlet?a.Wire no. 10 AWGb.Wire no. 11 AWGc.Wire no. 12 AWGd.Wire no. 13 AWG​</h2><br />
+                        <p>1.)It id the single line diagram presentation of the entire electrical circuit from the service entrance up to the smallest circuit branch.</p><p></p><p>a.Location Map</p><p>b.Schedule of Loads</p><p>c.Riser Diagram</p><p>dTitle Block</p><p></p><p>2.)Which of the following represents the real world on a much smaller scale. They help you organize information?</p><p></p><p>a.Location Map</p><p>b.Schedule of Loads</p><p>c.Riser Diagram</p><p>dTitle Block</p><p></p><p>3.It makes a drawing appear official and important, at a single glance</p><p></p><p>a.Location Map</p><p>b.Schedule of Loads</p><p>c.Riser Diagram</p><p>dTitle Block</p><p></p><p>4.It is a plan of a room or floor of a building drawn to scale as if viewed from above.</p><p></p><p>a.Electrical Wiring Plan</p><p>b.Floor Plan</p><p>c.Location Map</p><p>d.Wiring Plan</p><p></p><p>5.It refers to power supply to be applied in every house or building that needed electricity, either it will be single phase 2 wires or 3 wires.</p><p></p><p>a.Classification of service</p><p>b.Number of branch circuit and their corresponding sizes</p><p>c.Supplies materials to be used by the contractor</p><p>d.Type of wiring method</p><p></p><p>6.It refers to type and quality of electrical materials to be installed in the entire electrical wiring system from the service entrance up to the smallest circuit branch.</p><p></p><p>a.Classification of service</p><p>b.Number of branch circuit and their corresponding sizes</p><p>c.Supplies materials to be used by the contractor</p><p>d.Type of wiring method</p><p></p><p>7.Which of the following tests shall be performed by the contactor upon completion of electrical works.</p><p></p><p>a.Insulation resistance phase</p><p>b.Functional test</p><p>c.Voltage test</p><p>d.All of the above</p><p></p><p>8.What is the required watts per square meter, based on Philippine Electrical Code?</p><p></p><p>a.10 watts</p><p>b.30 watts</p><p>c.50 watts</p><p>d.70 watts</p><p></p><p>9.)The code requires that at least one circuit is supplied to the laundry outlets. How much ampere is required to laundry outlets?</p><p></p><p>a.10 amp</p><p>b.15 amp</p><p>c.20 amp</p><p>d.25 amp</p><p></p><p>10.Which of the following appliances provide a separate circuit and considered as a special purpose circuit / outlet?</p><p></p><p>a.Air Conditioning Unit</p><p>b.Electric Fan</p><p>c.Microwave Oven</p><p>d.Television</p><p></p><p>11.Which of the following is used nationally as the basis for safeguarding persons, buildings and its contents from hazards that may arise from the use of electricity?</p><p></p><p>a.Civil Code of the Philippines</p><p>b.Corporation Code of the Philippines</p><p>c.Philippine Electrical Code</p><p>d.Electrical Code of the Philippines</p><p></p><p>12.It is where the wires connected to the load side of the meter enter the house or building.</p><p></p><p>a.Entrance Service</p><p>b.Service Entrance</p><p>c.Service Wires</p><p>d.Wire Entrance</p><p></p><p>13.How many brand of circuit breaker shall be utilized in the entire project requirement?</p><p></p><p>a.one</p><p>b.two</p><p>c.three</p><p>d.four</p><p></p><p>14.it refers to type and quality of electrical materials to be installed in the entire electrical wiring system from the service entrance up to the smallest circuit branch.</p><p></p><p>a.Classification of service</p><p>b.Number of branch circuit and their corresponding sizes</p><p>c.Supplies materials to be used by the contractor</p><p>d.Type of wiring method</p><p></p><p>15.What is is the minimum size of conductor required for all the convenience outlet?</p><p></p><p>a.Wire no. 10 AWG</p><p>b.Wire no. 11 AWG</p><p>c.Wire no. 12 AWG</p><p>d.Wire no. 13 AWG</p><p></p><p></p>DAACBBDCAABDCAB<br />
+                                            <h2 class="ez-toc-section" id="directions-read-each-sentence-select-the-letter-of-the-correct-answer-and-write-it-in-your-answer-sheet-which-of-the-following-help-you-decide-your-product-design-worth-in-effort-time-and-gathering">
+                            8. Directions Read each sentence. Select the letter of the correct answer and write it in your Answer Sheet Which of the following help you decide your product design, worth in effort, time and gathering of materials A. Create and test your model C. Present your product design B. Design your product D. Research 2. This is where the product functions A Create and test your model C. Present your product design B Design your product D. Research2 3. Which of the following displays a list of items in your scene It initially loads a camera, a cube and a lamp? A Timeline C. 3D View B. Outliner D. Properties Editor 4. Which of the following windows that is used in animation? A 3D View C. Timeline B. Properties Editor D. Tool Shelf 5. What is consider as the main window in Blender A 3D View C. Timeline B. Properties Editor D Tool Shelf 6. The important information which the costumer can read A Colors B. Materials C. Shape D. Text 7. It shows the variety and relevance to the product's brand. A Colors B. Materials C. Shape D. Text 8. Which of the following Copy and paste keyboard shortcuts? A curic C. Ctrl + X B C + P D. None of the above 9. Which of the following is the function of Ctrl + Z? A Open B. Rede C. Shift D. Undo 10. Which of the following is the function of Col. V? A Find Open B Open C Paste D. Undohelp po plss​</h2><br />
+                        <p><strong>Answer:</strong></p><p>dkqkabakwkajakakadjaibdba</p><p>paayos nung tanong please</p><br />
+                                            <h2 class="ez-toc-section" id="activity-1-write-true-if-the-statement-is-correct-otherwise-write-false-write-the-answer-on-your-answer-sheet-___________1-every-change-you-make-to-your-bios-structure-is-saved-on-cmos-___________2">
+                            9. ACTIVITY 1. Write TRUE if the statement is correct otherwise write FALSE. Write the answer on your answer sheet.___________1. Every change you make to your BIOS structure is saved on CMOS.___________2. POST is an acronym for the Power-On Software Test.___________3. BIOS drivers are the many programs stored in your computer’s memory chips.___________4. Windows 10 uses UEFI system.___________5. Newer PCs have replaced the bootstrap loader with an EFI.___________6. CMOS is an acronym for Complementary Meta-Oxide Semiconductor.___________7. The last step in activating BIOS in Windows 10 is selecting 'UEFI Firmware Settings.'___________8. You can change the boot order of the devices under BIOS.___________9. BIOS will not load under windows 7 if you did not press the BIOS hotkey upon opening your PC.___________10. Oftentimes your computer will indicate on the startup screen which key or keys need to be pressed in order to enter BIOS settings.ACTIVITY 2: IdentificationSelect the answer in the box below and write the answer in your answer sheet.__________1. It tests the hardware of your PC and ensures that there is nothing out of order and no errors present with your operating system.__________2. It contain a number of hardware configuration options that can be changed through the setup utility.__________3. It’s the successor to the traditional BIOS. UEFI offers support for boot volumes over 2 TB in size__________4. It is a term that pertains to the way a system is set up.__________5. It is tasked with reading your PC’s hard drive boot sector to move along the complete operating system load.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>true</p><p>true</p><p>false </p><p>true </p><p>false </p><p>false </p><p>true</p><p>false</p><p>true</p><p>true</p><p></p><p><strong>Answer:</strong></p><p>1.true</p><p>2.true</p><p>3.false</p><p>4.true</p><p>5.false</p><p>6.false</p><p>7.true</p><p>8.false</p><p>9.true</p><p>10.true</p><p><strong>Explanation:</strong></p><p>thanks for the points :)</p><br />
+                                            <h2 class="ez-toc-section" id="choose-the-correct-answer-by-writing-theletter-of-your-choice-before-each-number1-which-is-not-an-observation-in-the-followinga-the-bird-flew-c-he-is-1-in-taller-than-samb-my-gown-is-long-d">
+                            10. CHOOSE THE CORRECT ANSWER BY WRITING THELETTER OF YOUR CHOICE BEFORE EACH NUMBER:1. Which is NOT an observation in the following:A. The bird flew. C. He is 1 in. taller than SamB. My gown is long. D. If I exposed this liquid underthe sun without cover, it willevaporate.2. Why is there a continuous research being conducted?Because…A. there is a problem C. there is a hypothesisB. there is a fund D. there is an investigation3. Which is a hypothesis statement in the following?A. Coffee needs hot water C. Coffee is bitterB. Coffee is a mixture D. If coffee is dissolved in hotwater, it will dissolve faster4. Which is NOT a qualitative observation in thefollowing?A. The load is heavy C. He is giganticB. Fel is so tall. D. The new phone measures 6in. long and 4 in. wide5. Which is a qualitative observation?A. The substance weighs 1 g D. I am 5 ft. tall.B. Furnitures today are space saving.C. His pair of shoes measures 10 inches long.For 6-7. A scientist conducts an experiment to test thetheory that vitamin C could extend a person’s life-expectancy.A. Amount of vitamin C given to the subjects.B. Life spanC. number of subjects D. number of days6. What is the independent variable in the experiment?7. What is the dependent variable in the experiment?For 8-9. A scientist studies the impact of a drug onCOVID-19 patients.A. administration of the drug - the dosage and thetiming.B. the impact the drug has on COVID-19 patients.C. number of patientsD. age of patients8. What is the independent variable in the study?9. What is the dependent variable in the study?10. What part of the scientific method states the causeand effect of a situation? It includes an “If and then”statement.A. Problem C. ExperimentB. Result D. Hypothesis11. Which variable must only be one to make anexperiment fair?A. Dependent variable C. Independent variableB. Controlled variable D. Responding variable12. Sodium (Na) and Chlorine(Cl2) can combinechemically to form table salt(NaCl). Which is acompound in the reaction?A. Na B. Cl C. Cl2 D. NaCl13. Symbols of elements can be 1 or 2 letters, which ofthe following is an element?A. NO B. CO C. Sn D. OH14. Which is NOT TRUE why some symbols of elementshave different letters from the spelling of their names?The names originated from…A. names of famous people C. the favorite word ofB. the place where the the discovererelement was discovered D. Latin names15. All of the following symbols are taken from the Latinor foreign names of elements EXCEPT…A. Au B. Hg C. Sn D. Mn16. Sulfuric acid (H2SO4) is a compound used inindustries and in homes for certain purposes. Whatelement is NOT found in this compound?A. hydrogen B. sodium C. oxygen D. sulfur17. We know some compounds that we used at homeby their common names. What is the common name ofhydrochloric acid that we use in cleaning toilets?A. acetic acid C. muriatic acidB. citric acid D. sulfuric acid18. What alcohol is present in wines and liquors?A. methyl alcohol C. isopropyl alcoholB. ethyl alcohol D. butyl alcohol19. The following describe mixtures EXCEPT…Mixtures are…A. sometimes homogeneous or heterogeneous.B. made up of two or more kinds of matter.C. with varying boiling and melting point.D. with definite composition and properties.20. The following are examples of a substance, EXCEPT…A. air B. sugar C. water D. Salt21. A compound contains nitrogen and oxygen. Theratio of the nitrogen atom to oxygen atom is 1:3. Whatis the formula of the compound?A. NO3 B. N3O C. NO D. N3O322. Which is NOT a property of a solution?A. it is homogeneousB. It has solute and solventC. It can be heterogeneousD. It cannot be filtered23. Which DOES NOT describe a homogeneous mixture?A. It has only one phaseB. Particles are evenly distributed in the mixtureC. It allows light to pass through easilyD. It can be filtered24. An unknown yellow material in the laboratory washeated. When heated, the material melted and turnedlight brown. The material cooled off and upon cooling, itturned back to yellow color. What could be the natureof the material?A. elements C. mixtureB. compound D. cannot be determined25. An unknown colorless and odorless liquid was boiledfor 15 minutes. It was observed that it has constantboiling point. What could be the nature of the liquid?A. mixture C. mixture of acidB. pure substance D. salt solution26. Vitamin C is taken in to strengthen the immunesystem. Its chemical name is ascorbic acid with aformula, HC6H7O6. What elements comprise vitamin C?A. hydrogen, carbon and oxygenB. helium, carbon and oxygenC. hydrogen, cobalt, oxygenD. hydrogen, carbon and oganesson​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. a </p><p>2. d </p><p>3. d</p><p></p><p><strong>Explanation:</strong></p><p>pagod na po ako yan lng</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-statements-is-not-true-about-propagandaa-it-is-very-common-in-advertisements-where-they-try-to-make-consumers-patronize-the-products-or-services-they-offerb-it-is-a-communic">
+                            11. Which of the following statements is NOT true about propaganda?a. It is very common in advertisements, where they try to make consumers patronize the products or services they offerb. It is a communication that is primarily used to influence an audience.c. It is an art of persuasion.d. It can range from claims that the majority of people are using the products/services, approvals from experts or famous personalities, and so on2. Which of the following statements is NOT applicable to recognize bias?a. Watch for stereotypesb. Look for loaded wordsc. Ignore sides of argumentationd. Notice vague language or generalizations3. Which of the following questions is NOT aligned to focus on the audience?a. What is the situation around you when delivering a speech?b. Who are the intended listeners?c. Will the choice of words appropriate to the level of listeners?d. What must be learned and felt in your speech?c.4. Which is not an attribute of an active listener?a. Paying attentionb. Giving prejudicec. Responding appropriatelyd. Providing feedback5. Which purpose do you use the following cohesive devices: thus, hence, thereforea. addition of ideasb. contrasting ideasc. concluding ideasd. introducing ideas6. It is an opinion or prejudice that affects the author's writing and prevents the author from being completely neutral about a topic or issue.a. stereptypesb. biasc. generalizationsd. loaded wordsOption 37. Which among the following statements is NOT true?a. Faulty parallelism happens when patterns of words in a sequence or a list is not parallel orb. Conjunctions are used to join parallel parts in a sentence with similar ideas.c. Parallel structure can be in a pattern of words, phrases and clauses.d. Parallel Structure means using the same pattern of words to show imbalance of ideas.8. It is a kind listening intended to make evaluation or scrutiny of a text.a. Informational Listeningb. Critical Listeningc. Intensive Listeningd. Empathetic Listening9. It is a propaganda technique that is often vague but presents positive ideas like those found in slogan or posters.a. Glittering Generalitiesb. Bandwagonc. Plain Folksd. Testimonial10. Juan is lazy. He does not do his homework or revision well. ___________, he always gets 0 marks in his tests.a. sob. thusc. howeverd. after11. ___________ save the kitten, we took him to the vet immediately.a. sinceb. whenc. in order tod. because12. Maria is a beautiful and smart girl. _________, she is kind. She always takes care of the sick animals. ___________, every one likes her very much.a. However, Sinceb. Moreover, Soc. Therefore, Howeverd. Besides, Therefore13. What kind of listening are you going to employ if you will make a reaction paper?a. Informational Listeningb. Empathetic Listeningc. Critical Listeningd. Therapeutic Listening14. It is a kind of discrimination where a group of people are labelled.a. racialb. generalizationc. biasd. stereotype15. Parallelism can be observed in the pattern of the following EXCEPT ______.a. wordb. textc. phrased. clause16. Although, despite, rather, nevertheless are words that indicate ______.a. Contrastb. Comparisonc. Conclusiond. Introduction17. They can indicate sequence, addition, comparison, contrast, causation, illustration, or emphasisa. Coordinating Conjuntionsb. Signal Wordsc. Transition Markersd. Subordinating Conjunctions18. What type of speech is a eulogy?a. Informative Speechb. Persuasive Speechc. Special Occasion Speechd. Argumentative Speech19. It is a type of speech where the speaker presents points to make the audience side with the case of the speaker or to forward an advocacy.a. Persuasiveb. Informativec. Special Occasiond. Argumentative20. These are words that are expressed with strong emotions that can reveal a person's opinion or bias.a. biasb. prejudicec. stereotyped. loaded words​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.D</p><p>2.A</p><p>3.D</p><p>4.A</p><p>5.C</p><p>6.B</p><p>7.D</p><p>8.A</p><p>8.C</p><p>9.B</p><p>10.D</p><p>11.A</p><p>12D.</p><p>13.D</p><p>14.B</p><p>15.B</p><p>16.A</p><p>17.A</p><p>18.C</p><p>19.B</p><p>20.D</p><p><strong>Explanation:</strong></p><p>PA BRAINLIEST ANSWER PO PLSS </p><br />
+                                            <h2 class="ez-toc-section" id="test-1-identify-the-following-statements-choose-your-answer-inside-the-box-____________________________________-omission-placement-photos-names-and-titles-statistics-bandwagon">
+                            12. test 1. Identify the following statements. choose your answer inside the box.   ____________________________________  (Omission)   (Placement)  (Photos)  (names and titles)   (statistics)  (bandwagon)  (loaded words)   (testimonial)  (name calling)  (plain folks)  (bias)  (propaganda)----------------------------------------------------------------------________1. form of bias in which what is presented first are viewed the most important, those that are placed last are seen to be quite less important. ________2.One of the most techniques of propaganda which uses a strong words that convey strong emotions.________3.form of bias in which certain information is taken out while other details are included.________4.saying a bad name about an opponent is one of the techniques propaganda techniques.________5. A propaganda technique which uses an experts or celebrities are to do persuasion about a certain product.________6. Form of bias which assumes that numbers can be manipulated to create a impression.________7. One of the propaganda techniques that use presentation of images to create a pleasant or unflaterring impresion to the audience._______8. It is persuasive information that is spread for the purpose of promoting a position or cause._______9. Form of bias in which the way the person or scene is described in the text or caption in the visual media can influence the viewer._______10. Propaganda technique in which listeners are persuaded into having or doing something to follow the majority. _______11. It is tendency to favor one side over the other._______12. Propaganda technique in which a person projecting to be an average or ordinary person.it so long to type, plss answer it seriously​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. bias</p><p>2. name calling </p><p>3. Omission</p><p>4. Bandwagon</p><p>5. Testimonial</p><p>6. name and titles</p><p>7. photos</p><p>8. propaganda</p><p>9. plain folks</p><p>10. placement</p><p>11. statistics</p><p>12. loaded words</p><p></p><p><strong>Explanation:</strong></p><p>Correct me if I'm wrong</p><br />
+                                            <h2 class="ez-toc-section" id="j1-it-refers-to-a-prejudice-or-unfairness-against-something-an-author-is-writing-abouta-bias-b-negative-traits-c-opinion-d-positive-traits2-which-of-the-following-is-not-a-definition-of-bia">
+                            13. j1.it refers to a prejudice or unfairness against something an author is writing abouta bias    b. negative traits   c. opinion.   d.positive traits2. which of the following is NOT a definition of biasa.An author letting feeling and emotions cloud his/her objectivity with regard to something he/she is writing aboutb.A prejudice or unfairness against something an author is writing aboutc. favoritism for something an author is writing aboutd. the all teachers about all the positive traits of what he/she is writing about.3. a source of bias in which words that are charged with emotion ( whether positive or negative) convivial an author's opinion about his/her topic.a. loaded words  b. opinions  c.stereotypes  d.vague language4. a source of bias in which the author labels an entire groupa. loaded words  b. opinions  c.stereotypes  d.vague language5. which of the following are used as opinion-marking signalsa. i agree with...    b. i believe...  c. i disagree with... d. all of the choices(a, b, and c)6. a source of bias in which the author isn't using specific languagea. loaded words  b. opinions  c.stereotypes  d.vague language7. it can be based on feelings,emotion,orprejudice, which are not objectivea. loaded words b.one - sided arguments c. opinions d.vague language8. a source of bias in which the author only presents one side of argument.a. loaded words b.one - sided arguments c. opinions d.vague language9. which of the following is a positive character traita. hot tempered b. I'll mannered c.kind d. strict10. all of the following character traits are positive except for one. which one is it?a.good in English b. hot tempered  c.intelligent d. sympathetic11. as a scholar in our institution, my life has been full of changes______, i did not quiver nor surrender; because i am a survivora. and b. because c. despite d.however12. my fellow students,we had our share of many complaints about how difficult the test was______we are here today, probably receiving awards.a. and b. because c.so d. yet13._________our constant disagreements in all our group projects, we remain true friends.a. although b. and c. despite d. unless14. in the middle of the wing our school projects, we lost track of time. sometimes, we need to call our parents_______it was already midnight.a. although b. and c. as d. because15.__________all the sleepless nights we experience to meet the deadline given by our educators, we remain steadfast.a. as b. because c. however d. in spite of16. i left the ceremony_______i need to look back to my experiences here in our school.a.as b. because c. despite d. unless17. people expected me to fall,______here i am, stronger than ever.a. because b. but c. in spite of d. unless18. we toast for the everlasting happiness of the couple_____for there promising future together.a. and b.as c. because d.despite19. before, i have to walk for miles in going to school_______now i have my car.a.as b.because c.but d.however 20. i always weight the pros and cons of the situation______ i decide.a.before b.but c.despite d. unless​</h2><br />
+                        answer1.A2.D3.A4.C5.D6.D7.C8.B9.C10.B11.A12.A13.A14.A15.C16.B17.B18.A19.C20.A<br />
+                                            <h2 class="ez-toc-section" id="c-present-your-product-design-c-present-your-product-design-a-timeline-b-outliner-read-each-sentence-select-the-let-write-it-in-your-answer-sheet-1-which-of-the-following-help-you-decide-your-p">
+                            14. C. Present your product design C. Present your product design A Timeline B. Outliner -Read each sentence. Select the let write it in your answer Sheet. 1. Which of the following help you decide your product design, worth in effort, time and gathering of materials A Create and test your model B. Design your product D. Research 2. This is where the product functions. A Create and test your model B. Design your product D. Research2 3. Which of the following displays a list of items in your scene It initially loads a camera, a cube and a lamp? C. 3D View D. Properties Editor 4. Which of the following windows that is used in animation? A. 3D View C. Timeline B. Properties Editor D. Tool Shelf 5. What is consider as the main window in Blender- A. 3D View C. Timeline B. Properties Editor D. Tool Shelf 6. The important information which the costumer can read. A. Colors B. Materials C. Shape 7. It shows the variety and relevance to the product's brand. A. Colors B. Materials C. Shape D. Text 8. Which of the following Copy and paste keyboard shortcuts? A. Ctrl + C C. Ctrl + X B. Ctrl + P D. None of the above .. Which of the following is the function of Ctrl + Z? A. Open B. Redo C. Shift D. Undo . Which of the following is the function of Ctrl + V? A. Find Open B. Open C. Paste D. Undo D. Textanswer po plss​</h2><br />
+                        <p><strong>Answer:</strong></p>DCDEBDCCAC<p>follow po thanks</p><p><strong>Explanation:</strong></p><p>basta yan yon</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="7213-which-of-the-following-below-defines-a-functiona-bc-d-x1-214-what-is-the-dependent-variable-on-the-number-of-hours-studied-to-grade-on-test-b-hours-studied-c-grade-on-test-d-the-number-o">
+                            15. 7213. Which of the following below defines a function?A.BC.D.X1 214. What is the dependent variable on "the number of hours studied to grade on test"? B. hours studied C. grade on test D. the number of hours studied 15. The more bread I sell, the more money earn. What is the independent variable in the givenA. testscenario?A. number of breads soldC. amount of money earnedB. cups of flour consumedD. length of time preparing the bread16. What is the set of all possible values which will make the function "work" and will give realy-values?A. domain 17. Which of the following is not a linearB. functionC. rangeD. slopefunction?JLA. f(x) = 3x - 4 B. f(x) = 4x + 1 18. Which of the following is used to graph the inequality 2x - y &gt;5^ primeC. f(x) = 5x + 1 D. f(x) = 3x ^ 2 + 2A. a rayB. a segment C. a solid line D. a dashed line19. What is the inequality model of the statement, "In a week, Jaime's allowance &amp; load() is at least Php 200".for snacks (s)A. s + i = 200B. s + i &lt;20 hat UC. s + i &gt; 200s + i &gt;= 20020. The table shows a person's age and the person's maximum recommended heart rate. Express the relation presented in the table below as a set of ordered pairs.AgeMaximumA. \ (25, 190) , (35, 180), (45, 170) \(in years)recommended HeartB. \ (25, 180) , (35, 190), (45, 170) \Rate (Beats per minute)C. \ ( 35 ,*170), (35, 180), \ 45, 170 )\ \ (45, 190) , (35, 180), (45, 170) \D.y25190351804517021. Which of the following is not a linear function?20 A. f(x) = x + 6B. f(x) = x + 5C. f(x) = x ^ 3 - 5D. f(x) = x + 122. Which of the following is a linear function?20 A. f(x) = 3B. f(x) = x + 3C. f(x) = x ^ 3 - 1D. f(x) = x ^ 2 + x + 123. What is the degree of the function f(x) = 4x + 3 ?A. 1B. 2C. 3D. 424. What is the domain of the function f(x) =x-7?A. D-\ z| x &gt;= 7 \B. D =\ x|x subset R\C. D = \{x &lt; 1\}D. D =\ x|x in mathbb R ,x ne2\25. Which of the following function has a domain of D =\ x|x in R\ ?A: f(x) = 5B. f(x) = x ^ 2 - 2C. f(x) = x / x + 3D. f(x) = 2x26. Which of the following ordered pairs is a solution of x - y &lt; 3 and 2x + y &lt;= 1 ?A. (-1,4)B. (0, 1)C. (1, 2)D. (5, 3)​</h2><br />
+                        <p><strong>Answer:</strong></p><p>21. C. f(x) = x^3 - 5 is not a linear function because it has an x^3 term, which is a degree 3 term. Linear functions have a degree of 1.</p><p></p><p>22. B. f(x) = x + 3 is a linear function because it has a degree of 1.</p><p></p><p>23. A. The degree of the function f(x) = 4x + 3 is 1 because the highest power of x is 1.</p><p></p><p>24. B. The domain of the function f(x) = x - 7 is all real numbers, or D = {x | x ∈ R}.</p><p></p><p>25. A. The function f(x) = 5 has a domain of all real numbers, or D = {x | x ∈ R}.</p><p></p><p>26. B. The ordered pair (0,1) is a solution of the given system of inequalities because when x=0 and y=1, the inequalities x - y &lt; 3 and 2x + y &lt;= 1 are both satisfied.</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/rdAyi7hLQmw?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>english</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/debate-samemarriage-pros-cons.html">Debate SameMarriage Pros Cons</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/wheeler-s-curriculum-development-model-strengths-and-weaknesses.html">Wheeler s Curriculum Development Model Strengths And Weaknesses</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/how-to-do-the-third-layer-of-a-rubik-s-cube.html">How To Do The Third Layer Of A Rubik s Cube</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/i-wish-we-met-under-happier-circumstances.html">I Wish We Met Under Happier Circumstances</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/sample-of-secretary-s-certificate-for-authorized-signatory.html">Sample Of Secretary s Certificate For Authorized Signatory</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/epekto-ng-bakuna-sa-sanggol.html">Epekto Ng Bakuna Sa Sanggol</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/bungisngis-philippine-mythology.html">Bungisngis Philippine Mythology</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/declarative-interrogative-imperative-exclamatory-powerpoint.html">Declarative Interrogative Imperative Exclamatory Powerpoint</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/direction-in-exam.html">Direction In Exam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/talk915-apply.html">Talk915 Apply</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ltom-2nd-edition.html">Ltom 2nd Edition</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/mabilis-magalit.html">Mabilis Magalit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/pageant-questions-about-education.html">Pageant Questions About Education</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/federigos.html">Federigo&#039;s</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/unionbank-dumaguete.html">Unionbank Dumaguete</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/heel-in-tagalog.html">Heel In Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/interactional-function-of-language.html">Interactional Function Of Language</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/masbate-to-cebu-roro.html">Masbate To Cebu Roro</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ano-ang-kahulugan-ng-gimbal.html">Ano Ang Kahulugan Ng Gimbal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/absite-surgery-pdf.html">Absite Surgery Pdf</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Igmp Snooping Mikrotik - QnA</title>
+    <meta name="description" content="Igmp Snooping Mikrotik, , , , , , , 0, Example: Configuring IGMP Snooping on EX Series Switches - Technical, www.juniper.net, 1250 x 1023, png, , 20, igmp-snooping-mikrotik, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Igmp Snooping Mikrotik - QnA" />
+    <meta property="og:description" content="Igmp Snooping Mikrotik, , , , , , , 0, Example: Configuring IGMP Snooping on EX Series Switches - Technical, www.juniper.net, 1250 x 1023, png, , 20, igmp-snooping-mikrotik, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Igmp Snooping Mikrotik - QnA" />
+    <meta name="twitter:description" content="Igmp Snooping Mikrotik, , , , , , , 0, Example: Configuring IGMP Snooping on EX Series Switches - Technical, www.juniper.net, 1250 x 1023, png, , 20, igmp-snooping-mikrotik, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Igmp Snooping Mikrotik</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">lovellahontiver9616</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Igmp+Snooping+Mikrotik" alt="Igmp Snooping Mikrotik">
+                    </div>
+                    <p></p>
+                    <p>Select how many different priority values are available for queues in mikrotik routeros:</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#select-how-many-different-priority-values-are-available-for-queues-in-mikrotik-routeros">1.
+                                            Select how many different priority values are available for queues in mikrotik routeros:</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#snoop-ang-hindi-niya%e2%80%8b">2.
+                                            snoop Ang Hindi  niya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#describe-thou-shalt-not-snoop-around-in-other-peoples-files">3.
+                                            Describe thou shalt not snoop around in other people's files.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-have-learned-far-in-the-blanies-to-complete-the-tani-point-of-view-first-person-person-descrpnom-the-narrator-is-one-of-the-recension-heshes-usually-the-soutacea-ce-the-pronours-this-is-not">4.
+                                            What I Have Learned Far in the blanies to complete the tani POINT OF VIEW First Person Person DESCRPNOM The narrator is one of the recension He/Shes usually the soutacea ce The pronours () This is not often med snoop dermentaci Author uses the pronoun you and you to reader is the character in te story it is the most commonly used point The (5)_ sno a character esory or she tells the readers about the factors of the character Pronouns used are te shereher Third (4)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#remedialactivity-06reference-based-on-your-slm-you-are-given-certain-tasks-to-finish-task-arrange-the-following-words-to-form-names-of-kitchen-tools-utensils-and-equipment-1-rkfo2-tetrbu-lcu">5.
+                                            Remedial
+ACTIVITY 06
+Reference: Based on your SLM, you are given certain tasks to finish. 
+Task: Arrange the following words to form names of kitchen tools, utensils and equipment.
+1.RKFO
+2.TETRBU LCURRE
+3.NDLOCARE
+4.PASULTA
+5.TINGTCU DROAB
+6.FERGERITOARR
+7.ZRSEET
+8.CHIEKTN HARES
+9.NOVE
+10.SNOOP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#siya-ang-namuno-sa-pangunahing-hukbong-hapones-sa-lingayen-pangasinan-c-heneral-macarthura-heneral-masaharu-hommasnoopd-heneral-emilio-aguinaldob-heneral-adolf-hitlersenal%e2%80%8b">6.
+                                            . Siya ang namuno sa pangunahing hukbong Hapones sa Lingayen, Pangasinan.C. Heneral MacArthurA. Heneral Masaharu HommaSnoopD. Heneral Emilio AguinaldoB. Heneral Adolf Hitlersenal​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-too-much-sun-exposure-can-burn-unprotected-skin-and_____permanent-discoloration-and-damage-to-the-dermis-a-causeb-solvec-suggest2-_______his-brother-who-is-into-acting-gilbert-is-quite-interested-i">7.
+                                            1.too much sun exposure can burn unprotected skin and_____permanent discoloration and damage to the dermis.A.causeB.solveC.suggest2._______his brother who is into acting, gilbert is quite interested in their family business.A.becauseB.sinceC.Unlike3.mental health is an important part of overall health and well-being. mental health___our emotional, psychological, and social well- being.A.includesB.indicates C. creates4.people are finding ways to ease thier burdens during the time of pandemic and their renewed faith in god has been____them cope with the times A.challengingB.helpingC.solving5.parents often tell their children to stop playing around or get serious,___in fact, games area very valuable way to spend time.A.becauseB.butC.since6.____many people enjoy exotic flavors, I think that chocolate tastes good.A.due toB.whileC.typically7.there are those who claim that technology is making people less creative___,according to computer magazine technology offers multiple creative outlets.A.howeverB.moreoverC.therefore8.one____with the modern olympics is that it has become very big and expensive to operate.A.answerB.causeC.problem9.although i raised rico and myla from birth, they_____from one another in many ways.A.differB.unlikeC.similar10.computer viruses are scary._____if an attacker gets control of your computer, they can snoop through yoyr files, steal your sensitive information, and even use your conputers webcam and microphone to spy on youA.for instanceB. in contrast C.as a result​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#explain-thou-shall-not-snoop-around-in-others-peoples-computer-files-%e2%80%8b">8.
+                                            explain thou shall not snoop around in others people's computer files? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-computer-viruses-are-scary-if-an-attacker-gets-control-of-your-computer-they-can-snoop-through-your-files-steal-your-sensitive-information-and-even-use-your-computers-webcam-and-microphone-to">9.
+                                            4. Computer viruses are scary. If an attacker gets control of your computer, they can snoop through your files, steal your sensitive information, and even use your computer's webcam and microphone to spy on you. But just because there are scary things on the internet, uvesn't mean that we should stay off of the Internet. Instead, practice safe habits such as installing virus protection. Virus protection will not protect you against all attacks, but it may stop the most common ones. It also helps to keep your software up to date. Software updates close security holes. By installing updates from software providers, you will have a stronger system. Perhaps the most important thing that you can do is to be smart about how you browse. Don't click on suspicious links and don't open attached files unless you are expecting them. The Internet can be a dangerous place, but you'll be safer if you take a few precautions. Happy browsing! 5. Viruses can mess up computers and make them run slowly. If you've ever gotten a virus on your computer, you may have wondered why someone would go through all of that trouble just to ruin your computer. There are two reasons why people spread viruses: money and power. If someone infects your computer with a virus, they can make money by stealing your sensitive information and selling it to identity thieves. Or, they can gain power by using your computer to attack other computers and websites to take them offline. Your computer makes an attractive target to cybercriminals because they can use it to gain money and power.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-fill-in-the-fish-bone-map-with-the-phase-or-sentences-below-1000-charactat-for-setting-place-seting-beginning-middle-ending-1-once-upon-a-time-in-a-vast-forest-2-the-fox-thought-of-a-pl">10.
+                                            Directions: Fill in the fish bone map with the phase or sentences below. 1000 charactat for Setting Place Seting Beginning Middle Ending 1. Once upon a time in a vast forest 2. The fox thought of a plan how to get the cheese from the crow. 3. The fox quickly snooped the cheese that fell from the crow's beak 4. crow and the fox 5. The fox used flattery words to praise the crow.character?settingplace?setting?beginning?middle?Ending?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#thai-shalt-not-snoop-around-in-other-peoples-computer-files">11.
+                                            Thai shalt not Snoop around in other people's computer files</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#remediaytask-arrange-the-following-words-to-form-names-of-kitchen-tools-utensils-and-equipment-1-rkfo2-tetrbu-lcurre3-ndlocare4-pasulta5-tingtcu-droab6-fergeritoarr7-zrseet8-chiektn-hares9">12.
+                                            Remediay
+Task: Arrange the following words to form names of kitchen tools, utensils and equipment.
+1.RKFO
+2.TETRBU LCURRE
+3.NDLOCARE
+4.PASULTA
+5.TINGTCU DROAB
+6.FERGERITOARR
+7.ZRSEET
+8.CHIEKTN HARES
+9.NOVE
+10.SNOOP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#snooping-of-other-peoples-private-messages-and-accounts-is-a-violation-of-which-of-the-following">13.
+                                            Snooping of other people's private messages and accounts is a violation of which of the following</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-too-much-sun-exposure-can-burnunprotected-skin-and-___________-permanentdiscoloration-and-damage-to-the-dermis-a-cause-b-solvec-suggest2-___________-his-brother-who-is-intoacting-gilber">14.
+                                            1. Too much sun exposure can burn
+unprotected skin and ___________ permanent
+discoloration and damage to the dermis.
+A. cause 
+B. solve
+C. suggest
+2. ___________ his brother who is into
+acting, Gilbert is quite interested in their family
+business.
+A. Because 
+B. Since 
+C. Unlike
+3. Mental health is an important part of overall
+health and well-being. Mental health ______our
+emotional, psychological, and social well- being.
+A. includes 
+B. indicates 
+C. creates
+4. People are finding ways to ease their burdens
+during the time of pandemic and their renewed
+faith in God has been ________ them cope with
+the times.
+A. challenging 
+B. helping 
+C. solving
+5. Parents often tell their children to ‘stop
+playing around’ or ‘get serious,’ _______ in fact,
+games area very valuable way to spend time.
+ A. because 
+ B. but 
+ C. since
+6. _________many people enjoy exotic flavors, I
+think that chocolate tastes good.
+A. Due to 
+B. While 
+C. Typically
+7. There are those who claim that technology is
+making people less creative. ________, according to
+Computer Magazine, technology offers multiple
+creative outlets.
+A. However 
+B. Moreover 
+C. Therefore
+8. One _________ with the modern Olympics is that
+it has become very big and expensive to operate.
+A. answer
+B. cause 
+C. problem
+9. Although I raised Rico and Myla from birth, they
+__________ from one another in many ways.
+A. differ 
+B. unlike 
+C. similar
+10. Computer viruses are scary. _____________, if
+an attacker gets control of your computer, they can
+snoop through your files, steal your sensitive
+information, and even use your computer’s webcam
+and microphone to spy on you.
+A. For instance
+ B. In contrast
+ C. As a result</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#who-is-the-goat-in-hiphop-musica-tupacb-eminemc-snoop-doggd-notorious-b-i-g%e2%80%8b">15.
+                                            who is the goat in hiphop music?A. TupacB. EminemC. Snoop DoggD. Notorious B.I.G​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#guess-the-word-and-classification-i-need-thx1-rtegrsa2-dreersdg3-nnelsfu4-srednaloc5-tersba6-rapersc7-snoop8-veskni9-gstno10-ersplee%e2%80%8b">16.
+                                            guess the word and classification. I need thx1. RTEGRSA2. DREERSDG3. NNELSFU4. SREDNALOC5. TERSBA6.RAPERSC7. SNOOP8.  VESKNI9. GSTNO10. ERSPLEE​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-protocol-does-ping-usesa-ip%d0%b2-tcpcicmpd-igmp2-the-default-gateway-is-the-address-of-your-router-assuming-your-gateway-address-is-192-168-1-1you-can-attempt-to-ping-the-router-to-see-if-it">17.
+                                            What protocol does ping uses?A IPВ. TCPCICMPD. IGMP2. The Default Gateway is the address of your router Assuming your gateway address is 192 168.1.1you can attempt to ping the router to see if it can send and receive information by running the belowcommand ping 192.168.1.1A TrueB. False3. What term we used to refer a task of determining a fault in a computer system and its network?A. Fault TestingB. Fault IsolationC. Fault DiagnosisD. Fault Diagnostics4. What does ping loopback address do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioningC. Determine if the cause of the problem is the local physical network.D. Determine if the IP communication between the local host is working.5. What does ping 127.0.0.1 do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioningC. Determine if the cause of the problem is the local physical networkD. Determine if the IP communication between the local host is working.6. What does ping local host IP Address do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioningC. Determine if the cause of the problem is the local physical network.D. Determine if the remote server and remote physical network is working.7. What does ping &lt;default gateway&gt; do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioningC. Determine if the cause of the problem is the local physical network.D. Determine if the IP communication between the local host is working8. What does ping &lt;remote server&gt; do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioning.C. Determine if the cause of the problem is the local physical network.D. Determine if the remote server and remote physical network is working.9. If you wanted to verify the local IP stack on a user's computer, what would you do?A. ping 127.0.0.0B. ping 127.0.0.1c. ping 1.0.0.127 D. ping 127.0.0.2550. If you wanted to verify if the TCP drivers is not corrupted on a user's computer, whatdo?A. ping 127.0:0.0B. ping 127.0.0.1C. ping 1.0.0.127 D. ping 127.0.0.2553 311. What is the indication that will be shown when the problem is about the host namincorrectly?A. Request timed outB. Unknown hostC. Destination hose unreachableD. Error12. What is the indication that will be shown when the problem is about the routing table of thedestination host?A. Request timed outB. Unknown hostC. Destination hose unreachableD. Error13. What is the indication that will be shown when the problem is about the local system route to thedesired destination?A. Request timed outB. Unknown hostC. Destination hose unreachableD. Error14. What is the indication that will be shown when the problem is about the remote router route todestination?A. Request timed outB. Unknown hostC. Destination hose unreachableD. Error15. It is also correct to retry ping with a hostname after using IP address.A. TrueB. False​anyone who can help me to answer this huh</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#young-wild-and-free-album-bruno-mars-snoop-dog">18.
+                                            Young wild and free album bruno mars snoop dog</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-it-is-used-in-measuring-ingredients-and-small-quantity-jumbled-words-ringmeasu-snoops%e2%80%8b">19.
+                                            2.it is used in measuring ingredients and small quantity (JUMBLED WORDS) (RINGMEASU SNOOPS)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#thou-shalt-not-snoop-around-in-other-peoples-computer-files">20.
+                                            Thou shalt not snoop around in other people's computer files.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arrange-the-scrambled-letters1-fodo-orporssec2-ringmeause-snoops3-dhan-eltow4-gnighiew-alecs-5-ngippoch-darbohelp-me-please%e2%80%8b">21.
+                                            arrange the scrambled letters1.FODO ORPORSSEC2.RINGMEAUSE SNOOPS3.DHAN ELTOW4.GNIGHIEW ALECS 5.NGIPPOCH DARBOhelp me please​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-computer-viruses-are-scary-if-an-attacker-gets-control-of-your-computer-they-can-snoop-through-your-files-steal-your-sensitive-information-and-even-use-your-computers-webcam-and-microphone-to">22.
+                                            4. Computer viruses are scary. If an attacker gets control of your computer, they can snoop through your files, steal your sensitive information, and even use your computer's webcam and microphone to spy on you. But just because there are scary things on the Internet, doesn't mean that we should stay off of the Internet. Instead, practice safe habits such as installing virus protection. Virus protection will not protect you against all attacks, but it may stop the most common ones. It also helps to keep your software up to date. Software updates close security holes. By installing updates from software providers, you will have a stronger system. Perhaps the most important thing that you can do is to be smart about how you browse. Don't click on suspicious links and don't open attached files unless you are expecting them. The Internet can be a dangerous place, but you'll be safer if you take a few precautions. Happy browsing!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#thou-shalt-not-snoop-around-in-other-peoples-computer-files">23.
+                                            Thou shalt not snoop around in other people's computer files.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arrange-the-scrambled-letters-to-form-a-word-related-to-the-topic-write-your-answer-in-your-activity-notebook-answer-sheet-1-emvaciwor-envo-2-pcipngho-droba-3-dsaper-4-edrba-5-sgehrasin-6-dare">24.
+                                            Arrange the scrambled letters to form a word related to the topic. Write your answer in your activity notebook/ answer sheet 1. EMVACIWOR ENVO 2. PCIPNGHO DROBA 3. DSAPER 4. EDRBA 5. SGEHRASIN 6. DAREB TERTOAS 7. SEVNO 8.SURINGMEA SNOOPS 9. XINGMI SNOOP 10. TRAY TYLIITU​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-identify-the-following-toolsuntensils-used-in-food-preservation-arrange-the-scrambled-letters-before-the-number-to-form-the-correct-words-fodo-orporssec-1-it-iis-used-to-cut-and-slice-f">25.
+                                            Directions: Identify the following tools/untensils used in food preservation.arrange the scrambled letters before the number to form the correct word/s.FODO ORPORSSEC  1.it Iis used to cut and slice fruits and vegetables fast, easily and conveniently.RINGMEASU SNOOPS 2.it is use to measuring ingredients in small quantity.DHAN ELTOW  3.it is used for wiping and drying the materials and hands while working.GHIGHIEW ALECS 4.its is used to weigh large pieces of meat,fish and root crops.NGIPPOCH DARBO 5.it is where the ingredients are placed when cut.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#my-mother-in-law-keeps-going-in-our-bedroom-so-i-put-a-lock-on-it-she-asked-why-the-door-is-locked-i-have-avoided-this-how-do-i-tell-her-to-stop-snoopingmy-mother-in-law-keeps-going-in-our-bedr">26.
+                                            My mother in law keeps going in our bedroom. So, I put a lock on it. She asked why the door is locked. I have avoided this. How do I tell her to stop snooping?
+My mother in law keeps going in our bedroom. So, I put a lock on it. She asked why the door is locked. I have avoided this. How do I tell her to stop snooping?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#over-80-of-todays-companies-monitor-their-employees-a-monitoring-is-necessary-to-prevent-fraudulent-activities-theft-and-otherworkplace-related-violations-b-monitoring-can-improve-the-employees-p">27.
+                                            Over 80% of today's companies monitor their employees.A Monitoring is necessary to prevent fraudulent activities, theft, and otherworkplace-related violations.B. Monitoring can improve the employees' productivity.C. Monitoring prevents any legal liabilities due to harassing or offensivecommunications.II. What are employees' privacy rights when it comes to electronic monitoring andsurveillance in the workplace?A American employees have basically no legal protection from mean andsnooping bosses.1. There are no federal or State laws protecting employees.2. Employees may assert privacy protection for their own personal effects.B. Most managers believe that there is no right to privacy in the workplace.1. Workplace communication should be about work, anything else is misuseof company equipment and company time.2. Employees have a right to prevent misuse by monitoring employeecommunication​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jumbled-letters1-denwoo-snoop2-remeats3-redlanco4-xingim-lowb5-chertub-fekin6-nelchan-kinfe%e2%80%8b">28.
+                                            JUMBLED LETTERS1. DENWOO SNOOP2. REMEATS3. REDLANCO4. XINGIM LOWB5. CHERTUB FEKIN6. NELCHAN KINFE​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mrs-hale-i%e2%80%99d-hate-to-have-men-coming-into-my-kitchen-snooping-around-and-criticizing-which-word-has-a-meaning-similar-to-%e2%80%9csnooping%e2%80%9d-as-it-is-used-in-this-excerptlookingp">29.
+                                            MRS. HALE. I’d hate to have men coming into my kitchen, snooping around and criticizing.
+Which word has a meaning similar to “snooping” as it is used in this excerpt?
+looking
+peering
+intruding
+searching</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="select-how-many-different-priority-values-are-available-for-queues-in-mikrotik-routeros">
+                            1. Select how many different priority values are available for queues in mikrotik routeros:</h2><br />
+                        <p><strong>Answer:</strong></p><p>lugi akonpag sinagotan ko toh pag 30 ung points</p><br />
+                                            <h2 class="ez-toc-section" id="snoop-ang-hindi-niya%e2%80%8b">
+                            2. snoop Ang Hindi  niya​</h2><br />
+                        <p><strong>Answer:</strong></p><p>wait,nasaan po ang tanong?</p><p><strong>Answer:</strong></p><p>huh! is this free? </p><p><strong>Explanation:</strong></p><p>if it is thank you</p><br />
+                                            <h2 class="ez-toc-section" id="describe-thou-shalt-not-snoop-around-in-other-peoples-files">
+                            3. Describe thou shalt not snoop around in other people's files.</h2><br />
+                        <p><strong>Answer:</strong></p><p>study hard ambition success</p><br />
+                                            <h2 class="ez-toc-section" id="what-i-have-learned-far-in-the-blanies-to-complete-the-tani-point-of-view-first-person-person-descrpnom-the-narrator-is-one-of-the-recension-heshes-usually-the-soutacea-ce-the-pronours-this-is-not">
+                            4. What I Have Learned Far in the blanies to complete the tani POINT OF VIEW First Person Person DESCRPNOM The narrator is one of the recension He/Shes usually the soutacea ce The pronours () This is not often med snoop dermentaci Author uses the pronoun you and you to reader is the character in te story it is the most commonly used point The (5)_ sno a character esory or she tells the readers about the factors of the character Pronouns used are te shereher Third (4)​</h2><br />
+                        <p><strong>Answer:</strong></p><p>thanks for the points have a nice Christmas</p><p><strong>Answer:</strong></p><p>thaks for the points. sorry for using your point </p><br />
+                                            <h2 class="ez-toc-section" id="remedialactivity-06reference-based-on-your-slm-you-are-given-certain-tasks-to-finish-task-arrange-the-following-words-to-form-names-of-kitchen-tools-utensils-and-equipment-1-rkfo2-tetrbu-lcu">
+                            5. Remedial
+ACTIVITY 06
+Reference: Based on your SLM, you are given certain tasks to finish. 
+Task: Arrange the following words to form names of kitchen tools, utensils and equipment.
+1.RKFO
+2.TETRBU LCURRE
+3.NDLOCARE
+4.PASULTA
+5.TINGTCU DROAB
+6.FERGERITOARR
+7.ZRSEET
+8.CHIEKTN HARES
+9.NOVE
+10.SNOOP</h2><br />
+                        <p><strong>Answer:</strong></p>forkbutter curlercolanderspatulacutting boardrefrigeratorzesterkitchen shearovenspoon<br />
+                                            <h2 class="ez-toc-section" id="siya-ang-namuno-sa-pangunahing-hukbong-hapones-sa-lingayen-pangasinan-c-heneral-macarthura-heneral-masaharu-hommasnoopd-heneral-emilio-aguinaldob-heneral-adolf-hitlersenal%e2%80%8b">
+                            6. . Siya ang namuno sa pangunahing hukbong Hapones sa Lingayen, Pangasinan.C. Heneral MacArthurA. Heneral Masaharu HommaSnoopD. Heneral Emilio AguinaldoB. Heneral Adolf Hitlersenal​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A i think </p><p><strong>Explanation:</strong></p><p>Hope it hepls :) </p><p><strong>Answer:</strong></p><p>A.Heneral Masaharu Homma</p><br />
+                                            <h2 class="ez-toc-section" id="1-too-much-sun-exposure-can-burn-unprotected-skin-and_____permanent-discoloration-and-damage-to-the-dermis-a-causeb-solvec-suggest2-_______his-brother-who-is-into-acting-gilbert-is-quite-interested-i">
+                            7. 1.too much sun exposure can burn unprotected skin and_____permanent discoloration and damage to the dermis.A.causeB.solveC.suggest2._______his brother who is into acting, gilbert is quite interested in their family business.A.becauseB.sinceC.Unlike3.mental health is an important part of overall health and well-being. mental health___our emotional, psychological, and social well- being.A.includesB.indicates C. creates4.people are finding ways to ease thier burdens during the time of pandemic and their renewed faith in god has been____them cope with the times A.challengingB.helpingC.solving5.parents often tell their children to stop playing around or get serious,___in fact, games area very valuable way to spend time.A.becauseB.butC.since6.____many people enjoy exotic flavors, I think that chocolate tastes good.A.due toB.whileC.typically7.there are those who claim that technology is making people less creative___,according to computer magazine technology offers multiple creative outlets.A.howeverB.moreoverC.therefore8.one____with the modern olympics is that it has become very big and expensive to operate.A.answerB.causeC.problem9.although i raised rico and myla from birth, they_____from one another in many ways.A.differB.unlikeC.similar10.computer viruses are scary._____if an attacker gets control of your computer, they can snoop through yoyr files, steal your sensitive information, and even use your conputers webcam and microphone to spy on youA.for instanceB. in contrast C.as a result​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>1.b</p><p>2.a</p><p>3.a</p><p>4.c</p><p>5.b</p><p>6.c</p><p>7.c</p><p>8.c</p><p>9. a</p><p>10.b</p><p><strong>Explanation:</strong></p><p>hope it helps you</p><p>carry on learning ❤️</p><br />
+                                            <h2 class="ez-toc-section" id="explain-thou-shall-not-snoop-around-in-others-peoples-computer-files-%e2%80%8b">
+                            8. explain thou shall not snoop around in others people's computer files? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Privacy. it is not nice looking at other peoples things without their permission</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="4-computer-viruses-are-scary-if-an-attacker-gets-control-of-your-computer-they-can-snoop-through-your-files-steal-your-sensitive-information-and-even-use-your-computers-webcam-and-microphone-to">
+                            9. 4. Computer viruses are scary. If an attacker gets control of your computer, they can snoop through your files, steal your sensitive information, and even use your computer's webcam and microphone to spy on you. But just because there are scary things on the internet, uvesn't mean that we should stay off of the Internet. Instead, practice safe habits such as installing virus protection. Virus protection will not protect you against all attacks, but it may stop the most common ones. It also helps to keep your software up to date. Software updates close security holes. By installing updates from software providers, you will have a stronger system. Perhaps the most important thing that you can do is to be smart about how you browse. Don't click on suspicious links and don't open attached files unless you are expecting them. The Internet can be a dangerous place, but you'll be safer if you take a few precautions. Happy browsing! 5. Viruses can mess up computers and make them run slowly. If you've ever gotten a virus on your computer, you may have wondered why someone would go through all of that trouble just to ruin your computer. There are two reasons why people spread viruses: money and power. If someone infects your computer with a virus, they can make money by stealing your sensitive information and selling it to identity thieves. Or, they can gain power by using your computer to attack other computers and websites to take them offline. Your computer makes an attractive target to cybercriminals because they can use it to gain money and power.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>the name of that malware is spyware</p><p><strong>Explanation:</strong></p><p>pa brainliest baka naman</p><br />
+                                            <h2 class="ez-toc-section" id="directions-fill-in-the-fish-bone-map-with-the-phase-or-sentences-below-1000-charactat-for-setting-place-seting-beginning-middle-ending-1-once-upon-a-time-in-a-vast-forest-2-the-fox-thought-of-a-pl">
+                            10. Directions: Fill in the fish bone map with the phase or sentences below. 1000 charactat for Setting Place Seting Beginning Middle Ending 1. Once upon a time in a vast forest 2. The fox thought of a plan how to get the cheese from the crow. 3. The fox quickly snooped the cheese that fell from the crow's beak 4. crow and the fox 5. The fox used flattery words to praise the crow.character?settingplace?setting?beginning?middle?Ending?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>character?</p><p>- 4. crow and the fox</p><p>setting/place?</p><p>- 1. Once upon a time in a vast forest</p><p>beginning?</p><p>- 2. The fox thought of a plan how to get the cheese from the crow.</p><p>middle?</p><p>- 5. The fox used flattery words to praise the crow.</p><p>ending?</p><p>- 3. The fox quickly snooped the cheese that fell from the crow's beak</p><p><strong>Explanation:</strong></p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="thai-shalt-not-snoop-around-in-other-peoples-computer-files">
+                            11. Thai shalt not Snoop around in other people's computer files</h2><br />
+                        <p>The King Of Muay Thai ml</p><br />
+                                            <h2 class="ez-toc-section" id="remediaytask-arrange-the-following-words-to-form-names-of-kitchen-tools-utensils-and-equipment-1-rkfo2-tetrbu-lcurre3-ndlocare4-pasulta5-tingtcu-droab6-fergeritoarr7-zrseet8-chiektn-hares9">
+                            12. Remediay
+Task: Arrange the following words to form names of kitchen tools, utensils and equipment.
+1.RKFO
+2.TETRBU LCURRE
+3.NDLOCARE
+4.PASULTA
+5.TINGTCU DROAB
+6.FERGERITOARR
+7.ZRSEET
+8.CHIEKTN HARES
+9.NOVE
+10.SNOOP</h2><br />
+                        <p><strong>Answer:</strong></p>forkbutter curler colanderspatulacutting boardrefrigeratorzesterkitchen shearovenspoon<p><strong>Answer:</strong></p>forkbutter curlercolanderspatulacutting boardrefrigeratorzesterkitchen shearovenspoon <br />
+                                            <h2 class="ez-toc-section" id="snooping-of-other-peoples-private-messages-and-accounts-is-a-violation-of-which-of-the-following">
+                            13. Snooping of other people's private messages and accounts is a violation of which of the following</h2><br />
+                        <p><strong>Answer:</strong></p><p>Invasion of privacy. </p><p>#tama</p><br />
+                                            <h2 class="ez-toc-section" id="1-too-much-sun-exposure-can-burnunprotected-skin-and-___________-permanentdiscoloration-and-damage-to-the-dermis-a-cause-b-solvec-suggest2-___________-his-brother-who-is-intoacting-gilber">
+                            14. 1. Too much sun exposure can burn
+unprotected skin and ___________ permanent
+discoloration and damage to the dermis.
+A. cause 
+B. solve
+C. suggest
+2. ___________ his brother who is into
+acting, Gilbert is quite interested in their family
+business.
+A. Because 
+B. Since 
+C. Unlike
+3. Mental health is an important part of overall
+health and well-being. Mental health ______our
+emotional, psychological, and social well- being.
+A. includes 
+B. indicates 
+C. creates
+4. People are finding ways to ease their burdens
+during the time of pandemic and their renewed
+faith in God has been ________ them cope with
+the times.
+A. challenging 
+B. helping 
+C. solving
+5. Parents often tell their children to ‘stop
+playing around’ or ‘get serious,’ _______ in fact,
+games area very valuable way to spend time.
+ A. because 
+ B. but 
+ C. since
+6. _________many people enjoy exotic flavors, I
+think that chocolate tastes good.
+A. Due to 
+B. While 
+C. Typically
+7. There are those who claim that technology is
+making people less creative. ________, according to
+Computer Magazine, technology offers multiple
+creative outlets.
+A. However 
+B. Moreover 
+C. Therefore
+8. One _________ with the modern Olympics is that
+it has become very big and expensive to operate.
+A. answer
+B. cause 
+C. problem
+9. Although I raised Rico and Myla from birth, they
+__________ from one another in many ways.
+A. differ 
+B. unlike 
+C. similar
+10. Computer viruses are scary. _____________, if
+an attacker gets control of your computer, they can
+snoop through your files, steal your sensitive
+information, and even use your computer’s webcam
+and microphone to spy on you.
+A. For instance
+ B. In contrast
+ C. As a result</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.a</p><p>2.b</p><p>3.a</p><p>4.c</p><p>5.a</p><p>6.c</p><p>(sana makatulong po) </p><p><strong>Answer:</strong></p><p>1 A</p><p>2B</p><p>3A</p><p>4B</p><p>5B</p><p>6A</p><p>7A</p><p>8C</p><p>9A</p><p>10 A</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="who-is-the-goat-in-hiphop-musica-tupacb-eminemc-snoop-doggd-notorious-b-i-g%e2%80%8b">
+                            15. who is the goat in hiphop music?A. TupacB. EminemC. Snoop DoggD. Notorious B.I.G​</h2><br />
+                        Answer:<br /><br />C.<br /><br />Explanation: <br /><br />Thats the answer :)<br />
+                                            <h2 class="ez-toc-section" id="guess-the-word-and-classification-i-need-thx1-rtegrsa2-dreersdg3-nnelsfu4-srednaloc5-tersba6-rapersc7-snoop8-veskni9-gstno10-ersplee%e2%80%8b">
+                            16. guess the word and classification. I need thx1. RTEGRSA2. DREERSDG3. NNELSFU4. SREDNALOC5. TERSBA6.RAPERSC7. SNOOP8.  VESKNI9. GSTNO10. ERSPLEE​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Graters</p><p>2.</p><p>3.Funnels</p><p>4.Colanders</p><p>5.</p><p>6.Scraper</p><p>7.Spoon</p><p>8.</p><p>9.</p><br />
+                                            <h2 class="ez-toc-section" id="what-protocol-does-ping-usesa-ip%d0%b2-tcpcicmpd-igmp2-the-default-gateway-is-the-address-of-your-router-assuming-your-gateway-address-is-192-168-1-1you-can-attempt-to-ping-the-router-to-see-if-it">
+                            17. What protocol does ping uses?A IPВ. TCPCICMPD. IGMP2. The Default Gateway is the address of your router Assuming your gateway address is 192 168.1.1you can attempt to ping the router to see if it can send and receive information by running the belowcommand ping 192.168.1.1A TrueB. False3. What term we used to refer a task of determining a fault in a computer system and its network?A. Fault TestingB. Fault IsolationC. Fault DiagnosisD. Fault Diagnostics4. What does ping loopback address do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioningC. Determine if the cause of the problem is the local physical network.D. Determine if the IP communication between the local host is working.5. What does ping 127.0.0.1 do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioningC. Determine if the cause of the problem is the local physical networkD. Determine if the IP communication between the local host is working.6. What does ping local host IP Address do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioningC. Determine if the cause of the problem is the local physical network.D. Determine if the remote server and remote physical network is working.7. What does ping &lt;default gateway&gt; do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioningC. Determine if the cause of the problem is the local physical network.D. Determine if the IP communication between the local host is working8. What does ping &lt;remote server&gt; do?A. Determine if the cause problem is IP Stack failureB. Determine if network interference control (NIC) is functioning.C. Determine if the cause of the problem is the local physical network.D. Determine if the remote server and remote physical network is working.9. If you wanted to verify the local IP stack on a user's computer, what would you do?A. ping 127.0.0.0B. ping 127.0.0.1c. ping 1.0.0.127 D. ping 127.0.0.2550. If you wanted to verify if the TCP drivers is not corrupted on a user's computer, whatdo?A. ping 127.0:0.0B. ping 127.0.0.1C. ping 1.0.0.127 D. ping 127.0.0.2553 311. What is the indication that will be shown when the problem is about the host namincorrectly?A. Request timed outB. Unknown hostC. Destination hose unreachableD. Error12. What is the indication that will be shown when the problem is about the routing table of thedestination host?A. Request timed outB. Unknown hostC. Destination hose unreachableD. Error13. What is the indication that will be shown when the problem is about the local system route to thedesired destination?A. Request timed outB. Unknown hostC. Destination hose unreachableD. Error14. What is the indication that will be shown when the problem is about the remote router route todestination?A. Request timed outB. Unknown hostC. Destination hose unreachableD. Error15. It is also correct to retry ping with a hostname after using IP address.A. TrueB. False​anyone who can help me to answer this huh</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.C</p><p>2.A</p><p>3.D</p><p>4.C</p><p>5.C</p><p>6.A</p><p>7.B</p><p>8.C</p><p>9.B</p><p>10.A</p><p>11.B</p><p>12.D</p><p>13.D</p><p>14.C</p><p>15.A</p><p></p><p>If theres a wrong answer then correct it!</p><br />
+                                            <h2 class="ez-toc-section" id="young-wild-and-free-album-bruno-mars-snoop-dog">
+                            18. Young wild and free album bruno mars snoop dog</h2><br />
+                        julie may rzonable wag mo akong iwan ha<br />
+                                            <h2 class="ez-toc-section" id="2-it-is-used-in-measuring-ingredients-and-small-quantity-jumbled-words-ringmeasu-snoops%e2%80%8b">
+                            19. 2.it is used in measuring ingredients and small quantity (JUMBLED WORDS) (RINGMEASU SNOOPS)​</h2><br />
+                        <p><strong>Answer:</strong></p><p>measuring spoons</p><p><strong>Explanation:</strong></p><p></p><p><strong>Answer:</strong></p><p>Measuring Spoon</p><p><strong>Explanation:</strong></p><p>Measuring Spoon</p><br />
+                                            <h2 class="ez-toc-section" id="thou-shalt-not-snoop-around-in-other-peoples-computer-files">
+                            20. Thou shalt not snoop around in other people's computer files.</h2><br />
+                        <p><strong>Answer:</strong></p>Reading other people's e-mail messages is as bad as opening and reading their letters. <p><strong>Explanation:</strong></p>Reading other people's e-mail messages is as bad as opening and reading their letters: This is invading their privacy. Obtaining other people's non-public files should be judged the same way as breaking into their rooms and stealing their documents.<br />
+                                            <h2 class="ez-toc-section" id="arrange-the-scrambled-letters1-fodo-orporssec2-ringmeause-snoops3-dhan-eltow4-gnighiew-alecs-5-ngippoch-darbohelp-me-please%e2%80%8b">
+                            21. arrange the scrambled letters1.FODO ORPORSSEC2.RINGMEAUSE SNOOPS3.DHAN ELTOW4.GNIGHIEW ALECS 5.NGIPPOCH DARBOhelp me please​</h2><br />
+                        <p><strong>Answer:</strong></p>Food processor Measuring spoonsHand towelWeighing scaleChopping board<p><strong>Explanation:</strong></p><p>stan 2ice :&gt;</p><p></p><p><strong>Answer:</strong></p><p>1. Food Processor</p><p>2. Measuring Spoons</p><p>3. Hand Towel</p><p>4. </p><p>5.</p><p></p><p>Sorry yan lng alam ko</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="4-computer-viruses-are-scary-if-an-attacker-gets-control-of-your-computer-they-can-snoop-through-your-files-steal-your-sensitive-information-and-even-use-your-computers-webcam-and-microphone-to">
+                            22. 4. Computer viruses are scary. If an attacker gets control of your computer, they can snoop through your files, steal your sensitive information, and even use your computer's webcam and microphone to spy on you. But just because there are scary things on the Internet, doesn't mean that we should stay off of the Internet. Instead, practice safe habits such as installing virus protection. Virus protection will not protect you against all attacks, but it may stop the most common ones. It also helps to keep your software up to date. Software updates close security holes. By installing updates from software providers, you will have a stronger system. Perhaps the most important thing that you can do is to be smart about how you browse. Don't click on suspicious links and don't open attached files unless you are expecting them. The Internet can be a dangerous place, but you'll be safer if you take a few precautions. Happy browsing!​</h2><br />
+                        <p>Answer:</p><p>E </p><p>Explanation:</p><p>Yes your right ✅</p><br />
+                                            <h2 class="ez-toc-section" id="thou-shalt-not-snoop-around-in-other-peoples-computer-files">
+                            23. Thou shalt not snoop around in other people's computer files.</h2><br />
+                        <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>.</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>i think is a game ball have me</p><p></p><p><strong>Answer:</strong></p><p>Reading other people's e-mail messages is as bad as opening and reading their letters: </p><p><strong>Explanation:</strong></p><p>This is invading their privacy. Obtaining other people's non-public files should be judged the same way as breaking into their rooms and stealing their documents.</p><br />
+                                            <h2 class="ez-toc-section" id="arrange-the-scrambled-letters-to-form-a-word-related-to-the-topic-write-your-answer-in-your-activity-notebook-answer-sheet-1-emvaciwor-envo-2-pcipngho-droba-3-dsaper-4-edrba-5-sgehrasin-6-dare">
+                            24. Arrange the scrambled letters to form a word related to the topic. Write your answer in your activity notebook/ answer sheet 1. EMVACIWOR ENVO 2. PCIPNGHO DROBA 3. DSAPER 4. EDRBA 5. SGEHRASIN 6. DAREB TERTOAS 7. SEVNO 8.SURINGMEA SNOOPS 9. XINGMI SNOOP 10. TRAY TYLIITU​</h2><br />
+                        MICROWAVE OVENCHOPPING BOARDSPREADBREADGARNISHESBREAD TOASTEROVENSMEASURING SPOONSMIXING SPOONUTILITY TRAY<br />
+                                            <h2 class="ez-toc-section" id="directions-identify-the-following-toolsuntensils-used-in-food-preservation-arrange-the-scrambled-letters-before-the-number-to-form-the-correct-words-fodo-orporssec-1-it-iis-used-to-cut-and-slice-f">
+                            25. Directions: Identify the following tools/untensils used in food preservation.arrange the scrambled letters before the number to form the correct word/s.FODO ORPORSSEC  1.it Iis used to cut and slice fruits and vegetables fast, easily and conveniently.RINGMEASU SNOOPS 2.it is use to measuring ingredients in small quantity.DHAN ELTOW  3.it is used for wiping and drying the materials and hands while working.GHIGHIEW ALECS 4.its is used to weigh large pieces of meat,fish and root crops.NGIPPOCH DARBO 5.it is where the ingredients are placed when cut.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. FOOD PROCESSOR</p><p>2. MEASURING SPOON</p><p>3.HAND TOWEL</p><p>4.WEIGHTING SCLAE</p><p>5. CHOPPING BOARD</p><p><strong>Explanation:</strong></p><p>Hope it helps</p><p><strong>#CARRYONLEARNING</strong><strong> </strong></p><br />
+                                            <h2 class="ez-toc-section" id="my-mother-in-law-keeps-going-in-our-bedroom-so-i-put-a-lock-on-it-she-asked-why-the-door-is-locked-i-have-avoided-this-how-do-i-tell-her-to-stop-snoopingmy-mother-in-law-keeps-going-in-our-bedr">
+                            26. My mother in law keeps going in our bedroom. So, I put a lock on it. She asked why the door is locked. I have avoided this. How do I tell her to stop snooping?
+My mother in law keeps going in our bedroom. So, I put a lock on it. She asked why the door is locked. I have avoided this. How do I tell her to stop snooping?</h2><br />
+                        <p><strong>Answer:</strong></p><p>Then you should say to her that please stop snooping to our bedroom because that is it not good </p><p><strong>Explanation:</strong></p><p>God Bless you ☺️</p><p><strong>Answer:</strong></p><p>to stop snooping open the door and K.      I.      S.     S. her. and S.       e.      x</p><br />
+                                            <h2 class="ez-toc-section" id="over-80-of-todays-companies-monitor-their-employees-a-monitoring-is-necessary-to-prevent-fraudulent-activities-theft-and-otherworkplace-related-violations-b-monitoring-can-improve-the-employees-p">
+                            27. Over 80% of today's companies monitor their employees.A Monitoring is necessary to prevent fraudulent activities, theft, and otherworkplace-related violations.B. Monitoring can improve the employees' productivity.C. Monitoring prevents any legal liabilities due to harassing or offensivecommunications.II. What are employees' privacy rights when it comes to electronic monitoring andsurveillance in the workplace?A American employees have basically no legal protection from mean andsnooping bosses.1. There are no federal or State laws protecting employees.2. Employees may assert privacy protection for their own personal effects.B. Most managers believe that there is no right to privacy in the workplace.1. Workplace communication should be about work, anything else is misuseof company equipment and company time.2. Employees have a right to prevent misuse by monitoring employeecommunication​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>Over 80% of today's companies monitor their employees.</p><p>A Monitoring is necessary to prevent fraudulent activities, theft, and other</p><p>workplace-related violations.</p><p>B. Monitoring can improve the employees' productivity.</p><p>C. Monitoring prevents any legal liabilities due to harassing or offensive</p><p>communications.</p><p>II. What are employees' privacy rights when it comes to electronic monitoring and</p><p>surveillance in the workplace?</p><p>A American employees have basically no legal protection from mean and</p><p>snooping bosses.</p><p>1. There are no federal or State laws protecting employees.</p><p>2. Employees may assert privacy protection for their own personal effects.</p><p>B. Most managers believe that there is no right to privacy in the workplace.</p><p>1. Workplace communication should be about work, anything else is misuse</p><p>of company equipment and company time.</p><p>2. Employees have a right to prevent misuse by monitoring employee</p><p>communication</p><p>yan sagot ko</p><br />
+                                            <h2 class="ez-toc-section" id="jumbled-letters1-denwoo-snoop2-remeats3-redlanco4-xingim-lowb5-chertub-fekin6-nelchan-kinfe%e2%80%8b">
+                            28. JUMBLED LETTERS1. DENWOO SNOOP2. REMEATS3. REDLANCO4. XINGIM LOWB5. CHERTUB FEKIN6. NELCHAN KINFE​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.WOODEN SPOON</p><p>2.</p><p>3.COLANDER</p><p>4.MIXING BOWL</p><p>5.BUTCHER KNIFE</p><p>6.CHANNEL KNIFE</p><p><strong>Explanation:</strong></p><p>sana makatulong :)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="mrs-hale-i%e2%80%99d-hate-to-have-men-coming-into-my-kitchen-snooping-around-and-criticizing-which-word-has-a-meaning-similar-to-%e2%80%9csnooping%e2%80%9d-as-it-is-used-in-this-excerptlookingp">
+                            29. MRS. HALE. I’d hate to have men coming into my kitchen, snooping around and criticizing.
+Which word has a meaning similar to “snooping” as it is used in this excerpt?
+looking
+peering
+intruding
+searching</h2><br />
+                        The similar word "snooping" is searching. Since the scene in the excerpt is refers to the men's (sheriff and county attorney) looking for evidences for Mr. Wright's murder but they take time to criticize his wife's capability as a housewife and homemaker.<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/aTGBrUjtRvc?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>math</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/mocha-girlseducation.html">Mocha GirlsEducation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/psa-tagum-city.html">Psa Tagum City</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/princess-joanne-apartelle-baguio-city.html">Princess Joanne Apartelle Baguio City</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/cooperatives-in-davao-city.html">Cooperatives In Davao City</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/s-r-membership-benefits.html">S r Membership Benefits</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-only-necessary-knowledge-is.html">The Only Necessary Knowledge Is</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/8990-holdings-careers.html">8990 Holdings Careers</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-sublime-paralytic.html">The Sublime Paralytic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/qchp-cv-template.html">Qchp Cv Template</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/bahal-na-tuba-lyrics.html">Bahal Na Tuba Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/chikita-lumalaban.html">Chikita Lumalaban</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/dh-ipc-c35n.html">Dh Ipc C35n</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/steppe-meaning-tagalog.html">Steppe Meaning Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/elements-of-a-trend.html">Elements Of A Trend</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/sedges-weeds-example.html">Sedges Weeds Example</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/types-of-tractor.html">Types Of Tractor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/lathala-in-english.html">Lathala In English</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/no-mans-sky-guide-book.html">No Man&#039;s Sky Guide Book</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/epekto-sa-pamumuhay-ng-mga-asyano.html">Epekto Sa Pamumuhay Ng Mga Asyano</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/walang-sawa-in-english.html">Walang Sawa In English</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

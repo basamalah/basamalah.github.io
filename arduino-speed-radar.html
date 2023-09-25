@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arduino Speed Radar - QnA</title>
+    <meta name="description" content="Arduino Speed Radar, , , , , , , 0, Arduino Radar Gun! Read the Speed - Easy How to - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, arduino-speed-radar, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arduino Speed Radar - QnA" />
+    <meta property="og:description" content="Arduino Speed Radar, , , , , , , 0, Arduino Radar Gun! Read the Speed - Easy How to - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, arduino-speed-radar, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arduino Speed Radar - QnA" />
+    <meta name="twitter:description" content="Arduino Speed Radar, , , , , , , 0, Arduino Radar Gun! Read the Speed - Easy How to - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, arduino-speed-radar, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Arduino Speed Radar</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">dabuwilma</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Arduino+Speed+Radar" alt="Arduino Speed Radar">
+                    </div>
+                    <p></p>
+                    <p>the increase in the radar speed of something​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-increase-in-the-radar-speed-of-something%e2%80%8b">1.
+                                            the increase in the radar speed of something​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#difference-of-arduino-lilypad-and-arduino-uno">2.
+                                            difference of arduino lilypad and arduino uno</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-are-the-concepts-of-relativity-applied-or-used-on-radar-speed-gun">3.
+                                            How are the concepts of relativity applied or used on Radar Speed Gun?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-determines-the-speed-and-direction-of-winds-aloft-by-means-of-radar-echoes-a-barographc-radiosonded-barometerb-wind-finding-radard-to-determine-how-much-moisture-is-in-the-air-or-amount-of-w">4.
+                                            1. It determines the speed and direction of winds aloft by means of radar echoes.A. BarographC. RadiosondeD. BarometerB. Wind Finding Radard to determine how much moisture is in the air or amount of water​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-special-form-of-radar-can-be-used-to-measure-the-speed-of-distant-winds%e2%80%8b">5.
+                                            What special form of radar can be used to measure the speed of distant winds?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pa-define-po-netoarduino-megaarduino-leonardo">6.
+                                            Pa define po neto:
+Arduino Mega
+Arduino Leonardo</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-this-board-was-the-predecessor-to-arduino-%e2%80%8b">7.
+                                            1. This board was the predecessor to Arduino.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ate-ichthus-pa-answer-define-the-ffarduino-red-boardarduino-robot">8.
+                                            ate ichthus, pa answer :&gt;
+Define the ff:
+Arduino Red Board
+Arduino Robot</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-ufo-was-detected-on-the-radar-flying-7400-miles-in-3-min-what-is-the-estimated-speed-per-hour">9.
+                                            A UFO was detected on the Radar flying 7400 miles in 3 min, what is the estimated speed per hour?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#enumeration1-3-components-of-ide4-5-types-of-brackets-in-arduino-coding6-7-types-of-line-comments-in-arduino8-9-the-two-required-functions-in-every-arduino-sketch10-20-give-11-dat">10.
+                                            Enumeration:
+1 - 3. Components of IDE
+4 - 5. Types of brackets in Arduino Coding
+6 - 7. Types of line comments in Arduino
+8 - 9. The two required functions in every Arduino sketch
+10 - 20. Give 11 data types in Arduino
+21 - 25. Types of operators in Arduino
+Nonsense = report</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#describe-the-importance-of-an-arduino-%e2%80%8b">11.
+                                            Describe the importance of an Arduino.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-determines-the-speed-and-direction-of-winds-aloft-by-means-of-radar-echoes-a-barographc-radiosonded-barometerb-wind-finding-radarthouminhu%e2%80%8b">12.
+                                            1. It determines the speed and direction of winds aloft by means of radar echoes.A. BarographC. RadiosondeD. BarometerB. Wind Finding RadarThouminhu​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pa-define-po-lahatarduino-unoarduino-pro-mini">13.
+                                            Pa define po lahat:
+Arduino uno
+Arduino pro mini</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-are-waves-used-by-cops-to-test-the-speed-of-your-car-with-radar">14.
+                                            Which are waves used by cops to test the speed of your car with radar?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#label-part-of-arduino">15.
+                                            Label part of arduino</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-ufo-was-detected-on-the-radar-flying-7400-miles-in-3-min-what-is-the-estimated-speed-per-hour">16.
+                                            A UFO was detected on the Radar flying 7400 miles in 3 min, what is the estimated speed per hour?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#guide-questionsquestion-1-cell-towers-reach-high-above-the-ground-why-do-you-thiok-such-tall-towers-areusedradaroutgoing-wavesremiected-waves-thone-trequencyquestion-2-in-police-radar-a-radar-gu">17.
+                                            GUIDE QUESTIONS:Question 1: Cell towers reach high above the ground. Why do you thiok such tall towers areused?RadarOutgoing wavesRemiected waves thone trequencyQuestion 2. In police radar, a radar gunsends out short bursts of microwaves. Themicrowaves reflect back from oncomingvehicles and are detected by a receiver in theradar gun. The frequency of the reflectedwaves is used to compute the speed of thevehicles. How are reflected microwaves usedto determine the speed of oncoming cars as seen in the picture on the right?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-to-download-arduino-%e2%80%8b">18.
+                                            How to download Arduino? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-are-waves-used-by-cops-to-test-the-speed-og-car-with-radar%e2%80%8b">19.
+                                            which are waves used by cops to test the speed og car  with radar?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#this-gadgets-can-detect-the-presence-of-radar-gun-which-then-allow-motorist-to-reduce-speed-before-being-caught%e2%80%8b">20.
+                                            This gadgets can detect the presence of radar gun, which then allow motorist to reduce speed before being caught?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#all-about-the-arduino-sketch">21.
+                                            All about the Arduino sketch</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-meaning-of-gizduino-and-arduino">22.
+                                            what is the meaning of gizduino and arduino? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-will-radar-failed-to-determinea-speedb-locationc-distanced-density-of-metal%e2%80%8b">23.
+                                            which of the following will radar failed to determinea. speedb. locationc. distanced. density of metal​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#discuss-what-you-think-of-the-arduino-you-like-and-dislike-about-the-arduino-on-robotici-need-answers%e2%80%8b">24.
+                                            discuss what you think of the Arduino you like and dislike about the Arduino on robotic?I need answers​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-cannot-be-determined-by-radara-distanceb-density-of-metalc-speedd-location">25.
+                                            Which of the following CANNOT be determined by Radar?
+A. Distance
+B. Density of metal
+C. Speed
+D. Location </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#parts-and-funtions-of-arduino%e2%80%8b">26.
+                                            parts and funtions of arduino​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-arduinoplease-expain-it">27.
+                                            What is arduino?
+(please expain it)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-overview-of-arduino">28.
+                                            What is the overview of arduino?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-difference-between-and-operators-in-arduino%e2%80%8b">29.
+                                            what is the difference between = and == operators in arduino?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-which-specialized-weather-instrument-determines-the-winds-direction-and-speeda-radarb-barograph%e2%80%8b">30.
+                                            5. Which specialized weather instrument determines the wind's direction and speed?a. radarb. barograph​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="the-increase-in-the-radar-speed-of-something%e2%80%8b">
+                            1. the increase in the radar speed of something​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>An adverbs of time tell us when an action happened, but also for how long, and how often. Adverbs of time are invariable. They are extremely common in English. Adverbs of time have standard positions in a sentence depending on what the adverb of time is telling us.</p><p></p><p>hope this help:)</p><br />
+                                            <h2 class="ez-toc-section" id="difference-of-arduino-lilypad-and-arduino-uno">
+                            2. difference of arduino lilypad and arduino uno</h2><br />
+                        <p><strong>Answer:</strong></p><p>was made for project in which technology is combined with textiles to aid in the development of e-textiles or wearable electronics project</p><p><strong>Explanation:</strong></p><p>I hope it helps</p><br />
+                                            <h2 class="ez-toc-section" id="how-are-the-concepts-of-relativity-applied-or-used-on-radar-speed-gun">
+                            3. How are the concepts of relativity applied or used on Radar Speed Gun?</h2><br />
+                        <p><strong>Answer:</strong></p><p>i dont know </p><p></p><p></p><p></p><p>sorry  </p><p></p><p></p><p></p><p>need points</p><br />
+                                            <h2 class="ez-toc-section" id="1-it-determines-the-speed-and-direction-of-winds-aloft-by-means-of-radar-echoes-a-barographc-radiosonded-barometerb-wind-finding-radard-to-determine-how-much-moisture-is-in-the-air-or-amount-of-w">
+                            4. 1. It determines the speed and direction of winds aloft by means of radar echoes.A. BarographC. RadiosondeD. BarometerB. Wind Finding Radard to determine how much moisture is in the air or amount of water​</h2><br />
+                        <p><strong>Answer:</strong></p><p>B.</p><p><strong>Explanation:</strong></p><p>It determines the speed and direction of winds aloft by means of radar echoes. A radar target is attached to a balloon and it is this target that is tracked by ground radar. The bearing and time of interval of the echoes is evaluated by a receiver.</p><br />
+                                            <h2 class="ez-toc-section" id="what-special-form-of-radar-can-be-used-to-measure-the-speed-of-distant-winds%e2%80%8b">
+                            5. What special form of radar can be used to measure the speed of distant winds?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Doppler radar</p><p><strong>Explanation:</strong></p><p>A Doppler radar is a specialized radar that uses the Doppler effect to produce velocity data about objects at a distance</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pa-define-po-netoarduino-megaarduino-leonardo">
+                            6. Pa define po neto:
+Arduino Mega
+Arduino Leonardo</h2><br />
+                        <p>Please refer to the pic attached.</p><p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-this-board-was-the-predecessor-to-arduino-%e2%80%8b">
+                            7. 1. This board was the predecessor to Arduino.​</h2><br />
+                        Wiring In 2003,building on the same principles as Processing, Hernando Barragán started developing a microcontroller board called wiring.This board was the predecessor to Arduino.<p></p><br />
+                                            <h2 class="ez-toc-section" id="ate-ichthus-pa-answer-define-the-ffarduino-red-boardarduino-robot">
+                            8. ate ichthus, pa answer :&gt;
+Define the ff:
+Arduino Red Board
+Arduino Robot</h2><br />
+                        <p>Hi SecretNumber :&gt; </p><p>Pasensya na hehe</p><br />
+                                            <h2 class="ez-toc-section" id="a-ufo-was-detected-on-the-radar-flying-7400-miles-in-3-min-what-is-the-estimated-speed-per-hour">
+                            9. A UFO was detected on the Radar flying 7400 miles in 3 min, what is the estimated speed per hour?</h2><br />
+                        148000 p/h . base in my calculation <br /><br />148,000 per hour <br /><br /> 7400 / 3 = 2466.66666....<strong></strong>→  2466.67 tas convert mo na lang<br />since may 60 mins. per hour times mo sa 60 <br />60*2466.67 yun na<br />
+                                            <h2 class="ez-toc-section" id="enumeration1-3-components-of-ide4-5-types-of-brackets-in-arduino-coding6-7-types-of-line-comments-in-arduino8-9-the-two-required-functions-in-every-arduino-sketch10-20-give-11-dat">
+                            10. Enumeration:
+1 - 3. Components of IDE
+4 - 5. Types of brackets in Arduino Coding
+6 - 7. Types of line comments in Arduino
+8 - 9. The two required functions in every Arduino sketch
+10 - 20. Give 11 data types in Arduino
+21 - 25. Types of operators in Arduino
+Nonsense = report</h2><br />
+                        <strong>ENUMERATION:</strong><strong></strong><strong></strong><strong></strong>1 - 3. Components of IDE1. Text editor2. Compiler3. Controls program<p></p><p></p><p></p>4 - 5. Types of brackets in Arduino Coding4. Parenthesis5. Curly braces<p></p><p></p><p></p>6 - 7. Types of line comments in Arduino6. Single-line comment7. Multi-line comment<p></p><p></p><p></p>
+8 - 9. The two required functions in every Arduino sketch8. Setup () block9. Loop () block<p></p><p></p><p>
+</p>10 - 20. Give 11 data types in Arduino10. Int11. Float12. Double13. Char14. Bool15. Unsigned int16. Byte17. Boolean18. Long19. Short20. Unsigned char<p></p><p></p><p>
+</p>21 - 25. Types of operators in Arduino21. Arithmetic22. Comparison23. Boolean24. Bitwise25. Compound
+<p>===============</p><p>[tex]{\underline{\sf{ichthus898}}}[/tex]</p><p><strong>Answer:</strong></p><p>1 - 3. Components of IDE
+</p><p>1. Text editor
+</p><p>2. Compiler
+</p><p>3. Controls program
+</p><p>4 - 5. Types of brackets in Arduino Coding
+</p><p>4. Parenthesis
+</p><p>5. Curly braces
+</p><p>6 - 7. Types of line comments in Arduino
+</p><p>6. Single-line comment
+</p><p>7. Multi-line comment
+</p><p>8 - 9. The two required functions in every Arduino sketch
+</p><p>8. Setup () block
+</p><p>9. Loop () block
+</p><p>10 - 20. Give 11 data types in Arduino
+</p><p>10. Int
+</p><p>11. Float
+</p><p>12. Double
+</p><p>13. Char
+</p><p>14. Bool
+</p><p>15. Unsigned int
+</p><p>16. Byte
+</p><p>17. Boolean
+</p><p>18. Long
+</p><p>19. Short
+</p><p>20. Unsigned char
+</p><p>21 - 25. Types of operators in Arduino
+</p><p>21. Arithmetic
+</p><p>22. Comparison
+</p><p>23. Boolean
+</p><p>24. Bitwise
+</p><p>25. Compound</p><p></p><p></p><p></p><p>welkam HAHAAHA</p><br />
+                                            <h2 class="ez-toc-section" id="describe-the-importance-of-an-arduino-%e2%80%8b">
+                            11. Describe the importance of an Arduino.​</h2><br />
+                        <p><strong></strong></p><p>Arduino is an open-source prototyping tool used to develop prototypes for electronics. It consists of both a software and a physical programmable circuit board, or IDE ( Integrated Development Environment) that runs on your device, where you can write computer code and upload it to the physical board.</p><p></p><p><strong>Answer:</strong></p><p></p><p>Arduino is an open-source prototyping platform used for building electronics projects. It consists of both a physical programmable circuit board and a software, or IDE (Integrated Development Environment) that runs on your computer, where you can write and upload the computer code to the physical board.</p><p></p><p>Why is Arduino so popular?</p><p></p><p>So the Arduino hardware is easy, the Arduino IDE is simple, and the code itself is much easier to comprehend (than trying to program an off-the-shelf microcontroller). ... Another reason Arduino is so popular is because there are many people using it which means there's a lot of examples out there to work with.</p><p></p><p>What is Arduino and its types?</p><p></p><p>Arduino board is an open-source platform used to make electronics projects. It consists of both a microcontroller and a part of the software or Integrated Development Environment (IDE) that runs on your PC, used to write &amp; upload computer code to the physical board.</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-it-determines-the-speed-and-direction-of-winds-aloft-by-means-of-radar-echoes-a-barographc-radiosonded-barometerb-wind-finding-radarthouminhu%e2%80%8b">
+                            12. 1. It determines the speed and direction of winds aloft by means of radar echoes.A. BarographC. RadiosondeD. BarometerB. Wind Finding RadarThouminhu​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>B. Wind Finding Radar</strong></p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pa-define-po-lahatarduino-unoarduino-pro-mini">
+                            13. Pa define po lahat:
+Arduino uno
+Arduino pro mini</h2><br />
+                        <p>Please see it on the pic, pasensya na kasi ayaw ma add sa answer kaya pinic ko na lang :)</p><br />
+                                            <h2 class="ez-toc-section" id="which-are-waves-used-by-cops-to-test-the-speed-of-your-car-with-radar">
+                            14. Which are waves used by cops to test the speed of your car with radar?</h2><br />
+                        <p>In police radar, a radar gun sends out short bursts of microwaves. The <strong>microwave</strong><strong>s</strong><strong> </strong>reflect back from oncoming vehicles and are detected by a receiver in the radar gun. The frequency of the reflected waves is used to compute the speed of the vehicles.</p><p><strong>Answer:</strong></p><p><strong>Microwave</strong> is the type of wave cops used to test the speed of a car with radar.</p><p></p><p><strong>Explanation:</strong></p><p>It is because "RADAR" speed detectors bounce <strong>microwave</strong> radiation off of moving vehicles and detect the reflected waves. These waves are shifted in frequency by the Doppler effect, and the beat frequency between the directed and reflected waves provides a measure of the <strong>vehicle speed</strong>. Moreover, Radar systems also transmit electromagnetic, or radio, waves. </p><p></p><p>On the other hand, the Doppler effect or Doppler shift is the change in frequency of a wave in relation to an observer who is moving relative to the wave source. </p><br />
+                                            <h2 class="ez-toc-section" id="label-part-of-arduino">
+                            15. Label part of arduino</h2><br />
+                        <p><strong>Answer:</strong></p>What are the parts of Arduino?Some boards look a bit different from the one below, but most Arduinos have the majority of these components in common:
+Power (USB / Barrel Jack) ...
+Pins (5V, 3.3V, GND, Analog, Digital, PWM, AREF) ...
+Reset Button. ...
+Power LED Indicator. ...
+TX RX LEDs. ...
+Main IC. ...
+Voltage Regulator.
+<p><strong>Explanation:</strong></p><p></p><p>- hope it help</p><br />
+                                            <h2 class="ez-toc-section" id="a-ufo-was-detected-on-the-radar-flying-7400-miles-in-3-min-what-is-the-estimated-speed-per-hour">
+                            16. A UFO was detected on the Radar flying 7400 miles in 3 min, what is the estimated speed per hour?</h2><br />
+                        diving the speed over hour how? first calucate the 3 min to hour next you diving the speed over hour and the answer is 148 s/h.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="guide-questionsquestion-1-cell-towers-reach-high-above-the-ground-why-do-you-thiok-such-tall-towers-areusedradaroutgoing-wavesremiected-waves-thone-trequencyquestion-2-in-police-radar-a-radar-gu">
+                            17. GUIDE QUESTIONS:Question 1: Cell towers reach high above the ground. Why do you thiok such tall towers areused?RadarOutgoing wavesRemiected waves thone trequencyQuestion 2. In police radar, a radar gunsends out short bursts of microwaves. Themicrowaves reflect back from oncomingvehicles and are detected by a receiver in theradar gun. The frequency of the reflectedwaves is used to compute the speed of thevehicles. How are reflected microwaves usedto determine the speed of oncoming cars as seen in the picture on the right?​</h2><br />
+                        <p><strong>Explanation:</strong></p><p></p><p>A microwave is an electromagnetic wave with a relatively long wavelength and low frequency. Microwaves are often classified as radio waves, but they have higher frequencies than other radio waves. With higher frequencies, they also have more energy. That’s why microwaves are useful for heating food in microwave ovens. Microwaves have other important uses as well, including cell phone transmissions and radar.</p><p></p><p>Microwaves can be interrupted by buildings and other obstructions, so cell towers must be placed high above the ground to prevent the interruption of cell phone signals.</p><p></p><p></p><p>I hope it'll help</p><p>–nexy</p><br />
+                                            <h2 class="ez-toc-section" id="how-to-download-arduino-%e2%80%8b">
+                            18. How to download Arduino? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>punta kang play store tas download mo na </p><br />
+                                            <h2 class="ez-toc-section" id="which-are-waves-used-by-cops-to-test-the-speed-og-car-with-radar%e2%80%8b">
+                            19. which are waves used by cops to test the speed og car  with radar?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>radio waves</p><p></p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="this-gadgets-can-detect-the-presence-of-radar-gun-which-then-allow-motorist-to-reduce-speed-before-being-caught%e2%80%8b">
+                            20. This gadgets can detect the presence of radar gun, which then allow motorist to reduce speed before being caught?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A speed radar detector is a sophisticated electronic gadget that certain motorists use to see if law enforcement or police officers are checking their speed using a radar gun. Drivers can use the radar detector to reduce their speed and avoid incurring a speeding ticket.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="all-about-the-arduino-sketch">
+                            21. All about the Arduino sketch</h2><br />
+                        <p><strong>Answer:</strong></p><p>Arduino sketch is the name that Arduino uses for a program. It's the unit of code that is uploaded to, and run on an Arduino board. A basic Arduino sketch consists of two functions: setup() loop()</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-meaning-of-gizduino-and-arduino">
+                            22. what is the meaning of gizduino and arduino? </h2><br />
+                        After the familiarization and the necessary preparations of the Gizduino, you can now write sketches to program your Gizduino. In the succeding entries I that I will post, I will discuss basic commands to program your Gizduino. <br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-will-radar-failed-to-determinea-speedb-locationc-distanced-density-of-metal%e2%80%8b">
+                            23. which of the following will radar failed to determinea. speedb. locationc. distanced. density of metal​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D is the answer please po joke </p><br />
+                                            <h2 class="ez-toc-section" id="discuss-what-you-think-of-the-arduino-you-like-and-dislike-about-the-arduino-on-robotici-need-answers%e2%80%8b">
+                            24. discuss what you think of the Arduino you like and dislike about the Arduino on robotic?I need answers​</h2><br />
+                        <p><strong>Answer:</strong></p>With the Arduino Robot, you can learn about electronics, mechanics, and software. It is a tiny computer on wheels. It comes with a number of of project examples you can easily replicate, and it is a powerful robotics platform that you can hack to perform all sorts of tasks.<br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-cannot-be-determined-by-radara-distanceb-density-of-metalc-speedd-location">
+                            25. Which of the following CANNOT be determined by Radar?
+A. Distance
+B. Density of metal
+C. Speed
+D. Location </h2><br />
+                        <p><strong>Answer:</strong></p><p>B yung sagot </p><p><strong>Explanation:</strong></p><p>paki follow na lang ako </p><br />
+                                            <h2 class="ez-toc-section" id="parts-and-funtions-of-arduino%e2%80%8b">
+                            26. parts and funtions of arduino​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Arduino is a microcontroller-based open source electronic prototyping board which can be programmed with an easy-to-use Arduino IDE.</p><p>In this article, I will talk about what’s on the Arduino UNO board and what it can do. UNO is not the only board in the Arduino family. There are other boards like Arduino Lilypad, Arduino Mini, Arduino Mega, and Arduino Nano. However, the Arduino UNO board became more popular than other boards in the family because it has documentation that is much more detailed. This led to its increased adoption for electronic prototyping, creating a vast community of electronic geeks and hobbyists.</p><p>In recent times, the UNO board has become synonymous with Arduino.</p><p>￼￼components of Arduino UNO board</p><p>The major components of Arduino UNO board are as follows:</p><p></p><p>USB connector</p><p></p><p>Power port</p><p></p><p>Microcontroller</p><p></p><p>Analog input pins</p><p></p><p>Digital pins</p><p></p><p>Reset switch</p><p></p><p>Crystal oscillator</p><p></p><p>USB interface chip</p><p></p><p>TX RX LEDs</p><p></p><p>Now let’s take a closer look at each component.</p><p>USB connector:</p><p>USB connector</p><p>This is a printer USB port used to load a program from the Arduino IDE onto the Arduino board. The board can also be powered through this port.</p><p>Power port:</p><p>Power port</p><p>The Arduino board can be powered through an AC-to-DC adapter or a battery. The power source can be connected by plugging in a 2.1mm center-positive plug into the power jack of the board.</p><p>2.1mm center-positive plug</p><p>The Arduino UNO board operates at a voltage of 5 volts, but it can withstand a maximum voltage of 20 volts. If the board is supplied with a higher voltage, there is a voltage regulator (it sits between the power port and USB connector) that protects the board from burning out.</p><p>Microcontroller:</p><p>Atmega328P microcontroller</p><p>It is the most prominent black rectangular chip with 28 pins. Think of it as the brains of your Arduino. The microcontroller used on the UNO board is Atmega328P by Atmel ( a major microcontroller manufacturer). Atmega328P has the following components in it:</p><p></p><p>Flash memory of 32KB. The program loaded from Arduino IDE is stored here.</p><p></p><p>RAM of 2KB. This is a runtime memory.</p><p></p><p>CPU: It controls everything that goes on within the device. It fetches the program instructions from flash memory and runs them with the help of RAM.</p><p></p><p>Electrically Erasable Programmable Read Only Memory (EEPROM) of 1KB. This is a type of nonvolatile memory, and it keeps the data even after device restart and reset.</p><p></p><p>Atmega328P is pre-programmed with bootloader. This allows you to directly upload a new Arduino program into the device, without using any external hardware programmer, making the Arduino UNO board easy to use.</p><p>Analog input pins:</p><p>Analog input pins</p><p>The Arduino UNO board has 6 analog input pins, labeled “Analog 0 to 5.” These pins can read the signal from an analog sensor like a temperature sensor and convert it into a digital value so that the system understands. These pins just measure voltage and not the current because they have very high internal resistance. Hence, only a small amount of current flows through these pins.</p><p>Although these pins are labeled analog and are analog input by default, these pins can also be used for digital input or output.</p><p>Digital pins:</p><p>Digital pins</p><p>You can find these pins labeled “Digital 0 to 13.” These pins can be used as either input or output pins. When used as output, these pins act as a power supply source for the components connected to them. When used as input pins, they read the signals from the component connected to them.</p><p>When digital pins are used as output pins, they supply 40 milliamps of current at 5 volts, which is more than enough to light an LED.</p><p>Some of the digital pins are labeled with tilde (~) symbol next to the pin numbers (pin numbers 3, 5, 6, 9, 10, and 11). These pins act as normal digital pins but can also be used for Pulse-Width Modulation (PWM), which simulates analog output like fading an LED in and out.</p><p>Reset switch:</p><p>Reset switch</p><p>When this switch is clicked, it sends a logical pulse to the reset pin of the Microcontroller, and now runs the program again from the start. This can be very useful if your code doesn’t repeat, but you want to test it multiple times.</p><p>Crystal oscillator:</p><p>Crystal oscillator</p><p>This is a quartz crystal oscillator which ticks 16 million times a second. On each tick, the microcontroller performs one operation, for example, addition, subtraction, etc.</p><p>USB interface chip:</p><p>USB interface chip</p><p>Think of this as a signal translator. It converts signals in the USB level to a level that an Arduino UNO board understands.</p><p>TX – RX LEDs:</p><p>TX – RX indicator</p><p>TX stands for transmit, and RX for receive. These are indicator LEDs which blink whenever the UNO board is transmitting or receiving data.</p><p>Now that you have explored the Arduino UNO board, you have started your journey toward building your first IoT prototype. In the next article, we will discuss Arduino programming and do a few experiments with Arduino and LEDs.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-arduinoplease-expain-it">
+                            27. What is arduino?
+(please expain it)</h2><br />
+                        <p><strong>Answer:</strong></p><p>Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online.</p><strong>ARDUINO</strong><strong></strong><p><strong></strong></p>What is Arduino?Arduino is an open-source electronics platform utilizing easy-to-use hardware and software for design and building a wide variety of electronic devices both simple and complex.<p>===============</p><p>[tex]{\underline{\sf{ichthus898}}}[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-overview-of-arduino">
+                            28. What is the overview of arduino?</h2><br />
+                        <p><strong>Answer:</strong></p><p>Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online.
+</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-difference-between-and-operators-in-arduino%e2%80%8b">
+                            29. what is the difference between = and == operators in arduino?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Its the same = 9777</p><p><strong>Explanation:</strong></p><p>Its equally </p><br />
+                                            <h2 class="ez-toc-section" id="5-which-specialized-weather-instrument-determines-the-winds-direction-and-speeda-radarb-barograph%e2%80%8b">
+                            30. 5. Which specialized weather instrument determines the wind's direction and speed?a. radarb. barograph​</h2><br />
+                        <p><strong>Answer:</strong></p><p>5. WHICH SPECIALIZED WEATHER INSTRUMENT DETERMINES THE WIND DIRECTION AND SPEED?</p><p></p><p></p><p>ANSWER------ ✓  A.</p><p><strong>Explanation:</strong></p><p> </p><p></p><p></p><p></p><p>    YAN PO SURE P O AKO</p><p><strong>Answer:</strong></p><p>A. Radar</p><p><strong>Explanation:</strong></p><p>Pa brainliest nalang po </p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Kzsh59TM4MY?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>english</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/j-b-black.html">J b Black</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/let-s-bow-our-heads-and-pray.html">Let s Bow Our Heads And Pray</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/mother-teresa-poem-do-it-anyway.html">Mother Teresa Poem Do It Anyway</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/blue-gold-stephen-fry-transcript.html">Blue Gold Stephen Fry Transcript</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/pitik-meaning.html">Pitik Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/bentonite-kaolin-and-selected-clay-minerals.html">Bentonite Kaolin And Selected Clay Minerals</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/20-talasalitaan.html">20 Talasalitaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ang-pusa-at-ang-daga-pabula.html">Ang Pusa At Ang Daga Pabula</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/allergy-ncp.html">Allergy Ncp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/heinz-dilemma-essay.html">Heinz Dilemma Essay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/sedges-weeds-example.html">Sedges Weeds Example</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/magtapon-ng-basura-sa-tamang-basurahan.html">Magtapon Ng Basura Sa Tamang Basurahan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/panahon-ng-ikatlong-republika.html">Panahon Ng Ikatlong Republika</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/can-sealer-before-operation.html">Can Sealer Before Operation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ano-ang-ipinakita-ng-mga-larawan.html">Ano Ang Ipinakita Ng Mga Larawan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/sweet-delicacies-in-pampanga.html">Sweet Delicacies In Pampanga</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/rizal-ophthalmologist.html">Rizal Ophthalmologist</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/insignia-of-national-artist.html">Insignia Of National Artist</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/century-maritime-agencies-inc.html">Century Maritime Agencies Inc</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/human-intelligence-ppt.html">Human Intelligence Ppt</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

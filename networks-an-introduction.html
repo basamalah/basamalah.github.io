@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Networks An Introduction - QnA</title>
+    <meta name="description" content="Networks An Introduction, , , , , , , 0, Introduction to Networking - Reviews &amp; Coupon - Java Code Geeks, courses.javacodegeeks.com, 2048 x 1214, jpeg, , 20, networks-an-introduction, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Networks An Introduction - QnA" />
+    <meta property="og:description" content="Networks An Introduction, , , , , , , 0, Introduction to Networking - Reviews &amp; Coupon - Java Code Geeks, courses.javacodegeeks.com, 2048 x 1214, jpeg, , 20, networks-an-introduction, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Networks An Introduction - QnA" />
+    <meta name="twitter:description" content="Networks An Introduction, , , , , , , 0, Introduction to Networking - Reviews &amp; Coupon - Java Code Geeks, courses.javacodegeeks.com, 2048 x 1214, jpeg, , 20, networks-an-introduction, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Networks An Introduction</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">angeliegentiles96</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Networks+An+Introduction" alt="Networks An Introduction">
+                    </div>
+                    <p></p>
+                    <p>I learned in introduction to network and it&#039;s benefits​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#i-learned-in-introduction-to-network-and-its-benefits%e2%80%8b">1.
+                                            I learned in introduction to network and it's benefits​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#computer-introduction-to-data-communication-and-network%e2%80%8b">2.
+                                            computer - introduction to data communication and network​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#introduction-to-career-in-hardware-troubleshooting-and-network-management-200-words%e2%80%8b">3.
+                                            introduction to career in hardware troubleshooting and network management 200 words​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tirelium-study-excitem-enrefully-circle-the-letter-of-the-correct-answer-this-be-the-style-of-writing-axed-to-report-new-stories-in-newspaper-televisor-badest-on-radio-an-south-s-journal-writing-r">4.
+                                            Tirelium: Study excitem enrefully, Circle the letter of the correct answer This be the style of writing axed to report new stories in newspaper, televisor badest on radio an. South s Journal Writing Radio Broadcasting Telenovela DTV Network 10. De fantenere undetenth the headline should give the reader inte information on the story and sum up what it is going to be About Aile B. Beading Introduction D. Healine 12 should only the reader's attention and take them want to read more Alle B leading C. Introduction D. Beadloc 12 a on ethic of the main points or the post possible predictions Conclusion B. Handline C Introduction 13. Thus belps a funnw the latest event that bagiren around the world A Books B Jaumdiam C. Headline D. Coches​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#instruction-draw-or-cut-a-picture-that-represents-the-specialized-subject-below-and-write-a-brief-explanation-about-the-picture-related-to-the-subject-2-5-sentences-every-photo-40-points-be-art">5.
+                                            Instruction: Draw or cut a picture that represents the specialized subject below and write a brief explanation about the picture related to the subject. (2-5 sentences every photo) (40 POINTS). Be artistic!1. Discipline and Ideas in the Applied Social Sciences.2. Creative Nonfiction3. Philippine Politics and Governance4. Trends, Networks and Critical thinking in the 21st Century 5. Introduction to World Religions and Beliefs Systems6. Discipline and Ideas in the Social Sciences7. Creative Writing8. Community Engagement, Solidarity and Citizenship​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-1-recall-the-highlight-activities-that-you-have-accomplished-in-the-following-subjects-below-write-your-answers-on-your-answer-sheet-1-philippine-politics-and-governance-2-disciplin">6.
+                                            Learning Task 1: Recall the highlight activities that you have accomplished in the following subjects below. Write your answers on your answer sheet, 1. Philippine Politics and Governance 2. Discipline and Ideas in the Social Sciences 3. Introduction of World Religions and Belief System 4. Discipline and Ideas in the Applied Social Sciences 5. Creative Writing 6. Community Engagement, Solidarity, and Citizenship 7. Creative Nonfiction 8. Trends, Networks, and Critical Thinking in the 21st Century Now that you have chosen your springboard in accomplishing this subject It is important to follow the step-by-step procedures in implementing a program As a social sciences advocate, the welfare of the community is one of the prior ties.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#introduction-about-social-media-and-networking-in-your-own-words-ps-200-word%e2%80%8b">7.
+                                            introduction about social media and networking? in your own words ps: 200 word​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-a-statement-uttered-directly-by-a-primary-source2-it-is-considerably-more-detailed-than-an-informal-one-3-the-senator-said-she-will-vote-for-the-renewal-of-the-network%e2%80%99s-franchise-4-e">8.
+                                            1. A statement uttered directly by a primary source
+2. It is considerably more detailed than an informal one.
+3. The senator said she will vote for the renewal of the network’s franchise.
+4. Evidence that negates or disagrees with the counterclaim.
+5. The purpose is to describe how and why things happen, and how things are to be done.
+6. Is a form of non-fiction writing which aims to convince the reader of a certain point of view.
+7. This part is the attention getter/grabber, highly engaging and motivational.
+8. Used primarily by formal speakers, politicians, business executives, etc. when they prepare their speeches well in advance.
+9. Done with little or no preparation.
+Choices Below:
+Formal outline
+Reported speech
+Direct speech
+Persuasive text
+Memorize delivery
+Manuscript delivery
+Explanatory
+Impromptu delivery
+Introduction
+Rebuttal
+If one answer is taken it cannot be taken again. Thank you! Godbless.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#11-this-is-the-style-of-writing-used-to-report-news-stories-in-newspapers-television-broadcasts-on-radio-and-on-the-internet-1-pointa-journalistic-writingb-radio-broadcastingc-telenovelad">9.
+                                            11. This is the style of writing used to report news stories in newspapers, television broadcasts, on radio and on the internet.
+*
+1 point
+A. Journalistic Writing
+B. Radio Broadcasting
+C. Telenovela
+D. TV Network
+12. The first sentence underneath the headline should give the reader more information on the story and sum up what it is going to be about.
+*
+1 point
+A. Title
+B. Heading
+C. Introduction
+D. Headline
+13. Should catch the reader’s attention and make them want to read more.
+*
+1 point
+A. Title
+B. Heading
+C. Introduction
+D. Headline
+14. Recap on some of the main points or suggest possible predictions.
+*
+1 point
+A. Conclusion
+B. Headline
+C. Introduction
+D. Title
+15. This helps us know the latest event that happen around the world.
+*
+1 point
+A. Books
+B. Journalism
+C. Headline
+D. Conclusion
+16. __________ a reading, viewing, or listening public.
+*
+1 point
+A. Audience
+B. News
+C. Reporter
+D. Journalism
+17. __________ a person employed by a newspaper, magazine, or television company to gather and report news.
+*
+1 point
+A. Audience
+B. News
+C. Reporter
+D. Journalism
+18. __________ a report of recent events.
+*
+1 point
+A. Audience
+B. News
+C. Reporter
+D. Journalism
+19. __________ is the act of writing about news related subjects for all mediums, print or non-print.
+*
+1 point
+A. Audience
+B. News
+C. Reporter
+D. Journalism
+20. The following are the features of journalistic writing except:
+*
+1 point
+A. Headline
+B. First sentence/Introduction-
+C. Reporter
+D. Conclusion</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-the-appropriate-transition-devices-to-be-used-then-indicate-its-purpose-the-emergence-of-technology-and-the-digital-era-has-undeniably-brought-about-accessibility-and-convenience-in-our-li">10.
+                                            Identify the appropriate transition devices to be used. Then, indicate its purpose. The emergence of technology and the digital era has undeniably brought about accessibility and convenience in our lives. The introduction of social networking sites, 11. _____________(but, and, in particular), has revolutionized the way we communicate 12._____________( and, yet, so) socialize without having to meet face-to-face with people. Behind all these benefits and advantages, 13. ____________(although, in contrary, however), lies a myriad of consequences ko that often we neglect to see. In realityn, social networking sites are consuming our lives and daily activities at a rate faster than we can real their benefits, 14. ____________ (though, hence, so) some of the adversities may be mitigated through moderation 15. ____________ (also, and, but) responsibility. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#label-the-following-sentences-according-to-structure-write-s-for-simple-cm-for-compound-cx-for-complex-and-cc-for-compound-complex-on-the-line-before-the-number-__________-1-the-information-age">11.
+                                            Label the following sentences according to structure. Write S for simple, CM for compound, CX for complex, and CC for compound-complex on the line before the number.
+__________ 1. The information age capitalizes on remarkable inventions.
+__________ 2. The Internet has existed since the 1960s but it was introduced only in the 1990s.
+__________3. One cannot appreciate social media unless one exposes himself or herself to it.
+__________4. Because the information age continues to push humankind’s innovativeness, we are able to achieve further, and with the help of the World Web, our limitation goes beyond the ordinary.
+__________5. When British Tim Berners-Lee invented the World Wide Web, its introduction paved the way for the accessibility of networks.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#i-introduction-time-frame-15-minutes-in-the-previous-lesson-you-have-learned-that-remote-desktop-is-a-program-or-an-operating-system-feature-that-allows-a-user-to-connect-to-a-computer-in-another">12.
+                                            I. Introduction (Time Frame: 15 minutes) In the previous lesson, you have learned that Remote Desktop is a program or an operating system feature that allows a user to connect to a computer in another location, see that computer's desktop and interact with it as if it were local. People use remote desktop access capabilities to do a variety of things. For your computer and other devices to be connected to one another, it needs to be connected to a network. Based on the picture below, list down the devices that can relate to one another. 1. 2. 3.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#covid-19-community-action-plancover-letterintroductioncommunity-profileresourcesnetworkpahelp-plss%e2%80%8b">13.
+                                            COVID 19 COMMUNITY ACTION PLANCover LetterIntroduction:Community Profile:Resources:Network:Pahelp plss​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#lesson-ratio-2-given-numbers-1-introduction-read-and-page-28-learning-task-1-seat-network-to-be-answered-at-home-page-28%e2%80%8b">14.
+                                            lesson ratio 2 given numbers 1 introduction. read and page 28 learning task 1 seat network to be answered at home page 28​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#introduction-learning-task-i-direction-identify-the-following-measuring-tools-used-in-computer-system-servicing-1-it-is-an-electronic-device-used-to-verify-the-electrical-connections-in-a-signal-cab">15.
+                                            INTRODUCTION LEARNING TASK I Direction: Identify the following measuring tools used in Computer System Servicing 1. It is an electronic device used to verify the electrical connections in a signal cable or other wired assembly. 2. It is a groovy little tool originally designed for testing network configurations. 3. an instrument for measuring electric potential in volts. 4. an instrument for measuring electrical resistance 5. an instrument for measuring electric current in amperes.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#test-directions-read-each-question-below-and-choose-the-letter-of-the-correct-answer-write-the-answer-on-the-space-provided-before-the-number-1-what-is-the-purpose-of-an-argumentative-essay-a-to">16.
+                                            Test Directions: Read each question below and choose the letter of the correct answer. Write the answer on the space provided before the number 1. What is the purpose of an argumentative essay? A. To convince the reader B. To entertain people C. To narrate an event D. To teach a lesson 2. Statistics, expert opinion, quotation and personal experience can be used in an argumentative essay as A. author's claim B. main idea C. supporting evidences D. topic sentence 3. Which is NOT necessary in an argumentative essay? A claim B. evidences C. narration D. reasons 4. Which is a question of fact? A. Are Filipinos saddened by the closure of the TV network? B. Does ABS-CBN help improve the life of the Filipinos? C. What are the possible effects of the ABS-CBN shutdown? D. Which is more beneficial - to watch TV or play outside? 5. Which is a claim of policy? A. Covid-19 pandemic has a tremendous negative effect on world economy. B. Governments need to provide financial assistance to families during a lockdown. C. Staying at home is beneficial to prevent the spread of the deadly corona virus disease. D. The origin of COVID-19 still remains uncertain but the WHO says it's most probably from animals. 6. If you want to convince others with your claim, what should you do? A. Make your claim longer and more detailed. B. Support it with reasons and evidences. C. Tell people you are serious with your claim. D. Write using effective literary and sound devices. 7. What does the introductory paragraph of an argumentative essay usually present? A. opposing arguments B. restatement of the main idea C. supporting evidences D. thesis statement or main claim 8. In which part of an argumentative essay are the reasons supporting the author's claim discussed? A. body B. conclusion C. introduction D. title 9. In an argumentative essay, the author's claim or position is usually first stated in the A. body B. conclusion C. evidence D. introduction 1. In which part of an essay can this sentence be found? So, with all these in mind, there is no doubt that we should support the liquor ban. A. body B. conclusion C. evidence D. introduction​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-panel-discussion-a-introduces-the-topic-closes-the-discussion-and-provides-a-summary-of-panel-presentation-and-discussion-2-thought-provoking-questions-b-discuss-the-issue-or-topic-and-also-rea">17.
+                                            1. Panel Discussion A. Introduces the topic, closes the discussion and provides a summary of panel presentation and discussion 2. Thought-provoking Questions B. Discuss the issue or topic and also react to other panel members' views and opinions 3. Pick out your panelists C. It is a discussion where a group of people who are skilled in a specific topic engage in conversation together in front of an audience 4. Choose your skillful moderator D. Questions are a level playing field where everyone feels that they can provide value to the discussion 5. Select a thought-provoking topic E. The room arranged in a way that encourages every member to participate, even the audience 6. Prepare the questions and prompts F. This is done before the day of the event and it can be over a meal, a networking event, or even just a casual introduction and mingling 7. Set up the room properly G. The topic isn't too general and it should have some buzz in the industry 8. Introduce the moderator to the panelists H. Powerful questions that increase audience interest, interaction and social responsibility 1. Select moderator that is 9. Panel Moderator assertive and confident, yet kind and likablepasagot po ng maayos​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-examples-of-forms-of-modern-communication-using-technology-are-the-television-writing-a-letter-and-radio____________________________________________________________2-communication-technology-makes">18.
+                                            1.Examples of forms of modern communication using technology are the television writing a letter and radio
+____________________________________________________________
+2.communication technology makes it possible for you send and receive messages anytime you want
+_____________________________
+3.television allows people to see place they haven .t gone to.
+____________________________________________________________
+4.radio reaches a wider audiencethan television
+______________________________ 
+ ______________________________
+ 5.a document can be sent through e-mail or fax.
+____________________________________________________________
+6.the worldwiide web ( WWW) is large than the internet
+______________________________
+7.
+The worldwide web is a network of linked document
+______________________________
+8.a fax machine can receive documents but cannot send them.
+___________________________________________________________
+9.communication technology always causes greater business productivity
+____________________________________________________________
+10.introduction of communication technology brought about new form of crime.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-match-your-answer-from-column-a-to-column-b-by-writing-your-answer-on-the-space-provided-column-a-1-it-provides-a-means-of-identification-for-managing-information-on-digital-networks2-thi">19.
+                                            Direction: Match your answer from column A to column B by writing your answer on the space provided.COLUMN A.1. It provides a means of identification for managing information on digital networks2. This part of a literature review defines the topic and the scope being considered3. It offers the reviewer's justification of the conducted research.4. It is a part in the organization of the evaluation of sources chronologically.5. This is the part that accurately contains in-text citations6. Relational words and phrases are used in writing the literature to achieve _____.7. This is a literature review strategy that combines ideas in order to form an integrated theory or system through critical evaluation.8. It is closely examining the elements or structure of the research.9. This is a literature review strategy that assesses the research based on the criteria that you chose.10. It is a literature review is simply a summary of what existing scholarship knows about a particular topic.COLUMN B.a. Article Critiqueb. Evaluationc. Analysisd. Synthesise. Coherencef. Referencesg. Main Bodyh. Conclusioni. Introductionj. DOI​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-the-following-warm-up-exercises-1-it-aim-to-promote-and-encourage-voluntary-blood-donation-by-the-citizenry-provide-for-adequate-safe-and-affordable-and-equitable-distribution-of-blood-an">20.
+                                            Identify the following warm-up exercises. 1. It aim to promote and encourage voluntary blood donation by the citizenry, provide for adequate, safe and affordable and equitable distribution of blood and blood products. 2. It refers to any representation of a child engaged or involved in real or simulated explicit sexual activities, 3. It refers to act of obtaining a person's information illegally. 4. The introduction of particulates, biological molecules, or the harmful materials into the earth's atmosphere 5. One of the most frequent causes of death among Filipinos. 6 The deposition or presence of radioactive substances in surface or within solids, liquids or gases including the human body, 7. A law that penalizes those who will be caught driving under the influence of alcohol, drugs and other similar substances. 8. The act promotes environmental awareness through environment education 9.  A person below 18 years of age or over but is unable to fully take care of himself/herself from abuse is considered 10. It refers to a computer or computer network.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#31-this-provides-basic-information-summary-and-reader%e2%80%99s-opening-statementrelated-to-the-story-a-title-b-introduction-c-body-d-conclusion32-this-explains-the-important-points-to-part">21.
+                                            31. This provides basic information, summary, and reader’s opening statement
+related to the story.
+A. Title B. Introduction C. Body D. Conclusion
+32. This explains the important points to part of the story that the reader wants to
+talk further in relation to his/her opinions.
+5
+A. Title B. Introduction C. Body D. Conclusion
+33. This is the final statement to what the reader is discussing throughout the body of
+the paper.
+A. Title B. Introduction C. Body D. Conclusion
+34. This is the style of writing used to report news stories in newspapers, television
+broadcasts, on radio and on the internet.
+A. Journalistic Writing C. Telenovela
+B. Radio Broadcasting D. TV Network
+35. The first sentence underneath the headline should give the reader more information
+on the story and sum up what it is going to be about.
+A. Title C. Introduction
+B. Heading D. Headline
+36. Should catch the reader’s attention and make them want to read more.
+A. Title C. Introduction
+B. Heading D. Headline
+37. Recap on some of the main points or suggest possible predictions.
+A. Conclusion C. Introduction
+B. Headline D. Title
+38. It is the form of verbs used in writing a news article.
+A. headline B. past form c, third person d. caption
+39. It is a short sentence explaining what is happening in the photo.
+A. quotations B. photo C. caption D. lead
+40. It must be catchy and written in bold letters.
+A. headline B. photo C. past form D. caption</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#check-your-understanding-identify-what-is-asked-in-the-following-sentences-and-write-your-answer-on-the-space-provided-1-a-set-of-symbols-that-developers-use-to-specify-the-headings-paragraphs-imag">22.
+                                            CHECK YOUR UNDERSTANDING Identify what is asked in the following sentences and write your answer on the space provided 1. A set of symbols that developers use to specify the headings, paragraphs, images, links, and other content elements that a webpage contains 2. An application software where user can edit, delete, save word documents. 3. An application that enables users with an Internet connection to access and view webpages on on a computer or mobile device. 4. It is consists of a worldwide collection of electronic documents or webpages. 5. A worldwide collection of networks that connects millions of businesses, government agencies, educational institutions, and individuals. BRIEF INTRODUCTION imunting data to make it more usef​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-activity-1-netiquettewrite-n-if-the-statement-shows-netiquette-and-nt-if-it-does-not-1-allow-others-to-express-themselves-too2-look-and-listen-before-you-leap-3-using-capital-letters">23.
+                                            LEARNING ACTIVITY 1- NETIQUETTE
+Write N if the statement shows Netiquette and NT, if it does not.
+1. Allow others to express themselves too
+2. Look and listen before you leap.
+3. Using capital letters all the time.
+4. Be respectful, courteous and honest in all of your online networking activities.
+5. Use anonymous account to take advantage of other people.
+6. Show appreciation when others provide assistance to you and to your contacts.
+7. Overwhelm your contacts with too many requests for introductions and assistance.
+8. Don't use all capital letters when composing your responses
+9. The use of acronyms in messages are good to use for all ages.
+10. Be careful when using acronyms.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-2-1-climate-change2-medicinal-plants-3-social-networking-4-cultural-beliefs5-communication-skills-activity-3-my-proposal-research-study-based-on-the-topic-that-you-have-chosen-in-ac">24.
+                                            (activity 2) 1. climate change,2 medicinal plants, 3. social networking, 4. cultural beliefs,5 communication skills activity 3. My proposal research study based on the topic that you have chosen in activity 2 using the narrowing chart write 1 proposal research title, sample of background of the study statement of the problem scope and limitation and signification of the studya.proposal research title: b. background of the study (introduction) c. statement of the problem d. scope and delimitation .e.significance of the study​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#importance-of-the-human-heart-the-heart-is-a-muscular-organ-about-the-size-of-a-fist-located-just-behind-and-slightly-left-of-the-breastbone-the-heart-pumps-blood-through-the-network-of-arteries-and">25.
+                                            Importance of the Human Heart The heart is a muscular organ about the size of a fist, located just behind and slightly left of the breastbone. The heart pumps blood through the network of arteries and veins called the cardiovascular system. The heart has four chambers: The right atrium receives blood from the veins and pumps it to the right ventricle. The right ventricle receives blood from the right atrium and pumps it to the lungs, where it is loaded with oxygen. The left atrium receives oxygenated blood from the lungs and pumps it to the left ventri- cle, The left ventricle (the strongest chamber) pumps oxygen-rich blood to the rest of the body. The left ventricle's vigorous contractions create our blood pressure. The heart is important because it pumps blood around your body, delivering oxygen and nutrients to your cells and removing waste products. There are valves between the atria and ventricles that make sure blood flows in one direction through your heart. INTRODUCTION BODY CONCLUSION​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-the-worldwide-web-www-is-larger-than-the-internet7-the-worldwide-web-is-a-network-of-linked-documents-28-a-fax-machine-can-receive-documents-but-cannot-send-them9-communication-technology-alway">26.
+                                            6. The Worldwide Web (WWW) is larger than the Internet7. The Worldwide Web is a network of linked documents.28.A fax machine can receive documents but cannot send them,9.Communication technology always causes greater business productivity,10.The introduction of communication technology brought about new formsof crime,​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-a-statement-uttered-directly-by-a-primary-source2-it-is-considerably-more-detailed-than-an-informal-one-3-the-senator-said-she-will-vote-for-the-renewal-of-the-network%e2%80%99s-franchise-4-e">27.
+                                            1. A statement uttered directly by a primary source
+2. It is considerably more detailed than an informal one.
+3. The senator said she will vote for the renewal of the network’s franchise.
+4. Evidence that negates or disagrees with the counterclaim.
+5. The purpose is to describe how and why things happen, and how things are to be done.
+6. Is a form of non-fiction writing which aims to convince the reader of a certain point of view.
+7. This part is the attention getter/grabber, highly engaging and motivational.
+8. Used primarily by formal speakers, politicians, business executives, etc. when they prepare their speeches well in advance.
+9. Done with little or no preparation.
+Choices Below:
+Formal outline
+Reported speech
+Direct speech
+Persuasive text
+Memorize delivery
+Manuscript delivery
+Explanatory
+Impromptu delivery
+Introduction
+Rebuttal
+If one answer is taken it cannot be taken again. Thank you! Godbless.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-communication-technology-makes-it-possible-for-you-to-send-and-receive-messages-anytime-you-want-3-television-allows-people-to-see-places-they-haven%e2%80%99t-gone-to-4-radio-reaches-a-wider-au">28.
+                                            2. Communication technology makes it possible for you to send and receive messages anytime you want.
+3. Television allows people to see places they haven’t gone to.
+4. Radio reaches a wider audience than television.
+5. A document can be sent through e-mail or fax.
+6. The Worldwide Web (WWW) is larger than the Internet.
+7. The Worldwide Web is a network of linked documents.
+8. A fax machine can receive documents but cannot send them.
+9. Communication technology always causes greater business productivity.
+10. The introduction of communication technology brought about new forms of crime.
+11. The Internet is an example of a network.
+12. The subscribers of Smart and Globe are considered part of a network.
+13. Voice is transmitted through a telephone in the same manner that a document is transmitted through a fax
+machine.
+14. Communication technology always makes people closer to each other.
+15. Workers are always more productive with the presence of modern communication tools. 
+TRUE OR FALSE??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-read-the-text-carefully-outline-the-text-using-the-sample-outline-format-below-you-can-modify-or-change-the-format-setting-depending-on-the-manner-of-your-outlining-write-the-outlin">29.
+                                            
+Directions: Read the text carefully. Outline the text using the sample outline format below---(you can modify or change the format setting depending on the manner of your outlining). Write the outline on your paper.
+A person who starts and develops a business is called an entrepreneur. Being an entrepreneur can involve a lot of financial and even career risk, but for those who succeed, the potential payoffs can be huge.
+The United States has literally been shaped by the vision and efforts of its entrepreneurs. Andrew Carnegie expanded the American steel industry in the late 1800s and became one of history's richest Americans. Thomas
+Modem entrepreneurs include Steve Jobs, co-founder of Apple Computer, shepherded Apple's introduction of the iPod and the iPhone. and helped to fund the animation giant Pixar. Martha Stewart bull upon the popularity of her T.V. shows to create her own brand of household products. Oprah Winfrey went from being a part-time newscaster to a popular talk show host whose entertainment empire includes a magazine and a T.V. network.
+​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-2-1-climate-change2-medicinal-plants-3-social-networking-4-cultural-beliefs5-communication-skills-activity-3my-proposal-research-study-based-on-the-topic-that-you-have-chosen-in-ac">30.
+                                            (activity 2) 1. climate change,2 medicinal plants, 3. social networking, 4. cultural beliefs,5 communication skills (activity 3)My proposal research study based on the topic that you have chosen in activity 2 using the narrowing chart write 1 proposal research title, sample of background of the study statement of the problem scope and limitation and signification of the studya proposal research title: b. background of the study (introduction) c. statement of the problemd. scope and delimitatione.significance of the study​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="i-learned-in-introduction-to-network-and-its-benefits%e2%80%8b">
+                            1. I learned in introduction to network and it's benefits​</h2><br />
+                        <p>with the principles of computer science we are able to connect office equipment like PC's so that we can search documents from and to each other.</p><br />
+                                            <h2 class="ez-toc-section" id="computer-introduction-to-data-communication-and-network%e2%80%8b">
+                            2. computer - introduction to data communication and network​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Data communications refers to the transmission of this digital data between two or more computers and a computer network or data network is a telecommunications network that allows computers to exchange data.</p><p><strong>Explanation:</strong></p><p>sana makatulong:)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="introduction-to-career-in-hardware-troubleshooting-and-network-management-200-words%e2%80%8b">
+                            3. introduction to career in hardware troubleshooting and network management 200 words​</h2><br />
+                        Introduction to a career in hardware troubleshooting and network management<p>The IT business relies heavily on hardware and <strong>networking</strong>. Laptops, constant internet access, and cloud storage are required for any software professional to continue working uninterrupted. Only when hardware and <strong>networking</strong> are set up flawlessly can work be done without interruption.</p><p>With the passage of time, IT hardware and networking have progressed as well. From physical server stations to cloud storage and virtualization, hardware and <strong>networking </strong>have advanced.</p><p>Professionals in hardware and <strong>networking</strong> can work in a variety of roles, including help desk support, field support, working in various sectors such as network support, and working as an internet support administrator. Support, help desk, and support admin are all places where you can start your career path.</p><p>The hardware and networking industry is vast, and you can work in a variety of areas to get started. Then you can move on to the hardware and networking course, which is available both online and offline. Before settling on a course, look into the hardware and networking course prices, the hardware and <strong>networking</strong> course syllabus, and the hardware and networking course details. Getting a job in the field is not difficult if one has a thorough understanding of the concepts and subject. You can confidently answer hardware networking interview questions if you have proper preparation and certification.</p><p></p><p> Any changes to the network software or hardware can create problems?</p><p>brainly.ph/question/16038934</p><p></p><p>#LETSSTUDY</p><br />
+                                            <h2 class="ez-toc-section" id="tirelium-study-excitem-enrefully-circle-the-letter-of-the-correct-answer-this-be-the-style-of-writing-axed-to-report-new-stories-in-newspaper-televisor-badest-on-radio-an-south-s-journal-writing-r">
+                            4. Tirelium: Study excitem enrefully, Circle the letter of the correct answer This be the style of writing axed to report new stories in newspaper, televisor badest on radio an. South s Journal Writing Radio Broadcasting Telenovela DTV Network 10. De fantenere undetenth the headline should give the reader inte information on the story and sum up what it is going to be About Aile B. Beading Introduction D. Healine 12 should only the reader's attention and take them want to read more Alle B leading C. Introduction D. Beadloc 12 a on ethic of the main points or the post possible predictions Conclusion B. Handline C Introduction 13. Thus belps a funnw the latest event that bagiren around the world A Books B Jaumdiam C. Headline D. Coches​</h2><br />
+                        <p><strong>Answer:</strong></p><p>10.D</p><p></p><p></p><p></p><p>11.A</p><p></p><p></p><p></p><p></p><p>12.C</p><p></p><p></p><p></p><p>13.A</p><p></p><p></p><p></p><p>keep safe po</p><p><strong>Explanation:</strong></p><p>paki ayos po ang questions </p><br />
+                                            <h2 class="ez-toc-section" id="instruction-draw-or-cut-a-picture-that-represents-the-specialized-subject-below-and-write-a-brief-explanation-about-the-picture-related-to-the-subject-2-5-sentences-every-photo-40-points-be-art">
+                            5. Instruction: Draw or cut a picture that represents the specialized subject below and write a brief explanation about the picture related to the subject. (2-5 sentences every photo) (40 POINTS). Be artistic!1. Discipline and Ideas in the Applied Social Sciences.2. Creative Nonfiction3. Philippine Politics and Governance4. Trends, Networks and Critical thinking in the 21st Century 5. Introduction to World Religions and Beliefs Systems6. Discipline and Ideas in the Social Sciences7. Creative Writing8. Community Engagement, Solidarity and Citizenship​</h2><br />
+                        <p><strong>Answer:</strong></p><p>?.</p><p><strong>Explanation:</strong></p><p>pa brainiest nman</p><p>  CA USA</p><p></p><p>Hindi ko po alam Ang asnwer</p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-1-recall-the-highlight-activities-that-you-have-accomplished-in-the-following-subjects-below-write-your-answers-on-your-answer-sheet-1-philippine-politics-and-governance-2-disciplin">
+                            6. Learning Task 1: Recall the highlight activities that you have accomplished in the following subjects below. Write your answers on your answer sheet, 1. Philippine Politics and Governance 2. Discipline and Ideas in the Social Sciences 3. Introduction of World Religions and Belief System 4. Discipline and Ideas in the Applied Social Sciences 5. Creative Writing 6. Community Engagement, Solidarity, and Citizenship 7. Creative Nonfiction 8. Trends, Networks, and Critical Thinking in the 21st Century Now that you have chosen your springboard in accomplishing this subject It is important to follow the step-by-step procedures in implementing a program As a social sciences advocate, the welfare of the community is one of the prior ties.​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Explanation:</strong></p><p><strong>1. Philippine Politics and Governance </strong></p><p>I learned about the three branches of the government. We also learned how a bill becomes a law. So we had an activity in where we create a bill and present it. Then our classmates will become divided into Congress and Senate and will decide if they will approve the bill. </p><p></p><p><strong>2. Discipline and Ideas in the Social Sciences </strong></p><p>Usually social sciences include Anthropology, Economics, Political Science, Psychology, Sociology and sometimes Criminology, Education, Geography, Law, Psychiatry, Philosophy, Religion and history.</p><p>Mostly, we were introduced to important evens in the past centuries like the Crusades, the Renaissance and the Industrial Revolution. We also took a deep dive into the World War II events. </p><p>We had reporting for the Common Wealth government and the Philippine's shift to Republic Government. </p><p> </p><p><strong>3. Introduction of World Religions and Belief System </strong></p><p>What matters is therefore not the content of beliefs, but the role they play in the life of believers. “Religious practice does not flow from belief, as a conclusion of premises, but belief consists in practice</p><p>We compared different religious system and philosophies in Asia and Africa.</p><p></p><p><strong>4. Discipline and Ideas in the Applied Social Sciences </strong></p><p>The humanities and social sciences mainly include the following disciplines: Anthropology; Archeology; Geography and Demography; Story ; Linguistics and Semiology; Memetic; Philosophy ; Psychology, Ergonomics and Cognitics; Sciences of religions; Economics (or Economics);</p><p>Applied Social Sciences are equally difficult. Because we have to base it in the reality of people living diversely. These situations are outside the textbook examples. So, we had to create essays and thesis about human experiences. Example, like discrimination and gender. Poverty and economy. </p><p></p><p><strong>5. Creative Writing </strong></p><p></p><p>The practice of creative writing covers different types of writing and aims to affirm one's personal voice from a diligent practice of literary writing and the development of critical reflexivity. Group dynamics are favored there, on the principle of writing in the workshop.</p><p>We wrote essays like argumentative and persuasive. </p><p></p><p><strong>6. Community Engagement, Solidarity, and Citizenship </strong></p><p>Civic engagement includes both political and non-political processes that aim to improve the quality of life of a population, whether at the community or societal level.</p><p>Investigating about policies were the highlight of these activities. </p><p></p><p><strong>7. Creative Nonfiction </strong></p><p>Writing about essays on global situations like the pandemic. Blogging about discrimination and travelling that involves globalization. </p><p></p><p>8. Trends, Networks, and Critical Thinking in the 21st Century Now that you have chosen your springboard in accomplishing this subject It is important to follow the step-by-step procedures in implementing a program As a social sciences advocate, the welfare of the community is one of the prior ties.​</p><p></p><p>#BrainlyFast</p><p>https://brainly.ph/question/25601389</p><br />
+                                            <h2 class="ez-toc-section" id="introduction-about-social-media-and-networking-in-your-own-words-ps-200-word%e2%80%8b">
+                            7. introduction about social media and networking? in your own words ps: 200 word​</h2><br />
+                        <p>Answer:</p><p></p><p>Social media networking are a platform that helps people maintain better relationships with their loved ones.This help facilitates development and connectivity in many parts of the world, thinks it is harmful, but it is helpful.</p><p></p><p>It is also available through blogs, blogs, podcasts, and more. In classification, We use social networks for a variety of purposes. We should observe the use of social networks and make sure that they do not affect our lives.</p><p></p><p>Advantages and Disadvantages,</p><p>You can see it everywhere these days. We think life takes up almost every area. There are strengths and weaknesses .This affects incoming students and improves their education. You can check each component.</p><p></p><p>In addition, the business community showed a very interesting response to social networking services (SNS). Companies use social network services to better connect potential customers and business partners. Job seekers are also trying to strengthen the relationship between employers and businesses. Use the website. This provides them with the best opportunity to find a better job.</p><br />
+                                            <h2 class="ez-toc-section" id="1-a-statement-uttered-directly-by-a-primary-source2-it-is-considerably-more-detailed-than-an-informal-one-3-the-senator-said-she-will-vote-for-the-renewal-of-the-network%e2%80%99s-franchise-4-e">
+                            8. 1. A statement uttered directly by a primary source
+2. It is considerably more detailed than an informal one.
+3. The senator said she will vote for the renewal of the network’s franchise.
+4. Evidence that negates or disagrees with the counterclaim.
+5. The purpose is to describe how and why things happen, and how things are to be done.
+6. Is a form of non-fiction writing which aims to convince the reader of a certain point of view.
+7. This part is the attention getter/grabber, highly engaging and motivational.
+8. Used primarily by formal speakers, politicians, business executives, etc. when they prepare their speeches well in advance.
+9. Done with little or no preparation.
+Choices Below:
+Formal outline
+Reported speech
+Direct speech
+Persuasive text
+Memorize delivery
+Manuscript delivery
+Explanatory
+Impromptu delivery
+Introduction
+Rebuttal
+If one answer is taken it cannot be taken again. Thank you! Godbless.</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.direct speech </p><p>2.manuscript delivery</p><p>3.reported speech</p><p>4.introduction</p><p>5.impromptu delivery</p><p>6.persuasive texy</p><p>7.rebuttal</p><p>8.introduction</p><p>9.formal outline</p><br />
+                                            <h2 class="ez-toc-section" id="11-this-is-the-style-of-writing-used-to-report-news-stories-in-newspapers-television-broadcasts-on-radio-and-on-the-internet-1-pointa-journalistic-writingb-radio-broadcastingc-telenovelad">
+                            9. 11. This is the style of writing used to report news stories in newspapers, television broadcasts, on radio and on the internet.
+*
+1 point
+A. Journalistic Writing
+B. Radio Broadcasting
+C. Telenovela
+D. TV Network
+12. The first sentence underneath the headline should give the reader more information on the story and sum up what it is going to be about.
+*
+1 point
+A. Title
+B. Heading
+C. Introduction
+D. Headline
+13. Should catch the reader’s attention and make them want to read more.
+*
+1 point
+A. Title
+B. Heading
+C. Introduction
+D. Headline
+14. Recap on some of the main points or suggest possible predictions.
+*
+1 point
+A. Conclusion
+B. Headline
+C. Introduction
+D. Title
+15. This helps us know the latest event that happen around the world.
+*
+1 point
+A. Books
+B. Journalism
+C. Headline
+D. Conclusion
+16. __________ a reading, viewing, or listening public.
+*
+1 point
+A. Audience
+B. News
+C. Reporter
+D. Journalism
+17. __________ a person employed by a newspaper, magazine, or television company to gather and report news.
+*
+1 point
+A. Audience
+B. News
+C. Reporter
+D. Journalism
+18. __________ a report of recent events.
+*
+1 point
+A. Audience
+B. News
+C. Reporter
+D. Journalism
+19. __________ is the act of writing about news related subjects for all mediums, print or non-print.
+*
+1 point
+A. Audience
+B. News
+C. Reporter
+D. Journalism
+20. The following are the features of journalistic writing except:
+*
+1 point
+A. Headline
+B. First sentence/Introduction-
+C. Reporter
+D. Conclusion</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. A</p><p>2. D</p><p>3. A</p><p>4. A</p><p>5. B</p><p>6. A</p><p>7. C</p><p>8. B</p><p>9. D</p><p>10. C</p><br />
+                                            <h2 class="ez-toc-section" id="identify-the-appropriate-transition-devices-to-be-used-then-indicate-its-purpose-the-emergence-of-technology-and-the-digital-era-has-undeniably-brought-about-accessibility-and-convenience-in-our-li">
+                            10. Identify the appropriate transition devices to be used. Then, indicate its purpose. The emergence of technology and the digital era has undeniably brought about accessibility and convenience in our lives. The introduction of social networking sites, 11. _____________(but, and, in particular), has revolutionized the way we communicate 12._____________( and, yet, so) socialize without having to meet face-to-face with people. Behind all these benefits and advantages, 13. ____________(although, in contrary, however), lies a myriad of consequences ko that often we neglect to see. In realityn, social networking sites are consuming our lives and daily activities at a rate faster than we can real their benefits, 14. ____________ (though, hence, so) some of the adversities may be mitigated through moderation 15. ____________ (also, and, but) responsibility. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>. do us up if to put to us to of to put to our</p><br />
+                                            <h2 class="ez-toc-section" id="label-the-following-sentences-according-to-structure-write-s-for-simple-cm-for-compound-cx-for-complex-and-cc-for-compound-complex-on-the-line-before-the-number-__________-1-the-information-age">
+                            11. Label the following sentences according to structure. Write S for simple, CM for compound, CX for complex, and CC for compound-complex on the line before the number.
+__________ 1. The information age capitalizes on remarkable inventions.
+__________ 2. The Internet has existed since the 1960s but it was introduced only in the 1990s.
+__________3. One cannot appreciate social media unless one exposes himself or herself to it.
+__________4. Because the information age continues to push humankind’s innovativeness, we are able to achieve further, and with the help of the World Web, our limitation goes beyond the ordinary.
+__________5. When British Tim Berners-Lee invented the World Wide Web, its introduction paved the way for the accessibility of networks.</h2><br />
+                        <p><strong>Answer:</strong></p><p>1 week and I will be there at the same time I don't have a car so I can get a ride to the airport on Friday and I will be there at all </p><br />
+                                            <h2 class="ez-toc-section" id="i-introduction-time-frame-15-minutes-in-the-previous-lesson-you-have-learned-that-remote-desktop-is-a-program-or-an-operating-system-feature-that-allows-a-user-to-connect-to-a-computer-in-another">
+                            12. I. Introduction (Time Frame: 15 minutes) In the previous lesson, you have learned that Remote Desktop is a program or an operating system feature that allows a user to connect to a computer in another location, see that computer's desktop and interact with it as if it were local. People use remote desktop access capabilities to do a variety of things. For your computer and other devices to be connected to one another, it needs to be connected to a network. Based on the picture below, list down the devices that can relate to one another. 1. 2. 3.​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>Introduction</strong></p>DesktopSystem unitCellphone/ tablets<p>thanks</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="covid-19-community-action-plancover-letterintroductioncommunity-profileresourcesnetworkpahelp-plss%e2%80%8b">
+                            13. COVID 19 COMMUNITY ACTION PLANCover LetterIntroduction:Community Profile:Resources:Network:Pahelp plss​</h2><br />
+                        <p><strong>Answer:</strong></p><p>HomeRoom Guidance Program</p><p>In The Picture</p><p></p><p>Questions:</p><p></p><p>1. Based on your answers what aspect of community that needs more help?</p><p></p><p>2. How will you address the issues concerning in each community?</p><p></p><p>3. As a student, what will be your biggest contribution in your community?</p><p></p><p>Need Ko Lang Po Questions 1-3 po</p><p></p><p></p><p></p><p></p><p>SORRY I DONT KKNOW</p><br />
+                                            <h2 class="ez-toc-section" id="lesson-ratio-2-given-numbers-1-introduction-read-and-page-28-learning-task-1-seat-network-to-be-answered-at-home-page-28%e2%80%8b">
+                            14. lesson ratio 2 given numbers 1 introduction. read and page 28 learning task 1 seat network to be answered at home page 28​</h2><br />
+                        <p><strong>Answer:</strong></p><p>titingin kapo sa libro nyan</p><p><strong>Step-by-step explanation:</strong></p><p>paki screenshot po</p><p>nasan po yung picture?</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="introduction-learning-task-i-direction-identify-the-following-measuring-tools-used-in-computer-system-servicing-1-it-is-an-electronic-device-used-to-verify-the-electrical-connections-in-a-signal-cab">
+                            15. INTRODUCTION LEARNING TASK I Direction: Identify the following measuring tools used in Computer System Servicing 1. It is an electronic device used to verify the electrical connections in a signal cable or other wired assembly. 2. It is a groovy little tool originally designed for testing network configurations. 3. an instrument for measuring electric potential in volts. 4. an instrument for measuring electrical resistance 5. an instrument for measuring electric current in amperes.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Cable Tester</p><p>2.Microsoft LoopBack Adapter</p><p>3.Volmeter</p><p>4.An ohmmeter</p><p>5.Ammeter</p><p><strong>Explanation:</strong></p><p>Correct if I'm wrong po</p><p></p><p><strong>Answer:</strong></p><p>1. Cable tester</p><p>2. Loop back or Loop-back adapter </p><p>3. Voltmeter</p><p>4. Analog multimeter or digital multimeter</p><p>5. Ammeter </p><p><strong>Explanation:</strong></p><p>Tama po yan </p><p>#Carryonlearning </p><br />
+                                            <h2 class="ez-toc-section" id="test-directions-read-each-question-below-and-choose-the-letter-of-the-correct-answer-write-the-answer-on-the-space-provided-before-the-number-1-what-is-the-purpose-of-an-argumentative-essay-a-to">
+                            16. Test Directions: Read each question below and choose the letter of the correct answer. Write the answer on the space provided before the number 1. What is the purpose of an argumentative essay? A. To convince the reader B. To entertain people C. To narrate an event D. To teach a lesson 2. Statistics, expert opinion, quotation and personal experience can be used in an argumentative essay as A. author's claim B. main idea C. supporting evidences D. topic sentence 3. Which is NOT necessary in an argumentative essay? A claim B. evidences C. narration D. reasons 4. Which is a question of fact? A. Are Filipinos saddened by the closure of the TV network? B. Does ABS-CBN help improve the life of the Filipinos? C. What are the possible effects of the ABS-CBN shutdown? D. Which is more beneficial - to watch TV or play outside? 5. Which is a claim of policy? A. Covid-19 pandemic has a tremendous negative effect on world economy. B. Governments need to provide financial assistance to families during a lockdown. C. Staying at home is beneficial to prevent the spread of the deadly corona virus disease. D. The origin of COVID-19 still remains uncertain but the WHO says it's most probably from animals. 6. If you want to convince others with your claim, what should you do? A. Make your claim longer and more detailed. B. Support it with reasons and evidences. C. Tell people you are serious with your claim. D. Write using effective literary and sound devices. 7. What does the introductory paragraph of an argumentative essay usually present? A. opposing arguments B. restatement of the main idea C. supporting evidences D. thesis statement or main claim 8. In which part of an argumentative essay are the reasons supporting the author's claim discussed? A. body B. conclusion C. introduction D. title 9. In an argumentative essay, the author's claim or position is usually first stated in the A. body B. conclusion C. evidence D. introduction 1. In which part of an essay can this sentence be found? So, with all these in mind, there is no doubt that we should support the liquor ban. A. body B. conclusion C. evidence D. introduction​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. A. to convince the reader</p><p>2. C. supporting evidences</p><p>3. C. narration</p><p>4. C. What are the possible effects of the ABS-CBN shutdown?</p><p>5. C. Staying at home is beneficial to prevent the spread of the deadly corona virus disease.</p><p>6. B. Support it with reasons and evidences.</p><p>7. D. thesis statement or main claim</p><p>8. A. body</p><p>9. D. introduction</p><p>10. B. conclusion</p><br />
+                                            <h2 class="ez-toc-section" id="1-panel-discussion-a-introduces-the-topic-closes-the-discussion-and-provides-a-summary-of-panel-presentation-and-discussion-2-thought-provoking-questions-b-discuss-the-issue-or-topic-and-also-rea">
+                            17. 1. Panel Discussion A. Introduces the topic, closes the discussion and provides a summary of panel presentation and discussion 2. Thought-provoking Questions B. Discuss the issue or topic and also react to other panel members' views and opinions 3. Pick out your panelists C. It is a discussion where a group of people who are skilled in a specific topic engage in conversation together in front of an audience 4. Choose your skillful moderator D. Questions are a level playing field where everyone feels that they can provide value to the discussion 5. Select a thought-provoking topic E. The room arranged in a way that encourages every member to participate, even the audience 6. Prepare the questions and prompts F. This is done before the day of the event and it can be over a meal, a networking event, or even just a casual introduction and mingling 7. Set up the room properly G. The topic isn't too general and it should have some buzz in the industry 8. Introduce the moderator to the panelists H. Powerful questions that increase audience interest, interaction and social responsibility 1. Select moderator that is 9. Panel Moderator assertive and confident, yet kind and likablepasagot po ng maayos​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1) C</p><p>2)</p><p>3)J</p><p>4)</p><p>5)G</p><p>6)B</p><p>7)E</p><p>8)I</p><p>9)</p><p>10)</p><br />
+                                            <h2 class="ez-toc-section" id="1-examples-of-forms-of-modern-communication-using-technology-are-the-television-writing-a-letter-and-radio____________________________________________________________2-communication-technology-makes">
+                            18. 1.Examples of forms of modern communication using technology are the television writing a letter and radio
+____________________________________________________________
+2.communication technology makes it possible for you send and receive messages anytime you want
+_____________________________
+3.television allows people to see place they haven .t gone to.
+____________________________________________________________
+4.radio reaches a wider audiencethan television
+______________________________ 
+ ______________________________
+ 5.a document can be sent through e-mail or fax.
+____________________________________________________________
+6.the worldwiide web ( WWW) is large than the internet
+______________________________
+7.
+The worldwide web is a network of linked document
+______________________________
+8.a fax machine can receive documents but cannot send them.
+___________________________________________________________
+9.communication technology always causes greater business productivity
+____________________________________________________________
+10.introduction of communication technology brought about new form of crime.</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Social Media.<br />2. blogs, websites, live video, social media technologies, and email communication. (KAYU NA PO PILI KUNG SAAN GUSTO MO PO)<br />3. Television allows people tp witness the happenings in our society that gives impact to their everyday living.<br />4.  listeners trust radio twice as much as social media<br />5. Email fax is exactly what it sounds like. Your business uses an email service to submit fax documents over the internet.<br />6. Much bigger. It's actually a network of networks, connecting millions of computers around the globe.<br />7. the World Wide Web is a global collection of documents and other resources, linked by hyperlinks and URIs.<br />8. A fax machine is designed to both send and receive documents so it has a sending part and a receiving part.<br />9.  Examining your organization's communication technology can help you transform employee interaction, production, and results.<br />10 The ease of technology, such as the Internet and social media platforms, has allowed criminals a means of carrying out illegal activities online against others.</p><p><strong>Explanation:</strong></p><p><strong>I HOPE ITS HELP :p</strong></p><br />
+                                            <h2 class="ez-toc-section" id="direction-match-your-answer-from-column-a-to-column-b-by-writing-your-answer-on-the-space-provided-column-a-1-it-provides-a-means-of-identification-for-managing-information-on-digital-networks2-thi">
+                            19. Direction: Match your answer from column A to column B by writing your answer on the space provided.COLUMN A.1. It provides a means of identification for managing information on digital networks2. This part of a literature review defines the topic and the scope being considered3. It offers the reviewer's justification of the conducted research.4. It is a part in the organization of the evaluation of sources chronologically.5. This is the part that accurately contains in-text citations6. Relational words and phrases are used in writing the literature to achieve _____.7. This is a literature review strategy that combines ideas in order to form an integrated theory or system through critical evaluation.8. It is closely examining the elements or structure of the research.9. This is a literature review strategy that assesses the research based on the criteria that you chose.10. It is a literature review is simply a summary of what existing scholarship knows about a particular topic.COLUMN B.a. Article Critiqueb. Evaluationc. Analysisd. Synthesise. Coherencef. Referencesg. Main Bodyh. Conclusioni. Introductionj. DOI​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.A</p><p>2.E</p><p>3.F</p><p>4.G</p><p>5.H</p><p>6.I</p><p>7.J</p><p>8.B</p><p>9.C</p><p>10.D</p><p>Hope it help you</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="identify-the-following-warm-up-exercises-1-it-aim-to-promote-and-encourage-voluntary-blood-donation-by-the-citizenry-provide-for-adequate-safe-and-affordable-and-equitable-distribution-of-blood-an">
+                            20. Identify the following warm-up exercises. 1. It aim to promote and encourage voluntary blood donation by the citizenry, provide for adequate, safe and affordable and equitable distribution of blood and blood products. 2. It refers to any representation of a child engaged or involved in real or simulated explicit sexual activities, 3. It refers to act of obtaining a person's information illegally. 4. The introduction of particulates, biological molecules, or the harmful materials into the earth's atmosphere 5. One of the most frequent causes of death among Filipinos. 6 The deposition or presence of radioactive substances in surface or within solids, liquids or gases including the human body, 7. A law that penalizes those who will be caught driving under the influence of alcohol, drugs and other similar substances. 8. The act promotes environmental awareness through environment education 9.  A person below 18 years of age or over but is unable to fully take care of himself/herself from abuse is considered 10. It refers to a computer or computer network.​</h2><br />
+                        <p>ayaw ma confirm nung answer q.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="31-this-provides-basic-information-summary-and-reader%e2%80%99s-opening-statementrelated-to-the-story-a-title-b-introduction-c-body-d-conclusion32-this-explains-the-important-points-to-part">
+                            21. 31. This provides basic information, summary, and reader’s opening statement
+related to the story.
+A. Title B. Introduction C. Body D. Conclusion
+32. This explains the important points to part of the story that the reader wants to
+talk further in relation to his/her opinions.
+5
+A. Title B. Introduction C. Body D. Conclusion
+33. This is the final statement to what the reader is discussing throughout the body of
+the paper.
+A. Title B. Introduction C. Body D. Conclusion
+34. This is the style of writing used to report news stories in newspapers, television
+broadcasts, on radio and on the internet.
+A. Journalistic Writing C. Telenovela
+B. Radio Broadcasting D. TV Network
+35. The first sentence underneath the headline should give the reader more information
+on the story and sum up what it is going to be about.
+A. Title C. Introduction
+B. Heading D. Headline
+36. Should catch the reader’s attention and make them want to read more.
+A. Title C. Introduction
+B. Heading D. Headline
+37. Recap on some of the main points or suggest possible predictions.
+A. Conclusion C. Introduction
+B. Headline D. Title
+38. It is the form of verbs used in writing a news article.
+A. headline B. past form c, third person d. caption
+39. It is a short sentence explaining what is happening in the photo.
+A. quotations B. photo C. caption D. lead
+40. It must be catchy and written in bold letters.
+A. headline B. photo C. past form D. caption</h2><br />
+                        <p><strong>Answer:</strong></p><p>31.C</p><p>32.B</p><p>33.D</p><p>34.A( I know this because I'm a journalist)</p><p>35.D</p><p>36.B</p><p>37.A</p><p>38.</p><p>39.C</p><p>40.A</p><p></p><p></p><p><strong>Explanation:</strong></p><p> Don't rely to us too much because it is my own answer it is more better to double check before you copy it</p><p></p><p>thanks</p><br />
+                                            <h2 class="ez-toc-section" id="check-your-understanding-identify-what-is-asked-in-the-following-sentences-and-write-your-answer-on-the-space-provided-1-a-set-of-symbols-that-developers-use-to-specify-the-headings-paragraphs-imag">
+                            22. CHECK YOUR UNDERSTANDING Identify what is asked in the following sentences and write your answer on the space provided 1. A set of symbols that developers use to specify the headings, paragraphs, images, links, and other content elements that a webpage contains 2. An application software where user can edit, delete, save word documents. 3. An application that enables users with an Internet connection to access and view webpages on on a computer or mobile device. 4. It is consists of a worldwide collection of electronic documents or webpages. 5. A worldwide collection of networks that connects millions of businesses, government agencies, educational institutions, and individuals. BRIEF INTRODUCTION imunting data to make it more usef​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The used value of a CSS property is its value after all calculations have been performed on the computed value. After the user agent has finished its calculations, every CSS property has a used value. The used values of dimensions (e.g., width , line-height ) are in pixels.</p><br />
+                                            <h2 class="ez-toc-section" id="learning-activity-1-netiquettewrite-n-if-the-statement-shows-netiquette-and-nt-if-it-does-not-1-allow-others-to-express-themselves-too2-look-and-listen-before-you-leap-3-using-capital-letters">
+                            23. LEARNING ACTIVITY 1- NETIQUETTE
+Write N if the statement shows Netiquette and NT, if it does not.
+1. Allow others to express themselves too
+2. Look and listen before you leap.
+3. Using capital letters all the time.
+4. Be respectful, courteous and honest in all of your online networking activities.
+5. Use anonymous account to take advantage of other people.
+6. Show appreciation when others provide assistance to you and to your contacts.
+7. Overwhelm your contacts with too many requests for introductions and assistance.
+8. Don't use all capital letters when composing your responses
+9. The use of acronyms in messages are good to use for all ages.
+10. Be careful when using acronyms.</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.NT</p><p>2.N</p><p>3.N</p><p>4.NT</p><p>5.NT</p><p>6.N</p><p>7.NT</p><p>8.N</p><p>9.NT</p><p>10.NT</p><p><strong>Explanation:</strong></p><p>ang cute ko ^_^</p><p></p><p><strong>Answer:</strong></p><p>1.N</p><p>2.N</p><p>3.NT</p><p>4.NT</p><p>5.NT</p><p>6.N</p><p>7.NT</p><p>8.N</p><p>9.N</p><p>10.NT</p><p><strong>Explanation:</strong></p><p>YAN PO PA BRAINLEST AND HEART</p><p>#CARRY ON LEARNING:)</p><br />
+                                            <h2 class="ez-toc-section" id="activity-2-1-climate-change2-medicinal-plants-3-social-networking-4-cultural-beliefs5-communication-skills-activity-3-my-proposal-research-study-based-on-the-topic-that-you-have-chosen-in-ac">
+                            24. (activity 2) 1. climate change,2 medicinal plants, 3. social networking, 4. cultural beliefs,5 communication skills activity 3. My proposal research study based on the topic that you have chosen in activity 2 using the narrowing chart write 1 proposal research title, sample of background of the study statement of the problem scope and limitation and signification of the studya.proposal research title: b. background of the study (introduction) c. statement of the problem d. scope and delimitation .e.significance of the study​</h2><br />
+                        <strong>ENJOY</strong><strong>!</strong><p></p><p>We're no strangers to love</p><p>You know the rules and so do I</p><p>A full commitment's what I'm thinking of</p><p>You wouldn't get this from any other guy</p><p>I just wanna tell you how I'm feeling</p><p>Gotta make you understand</p><p>Never gonna give you up</p><p>Never gonna let you down</p><p>Never gonna run around and desert you</p><p>Never gonna make you cry</p><p>Never gonna say goodbye</p><p>Never gonna tell a lie and hurt you</p><p>We've known each other for so long</p><p>Your heart's been aching but you're too shy to say it</p><p>Inside we both know what's been going on</p><p>We know the game and we're gonna play it</p><p>And if you ask me how I'm feeling</p><p>Don't tell me you're too blind to see</p><p>Never gonna give you up</p><p>Never gonna let you down</p><p>Never gonna run around and desert you</p><p>Never gonna make you cry</p><p>Never gonna say goodbye</p><p>Never gonna tell a lie and hurt you</p><p>Never gonna give you up</p><p>Never gonna let you down</p><p>Never gonna run around and desert you</p><p>Never gonna make you cry</p><p>Never gonna say goodbye</p><p>Never gonna tell a lie and hurt you</p><p>Never gonna give, never gonna give</p><p>(Give you up)</p><p>We've known each other for so long</p><p>Your heart's been aching but you're too shy to say it</p><p>Inside we both know what's been going on</p><p>We know the game and we're gonna play it</p><p>I just wanna tell you how I'm feeling</p><p>Gotta make you understand</p><p>Never gonna give you up</p><p>Never gonna let you down</p><p>Never gonna run around and desert you</p><p>Never gonna make you cry</p><p>Never gonna say goodbye</p><p>Never gonna tell a lie and hurt you</p><p>Never gonna give you up</p><p>Never gonna let you down</p><p>Never gonna run around and desert you</p><p>Never gonna make you cry</p><p>Never gonna say goodbye</p><p>Never gonna tell a lie and hurt you</p><p>Never gonna give you up</p><p>Never gonna let you down</p><p>Never gonna run around and desert you</p><p>Never gonna make you cry</p><p>Never gonna say goodbye</p><p></p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><p>[tex] \pink{ \rule{500pt}{100000pt}}[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="importance-of-the-human-heart-the-heart-is-a-muscular-organ-about-the-size-of-a-fist-located-just-behind-and-slightly-left-of-the-breastbone-the-heart-pumps-blood-through-the-network-of-arteries-and">
+                            25. Importance of the Human Heart The heart is a muscular organ about the size of a fist, located just behind and slightly left of the breastbone. The heart pumps blood through the network of arteries and veins called the cardiovascular system. The heart has four chambers: The right atrium receives blood from the veins and pumps it to the right ventricle. The right ventricle receives blood from the right atrium and pumps it to the lungs, where it is loaded with oxygen. The left atrium receives oxygenated blood from the lungs and pumps it to the left ventri- cle, The left ventricle (the strongest chamber) pumps oxygen-rich blood to the rest of the body. The left ventricle's vigorous contractions create our blood pressure. The heart is important because it pumps blood around your body, delivering oxygen and nutrients to your cells and removing waste products. There are valves between the atria and ventricles that make sure blood flows in one direction through your heart. INTRODUCTION BODY CONCLUSION​</h2><br />
+                        <p><strong>Answer:</strong></p><p>to the right ventricle. The right ventricle receives blood from the right atrium and pumps it to the lungs, where it is loaded with oxygen. The left atrium receives oxygenated blood from the lungs and pumps it to the left ventri- cle, The left ventricle (the strongest chamber) pumps oxygen-rich blood to the rest of the body. The left ventricle's vigorous contractions create our blood pressure. The heart is important because it pumps blood around your body, delivering oxygen and nutrients to your cells and removing waste products. There are valves between the atria and ventricles that make sure blood flows in one direction through your heart. INTRODUCTION BODY CONCLUSION</p><p><strong>Explanation:</strong></p><p>to the right ventricle. The right ventricle receives blood from the right atrium and pumps it to the lungs, where it is loaded with oxygen. The left atrium receives oxygenated blood from the lungs and pumps it to the left ventri- cle, The left ventricle (the strongest chamber) pumps oxygen-rich blood to the rest of the body. The left ventricle's vigorous contractions create our blood pressure. The heart is important because it pumps blood around your body, delivering oxygen and nutrients to your cells and removing waste products. There are valves between the atria and ventricles that make sure blood flows in one direction through your heart. INTRODUCTION BODY CONCLUSION</p><p></p><p><strong>Answer:</strong></p><p>Tama or mali yta sagot nila haha</p><br />
+                                            <h2 class="ez-toc-section" id="6-the-worldwide-web-www-is-larger-than-the-internet7-the-worldwide-web-is-a-network-of-linked-documents-28-a-fax-machine-can-receive-documents-but-cannot-send-them9-communication-technology-alway">
+                            26. 6. The Worldwide Web (WWW) is larger than the Internet7. The Worldwide Web is a network of linked documents.28.A fax machine can receive documents but cannot send them,9.Communication technology always causes greater business productivity,10.The introduction of communication technology brought about new formsof crime,​</h2><br />
+                        <p><strong>Answer:</strong></p><p>6. False</p><p>To start, the internet is bigger. Much bigger. It's actually a network of networks, connecting millions of computers around the globe. The World Wide Web uses Hypertext Transfer Protocol (HTTP) - a language used to transmit data - to access information that lives on different networks.</p><p>7.True</p><p>The World Wide Web is a system for displaying text, graphics, and audio retrieved over. A hypertext document with its corresponding text and hyperlinks is written in HyperText Markup Language (HTML) and is assigned an online address called a Uniform Resource Locator (URL).</p><p>8.False</p><p>A fax machine uses an active telephone landline to send and receive documents, and using one is as easy as dialing a telephone number. Once you properly set up your fax machine and familiarize yourself with the methods for sending and receiving a fax, you’ll be sending documents with ease in no time</p><p>9.True</p><p>Communications play a profound role in the productivity of your business. Examining your organization's communication technology can help you transform employee interaction, production, and results. This transformation can lead your business to increased profits and opportunities for growth.
+</p><p>
+10.True</p><p>The ease of technology, such as the Internet and social media platforms, has allowed criminals a means of carrying out illegal activities online against others. At the same time, the criminal justice system can also leverage the power of technology to help stop, find, or prevent these crimes altogether.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-a-statement-uttered-directly-by-a-primary-source2-it-is-considerably-more-detailed-than-an-informal-one-3-the-senator-said-she-will-vote-for-the-renewal-of-the-network%e2%80%99s-franchise-4-e">
+                            27. 1. A statement uttered directly by a primary source
+2. It is considerably more detailed than an informal one.
+3. The senator said she will vote for the renewal of the network’s franchise.
+4. Evidence that negates or disagrees with the counterclaim.
+5. The purpose is to describe how and why things happen, and how things are to be done.
+6. Is a form of non-fiction writing which aims to convince the reader of a certain point of view.
+7. This part is the attention getter/grabber, highly engaging and motivational.
+8. Used primarily by formal speakers, politicians, business executives, etc. when they prepare their speeches well in advance.
+9. Done with little or no preparation.
+Choices Below:
+Formal outline
+Reported speech
+Direct speech
+Persuasive text
+Memorize delivery
+Manuscript delivery
+Explanatory
+Impromptu delivery
+Introduction
+Rebuttal
+If one answer is taken it cannot be taken again. Thank you! Godbless.</h2><br />
+                        <p>answer:</p><p>1.<strong>p</strong><strong>e</strong><strong>r</strong><strong>s</strong><strong>u</strong><strong>a</strong><strong>s</strong><strong>i</strong><strong>v</strong><strong>e</strong><strong> </strong><strong>text</strong></p><p>2.<strong>f</strong><strong>o</strong><strong>r</strong><strong>m</strong><strong>a</strong><strong>t</strong><strong> </strong><strong>outline</strong><strong> </strong></p><p>3.<strong>r</strong><strong>e</strong><strong>b</strong><strong>u</strong><strong>t</strong><strong>t</strong><strong>a</strong><strong>l</strong></p><p>4.<strong>r</strong><strong>e</strong><strong>p</strong><strong>o</strong><strong>r</strong><strong>t</strong><strong>e</strong><strong>d</strong><strong> </strong><strong>speeche</strong></p><p>5.<strong>i</strong><strong>n</strong><strong>t</strong><strong>r</strong><strong>o</strong><strong>d</strong><strong>u</strong><strong>c</strong><strong>t</strong><strong>i</strong><strong>o</strong><strong>n</strong><strong> </strong></p><p>6.<strong>e</strong><strong>x</strong><strong>p</strong><strong>l</strong><strong>a</strong><strong>n</strong><strong>a</strong><strong>t</strong><strong>o</strong><strong>r</strong><strong>y</strong></p><p>7.<strong>d</strong><strong>i</strong><strong>r</strong><strong>e</strong><strong>c</strong><strong>t</strong><strong> </strong><strong>speech</strong></p><p>8.<strong>m</strong><strong>a</strong><strong>n</strong><strong>u</strong><strong>s</strong><strong>r</strong><strong>i</strong><strong>p</strong><strong>t</strong><strong> </strong><strong>delivery</strong></p><p>9.<strong>i</strong><strong>n</strong><strong>p</strong><strong>r</strong><strong>o</strong><strong>m</strong><strong>t</strong><strong>u</strong><strong> </strong><strong>delivery</strong></p><p><strong>Explanation:</strong></p>correct me if I'm wrong <p></p><strong>#</strong><strong>c</strong><strong>a</strong><strong>r</strong><strong>r</strong><strong>y</strong><strong> </strong><strong>on</strong><strong> </strong><strong>learning</strong><strong> </strong><br />
+                                            <h2 class="ez-toc-section" id="2-communication-technology-makes-it-possible-for-you-to-send-and-receive-messages-anytime-you-want-3-television-allows-people-to-see-places-they-haven%e2%80%99t-gone-to-4-radio-reaches-a-wider-au">
+                            28. 2. Communication technology makes it possible for you to send and receive messages anytime you want.
+3. Television allows people to see places they haven’t gone to.
+4. Radio reaches a wider audience than television.
+5. A document can be sent through e-mail or fax.
+6. The Worldwide Web (WWW) is larger than the Internet.
+7. The Worldwide Web is a network of linked documents.
+8. A fax machine can receive documents but cannot send them.
+9. Communication technology always causes greater business productivity.
+10. The introduction of communication technology brought about new forms of crime.
+11. The Internet is an example of a network.
+12. The subscribers of Smart and Globe are considered part of a network.
+13. Voice is transmitted through a telephone in the same manner that a document is transmitted through a fax
+machine.
+14. Communication technology always makes people closer to each other.
+15. Workers are always more productive with the presence of modern communication tools. 
+TRUE OR FALSE??</h2><br />
+                        <p><strong>Answer:</strong></p><p>2.TRUE</p><p>3.TRUE</p><p>4.FALSE</p><p>5.TRUE</p><p>6.TRUE</p><p>7.TRUE</p><p>8.TRUE</p><p>9.TRUE</p><p>10.TRUE</p><p>11.TRUE</p><p>12.TRUE</p><p>13.TRUE</p><p>14.TRUE</p><p>15.TRUE</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="directions-read-the-text-carefully-outline-the-text-using-the-sample-outline-format-below-you-can-modify-or-change-the-format-setting-depending-on-the-manner-of-your-outlining-write-the-outlin">
+                            29. 
+Directions: Read the text carefully. Outline the text using the sample outline format below---(you can modify or change the format setting depending on the manner of your outlining). Write the outline on your paper.
+A person who starts and develops a business is called an entrepreneur. Being an entrepreneur can involve a lot of financial and even career risk, but for those who succeed, the potential payoffs can be huge.
+The United States has literally been shaped by the vision and efforts of its entrepreneurs. Andrew Carnegie expanded the American steel industry in the late 1800s and became one of history's richest Americans. Thomas
+Modem entrepreneurs include Steve Jobs, co-founder of Apple Computer, shepherded Apple's introduction of the iPod and the iPhone. and helped to fund the animation giant Pixar. Martha Stewart bull upon the popularity of her T.V. shows to create her own brand of household products. Oprah Winfrey went from being a part-time newscaster to a popular talk show host whose entertainment empire includes a magazine and a T.V. network.
+​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Explanation:</strong></p><p>Pasagot po</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="activity-2-1-climate-change2-medicinal-plants-3-social-networking-4-cultural-beliefs5-communication-skills-activity-3my-proposal-research-study-based-on-the-topic-that-you-have-chosen-in-ac">
+                            30. (activity 2) 1. climate change,2 medicinal plants, 3. social networking, 4. cultural beliefs,5 communication skills (activity 3)My proposal research study based on the topic that you have chosen in activity 2 using the narrowing chart write 1 proposal research title, sample of background of the study statement of the problem scope and limitation and signification of the studya proposal research title: b. background of the study (introduction) c. statement of the problemd. scope and delimitatione.significance of the study​</h2><br />
+                         <strong>a</strong><strong>n</strong><strong>s</strong><strong>w</strong><strong>e</strong><strong>r</strong><strong>:</strong><p><strong>A</strong><strong> </strong><strong>p</strong><strong>o</strong><strong> </strong></p><p></p><strong>s</strong><strong>o</strong><strong>r</strong><strong>r</strong><strong>y</strong><strong> </strong><strong>p</strong><strong>o</strong><strong> </strong><strong>k</strong><strong>u</strong><strong>n</strong><strong> </strong><strong>m</strong><strong>a</strong><strong>l</strong><strong>i</strong><strong> </strong><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/sKPD358dIxM?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>computer_science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/what-s-up-chords.html">What s Up Chords</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/parts-of-respiratory-system-and-its-function-pdf.html">Parts Of Respiratory System And Its Function Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/wheeler-s-curriculum-development-model-strengths-and-weaknesses.html">Wheeler s Curriculum Development Model Strengths And Weaknesses</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/a-mother-s-prayer-chords-and-lyrics.html">A Mother s Prayer Chords And Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/letting-go-the-pathway-of-surrender-pdf.html">Letting Go The Pathway Of Surrender Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/help-me-it-s-like-the-walls-are-caving-in.html">Help Me It s Like The Walls Are Caving In</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/general-science-question-answer-pdf.html">General Science Question Answer Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/aqw-grimoire-latest-version.html">Aqw Grimoire Latest Version</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/christus-vivit-summary.html">Christus Vivit Summary</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-dialogue-uses-conditional-sentences.html">The Dialogue Uses Conditional Sentences</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-html-global-attribute-contenteditable-is-used-to.html">The Html Global Attribute Contenteditable Is Used To</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/apo-hiking-society-hanggang-may-pag-ibig.html">Apo Hiking Society Hanggang May Pag Ibig</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/republic-act-9155-explanation.html">Republic Act 9155 Explanation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/physics-behind-martial-arts.html">Physics Behind Martial Arts</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ano-ang-ampalaya.html">Ano Ang Ampalaya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/parts-of-table-in-tabulation.html">Parts Of Table In Tabulation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/teoryang-romantisismo-halimbawa-ng-kwento.html">Teoryang Romantisismo Halimbawa Ng Kwento</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/no-mans-sky-guide-book.html">No Man&#039;s Sky Guide Book</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/absite-surgery-pdf.html">Absite Surgery Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ambon-ambon-falls-laurel-batangas.html">Ambon Ambon Falls Laurel Batangas</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

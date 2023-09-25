@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Principal Minors Of A 3x3 Matrix - QnA</title>
+    <meta name="description" content="Principal Minors Of A 3x3 Matrix, Minors and Cofactors of a Matrix, , , , Asquared math, 2020-05-02T16:27:14.000000Z, 20, Minor of Matrix — Python Challenges, arctraining.github.io, 772 x 562, png, , 20, principal-minors-of-a-3x3-matrix, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Principal Minors Of A 3x3 Matrix - QnA" />
+    <meta property="og:description" content="Principal Minors Of A 3x3 Matrix, Minors and Cofactors of a Matrix, , , , Asquared math, 2020-05-02T16:27:14.000000Z, 20, Minor of Matrix — Python Challenges, arctraining.github.io, 772 x 562, png, , 20, principal-minors-of-a-3x3-matrix, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Principal Minors Of A 3x3 Matrix - QnA" />
+    <meta name="twitter:description" content="Principal Minors Of A 3x3 Matrix, Minors and Cofactors of a Matrix, , , , Asquared math, 2020-05-02T16:27:14.000000Z, 20, Minor of Matrix — Python Challenges, arctraining.github.io, 772 x 562, png, , 20, principal-minors-of-a-3x3-matrix, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Principal Minors Of A 3x3 Matrix</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Zeneil</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Principal+Minors+Of+A+3x3+Matrix" alt="Principal Minors Of A 3x3 Matrix">
+                    </div>
+                    <p></p>
+                    <p>How to solve 5 by 5 matrix in expanding by minors by row?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-to-solve-5-by-5-matrix-in-expanding-by-minors-by-row">1.
+                                            How to solve 5 by 5 matrix in expanding by minors by row?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-dimensions-of-matrices-is-appropriate-to-multiply-in-a-3-x-2-matrix-so-that-the-product-is-a-3-x-2-matrix-2x3-3x3-2x2-3x2%e2%80%8b">2.
+                                            Which of the following dimensions of matrices is appropriate to multiply in a 3 x 2 matrix so that the product is a 3 x 2 matrix? 2x3 3x3 2x2 3x2​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-________-matrix-is-divided-into-red-yellow-and-green-zones-representing-major-moderate-and-minor-risks">3.
+                                            The ________ matrix is divided into red, yellow, and green zones representing major, moderate, and minor risks.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-profile-matrix-and-proximity-matrix%e2%80%8b">4.
+                                            what is profile matrix and proximity matrix?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-one-of-the-three-principal-gallo-graphical-additions-of-the-philippines-consisting-of-major-and-minor-island-a-luzonb-visayasc-mindanaod-none-of-the-above%e2%80%8b">5.
+                                            It is one of the three principal gallo graphical additions of the philippines consisting of major and minor island.A. LuzonB. VisayasC. MindanaoD. None of the above​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#one-of-the-three-principal-geographical-division-of-philippines-consisting-of-major-in-minor-island%e2%80%8b">6.
+                                            one of the three principal geographical division of philippines consisting of major in minor island​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-groups-of-chords-based-on-the-principal-chords-that-are-found-in-harmony-called-a-vocal-chord-b-minor-chord-c-family-chord-d-guitar-chord">7.
+                                            What are the groups of chords based on the principal chords that are found in harmony called? * a. Vocal chord b. Minor chord c. Family chord d. Guitar chord</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#one-of-the-three-principal-geographicaldivisions-of-the-philippines-consisting-of-major-and-minor-islands-it-consistsof-three-administrative-regions-central-eastern-and-wester-cebuanohiligayno">8.
+                                            One of the three principal geographical
+divisions of the Philippines consisting of major and minor islands. It consists
+of three administrative regions: Central, Eastern and Wester. Cebuano,
+Hiligaynon, Kinaray-a, Akeanon.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#brainliest-sa-makaka-sagot-tyactivity-3-1-find-the-minor-and-cofactor-of-the-given-matrix-answers-onlya_22-b_12-c_23-a_12-b_11-c_21-a_11-b_21-c_33-c_13">9.
+                                            brainliest sa makaka sagot tyActivity 3.1. Find the minor and cofactor of the given matrix. Answers only!a_22 *b_12 *c_23 *a_12 *b_11 *c_21 *a_11 *b_21 *c_33 *c_13 *</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4x-3x3-3x3-4x%e2%80%8b">10.
+                                            (4x - 3x3) - (3x3 + 4x)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3x3-12x2-5x-503x3-4x2-3x-160%e2%80%8b">11.
+                                            3x3 - 12x2 - 5x - 503x3 - 4x2 + 3x - 160​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#31-what-is-the-simplified-product-of-3x-x2-%e2%80%93-5x-7-a-3x3-15x2-21x-c-3x3-15x2-21x-b-3x3-15x2-21x-d-3x3-15x2-21x%e2%80%8b">12.
+                                            31. What is the simplified product of 3x (x2 – 5x - 7)? A. 3x3 - 15x2 + 21x C. 3x3 + 15x2 + 21x B. 3x3 + 15x2-21x D. 3x3 - 15x2 - 21x​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-visayas-is-one-of-the-three-principal-geographical-divisions-of-the-philippines-consisting-of-majorand-minor-islandstrue-or-false%e2%80%8b">13.
+                                            1. Visayas is one of the three principal geographical divisions of the Philippines consisting of majorand minor islands(True or False)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#simplify-x2-x-13x-2-use-the-horizontal-methoda-3x3-x2-x-2b-3x3-5x2-x-2c-3x3-x2-5x-2d-3x3-x2-2%e2%80%8b">14.
+                                            Simplify (x2 + x + 1)(3x - 2). Use the horizontal methoda. 3x3 + x2 + x-2b. 3x3 - 5x2 + x - 2c. 3x3 + x2 + 5x - 2d. 3x3 + x2 - 2​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#subtract-x32x2-x7-from-4x36x22x-7a-3x34x23x-14b-3x3-4x2-3x14c-3x34x23xd-3x34x23x-14report-nanggugulo">15.
+                                            Subtract (x3+2x2-x+7) from (4x3+6x2+2x-7)
+A. -3x3+4x2+3x-14
+B. -3x3-4x2-3x+14
+C. 3x3+4x2+3x
+D. 3x3+4x2+3x-14
+REPORT NANGGUGULO</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#for-the-given-ellipse-find-the-principal-axis-center-foci-vertices-co-vertices-length-of-major-and-minor-axis-then-sketch-the-graph-%e2%80%8b">16.
+                                            For the given ellipse, find the principal axis, center, foci, vertices, co-vertices, length of major and minor axis then sketch the graph.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-is-one-of-the-three-principal-geographicaldivisions-of-the-philippines-consisting-of-major-and-minorislands-which-is-divided-into-3-administrative-regions-%e2%80%8b">17.
+                                            1. It is one of the three principal geographicaldivisions of the Philippines consisting of major and minorislands which is divided into 3 administrative regions.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#simplify-2x3-4x2-8x-12-x3-5x2-7x-10a-3x3-x2-x-22c-3x3-9x2-x-22b-3x3-x2-x-22d-3x3-9x2-x-22fyaluate-fi-%e2%80%8b">18.
+                                            Simplify: (2x3 - 4x2 + 8x + 12) + (x3 + 5x2 - 7x + 10)A. 3x3 + x2 + x + 22C. 3x3 - 9x2 + x + 22B. 3x3 + x2 - x + 22D. 3x3 - 9x2 - x + 22Fyaluate fi-​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#to-show-how-variables-are-closely-related-with-one-another-you-must-usea-data-matrixc-proximity-matrixb-profile-matrixd-table-matrix">19.
+                                            To show how variables are closely related with one another, you must use
+a. data matrix
+c. proximity matrix
+b. profile matrix
+d. table matrix</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-matrix-of-order-1-is-a-square-matrix-is-it-true-or-false%e2%80%8b">20.
+                                            a matrix of order 1 is a square matrix. Is it true or false?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-principal-suggestion-that-minor-changes-in-training-regimens-yield-more-consistence-gains-in-sports-performance-%e2%80%8b">21.
+                                            Which principal suggestion that minor changes in training regimens yield more consistence gains in sports performance. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-give-the-relative-minor-scale-of-each-major-scale-by-writing-the-answer-on-the-space-provide1-d-majorb-minorc-minorf-minorg-minord-minor2-e-majorb-minorc-minorf-minorg">22.
+                                            Direction: Give the relative minor scale of each major scale by writing the answer on the 
+space provide:
+1. D Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor
+2. E Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor
+3. A Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor
+4. B Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor
+5. F# Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#let-a-be-a-3x3-matrix-with-real-entries-such-that-a2-5a-6i-0-where-i-is-the-3x3-identity-matrix-let-fx-detxi-a-be-the-characteristic-polynomial-of-a-a-find-the-eigenvalues-of-a-b">23.
+                                             Let A be a 3x3 matrix with real entries such that A^2 - 5A + 6I = 0, where I is the 3x3 identity matrix. Let f(x) = det(xI - A) be the characteristic polynomial of A. a) Find the eigenvalues of A. b) Find a basis for each eigenspace of A. c) Use the eigenvalues and eigenvectors to diagonalize A. d) Use the diagonalization of A to compute the integral of e^(2t)A^t dt from 0 to infinity. need answer rn.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#subtract-4x%c2%b3%e2%88%92-x%c2%b2-1-from-7x%c2%b3-2x-%e2%88%923-a-%e2%88%923x3%e2%88%92x22x%e2%88%924-b-3x3x22x%e2%88%924-c-3x3%e2%88%92x22x4-d-3x3%e2%88%92x2%e2%88%922x%e2%88%924pa">24.
+                                            Subtract 4x³− x²+ 1 from 7x³ + 2x −3. 
+a. −3x3−x2+2x−4 
+b. 3x3+x2+2x−4 
+c. 3x3−x2+2x+4 
+d. 3x3−x2−2x−4
+Pahelp po please</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3x3-x%c2%b2x2x%c2%b28-1tex3x3-x2x2-8-1-tex%e2%80%8b">25.
+                                            3x3-x²x2x²+8-1[tex]3x3 - x2x2 + 8 - 1 [/tex]​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#one-of-the-three-principal-geographical-divisions-of-the-philippines-consisting-of-major-and-minor-islands">26.
+                                            One of the three principal geographical divisions of the Philippines consisting of major and minor islands</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#19-which-of-the-following-is-the-difference-of-3x3-%e2%80%93-x2-4x-2-5x2-%e2%80%93-7x-3-a-3x3-%e2%80%93-6x-3x-1-c-3x3-6x2-3x-%e2%80%93-1-b-3x3-6x-3x-1-d-3x3">27.
+                                            - - - - 19. Which of the following is the difference of (3x3 – x2 - 4x + 2) - (5x2 – 7x + 3)? A.3x3 – 6x - 3x - 1 C. 3x3 + 6x2 + 3x – 1 B. 3x3 + 6x - 3x + 1 D. 3x3 – 6x2 + 3x - 1 ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#visaya-is-one-of-the-three-principal-geographical-division-of-the-philippines-consisiting-of-major-and-minor-islands-it-consists-of-three-adminitrative-regions-central-easternand%e2%80%8b">28.
+                                            Visaya is one of the three principal geographical division of the philippines consisiting of major and minor islands. It consists of three adminitrative regions. Central eastern,and​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-subtract-and-simplify-7x3-%e2%80%93-5x-8-4x3-%e2%80%93-2x-1a-3x3-3x-7c-3x3-3x-7b-3x3-7x-7d-3x3-7x-7%e2%80%8b">29.
+                                            8. Subtract and simplify: (7x3 – 5x + 8) - (4x3 – 2x + 1)A. 3x3 + 3x - 7C. 3x3 -3x +7B. 3x3 - 7x - 7D. 3x3-7x + 7​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#12-what-is-3x33-equal-toa-3x3b-6x6%e2%80%8b">30.
+                                            12. What is ( 3x3)3 equal to?A. 3x3B. 6x6​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="how-to-solve-5-by-5-matrix-in-expanding-by-minors-by-row">
+                            1. How to solve 5 by 5 matrix in expanding by minors by row?</h2><br />
+                        As we have previously stated, the basic data element in the
+MATLAB system is the array. A scalar is represented as a
+array—that is, an array with one row and one column.
+Vectors are one-dimensional arrays. An array is
+called a column vector, where m is the number of rows in
+the single-column array. A array is called a row vector,
+where n is the number of columns in the single-row
+array. Array elements may be numbers, characters, strings,
+other arrays, or structures. Recall that the elements in an
+array must be uniform. A special type of array, called a cell
+array, allows nonuniform elements.
+MATLAB supports multidimensional arrays. A matrix
+is a special case of an array. A matrix is a rectangular array
+containing elements of any specified algebraic system, usually
+real or complex numbers. The English mathematician
+Arthur Cayley first introduced the concept of a matrix in the
+mid-19th century. Matrices are employed to help solve systems
+of linear equations and to perform linear transformations.
+This chapter describes several applications of matrix
+algebra to scientific and engineering problems.
+MATLAB arrays are, by default, self-dimensioning.
+That is, if we initialize an array with a set of values, MATLAB
+automatically allocates the correct amount of space for
+the array. If you append an element to an array, MATLAB
+automatically resizes the array to handle the new element.
+This is different from many programming languages, where
+memory allocation and array sizing takes a considerable
+amount of programming effort.<br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-dimensions-of-matrices-is-appropriate-to-multiply-in-a-3-x-2-matrix-so-that-the-product-is-a-3-x-2-matrix-2x3-3x3-2x2-3x2%e2%80%8b">
+                            2. Which of the following dimensions of matrices is appropriate to multiply in a 3 x 2 matrix so that the product is a 3 x 2 matrix? 2x3 3x3 2x2 3x2​</h2><br />
+                        <p><strong>Answer:</strong></p><p>may answer key po yan sa likod</p><br />
+                                            <h2 class="ez-toc-section" id="the-________-matrix-is-divided-into-red-yellow-and-green-zones-representing-major-moderate-and-minor-risks">
+                            3. The ________ matrix is divided into red, yellow, and green zones representing major, moderate, and minor risks.</h2><br />
+                        <p><strong>Answer:</strong></p><p>risk matrix</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-profile-matrix-and-proximity-matrix%e2%80%8b">
+                            4. what is profile matrix and proximity matrix?​</h2><br />
+                        <p> </p><p>Proximity matrix simply stores the distances between each two points.</p><p>The profile matrix identifies a firm's key competitors and compares them using industry's critical success factors. </p><p> </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="it-is-one-of-the-three-principal-gallo-graphical-additions-of-the-philippines-consisting-of-major-and-minor-island-a-luzonb-visayasc-mindanaod-none-of-the-above%e2%80%8b">
+                            5. It is one of the three principal gallo graphical additions of the philippines consisting of major and minor island.A. LuzonB. VisayasC. MindanaoD. None of the above​</h2><br />
+                        <p><strong>Answer:</strong></p><p>visayas ata</p><p></p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="one-of-the-three-principal-geographical-division-of-philippines-consisting-of-major-in-minor-island%e2%80%8b">
+                            6. one of the three principal geographical division of philippines consisting of major in minor island​</h2><br />
+                        <p><strong>Answer:</strong></p><p>
+</p><p>Image result for one of the three principal geographical division of philippines consisting of major in minor island
+</p><p>The country can be divided into three main areas: Luzon (the largest, northernmost island, which includes Manila); a group of islands called the Visayas (including the major islands Panay, Negros, Cebu, Bohol, Leyte, Samar, and Masbate); and Mindanao, the second-largest island in the Philippines, found at the southern ...</p><p><strong>Explanation:</strong></p><p>Province	Region	Island group
+</p><p>Sulu	BARMM	Mindanao
+</p><p>Tawi-Tawi	BARMM	Mindanao</p><p></p><p></p><p>Im not sure,But i hoped it help:) yan ang naintindihan ko hehe</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-groups-of-chords-based-on-the-principal-chords-that-are-found-in-harmony-called-a-vocal-chord-b-minor-chord-c-family-chord-d-guitar-chord">
+                            7. What are the groups of chords based on the principal chords that are found in harmony called? * a. Vocal chord b. Minor chord c. Family chord d. Guitar chord</h2><br />
+                        Qᴜᴇꜱᴛɪᴏɴ <p></p><p>➻   ᴡʜᴀᴛ ᴀʀᴇ ᴛʜᴇ ɢʀᴏᴜᴘꜱ ᴏꜰ ᴄʜᴏʀᴅꜱ ʙᴀꜱᴇᴅ ᴏɴ ᴛʜᴇ ᴘʀɪɴᴄɪᴘᴀʟ ᴄʜᴏʀᴅꜱ ᴛʜᴀᴛ ᴀʀᴇ ꜰᴏᴜɴᴅ ɪɴ ʜᴀʀᴍᴏɴʏ ᴄᴀʟʟᴇᴅ?</p><p></p><p></p><p></p><p></p><p>ᴀɴꜱᴡᴇʀ:</p><p>A sequence of chords is known as a <strong>chord progression or harmonic progression</strong>. These are frequently used in Western music. A chord progression "aims for a definite goal" of establishing (or contradicting) a tonality founded on a key, root or tonic chord.</p><p></p><p></p><p>➻ ᴅ. ɢᴜɪᴛᴀʀ ᴄʜᴏʀᴅ</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>ᴅᴀᴛᴇ: ᴍᴀʏ 17. 2022</p><br />
+                                            <h2 class="ez-toc-section" id="one-of-the-three-principal-geographicaldivisions-of-the-philippines-consisting-of-major-and-minor-islands-it-consistsof-three-administrative-regions-central-eastern-and-wester-cebuanohiligayno">
+                            8. One of the three principal geographical
+divisions of the Philippines consisting of major and minor islands. It consists
+of three administrative regions: Central, Eastern and Wester. Cebuano,
+Hiligaynon, Kinaray-a, Akeanon.</h2><br />
+                        <p> </p><p>The Philippines is one of the world's largest archipelago nations. It is situated in Southeast Asia in the Western Pacific Ocean. Its islands are classified into three main geographical areas – Luzon, Visayas, and Mindanao. Because of its archipelagic nature, Philippines is a culturally diverse country.</p><p> </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="brainliest-sa-makaka-sagot-tyactivity-3-1-find-the-minor-and-cofactor-of-the-given-matrix-answers-onlya_22-b_12-c_23-a_12-b_11-c_21-a_11-b_21-c_33-c_13">
+                            9. brainliest sa makaka sagot tyActivity 3.1. Find the minor and cofactor of the given matrix. Answers only!a_22 *b_12 *c_23 *a_12 *b_11 *c_21 *a_11 *b_21 *c_33 *c_13 *</h2><br />
+                        <p><strong>Answer:</strong></p><p>[tex] \sqrt{2x8a = 7 \sqrt{43} [/tex]</p><p>hope its help </p><br />
+                                            <h2 class="ez-toc-section" id="4x-3x3-3x3-4x%e2%80%8b">
+                            10. (4x - 3x3) - (3x3 + 4x)​</h2><br />
+                        <p><strong>Answer:</strong></p><p>-6x^(2)</p><p>thats the answer</p><p></p><strong>SUBTRACTING POLYNOMIALS</strong><strong></strong><p>Equation:<strong> </strong>[tex](4x-3x^{3})-(3x^{3}+4x)[/tex]<strong></strong></p><p>Solution:</p><p>[tex](4x-3x^{3})-(3x^{3}+4x)\\4x-3x^{3}-3x^{3}-4x\\-3x^{3}-3x^{3}+0\\-3x^{3}-3x^{3}\\-6x^{3}[/tex]</p><p></p><p>Answer:</p><p>[tex]{\blue{\boxed{\blue{\huge{\boxed{-6x^{3}}}}}}}[/tex]</p><p></p><p></p><p>[tex]{\purple{\boxed{Soyeon:))}}}[/tex]</p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="3x3-12x2-5x-503x3-4x2-3x-160%e2%80%8b">
+                            11. 3x3 - 12x2 - 5x - 503x3 - 4x2 + 3x - 160​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.) (x - 5)(3x² + 3x + 10)</p><p>2.) x ( 3x² - 4x + 3) - 160</p><p><strong>Step-by-step explanation:</strong></p><p>I'm not sure for the number 2</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="31-what-is-the-simplified-product-of-3x-x2-%e2%80%93-5x-7-a-3x3-15x2-21x-c-3x3-15x2-21x-b-3x3-15x2-21x-d-3x3-15x2-21x%e2%80%8b">
+                            12. 31. What is the simplified product of 3x (x2 – 5x - 7)? A. 3x3 - 15x2 + 21x C. 3x3 + 15x2 + 21x B. 3x3 + 15x2-21x D. 3x3 - 15x2 - 21x​</h2><br />
+                        <p><strong>Answer:</strong></p><p>c po</p><p><strong>Step-by-step explanation:</strong></p><p>sanamakatulong PA heart </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-visayas-is-one-of-the-three-principal-geographical-divisions-of-the-philippines-consisting-of-majorand-minor-islandstrue-or-false%e2%80%8b">
+                            13. 1. Visayas is one of the three principal geographical divisions of the Philippines consisting of majorand minor islands(True or False)​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>True</strong><strong> </strong><strong>ang</strong><strong> </strong><strong>sagot</strong><strong> </strong><strong>dyan</strong><strong> </strong><strong>sa</strong><strong> </strong><strong>tanong</strong><strong> </strong><strong>mo</strong></p><br />
+                                            <h2 class="ez-toc-section" id="simplify-x2-x-13x-2-use-the-horizontal-methoda-3x3-x2-x-2b-3x3-5x2-x-2c-3x3-x2-5x-2d-3x3-x2-2%e2%80%8b">
+                            14. Simplify (x2 + x + 1)(3x - 2). Use the horizontal methoda. 3x3 + x2 + x-2b. 3x3 - 5x2 + x - 2c. 3x3 + x2 + 5x - 2d. 3x3 + x2 - 2​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>a</strong><strong>.</strong><strong> </strong><strong>3</strong><strong>x</strong><strong>³</strong><strong> </strong><strong>+</strong><strong> </strong><strong>x²</strong><strong> </strong><strong>+</strong><strong> </strong><strong>x</strong><strong> </strong><strong>-</strong><strong> </strong><strong>2</strong></p><p><strong>Step-by-step explanation:</strong></p><p></p><p>[tex]( {x}^{2}  + x + 1)(3x - 2) \\  = 3 {x}^{3}  - 2 {x}^{2}  + 3 {x}^{2}  - 2x + 3x - 2 \\  = 3  {x}^{3}  +  {x}^{2}  + x - 2[/tex]</p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="subtract-x32x2-x7-from-4x36x22x-7a-3x34x23x-14b-3x3-4x2-3x14c-3x34x23xd-3x34x23x-14report-nanggugulo">
+                            15. Subtract (x3+2x2-x+7) from (4x3+6x2+2x-7)
+A. -3x3+4x2+3x-14
+B. -3x3-4x2-3x+14
+C. 3x3+4x2+3x
+D. 3x3+4x2+3x-14
+REPORT NANGGUGULO</h2><br />
+                        <p><strong>Answer:</strong></p><p>D. 3x3+4x2+3x-14</p><p><strong>Step-by-step explanation:</strong></p><p>When combining polynomials, combine like terms by combining the coefficients.
+</p><p>Subtract (x3+2x2-x+7) from (4x3+6x2+2x-7)
+</p><p>(4x3}+6x2+2x-7) – (x3+2x2-x+7)
+</p><p>(4x3-x3) +(6x2 -2x2) +(2x-(-x)) +(-7-7)
+</p><p>3x3+4x2+3x-14</p><p></p><p>Answer:</p><p>A. -3x3+4x2+3x-14</p><p>Step-by-step explanation:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="for-the-given-ellipse-find-the-principal-axis-center-foci-vertices-co-vertices-length-of-major-and-minor-axis-then-sketch-the-graph-%e2%80%8b">
+                            16. For the given ellipse, find the principal axis, center, foci, vertices, co-vertices, length of major and minor axis then sketch the graph.​</h2><br />
+                        wag nyo nalang pansinin tung drawing <br /><br /><br />
+                                            <h2 class="ez-toc-section" id="1-it-is-one-of-the-three-principal-geographicaldivisions-of-the-philippines-consisting-of-major-and-minorislands-which-is-divided-into-3-administrative-regions-%e2%80%8b">
+                            17. 1. It is one of the three principal geographicaldivisions of the Philippines consisting of major and minorislands which is divided into 3 administrative regions.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The Philippines is an archipelago of 7,641 islands that are categorized broadly under the three main geographical divisions from north to  ...</p><p><strong>Explanation:</strong></p><p><strong>Ayan </strong><strong>lang </strong><strong>po </strong><strong>alam </strong><strong>ko </strong><strong>sori</strong></p><br />
+                                            <h2 class="ez-toc-section" id="simplify-2x3-4x2-8x-12-x3-5x2-7x-10a-3x3-x2-x-22c-3x3-9x2-x-22b-3x3-x2-x-22d-3x3-9x2-x-22fyaluate-fi-%e2%80%8b">
+                            18. Simplify: (2x3 - 4x2 + 8x + 12) + (x3 + 5x2 - 7x + 10)A. 3x3 + x2 + x + 22C. 3x3 - 9x2 + x + 22B. 3x3 + x2 - x + 22D. 3x3 - 9x2 - x + 22Fyaluate fi-​</h2><br />
+                        <p><strong>Answer:</strong></p>A<p><strong>Step-by-step explanation:</strong></p><p></p><p> Let's simplify step-by-step.</p><p></p><p>(2x³−4x²+8x+12)+(x³+5x²−7x+10)</p><p></p><p>=(2x³+−4x²+8x+12)+(x³+5x²−7x+10)</p><p></p><p>Combine Like Terms:</p><p></p><p>=2x3+−4x2+8x+12+x3+5x2+−7x+10</p><p></p><p>=(2x3+x3)+(−4x2+5x2)+(8x+−7x)+(12+10)</p><p></p><p>=3x3+x2+x+22</p><p></p><p>Answer:</p><p></p><p>=3x3+x2+x+22</p><br />
+                                            <h2 class="ez-toc-section" id="to-show-how-variables-are-closely-related-with-one-another-you-must-usea-data-matrixc-proximity-matrixb-profile-matrixd-table-matrix">
+                            19. To show how variables are closely related with one another, you must use
+a. data matrix
+c. proximity matrix
+b. profile matrix
+d. table matrix</h2><br />
+                        <p><strong>Answer:</strong></p><p>a</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-matrix-of-order-1-is-a-square-matrix-is-it-true-or-false%e2%80%8b">
+                            20. a matrix of order 1 is a square matrix. Is it true or false?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>False</p><p><strong>Step-by-step explanation:</strong></p><p></p><p><strong>Answer:</strong></p><p>true</p><p><strong>Step-by-step explanation:</strong></p><p>ay guess </p><p>i hope help</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="which-principal-suggestion-that-minor-changes-in-training-regimens-yield-more-consistence-gains-in-sports-performance-%e2%80%8b">
+                            21. Which principal suggestion that minor changes in training regimens yield more consistence gains in sports performance. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The Variation Principle suggests that minor changes in training regimens yield more consistent gains in sport performance. Training programs for virtually every sport include variations in intensity, duration, volume, and other important aspects of practice</p><br />
+                                            <h2 class="ez-toc-section" id="direction-give-the-relative-minor-scale-of-each-major-scale-by-writing-the-answer-on-the-space-provide1-d-majorb-minorc-minorf-minorg-minord-minor2-e-majorb-minorc-minorf-minorg">
+                            22. Direction: Give the relative minor scale of each major scale by writing the answer on the 
+space provide:
+1. D Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor
+2. E Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor
+3. A Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor
+4. B Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor
+5. F# Major
+B Minor
+C# Minor
+F# Minor
+G# Minor
+D# Minor</h2><br />
+                        <p><strong>Answer:</strong></p><p>bakit Po Ang gulo at Wala pong picture</p><p>next time Po mag lagay ka ng picture</p><p>para Po masagutan Po namin</p><br />
+                                            <h2 class="ez-toc-section" id="let-a-be-a-3x3-matrix-with-real-entries-such-that-a2-5a-6i-0-where-i-is-the-3x3-identity-matrix-let-fx-detxi-a-be-the-characteristic-polynomial-of-a-a-find-the-eigenvalues-of-a-b">
+                            23.  Let A be a 3x3 matrix with real entries such that A^2 - 5A + 6I = 0, where I is the 3x3 identity matrix. Let f(x) = det(xI - A) be the characteristic polynomial of A. a) Find the eigenvalues of A. b) Find a basis for each eigenspace of A. c) Use the eigenvalues and eigenvectors to diagonalize A. d) Use the diagonalization of A to compute the integral of e^(2t)A^t dt from 0 to infinity. need answer rn.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A) be the characteristic polynomial of  A a) Find the elgenvalues of A.</p><p></p><p></p><p></p><p>please correct me if I'm wrong </p><br />
+                                            <h2 class="ez-toc-section" id="subtract-4x%c2%b3%e2%88%92-x%c2%b2-1-from-7x%c2%b3-2x-%e2%88%923-a-%e2%88%923x3%e2%88%92x22x%e2%88%924-b-3x3x22x%e2%88%924-c-3x3%e2%88%92x22x4-d-3x3%e2%88%92x2%e2%88%922x%e2%88%924pa">
+                            24. Subtract 4x³− x²+ 1 from 7x³ + 2x −3. 
+a. −3x3−x2+2x−4 
+b. 3x3+x2+2x−4 
+c. 3x3−x2+2x+4 
+d. 3x3−x2−2x−4
+Pahelp po please</h2><br />
+                        <p><strong>Answer:</strong></p><p>a</p><p><strong>Step-by-step explanation:</strong></p><p>[tex] - 3 {x}^{2}  -  {x}^{2}  + 2x - 4[/tex]</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="3x3-x%c2%b2x2x%c2%b28-1tex3x3-x2x2-8-1-tex%e2%80%8b">
+                            25. 3x3-x²x2x²+8-1[tex]3x3 - x2x2 + 8 - 1 [/tex]​</h2><br />
+                        <p><strong>Answer:</strong></p><p>−(x6−3x3−7) or −x6+3x3+7</p><p><strong>Step-by-step explanation:</strong></p><p>correct me po if im wrong</p><br />
+                                            <h2 class="ez-toc-section" id="one-of-the-three-principal-geographical-divisions-of-the-philippines-consisting-of-major-and-minor-islands">
+                            26. One of the three principal geographical divisions of the Philippines consisting of major and minor islands</h2><br />
+                        <p><strong>Answer:</strong></p><p>philippine sea plate, pacific plate, eurasian plate</p><br />
+                                            <h2 class="ez-toc-section" id="19-which-of-the-following-is-the-difference-of-3x3-%e2%80%93-x2-4x-2-5x2-%e2%80%93-7x-3-a-3x3-%e2%80%93-6x-3x-1-c-3x3-6x2-3x-%e2%80%93-1-b-3x3-6x-3x-1-d-3x3">
+                            27. - - - - 19. Which of the following is the difference of (3x3 – x2 - 4x + 2) - (5x2 – 7x + 3)? A.3x3 – 6x - 3x - 1 C. 3x3 + 6x2 + 3x – 1 B. 3x3 + 6x - 3x + 1 D. 3x3 – 6x2 + 3x - 1 ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D that my answers my module</p><p><strong>Step-by-step explanation:</strong></p><p>alpha chismosa</p><br />
+                                            <h2 class="ez-toc-section" id="visaya-is-one-of-the-three-principal-geographical-division-of-the-philippines-consisiting-of-major-and-minor-islands-it-consists-of-three-adminitrative-regions-central-easternand%e2%80%8b">
+                            28. Visaya is one of the three principal geographical division of the philippines consisiting of major and minor islands. It consists of three adminitrative regions. Central eastern,and​</h2><br />
+                        <p><strong>Answer:</strong></p><p>western</p><p><strong>Explanation:</strong></p><p>western region obviously</p><br />
+                                            <h2 class="ez-toc-section" id="8-subtract-and-simplify-7x3-%e2%80%93-5x-8-4x3-%e2%80%93-2x-1a-3x3-3x-7c-3x3-3x-7b-3x3-7x-7d-3x3-7x-7%e2%80%8b">
+                            29. 8. Subtract and simplify: (7x3 – 5x + 8) - (4x3 – 2x + 1)A. 3x3 + 3x - 7C. 3x3 -3x +7B. 3x3 - 7x - 7D. 3x3-7x + 7​</h2><br />
+                        Answer:<p>[tex]3 {x}^{3}  - 3x + 7[/tex]</p><p>Solution:</p><p>[tex](7 {x}^{3}  - 5x + 8) - (4 {x}^{3}  - 2x + 1) \\  = 7 {x}^{3}  - 5x + 8 - 4 {x}^{3}  + 2x - 1 \\  = 3 {x}^{3}  - 3x + 7[/tex]</p><p>#CarryOnLearning </p><p>#StudyWell </p><br />
+                                            <h2 class="ez-toc-section" id="12-what-is-3x33-equal-toa-3x3b-6x6%e2%80%8b">
+                            30. 12. What is ( 3x3)3 equal to?A. 3x3B. 6x6​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A. po ang sagut jan</p><p><strong>Step-by-step explanation:</strong></p><p>pa follow po plss❤</p><p><strong>Answer:</strong></p><p>B. 6x6</p><p><strong>Step-by-step explanation:</strong></p><p>(3x3)3</p><p>6x6</p><p></p><p></p><p>ganyan?</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/iJNqWSDPYWo?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>math</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/aling-ising-s-uniform-center.html">Aling Ising s Uniform Center</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/earth-s-answer-analysis.html">Earth s Answer Analysis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/newton-s-second-law-problem-solving-worksheet-answers.html">Newton s Second Law Problem Solving Worksheet Answers</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/health-optimizing-physical-education-grade-11.html">Health Optimizing Physical Education Grade 11</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/maggie-s-bridge-delaware.html">Maggie s Bridge Delaware</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/employer-s-data-form-pag-ibig.html">Employer s Data Form Pag Ibig</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/bloom-s-taxonomy-tagalog.html">Bloom s Taxonomy Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ano-ang-ibig-sabihin-ng-mahahagilap.html">Ano Ang Ibig Sabihin Ng Mahahagilap</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/christus-vivit-summary.html">Christus Vivit Summary</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/nipas-act.html">Nipas Act</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/la-salette-of-roxas.html">La Salette Of Roxas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ang-soberanya-ng-bansa.html">Ang Soberanya Ng Bansa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/hate-to-love-you-tijan-meyer.html">Hate To Love You Tijan Meyer</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/please-observe-social-distancing.html">Please Observe Social Distancing</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/hindi-madali-in-english.html">Hindi Madali In English</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/pamantasan-ng-lungsod-ng-marikina-courses-offered.html">Pamantasan Ng Lungsod Ng Marikina Courses Offered</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/analysis-meaning-tagalog.html">Analysis Meaning Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/banana-con-yelo-recipe.html">Banana Con Yelo Recipe</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/mythomania-adalah.html">Mythomania Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/valucare-accredited-hospitals.html">Valucare Accredited Hospitals</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

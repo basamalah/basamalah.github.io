@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Give Some Concrete Instances When Unity Exists - QnA</title>
+    <meta name="description" content="Give Some Concrete Instances When Unity Exists, Static vs Instances | Unity C# Basics Part 4, , , , LlamAcademy, 2022-04-26T12:00:08.000000Z, 20, Chinua Achebe Quote: “I feel that the English language will be able to, quotefancy.com, 1600 x 900, jpeg, , 20, give-some-concrete-instances-when-unity-exists, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Give Some Concrete Instances When Unity Exists - QnA" />
+    <meta property="og:description" content="Give Some Concrete Instances When Unity Exists, Static vs Instances | Unity C# Basics Part 4, , , , LlamAcademy, 2022-04-26T12:00:08.000000Z, 20, Chinua Achebe Quote: “I feel that the English language will be able to, quotefancy.com, 1600 x 900, jpeg, , 20, give-some-concrete-instances-when-unity-exists, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Give Some Concrete Instances When Unity Exists - QnA" />
+    <meta name="twitter:description" content="Give Some Concrete Instances When Unity Exists, Static vs Instances | Unity C# Basics Part 4, , , , LlamAcademy, 2022-04-26T12:00:08.000000Z, 20, Chinua Achebe Quote: “I feel that the English language will be able to, quotefancy.com, 1600 x 900, jpeg, , 20, give-some-concrete-instances-when-unity-exists, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Give Some Concrete Instances When Unity Exists</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">suga124</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Give+Some+Concrete+Instances+When+Unity+Exists" alt="Give Some Concrete Instances When Unity Exists">
+                    </div>
+                    <p></p>
+                    <p>give some concrete instances when unity exists</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-concrete-instances-when-unity-exists">1.
+                                            give some concrete instances when unity exists</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-concrete-instances-when-unity-exists-brainly">2.
+                                            give some concrete instances when unity exists brainly</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gives-some-concrete-instances-when-unity-exists-even-though-there-are-differences-happening-among-people-%e2%80%8b">3.
+                                            gives some concrete instances when unity exists even though there are differences happening among people.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#when-is-it-proper-to-help-and-when-is-it-not-give-instances-and-explain%e2%80%8b">4.
+                                            when is it proper to help and when is it not? give instances and explain​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-instances-that-filipinos-participated-for-unity">5.
+                                            What are the instances that Filipinos participated for unity?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#are-there-instances-that-an-act-of-man-becomes-human-act-how-give-concrete-example">6.
+                                            Are there instances that an act of man becomes human act? How? Give concrete example</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-concrete-examples-for-vertical-and-horizontal-motion%e2%80%8b">7.
+                                            give some concrete examples for vertical and horizontal motion​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-instances-that-filipinos-participated-for-unity%e2%80%8b">8.
+                                            What are the instances that Filipino's participated for unity?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cite-concrete-instances-when-human-persons-are-positively-transformed-by-their-society-%e2%80%8b">9.
+                                            Cite concrete instances when human persons are positively transformed by their society ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-concrete-instances-when-unity-even-though-there-are-differences-happening-among-people%e2%80%8b">10.
+                                            give some concrete instances when unity even though there are differences happening among people​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-conrete-instances-when-unity-exists-even-thought-there-are-differences-happening-among-people-unity-in-diversitypagkakaisa-sa-kabila-ng-pagkakaiba-iba%e2%80%8b">11.
+                                            Give some conrete instances when unity exists even thought there are differences happening among people.Unity in Diversity:Pagkakaisa sa kabila ng pagkakaiba-iba​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-concrete-instances-when-unity-exists-even-though-there-are-differences-happening-among-people">12.
+                                            Give some concrete instances when unity exists even though there are differences happening among people.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-instances-when-you-pray%e2%80%8b">13.
+                                            give instances when you pray​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#as-a-member-of-your-familywhat-can-you-do-to-maintain-its-unity-give-3-concrete-examples">14.
+                                            As a member of your family,what can you do to maintain its unity? Give 3 concrete examples </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#was-there-an-instance-when-you-misjudge-someonegive-detail-of-that-instance-%e2%80%8b">15.
+                                            was there an instance when you misjudge someone?Give detail of that instance.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-instances-when-a-parallel-circuit-is-used%e2%80%8b">16.
+                                            give instances when a parallel circuit is used​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#in-what-situation-or-instances-can-a-person-be-held-accountable-for-hisher-action-give-a-concrete-example-and-justify-your-answer-%e2%80%8b">17.
+                                            In what situation or instances can a person be held accountable for his/her action? Give a concrete example and justify your answer.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#are-there-instances-that-an-act-of-man-becomes-human-act-how-give-concrete-example-%e2%80%8b">18.
+                                            Are there instances that an act of man becomes human act? How? Give concrete example.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-concrete-instances-on-the-significance-of-bank-reconciliation%e2%80%8b">19.
+                                            give concrete instances on the significance of bank reconciliation​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cite-some-instances-the-god-exist-in-your-life%e2%80%8b">20.
+                                            cite some instances the god exist in your life​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-a-concrete-example-on-the-statement-unity-in-diversity%e2%80%8b">21.
+                                            give a concrete example on the statement unity in diversity​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#describe-how-your-familly-experienced-love-and-unity-give-a-concrete-example">22.
+                                            Describe How your familly experienced love and unity . give a concrete example.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-concrete-instances-when-unity-exists-even-though-there-are-differences-happening-among-people-%e2%80%8b">23.
+                                            Give some concrete instances when unity exists even though there are differences happening : among people.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-instances-when-we-encounter-dbms%e2%80%8b">24.
+                                            Give some instances when we encounter DBMS​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-concrete-example-of-numerical-data%e2%80%8b">25.
+                                            give some concrete example of numerical data​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-instances-where-in-we-acquire-risk-in-cookery%e2%80%8b">26.
+                                            Give some instances where in we acquire risk in cookery​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-some-example-of-unity-and-variety%e2%80%8b">27.
+                                            give some example of unity and variety​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-will-you-maintain-the-unity-of-the-church-give-at-least-5-concrete-actions%e2%80%8b">28.
+                                            How will you maintain the unity of the church? Give at least 5 concrete actions​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#some-concrete-of-unity-in-diversity%e2%80%8b">29.
+                                            some concrete of unity in diversity​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-4-give-some-concrete-instancesscenario-when-unity-exists-even-though-there-are-differences-happeningv-among-people-%e2%80%8b">30.
+                                            Learning task 4: Give some concrete instances/scenario when unity exists even though there are differences happeningv among people.​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="give-some-concrete-instances-when-unity-exists">
+                            1. give some concrete instances when unity exists</h2><br />
+                        <p><strong>Answer:</strong></p><p>Nakita ko lang yan sana makatulongシ︎</p><br />
+                                            <h2 class="ez-toc-section" id="give-some-concrete-instances-when-unity-exists-brainly">
+                            2. give some concrete instances when unity exists brainly</h2><br />
+                        <p><strong>Answer:</strong></p><p>The social level of effective teamwork is definitely improved by Unity in Diversity. </p><br />
+                                            <h2 class="ez-toc-section" id="gives-some-concrete-instances-when-unity-exists-even-though-there-are-differences-happening-among-people-%e2%80%8b">
+                            3. gives some concrete instances when unity exists even though there are differences happening among people.​</h2><br />
+                        <p><strong>In the Philippines, there is a well-known case of unity in diversity: Hundreds of evacuees from Marawi City's armed war have taken refuge in a gymnasium in Maria Cristina, Lanao del Norte.</strong> The gymnasium's conditions are characteristic of most emergency centers: crowded, hot, and with no anonymity for the people who have taken refuge there. In these ostensibly daunting circumstances, the evacuees — Muslims and Christians — have continued to live in peace and work together.
+</p><p>
+</p><p><strong>Unity of Diversity </strong>is a term that refers to people being together through their differences. History, language, politics, faith, sect, class, race, and other factors may all contribute to these disparities. Furthermore, this idea has existed from the beginning of time. About everybody on the planet has repeatedly shown this admirable trait.
+</p><p>
+</p><p>Unity in diversity is critical for a democracy and it is really common for individuals with differing viewpoints and philosophies to become disintegrated. It would still be hard for a power to disintegrate a country if the people are united amid their differences.
+</p><p>
+</p>Advantages of Unity in Diversity:
+People's morale in the workplace, company, and society improves as they are united in their diversity.
+It aids in the improvement of success, job efficiency, competitiveness, and lifestyle by enhancing communication, relationships, and teamwork among people.
+This allows for good contact even in difficult situations.
+Keeps us away from social issues which makes it easier to resolve disputes.
+<p>
+</p><p>To know more about society, read the following:
+</p><p>Difference of agrarian society, hunting and gathering society, and pastoral society??? ​ https://brainly.ph/question/5401385
+</p><p>what are the similarities between tribal society, industrial society and post-industrial society? https://brainly.ph/question/10050930
+</p><p>compare the primitive society and civilized society https://brainly.ph/question/11834757  
+</p><p><strong>#LetsStudy</strong></p><br />
+                                            <h2 class="ez-toc-section" id="when-is-it-proper-to-help-and-when-is-it-not-give-instances-and-explain%e2%80%8b">
+                            4. when is it proper to help and when is it not? give instances and explain​</h2><br />
+                        <p><strong>Answer:</strong></p><p>send pic po para masagutan ko</p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-instances-that-filipinos-participated-for-unity">
+                            5. What are the instances that Filipinos participated for unity?</h2><br />
+                        <p><strong>Answer:</strong></p><p>
+</p><p>█░█ █▀▀ █░░ █░░ █▀█   █▀█ █▀█
+</p><p>█▀█ ██▄ █▄▄ █▄▄ █▄█   █▀▀ █▄█</p><p><strong>Explanation:</strong></p><p></p><p><strong>Answer:</strong></p><p>unity is the maker of the game zombie catchers</p><p><strong>Explanation:</strong></p><p>Welcome to Gboard clipboard, any text you copy will be saved here.</p><br />
+                                            <h2 class="ez-toc-section" id="are-there-instances-that-an-act-of-man-becomes-human-act-how-give-concrete-example">
+                            6. Are there instances that an act of man becomes human act? How? Give concrete example</h2><br />
+                        <p><strong>Answer:</strong></p><strong>Not every act that a human being does is a distinctively human act. Some acts that human beings do are performed also by animals, e.g., vegetative acts and acts of perception and of emotion. When a human being does such acts, they are called acts of man but not human acts.</strong><p><strong>Explanation:</strong></p><strong>#</strong><strong> </strong><strong>CARRY </strong><strong>ON </strong><strong>LEARNING </strong><br />
+                                            <h2 class="ez-toc-section" id="give-some-concrete-examples-for-vertical-and-horizontal-motion%e2%80%8b">
+                            7. give some concrete examples for vertical and horizontal motion​</h2><br />
+                        Vertical Motion Examples:A ball is thrown upwards from a balcony with a speed of 3 m/s, 8 m above the ground. Find the time is taken for the ball to hit the ground and the speed at which it hits the ground.Horizontal Motion ExamplesA boat traveling in a river. A shell fired from a gun. The motion of a billiard ball on the billiard table is horizontal. Throwing a ball or a cannonball is a horizontal motion.<br />
+                                            <h2 class="ez-toc-section" id="what-are-the-instances-that-filipinos-participated-for-unity%e2%80%8b">
+                            8. What are the instances that Filipino's participated for unity?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>when there is really no wal and that's when they gather together to be united</p><p><strong>Explanation:</strong></p><p>✅</p><br />
+                                            <h2 class="ez-toc-section" id="cite-concrete-instances-when-human-persons-are-positively-transformed-by-their-society-%e2%80%8b">
+                            9. Cite concrete instances when human persons are positively transformed by their society ?​</h2><br />
+                        <p>Society and its institutions influence and condition individuals, but individuals can in turn make society evolve and change its institutions. As this interaction continues over the course of generations, culture and individuals mutually shape each other.</p><p><strong>Explanation:</strong></p><p>Social transformation refers to the process of change in institutionalized relationships, norms, values, and hierarchies over time. It is the manner in which society changes due to economic growth, science, technological innovations, and war or political upheavals.</p><p>hope it helped.</p><br />
+                                            <h2 class="ez-toc-section" id="give-some-concrete-instances-when-unity-even-though-there-are-differences-happening-among-people%e2%80%8b">
+                            10. give some concrete instances when unity even though there are differences happening among people​</h2><br />
+                        <p><strong>Answer:</strong></p><p>In our society, there are so many possibilities that war could happen or chaos can happen among the different countries. But because of unity, we can maintain the peace of not having a war zone society. It is because we learned that unity brings us as one.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-some-conrete-instances-when-unity-exists-even-thought-there-are-differences-happening-among-people-unity-in-diversitypagkakaisa-sa-kabila-ng-pagkakaiba-iba%e2%80%8b">
+                            11. Give some conrete instances when unity exists even thought there are differences happening among people.Unity in Diversity:Pagkakaisa sa kabila ng pagkakaiba-iba​</h2><br />
+                        <p><strong>Answer:</strong></p><p>nepal </p><p><strong>Explanation:</strong></p><p>Nepal is a multi-cultural, multi-racial, multi-linguistic, and multi-ethnic country. It is a country with indigenous nationality. This is ethnic and cultural diversity, which is also known as unity in diversity, is an important national heritage, which need to be further strengthened.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-some-concrete-instances-when-unity-exists-even-though-there-are-differences-happening-among-people">
+                            12. Give some concrete instances when unity exists even though there are differences happening among people.</h2><br />
+                        <p><strong>Answer:</strong></p><p>identify the difference ways on how to help the family and community</p><br />
+                                            <h2 class="ez-toc-section" id="give-instances-when-you-pray%e2%80%8b">
+                            13. give instances when you pray​</h2><br />
+                        <p><strong>Answer:</strong></p><p>god bless you </p><p><strong>Explanation:</strong></p><p><strong>pa</strong><strong> </strong><strong>heart</strong><strong> </strong></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p><strong>pretty </strong><strong>lady</strong></p>Your prayer or your wishes will be granted, but only if you really need it. God wouldn’t give you your wish immediately, but by waiting patiently he would know that you really deserve the gift he’s preparing for you.<br />
+                                            <h2 class="ez-toc-section" id="as-a-member-of-your-familywhat-can-you-do-to-maintain-its-unity-give-3-concrete-examples">
+                            14. As a member of your family,what can you do to maintain its unity? Give 3 concrete examples </h2><br />
+                        <p><strong>Answer:</strong></p><p>1. respect your parents and obey those advice</p><p>2. take a time for your family to have bonding together </p><p><strong>Explanation:</strong></p><p>hehe Yan lg alam q</p><br />
+                                            <h2 class="ez-toc-section" id="was-there-an-instance-when-you-misjudge-someonegive-detail-of-that-instance-%e2%80%8b">
+                            15. was there an instance when you misjudge someone?Give detail of that instance.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>telling something bad about them Because you look at his/her appearance.</p><br />
+                                            <h2 class="ez-toc-section" id="give-instances-when-a-parallel-circuit-is-used%e2%80%8b">
+                            16. give instances when a parallel circuit is used​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Yan napi Yung sagot sa number 2</p><br />
+                                            <h2 class="ez-toc-section" id="in-what-situation-or-instances-can-a-person-be-held-accountable-for-hisher-action-give-a-concrete-example-and-justify-your-answer-%e2%80%8b">
+                            17. In what situation or instances can a person be held accountable for his/her action? Give a concrete example and justify your answer.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A moral agent is a person who has the ability to discern right from wrong and to be held accountable for his or her own actions.</p><br />
+                                            <h2 class="ez-toc-section" id="are-there-instances-that-an-act-of-man-becomes-human-act-how-give-concrete-example-%e2%80%8b">
+                            18. Are there instances that an act of man becomes human act? How? Give concrete example.​</h2><br />
+                        <p>When a human being does such acts, they are called acts of man but not human acts. Acts of man, therefore, are acts shared in common by man and other animals, whereas human acts are proper to human beings.</p><p></p><p>Here are some examples of Acts of Human: breathing ; beating of the heart ; perspiration ; growing of the hair ; growing of the nails ; etc.</p><p></p><p></p><p></p><p></p><p></p><p></p><p>f y'all</p><br />
+                                            <h2 class="ez-toc-section" id="give-concrete-instances-on-the-significance-of-bank-reconciliation%e2%80%8b">
+                            19. give concrete instances on the significance of bank reconciliation​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>What is the purpose of preparing bank reconciliation?
+</strong></p><p><strong>Bank reconciliation statements ensure payments have been processed and cash collections have been deposited into the bank. The reconciliation statement helps identify differences between the bank balance and book balance, in order to process necessary adjustments or corrections.</strong></p><p></p><p><strong>Explanation:</strong></p><p>hope it helps :) brainliest?</p><br />
+                                            <h2 class="ez-toc-section" id="cite-some-instances-the-god-exist-in-your-life%e2%80%8b">
+                            20. cite some instances the god exist in your life​</h2><br />
+                        <p><strong>Answer:</strong></p><p>he helps you everytime you got the chance</p><p><strong>Answer:</strong></p><p>God exists if you believe</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-a-concrete-example-on-the-statement-unity-in-diversity%e2%80%8b">
+                            21. give a concrete example on the statement unity in diversity​</h2><br />
+                        <p><strong>Answer:</strong></p><p>It shows Europeans have come together irrespective of differences. India is another brilliant example of Unity in Diversity. In India, people of diverse religions, cultures, castes, sects, etc. have been living together. ... Hence, India is a country which perfectly demonstrates Unity in Diversity.</p><p></p><p></p><p><strong>Answer:</strong></p><p>India </p><p><strong>Explanation:</strong></p><p>shows Europeans have come together irrespective of differences. India is another brilliant example of Unity in Diversity. In India, people of diverse religions, cultures, castes, sects, etc. have been living together. ... Hence, India is a country which perfectly demonstrates Unity in Diversity.</p><br />
+                                            <h2 class="ez-toc-section" id="describe-how-your-familly-experienced-love-and-unity-give-a-concrete-example">
+                            22. Describe How your familly experienced love and unity . give a concrete example.</h2><br />
+                        <p><strong>Answer:</strong></p><p>Praying to the lord and saviour, and sending help to those who are in need, that is an example of showing love and unity to each other.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-some-concrete-instances-when-unity-exists-even-though-there-are-differences-happening-among-people-%e2%80%8b">
+                            23. Give some concrete instances when unity exists even though there are differences happening : among people.​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>Unity can exist even when differences arise among people in various settings such as politics, sports, religion, nation, and workplace. In politics, despite having diverse political opinions and beliefs, people come together to form a government that works towards the common good. Similarly, in sports, people of different backgrounds and cultures work together towards a common goal of winning the game. Religious unity occurs when people of different religions come together during times of crisis to help each other, despite having different beliefs and practices. National unity is celebrated during events such as Independence Day, Republic Day, or sporting events, where citizens of a country unite in their love for their nation. Lastly, in the workplace, people of different backgrounds and skills come together to achieve a common goal and the success of the organization.</p><br />
+                                            <h2 class="ez-toc-section" id="give-some-instances-when-we-encounter-dbms%e2%80%8b">
+                            24. Give some instances when we encounter DBMS​</h2><br />
+                        <p><strong>Answer:</strong></p>The DBMS manages incoming data, organizes it, and provides ways for the data to be modified or extracted by users or other programs. ... Some DBMS examples include MySQL, PostgreSQL, Microsoft Access, SQL Server, FileMaker, Oracle, RDBMS, dBASE, Clipper, and FoxPro<p><strong>Explanation:</strong></p>hopeithelps<p><strong>Answer:</strong></p><p>The DBMS manages incoming data, organizes it, and provides ways for the data to be modified or extracted by users or other programs. ... Some DBMS examples includeMySQL, PostgreSQL, Microsoft Access, SQL Server, FileMaker, Oracle, RDBMS, dBASE, Clipper, and FoxPro.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-some-concrete-example-of-numerical-data%e2%80%8b">
+                            25. give some concrete example of numerical data​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>When working with statistical data, researchers need to get acquainted with the data types used—categorical and numerical data. The different data types are used in separate cases and require different statistical and visualization techniques. </p><p></p><p>Therefore, researchers need to understand the different data types and their analysis. This knowledge is what is used during the research process. </p><p></p><p>Numerical data as a case study is categorized into discrete and continuous data where continuous data are further grouped into interval and ratio data. These data types are significantly used for statistical analysis or research purposes. </p><br />
+                                            <h2 class="ez-toc-section" id="give-some-instances-where-in-we-acquire-risk-in-cookery%e2%80%8b">
+                            26. Give some instances where in we acquire risk in cookery​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Manual handling</p><p></p><p>Carrying, lifting, pushing, and other manual handling manoeuvres can, if not done safely, seriously harm the body's musculoskeletal system.</p><p></p><p>2.Foodborne Illnesses</p><p></p><p>Foodborne Illnesses or Food poisoning occurs when food spoilage takes place. This can be caused by contaminated food, pathogenic bacteria's, viruses or parasites that contaminate food items.</p><p></p><p>3.Common Culprits</p><p></p><p>Time &amp; temperature abuse is caused by improper cooking, holding, cooling and reheating of food, leading to the growth of pathogens.</p><p></p><p>Cross contamination occurs when you mix</p><p></p><p>cooked and uncooked food, especially raw meat or fish. Assign different containers for the preparation of each kind of food and avoid un sanitised food surfaces, utensils and equipment.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-some-example-of-unity-and-variety%e2%80%8b">
+                            27. give some example of unity and variety​</h2><br />
+                        <p><strong>Answer: Unity: Unity is being in harmony or one in spirit. An example of unity is a bride and groom both lighting a single candle at the same time with each of their candles. The quality of being one in spirit, sentiment, purpose, etc.; harmony; agreement; concord; uniformity.</strong></p><p><strong>Variety: Variety is an assortment or the state of having many different things. An example of variety is when you have purple flowers, blue flowers, green flowers and flowers of a whole bunch of other colors.</strong></p><p><strong>Explanation: #HappytoHelp# :)</strong></p><p></p><p><strong>Answer:</strong></p><p><strong>Variety </strong>is the use of different visual elements throughout a work, whereas unity is a feeling that all the parts of a work fit together well. These do not have to be opposites, as a work filled with variety might also have unity
+</p><p>
+</p><p><strong>Unity</strong> in an artwork creates a sense of harmony and wholeness, by using similar elements within the composition and placing them in a way that brings them all together. Variety adds interest by using contrasting elements within the composition.</p><p><strong>Explanation:</strong></p><p><strong>     I HOPE IT HELPS</strong></p><br />
+                                            <h2 class="ez-toc-section" id="how-will-you-maintain-the-unity-of-the-church-give-at-least-5-concrete-actions%e2%80%8b">
+                            28. How will you maintain the unity of the church? Give at least 5 concrete actions​</h2><br />
+                        <p><strong>Answer:</strong></p><p>ok na yata yan </p><p> </p><p>sana makatulong</p><p><strong>1</strong><strong>.</strong><strong> </strong>Greet everyone, especially new or unfamiliar members. Take time to learn their names and something about them. </p><p></p><p><strong>2</strong><strong>.</strong><strong> </strong>Be faithful home and visiting teachers.</p><p></p><p><strong>3</strong><strong>.</strong><strong> </strong>Avoid jokes or comments that may be offensive.</p><p></p><p><strong>4</strong><strong>.</strong><strong> </strong>See opportunities to serve and include everyone.</p><p></p><p><strong>5</strong><strong>.</strong><strong> </strong>Build genuine friendships.</p><p></p><p></p><p>Sana po makatulong </p><br />
+                                            <h2 class="ez-toc-section" id="some-concrete-of-unity-in-diversity%e2%80%8b">
+                            29. some concrete of unity in diversity​</h2><br />
+                        <p><strong>Religion, caste, food habits, languages and sociol customs, etc are the examples of unity in diversity. Explanation: India is a brilliant example of unity in diversity. In India, people of diverse religions, cultures, castes, sects, etc.</strong></p><p></p><p><strong>Explanation:</strong></p><p></p><p>:)</p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-4-give-some-concrete-instancesscenario-when-unity-exists-even-though-there-are-differences-happeningv-among-people-%e2%80%8b">
+                            30. Learning task 4: Give some concrete instances/scenario when unity exists even though there are differences happeningv among people.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The People, all from different backgrounds and races, united as one to work towards a common goal: their desire for a better life in Singapore. They made Singapore into a multi-racial, multicultural, diverse society where everyone could work together for the good of the nation, and had an equal say.</p><p></p><p><strong>Explanation:</strong></p><p></p><p>hope it's help</p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/JRRlAzBh-6U?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>english</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/lesbian-teacher.html">Lesbian Teacher</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/jerome-s-bungalow.html">Jerome s Bungalow</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/our-lady-s-juggler-reflection.html">Our Lady s Juggler Reflection</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/persuasive-essay-about-love-and-hate.html">Persuasive Essay About Love And Hate</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/s-r-membership-benefits.html">S r Membership Benefits</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/o-o-defrag-complete-access.html">O o Defrag Complete Access</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/he-s-been-faithful-sandi-patty.html">He s Been Faithful Sandi Patty</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/poems-by-angela-manalang-gloria-analysis.html">Poems By Angela Manalang Gloria Analysis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/osborne-checklist.html">Osborne Checklist</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/kakayahang-sosyolingguwistik.html">Kakayahang Sosyolingguwistik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/dbp-dagupan.html">Dbp Dagupan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/katangian-ng-sparta.html">Katangian Ng Sparta</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ansi-z540-1-pdf.html">Ansi Z540 1 Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/art-deco-bungalow.html">Art Deco Bungalow</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/solid-west-vigan-city.html">Solid West Vigan City</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/reaksyon.html">Reaksyon</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/calempung.html">Calempung</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/maiksi-in-english.html">Maiksi In English</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/quarantine-id-bugtong.html">Quarantine Id Bugtong</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/focolare-songs.html">Focolare Songs</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

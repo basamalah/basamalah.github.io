@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dc Motor Transistor Circuit - QnA</title>
+    <meta name="description" content="Dc Motor Transistor Circuit, , , , , , , 0, Basic H-bridge motor driver circuit using bipolar transistor, www.eleccircuit.com, 1200 x 677, png, , 20, dc-motor-transistor-circuit, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dc Motor Transistor Circuit - QnA" />
+    <meta property="og:description" content="Dc Motor Transistor Circuit, , , , , , , 0, Basic H-bridge motor driver circuit using bipolar transistor, www.eleccircuit.com, 1200 x 677, png, , 20, dc-motor-transistor-circuit, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dc Motor Transistor Circuit - QnA" />
+    <meta name="twitter:description" content="Dc Motor Transistor Circuit, , , , , , , 0, Basic H-bridge motor driver circuit using bipolar transistor, www.eleccircuit.com, 1200 x 677, png, , 20, dc-motor-transistor-circuit, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Dc Motor Transistor Circuit</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">user011294749</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Dc+Motor+Transistor+Circuit" alt="Dc Motor Transistor Circuit">
+                    </div>
+                    <p></p>
+                    <p>A motor with an operating resistance of 32 Ω is connected to a voltage source. The current in the circuit is 1.5 A. What is the voltage of the source? in a dc motor.</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-motor-with-an-operating-resistance-of-32-%cf%89-is-connected-to-a-voltage-source-the-current-in-the-circuit-is-1-5-a-what-is-the-voltage-of-the-source-in-a-dc-motor">1.
+                                            A motor with an operating resistance of 32 Ω is connected to a voltage source. The current in the circuit is 1.5 A. What is the voltage of the source? in a dc motor.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-a-better-circuit-using-an-scr-or-using-a-transistor-transistor-circuit">2.
+                                            What is a better circuit, using an scr or using a transistor-transistor circuit?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-main-difference-between-a-dc-motor-and-an-ac-motora-a-dc-motor-uses-a-commutatorc-a-dc-motor-uses-slip-ringsb-an-ac-motor-uses-a-commutatord-an-ac-motor-uses-brushes">3.
+                                            What is the main difference between a DC motor and an AC motor?a. A DC motor uses a commutator						c. A DC motor uses slip ringsb. An AC motor uses a commutator					d. An AC motor uses brushes​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#when-connecting-a-transistor-in-a-circuit-why-must-the-technician-know-whether-a-transistor-is-npn-or-pnp%e2%80%8b">4.
+                                            when connecting a transistor in a circuit, why must the technician know whether a transistor is NPN or PNP?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-statements-briefly-describes-the-difference-between-a-dc-motor-and-an-ac-motor-a-b-c-d-dc-motors-can-be-in-two-phases-or-three-phases-while-ac-is-only-a-single-phase-dc-or">5.
+                                            Which of the following statements briefly describes the difference between a DC motor and an AC motor? A. B. C. D. DC motors can be in two phases or three phases while AC is only a single phase. DC or AC refers to how the electrical current is transferred through and fro the motor. DC motors work well for systems that are hard to start because they need a lot of power upfront as compared to AC. AC motors work for situations where speed needs to be controlled and have a continuous current while DC has an alternating current.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-220-volt-dc-series-motor-is-running-at-a-speed-of-850-rpm-and-draws-105-a-calculate-at-what-speed-the-motor-will-run-when-developing-half-the-torque-total-resistance-of-the-armature-and-field-is-0">6.
+                                            A 220 volt DC series motor is running at a speed of 850 rpm and draws 105 A. Calculate at what speed the motor will run when developing half the torque. Total resistance of the armature and field is 0.1 ohm. Assume that the magnetic circuit is unsaturated. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#if-a-transistor-has-a-dc-emitter-current-of-6-25-ma-how-much-is-the-ac-emitter-resistance">7.
+                                            If a transistor has a dc emitter current of 6.25 ma how much is the ac emitter resistance</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hat-is-the-difference-between-the-ac-motor-and-the-dc-motor7-8-9-10-%e2%80%8b">8.
+                                            hat is the difference between the AC Motor and the DC Motor7.8.9.10.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-what-are-the-3-examples-of-transistors-in-circuit-drawings%e2%80%8b">9.
+                                            2.What are the 3 examples of transistors in circuit drawings​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#explain-how-a-npn-transistor-is-connected-to-a-circuit%e2%80%8b">10.
+                                            explain how a npn transistor is connected to a circuit​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-difference-between-dc-motor-and-dc-generator%e2%80%8b">11.
+                                            What is difference between DC motor and DC generator?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-important-is-transistors-in-the-circuit%e2%80%8b">12.
+                                            how important is transistors in the circuit​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#similarities-of-basic-dc-motor-and-the-dc-generator%e2%80%8b">13.
+                                            similarities of basic DC motor and the DC generator​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-are-transformer-used-in-an-ac-circuit-and-not-on-a-dc-circuit">14.
+                                            why are transformer used in an ac circuit and not on a dc circuit?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#enumerate-the-parts-of-a-basic-dc-motor-%e2%80%8b">15.
+                                            enumerate the parts of a basic DC motor.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#similarities-between-vacuum-tubes-transistor-and-integrated-circuit%e2%80%8b">16.
+                                            similarities between vacuum tubes, transistor, and integrated circuit​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#examples-of-ac-and-dc-circuit%e2%80%8b">17.
+                                            examples of AC and DC Circuit?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#components-of-a-simple-dc-motor%e2%80%8b">18.
+                                            components of a simple dc motor​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-does-the-operation-of-the-armature-differ-between-a-dc-generator-and-a-dc-motor">19.
+                                            How does the operation of the armature differ between a dc generator and a dc motor?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-nature-of-the-force-responsible-in-the-operation-of-a-dc-motor">20.
+                                            What is the nature of the force responsible in the operation of a dc motor?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-basic-principle-of-dc-motor">21.
+                                            What are the basic principle of dc motor?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-transistor-timer-circuit%e2%80%8b">22.
+                                            what is transistor timer circuit​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#differentiate-between-transistor-timer-circuit-and-integrated-circuit%e2%80%8b">23.
+                                            differentiate between transistor timer circuit and integrated circuit​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-is-a-wiring-configuration-for-a-dc-motor">24.
+                                            Which of the following is a wiring configuration for a dc motor?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#they-are-mostly-used-for-converting-circuits-such-as-ac-to-dc-circuits-%e2%80%8b">25.
+                                            They are mostly used for converting circuits such as AC to DC circuits.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-will-happen-with-the-increase-in-speed-of-a-dc-motor%e2%80%8b">26.
+                                            What will happen, with the increase in speed of a DC motor?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-statements-is-truea-dc-is-more-efficient-than-acb-ac-is-less-expensive-than-dcc-motors-only-use-ac-while-generators-only-use-dcd-motors-and-generators-can-be-either-ac-or-d">27.
+                                            Which of the following statements is true?a. DC is more efficient than ACb. AC is less expensive than DCc. Motors only use AC while generators only use DCd. Motors and generators can be either AC or DC​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#differentiate-why-the-series-and-shunt-dc-motor-encounter-a-motorization%e2%80%8b">28.
+                                            Differentiate why the Series and Shunt DC Motor encounter a motorization?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-nature-of-the-force-responsible-in-the-operation-of-a-dc-motors-%e2%80%8b">29.
+                                            what is the nature of the force responsible in the operation of a DC motors.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-statements-briefly-describes-the-difference-between-a-dc-motor-and-an-ac-motor-b-c-dc-motors-can-be-in-two-phases-or-three-phases-while-ac-is-only-a-single-phase-dc-or-ac-re">30.
+                                            Which of the following statements briefly describes the difference between a DC motor and an AC motor? B. C. DC motors can be in two phases or three phases while AC is only a single phase. DC or AC refers to how the electrical current is transferred through and fro the motor. DC motors work well for systems that are hard to start because they need a lot of power upfront as compared to AC. D. AC motors work for situations where speed needs to be controlled and have a continuous current while DC has an alternating current.​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="a-motor-with-an-operating-resistance-of-32-%cf%89-is-connected-to-a-voltage-source-the-current-in-the-circuit-is-1-5-a-what-is-the-voltage-of-the-source-in-a-dc-motor">
+                            1. A motor with an operating resistance of 32 Ω is connected to a voltage source. The current in the circuit is 1.5 A. What is the voltage of the source? in a dc motor.</h2><br />
+                        <p><strong>Answer:</strong></p><p>[tex]V = 48V[/tex]</p><p><strong>Explanation:</strong></p><p>Using Ohm's law:
+</p><p>
+V=IR</p><p></p><p>V = (1.5 A) (32 Ω)</p><p>V = 48V</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-a-better-circuit-using-an-scr-or-using-a-transistor-transistor-circuit">
+                            2. What is a better circuit, using an scr or using a transistor-transistor circuit?</h2><br />
+                        <p><strong>Answer:</strong></p><p>Internal power losses in a thyristor are much smaller than those in a transistor. Transistors, however, have lower voltage drop, and need no turn-off circuit. Power transistors are linear devices better suited for some linear power applications such as audio and high frequency power amplifiers, regulator systems etc.</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-main-difference-between-a-dc-motor-and-an-ac-motora-a-dc-motor-uses-a-commutatorc-a-dc-motor-uses-slip-ringsb-an-ac-motor-uses-a-commutatord-an-ac-motor-uses-brushes">
+                            3. What is the main difference between a DC motor and an AC motor?a. A DC motor uses a commutator						c. A DC motor uses slip ringsb. An AC motor uses a commutator					d. An AC motor uses brushes​</h2><br />
+                        What is the main difference between a DC motor and an AC motor?<p></p>a. A DC motor uses a Comunnicator					<p></p><p></p>b. An AC motor uses a Comunnicator 				<p></p><p></p>c. A DC motor uses slip rings<p></p><p></p>d. An AC motor uses brushes<p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>[tex]\huge\colorbox{stefanie}{\boxed{\colorbox{Black}{\color{purple}{ {Answer}}}}}[/tex]</p><p></p>D.<br />
+                                            <h2 class="ez-toc-section" id="when-connecting-a-transistor-in-a-circuit-why-must-the-technician-know-whether-a-transistor-is-npn-or-pnp%e2%80%8b">
+                            4. when connecting a transistor in a circuit, why must the technician know whether a transistor is NPN or PNP?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>To connect the positive lead of the multimeter to the Base (B) of the transistor and connect the negative lead to the Emitter (E) of the transistor. If it is an NPN transistor then meter should show a voltage drop between 0.45V and 0.9V. If it is a PNP transistor, then it should display see “OL” (Over Limit).</p><p><strong>Explanation:</strong></p><p>I hope it helps&lt;3</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-statements-briefly-describes-the-difference-between-a-dc-motor-and-an-ac-motor-a-b-c-d-dc-motors-can-be-in-two-phases-or-three-phases-while-ac-is-only-a-single-phase-dc-or">
+                            5. Which of the following statements briefly describes the difference between a DC motor and an AC motor? A. B. C. D. DC motors can be in two phases or three phases while AC is only a single phase. DC or AC refers to how the electrical current is transferred through and fro the motor. DC motors work well for systems that are hard to start because they need a lot of power upfront as compared to AC. AC motors work for situations where speed needs to be controlled and have a continuous current while DC has an alternating current.​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Explanation:</strong></p><p>Which of the following statements briefly describes the difference between a DC motor and an AC motor? A. B. C. D. DC motors can be in two phases or three phases while AC is only a single phase. DC or AC refers to how the electrical current is transferred through and fro the motor. DC motors work well for systems that are hard to start because they need a lot of power upfront as compared to AC. AC motors work for situations where speed needs to be controlled and have a continuous current while DC has an alternating current.​</p><br />
+                                            <h2 class="ez-toc-section" id="a-220-volt-dc-series-motor-is-running-at-a-speed-of-850-rpm-and-draws-105-a-calculate-at-what-speed-the-motor-will-run-when-developing-half-the-torque-total-resistance-of-the-armature-and-field-is-0">
+                            6. A 220 volt DC series motor is running at a speed of 850 rpm and draws 105 A. Calculate at what speed the motor will run when developing half the torque. Total resistance of the armature and field is 0.1 ohm. Assume that the magnetic circuit is unsaturated. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>112</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="if-a-transistor-has-a-dc-emitter-current-of-6-25-ma-how-much-is-the-ac-emitter-resistance">
+                            7. If a transistor has a dc emitter current of 6.25 ma how much is the ac emitter resistance</h2><br />
+                        <p><strong>Answer:</strong></p><p>3.75</p><p><strong>Step-by-step explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="hat-is-the-difference-between-the-ac-motor-and-the-dc-motor7-8-9-10-%e2%80%8b">
+                            8. hat is the difference between the AC Motor and the DC Motor7.8.9.10.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The most basic difference is the power source. A.C. motors are powered from alternating current (A.C.) while D.C. motors are powered from direct current (D.C.), such as batteries, D.C. power supplies or an AC-to-DC power converter.</p><br />
+                                            <h2 class="ez-toc-section" id="2-what-are-the-3-examples-of-transistors-in-circuit-drawings%e2%80%8b">
+                            9. 2.What are the 3 examples of transistors in circuit drawings​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>What are the 3 terminals of a transistor?</p><p></p><p>A bipolar transistor has terminals labeled base, collector, and emitter. A small current at the base terminal (that is, flowing between the base and the emitter) can control or switch a much larger current between the collector and emitter terminals.</p><p></p><p><strong>#</strong><strong>C</strong><strong>A</strong><strong>R</strong><strong>R</strong><strong>Y</strong><strong>_</strong><strong>O</strong><strong>N</strong><strong>_</strong><strong>L</strong><strong>E</strong><strong>A</strong><strong>R</strong><strong>N</strong><strong>I</strong><strong>N</strong><strong>G</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="explain-how-a-npn-transistor-is-connected-to-a-circuit%e2%80%8b">
+                            10. explain how a npn transistor is connected to a circuit​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The NPN transistor is designed to pass electrons from the emitter to the collector (so conventional current flows from collector to emitter). The emitter "emits" electrons into the base, which controls the number of electrons the emitter emits. ... The transistor is kind of like an electron valve.</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-difference-between-dc-motor-and-dc-generator%e2%80%8b">
+                            11. What is difference between DC motor and DC generator?​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>DC motor</strong></p>A DC motor is any of a class of rotary electrical motors that converts direct current electrical energy into mechanical energy. The most common types rely on the forces produced by magnetic fields.<p></p><p><strong>DC generator</strong></p>A direct-current (DC) generator is a rotating machine that supplies an electrical output with unidirectional voltage and current. ... The field is produced by direct current in field coils or by permanent magnets on the stator. The output, or armature, windings are placed in slots in the cylindrical iron rotor.<p></p><p><strong>Answer:</strong></p>The most significant difference between DC motor and DC generator lies in the conversion mechanism. DC motor converts electrical energy into mechanical energy whereas DC generator converts mechanical energy into an electrical energy.<p><strong>Explanation:</strong></p><p>Hope It Helps</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="how-important-is-transistors-in-the-circuit%e2%80%8b">
+                            12. how important is transistors in the circuit​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Transistors make excellent electronic switches. They can turn currents on and off billions of times per second. Digital computers use transistors as a basic mechanism for storing and moving data.</p><br />
+                                            <h2 class="ez-toc-section" id="similarities-of-basic-dc-motor-and-the-dc-generator%e2%80%8b">
+                            13. similarities of basic DC motor and the DC generator​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>A generator works on the principle of electromagnetic induction. 2. A D.C. works on the principle of force acting on a current carrying conductor placed in a magnetic field. Similarity: Both in A.C generator and D.C motor, a coil rotates in a magnetic field between the pole pieces of a powerful electromagnet.</strong></p><p><strong>Explanation:</strong></p><p><strong>If we were to ask anything common between the electric motor and the electric generator, the similarities are as follows: Both have magnetic field lines. Both have armature coil placed between the magnetic poles viz: North and the South pole. Both have carbon pressures.
+</strong></p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="why-are-transformer-used-in-an-ac-circuit-and-not-on-a-dc-circuit">
+                            14. why are transformer used in an ac circuit and not on a dc circuit?</h2><br />
+                        pag ac circuit kasi continues lang ang flow ng charges to produce electricity (back and forth yan) while pag dc circuit, one way lang ang pag flow ng charges niyan so pag nag use ka ng trnsformer sa dc, puputok yan or short circuit will happen<br />
+                                            <h2 class="ez-toc-section" id="enumerate-the-parts-of-a-basic-dc-motor-%e2%80%8b">
+                            15. enumerate the parts of a basic DC motor.​</h2><br />
+                        <p>The basic parts for DC motors are as follows:</p><p>Stator. The stator carries the field winding and Poles. ...</p><p>Rotor. It carries the armature winding. ...</p><p>Armature Winding. ...</p><p>Field Winding. ...</p><p>Commutator. ...</p><p>Brushes. ...</p><p>Poles. ...</p><p>Slot/Teeth.</p><br />
+                                            <h2 class="ez-toc-section" id="similarities-between-vacuum-tubes-transistor-and-integrated-circuit%e2%80%8b">
+                            16. similarities between vacuum tubes, transistor, and integrated circuit​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Transistor and vacuum tube both are almost same in conceptually. Transistors are used in small integrated circuits which require low voltage supply and Vacuum tubes are used in high power applications. ... Vacuum tubes are really big and very hot. It uses lots of electricity.</p><p></p><p>Hope it helps, good luck!❤️</p><br />
+                                            <h2 class="ez-toc-section" id="examples-of-ac-and-dc-circuit%e2%80%8b">
+                            17. examples of AC and DC Circuit?​</h2><br />
+                        <p><strong>Answer:</strong></p>Hope it helps<p><strong>Explanation:</strong></p>#Carry on learning<p></p>if you like my answer plss brainleast<br />
+                                            <h2 class="ez-toc-section" id="components-of-a-simple-dc-motor%e2%80%8b">
+                            18. components of a simple dc motor​</h2><br />
+                        <p><strong>Answer:</strong></p><p>DC motors include two key components: a stator and an armature. The stator is the stationary part of a motor, while the armature rotates. In a DC motor, the stator provides a rotating magnetic field that drives the armature to rotate.</p><p></p><p><strong>Explanation:</strong></p>Hope this helps!<br />
+                                            <h2 class="ez-toc-section" id="how-does-the-operation-of-the-armature-differ-between-a-dc-generator-and-a-dc-motor">
+                            19. How does the operation of the armature differ between a dc generator and a dc motor?</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>[tex]\:\:\:\:\:\:\:\:\:\:\:\:\:\: [/tex][tex]\mathtt{ \pmb{Do\:u\:know\:i\:still\:\color{red}{love}\: \color{black}{ him?}}}[/tex]</p><p>[tex]\:\:\:\:\:\:\:\:\:\:\:\:\:\: [/tex][tex]\mathtt{ \pmb{ \color{blue}Sad\: \color{black}he\: don't\:\color{red}{love}\: \color{black}{me\:now.}}}[/tex]</p><p></p><p></p><p>[tex]\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\: [/tex] [tex] \color {black} \rule {40pt} {9000000pt} [/tex]</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-nature-of-the-force-responsible-in-the-operation-of-a-dc-motor">
+                            20. What is the nature of the force responsible in the operation of a dc motor?</h2><br />
+                        <p>The basic working principle of a DC motor is: "whenever a current carrying conductor is placed in a magnetic field, it experiences a <strong>mechanical force</strong>"</p><p></p><p>In theory, a <strong>DC motor</strong> is an electric motor that requires a supply of direct current or DC (Direct Current) voltage to the field coil to be converted into mechanical energy.  The field coil on the motor is called the stator, and the armature coil is called the rotor.</p> DC Motor Parts<p> DC motors have 3 main parts or components to be able to rotate as follows:</p><p> -.  <strong>Field pole</strong> = Usually a simple DC motor only has two field poles, namely the north pole and the south pole.</p><p> -.  <strong>Dinamo</strong> = Dynamo in the form of a cylinder, connected to the driving axle to move the load.  In the case of a small DC motor, the armature rotates in the magnetic field created by the poles, until the north and south magnetic poles change locations.</p><p> -.  <strong>Commutator</strong> = This component is mainly found in DC motors.  Its purpose is to transmit current between the armature and the power source.</p><p></p><p> The main <strong>advantage</strong> of this DC motor is speed control, which does not affect the quality of the power supply.  This motor can be controlled by adjusting the dynamo voltage or field current.</p><p></p><p>learn more about <strong>DC motor</strong> at  https://brainly.ph/question/4323763.</p><p>#SPJ4</p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-basic-principle-of-dc-motor">
+                            21. What are the basic principle of dc motor?</h2><br />
+                        <p><strong>Answer:</strong></p><p>DC motors operate on Faraday's principle of electromagnetism which states that a current-carrying conductor experiences a force when placed in a magnetic field</p><p>Principle : It works on the principle of motion of a current carrying conductor in a magnetic field, according to Fleming's Left Hand Rule. It is a device which converts electrical energy into mechanical energy of rotation</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-transistor-timer-circuit%e2%80%8b">
+                            22. what is transistor timer circuit​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The timer works on the capacitor “C” Resistor R1, R2 and emitter network, this network is arrange in such way that they provides forward bias voltage to the transistor base terminal</p><p></p><p><strong>Answer:</strong></p><p>The timer works on the capacitor “C” Resistor R1, R2 and emitter network, this network is arrange in such way that they provides forward bias voltage to the transistor base terminal (break over voltage).</p><br />
+                                            <h2 class="ez-toc-section" id="differentiate-between-transistor-timer-circuit-and-integrated-circuit%e2%80%8b">
+                            23. differentiate between transistor timer circuit and integrated circuit​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A single transistor acts as a current amplifier or as an on/off switch, depending on how its gate or base terminal is driven in the design. ... An integrated circuit is made from silicon as well but uses lithography to pattern an entire circuit onto the resulting chip, containing up to billions of individual transistors</p><p><strong>Explanation:</strong></p><p>sana nakatulong</p><p>:}</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-is-a-wiring-configuration-for-a-dc-motor">
+                            24. Which of the following is a wiring configuration for a dc motor?</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>Which of the following is a wiring configuration for a dc motor?</p>C. Bearing.<p></p><p><strong>Explanation:</strong></p><p></p>#CarryOnLearning!<br />
+                                            <h2 class="ez-toc-section" id="they-are-mostly-used-for-converting-circuits-such-as-ac-to-dc-circuits-%e2%80%8b">
+                            25. They are mostly used for converting circuits such as AC to DC circuits.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>22OV 12VC</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-will-happen-with-the-increase-in-speed-of-a-dc-motor%e2%80%8b">
+                            26. What will happen, with the increase in speed of a DC motor?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>it wil burst in flames while increasing speed</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-statements-is-truea-dc-is-more-efficient-than-acb-ac-is-less-expensive-than-dcc-motors-only-use-ac-while-generators-only-use-dcd-motors-and-generators-can-be-either-ac-or-d">
+                            27. Which of the following statements is true?a. DC is more efficient than ACb. AC is less expensive than DCc. Motors only use AC while generators only use DCd. Motors and generators can be either AC or DC​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D)  motors and generators can be either AC or DC</p><br />
+                                            <h2 class="ez-toc-section" id="differentiate-why-the-series-and-shunt-dc-motor-encounter-a-motorization%e2%80%8b">
+                            28. Differentiate why the Series and Shunt DC Motor encounter a motorization?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A series motor respond by decreasing its speed with small increase in current for a given load torque. A shunt motor holds its speed nearly constant with large increase in input current for same amount of load torque.</p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-nature-of-the-force-responsible-in-the-operation-of-a-dc-motors-%e2%80%8b">
+                            29. what is the nature of the force responsible in the operation of a DC motors.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The basic working principle of a DC motor is: "whenever a current carrying conductor is placed in a magnetic field, it experiences a mechanical force". The direction of this force is given by Fleming's left-hand rule and its magnitude is given by F = BIL.</p><p><strong>Answer:</strong></p><p>  </p><p></p><p>The basic working principle of a DC motor is: "whenever a current carrying conductor is placed in a magnetic field, it experiences a mechanical force". The direction of this force is given by Fleming's left-hand rule and its magnitude is given by F = BIL.</p><p></p><p></p><p></p><p></p><p></p><p>Paki Brainliest po pls kailangan ko lang po salamat ( pls make this answer brainliest i realy need it thank you)</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-statements-briefly-describes-the-difference-between-a-dc-motor-and-an-ac-motor-b-c-dc-motors-can-be-in-two-phases-or-three-phases-while-ac-is-only-a-single-phase-dc-or-ac-re">
+                            30. Which of the following statements briefly describes the difference between a DC motor and an AC motor? B. C. DC motors can be in two phases or three phases while AC is only a single phase. DC or AC refers to how the electrical current is transferred through and fro the motor. DC motors work well for systems that are hard to start because they need a lot of power upfront as compared to AC. D. AC motors work for situations where speed needs to be controlled and have a continuous current while DC has an alternating current.​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Explanation:</strong></p><strong>Which of the following statements briefly describes the difference between a DC motor and an AC motor? B. C. DC motors can be in two phases or three phases while AC is only a single phase. DC or AC refers to how the electrical current is transferred through and fro the motor. DC motors work well for systems that are hard to start because they need a lot of power upfront as compared to AC. D. AC motors work for situations where speed needs to be controlled and have a continuous current while DC has an alternating current.​</strong><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/vSV85c9Yecg?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>physics</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/jojo-s-bible-adventures.html">Jojo s Bible Adventures</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/s-r-membership-renewal.html">S r Membership Renewal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/7-c-s-of-business-letter.html">7 C s Of Business Letter</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/history-of-children-s-literature-timeline.html">History Of Children s Literature Timeline</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/communication-is-schemata-driven.html">Communication Is Schemata Driven</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/pugo-adventure-room-rates-2019.html">Pugo Adventure Room Rates 2019</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/teoryang-behaviorism.html">Teoryang Behaviorism</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/destrong-mandaue.html">Destrong Mandaue</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/panimula-ng-el-filibusterismo.html">Panimula Ng El Filibusterismo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/osborne-checklist.html">Osborne Checklist</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/novasina-labmaster.html">Novasina Labmaster</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/theoretical-driving-course.html">Theoretical Driving Course</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/dh-ipc-c35n.html">Dh Ipc C35n</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/apibca.html">Apibca</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/cibeles-insurance.html">Cibeles Insurance</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/girlfriends-of-rizal.html">Girlfriends Of Rizal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/batang-binalibag-ng-ama-patay.html">Batang Binalibag Ng Ama Patay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/hindi-madali-in-english.html">Hindi Madali In English</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/nutritionist-dietitian-licensure-exam-2022.html">Nutritionist dietitian Licensure Exam 2022</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/excel-quiz-template.html">Excel Quiz Template</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

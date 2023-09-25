@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cpu Scheduling Algorithms Questions And Answers - QnA</title>
+    <meta name="description" content="Cpu Scheduling Algorithms Questions And Answers, , , , , , , 0, Scheduling Algorithms in OS, www.notesjam.com, 1200 x 800, png, , 20, cpu-scheduling-algorithms-questions-and-answers, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cpu Scheduling Algorithms Questions And Answers - QnA" />
+    <meta property="og:description" content="Cpu Scheduling Algorithms Questions And Answers, , , , , , , 0, Scheduling Algorithms in OS, www.notesjam.com, 1200 x 800, png, , 20, cpu-scheduling-algorithms-questions-and-answers, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cpu Scheduling Algorithms Questions And Answers - QnA" />
+    <meta name="twitter:description" content="Cpu Scheduling Algorithms Questions And Answers, , , , , , , 0, Scheduling Algorithms in OS, www.notesjam.com, 1200 x 800, png, , 20, cpu-scheduling-algorithms-questions-and-answers, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Cpu Scheduling Algorithms Questions And Answers</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">captaincandy</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Cpu+Scheduling+Algorithms+Questions+And+Answers" alt="Cpu Scheduling Algorithms Questions And Answers">
+                    </div>
+                    <p></p>
+                    <p>SITUATION: I&#039;ll create an algorithm that&#039;ll generate a pseudo-random schedule.QUESTION: Do you know why it won&#039;t be a true random schedule? ​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#situation-ill-create-an-algorithm-thatll-generate-a-pseudo-random-schedule-question-do-you-know-why-it-wont-be-a-true-random-schedule-%e2%80%8b">1.
+                                            SITUATION: I'll create an algorithm that'll generate a pseudo-random schedule.QUESTION: Do you know why it won't be a true random schedule? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-scheduling-algorithms-could-result-in-starvation">2.
+                                            Which of the following scheduling algorithms could result in starvation?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-cpu-scheduling-important-in-the-execution-of-processes-inside-the-computer%e2%80%8b">3.
+                                            why cpu scheduling important in the execution of processes inside the computer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#when-is-the-scheduler-phone-not-allowed-in-school-duringpliss-answer-this-question%e2%80%8b">4.
+                                            when is the scheduler phone not allowed in school ? (during)pliss answer this question​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-a-cpu-please-i-need-an-answer">5.
+                                            What is a cpu? please i need an answer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-algorithm-pls-answer-and-dont-delete-it">6.
+                                            what is algorithm pls answer and don't delete it</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#study-the-algorithm-below-and-answer-the-questions-which-control-structures-are-used-in-the-algorithm-what-will-the-algorithm-print-when-the-price-of-the-tv-is-2100-how-would-you-modify-the-alg">7.
+                                             Study the algorithm below and answer the questions.  Which control structures are used in the algorithm? What will the algorithm print when the price of the TV is $2,100? How would you modify the algorithm so that it can be used for only the first 10 customers buying a TV? How would you modify the algorithm so that it allows the user to also enter the discount rate and then uses that rate to calculate the discount? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#an-address-generated-by-the-cpu-group-of-answer-choices">8.
+                                            An address generated by the cpu. group of answer choices</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#answer-the-following-questions1-describe-the-difference-between-abstract-data-type-from-data-structures-2-explain-the-relationship-between-problems-algorithms-and-programs-3-using-your-own-wor">9.
+                                            Answer the following questions:
+1. Describe the difference between abstract data type from data structures.
+2. Explain the relationship between problems, algorithms and programs.
+3. Using your own words, list down at least five (5) reasons why you need to study algorithms.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#answer-is-needed-and-it-is-an-algorithm">10.
+                                            answer is needed and it is an algorithm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-cpu-answer%e2%80%8b">11.
+                                            what is the cpu answer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-design-and-analysis-of-algorithms-explain-your-answer-%e2%80%8b">12.
+                                            what is design and analysis of algorithms? explain your answer.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#this-type-of-algorithm-involves-asking-a-question-and-a-choice-is-made">13.
+                                            This type of algorithm involves asking a question and a choice is made.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-cpu-what-is-the-importance-of-cpu%e2%80%8b">14.
+                                            what is cpu? what is The importance of cpu?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-puzzle-your-answer-might-be-in-acronym-or-complete-words-1-it-is-the-brain-of-the-computer-2-it-directs-the-cpu-to-transfer-data-from-one-location-to-another-3-it-is-the-heart-of-the-cpu-4">15.
+                                            B. PUZZLE. Your answer might be in acronym or complete words. 1. It is the brain of the computer. 2. It directs the CPU to transfer data from one location to another. 3. It is the Heart of the CPU. 4. It is the brain of the CPU. 5. It is CPU architecture that uses a broad set of instructions 4. 1. с​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#answer-the-questions-explain-why-a-time-schedule-is-helpful-in-meal-praparation-after-serving-your-soup-evaluate-the-schedule-%e2%80%8b">16.
+                                            Answer the questions EXplain why a time schedule is helpful in meal praparation After serving your soup evaluate the schedule.. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#do-you-think-that-algorithm-is-correctly-design-defend-your-answers%e2%80%8b">17.
+                                            do you think that algorithm is correctly design defend your answers​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#brainlist-kopo-maka-answerprocessing-questions-1-what-are-the-important-things-to-be-considered-in-making-algorithm-express-in-flowchart-2-why-is-it-important-to-analyze-the-problem-before-creating">18.
+                                            BRAINLIST KOPO MAKA ANSWERProcessing Questions: 1.What are the important things to be considered in making algorithm express in flowchart? 2. Why is it important to analyze the problem before creating flowchart? 3. Why is it important to make algorithm and flowchart in solving thei problem?​​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#information-of-cpu-type-can-someone-answer-%e2%80%8b">19.
+                                            information of  cpu type? can someone answer? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-write-true-if-the-statement-is-true-and-false-if-not-true-1-computer-is-a-machine-that-perform-only-a-single-task-according-to-specific-instruction-2-hardware-is-the-intangible-part-of">20.
+                                            Directions: Write TRUE if the statement is true and FALSE if not. true 1. Computer is a machine that perform only a single task according to specific instruction, 2. Hardware is the intangible part of a computer. 3. CPU is the heart and brain of the computer 4. Systems programs are needed to keep all the hardware and software systems running together smooth. 5. Compiler is a program that converts instruction into a machine code so that they can be read and executed by a computer. 6. Algorithm is a step-by-step instructions used to solve problem.7. An algorithm is an ordered set of unclear executable steps. 8. A set of directions is the algorithm we use when we're looking for the Post Office. 9. A set of directions is the algorithm we use when we're building a wardrobe. 10. Only top software programmers can write an algorithm. 11. A recipe is the algorithm we use when we're making a cake. 12. When you write an algorithm the order of the instructions is very important. 13. Algorithms can be used anytime to design solutions to problems. 14. More than one way of solving problem should be considered when designing an algorithm 15. A program is an illustration of an algorithm designed for computer applications​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-cpu-and-what-is-cpu-holder">21.
+                                            what is CPU ???????? and what is CPU holder?????</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cpu-clean-withplease-answer-it-properlyimproper-answer-automatic-report">22.
+                                            CPU clean with?
+Please answer it properly
+Improper answer automatic report!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-is-an-operating-system-that-uses-specialized-scheduling-algorithms-in-order-to-achieve-a-deterministic-nature-of-behavior-a-distributed-b-embedded-c-multi-user-d-real-time%e2%80%8b">23.
+                                            1.it is an operating system that uses specialized scheduling algorithms in order to achieve a deterministic nature of behavior  a.distributed b.embedded c.multi-user d.real-time​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ewhat-other-enrichment-activity-can-i-engage-indirection-complete-the-abbreviated-words-write-your-answer-in-the-space-provideddirection-answer-the-following-questions-below-refer-to-the-rubric-p">24.
+                                            EWhat Other Enrichment Activity Can I Engage InDirection: Complete the abbreviated words. Write your answer in the space provided,Direction: Answer the following questions below. Refer to the rubric Provided in the next activity.1. How fast does a CPU transfer data?2. Could a GPU be used in place of a CPU?3. Could a computer work without a CPU?1. How Is the CPU Speed Measured?5. What is Clock Speed?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-can-rational-expression-and-equations-be-used-to-answer-questions-about-completion-of-a-job-on-schedule%e2%80%8b">25.
+                                            how can rational expression and equations be used to answer questions about completion of a job on schedule?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-what-is-one-way-of-getting-the-gcd-of-two-positive-integers-without-factoring-by-recursive-use-of-division-algorithm-a-eulers-algorithmb-euclidean-algorithmc-division-algorithmd-bezout">26.
+                                            2. What is one way of getting the GCD of two positive integers without factoring, by recursive use of division algorithm? *
+A. Euler's Algorithm
+B. Euclidean Algorithm
+C. Division Algorithm
+D. Bezout's Algorithm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#create-a-algorithm-create-a-algorithm-daw-e-diko-alam-%e2%80%8b">27.
+                                            Create a algorithm Create a algorithm daw e diko alam.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-advantages-of-the-algorithm-and-why-should-we-use-the-algorithm-in-programming-%e2%80%8b">28.
+                                            What are the advantages of the algorithm and why should we use the algorithm in programming ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-use-the-table-to-answer-the-following-questions-belowb-use-the-metro-rail-transit-mrt-schedule-to-answer-the-questions-below-write-your-answer-in-your-notebook%e2%80%8b">29.
+                                            A.Use the table to answer the following questions below:B.Use the Metro Rail Transit (MRT) schedule to answer the questions below Write your answer in your notebook​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#as-a-student-i-learned-that-it-is-important-to-plan-your-time-schedule-on-the-hand-tools-because__________________________________________________________________________please-answer-this-question">30.
+                                            As a student, I learned that it is important to plan your time schedule on the hand tools because__________________________________________________________________________please answer this question​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="situation-ill-create-an-algorithm-thatll-generate-a-pseudo-random-schedule-question-do-you-know-why-it-wont-be-a-true-random-schedule-%e2%80%8b">
+                            1. SITUATION: I'll create an algorithm that'll generate a pseudo-random schedule.QUESTION: Do you know why it won't be a true random schedule? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Obviously because the generation of true random numbers remains as an unsolved problem in computer science. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-scheduling-algorithms-could-result-in-starvation">
+                            2. Which of the following scheduling algorithms could result in starvation?</h2><br />
+                        <p><strong>Answer</strong><strong>:</strong></p><p><strong>queue</strong></p><p></p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="why-cpu-scheduling-important-in-the-execution-of-processes-inside-the-computer%e2%80%8b">
+                            3. why cpu scheduling important in the execution of processes inside the computer​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The aim of CPU scheduling is to make the system efficient, fast, and fair. Whenever the CPU becomes idle, the operating system must select one of the processes in the ready queue to be executed. ... The scheduler selects from among the processes in memory that are ready to execute and allocates the CPU to one of them.</p><p><strong>Explanation:</strong></p><p>That,s it    </p><p>You can thanks me</p><br />
+                                            <h2 class="ez-toc-section" id="when-is-the-scheduler-phone-not-allowed-in-school-duringpliss-answer-this-question%e2%80%8b">
+                            4. when is the scheduler phone not allowed in school ? (during)pliss answer this question​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The use of mobile phones in schools by students has become a controversial topic debated by students, parents, teachers and authorities.</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-a-cpu-please-i-need-an-answer">
+                            5. What is a cpu? please i need an answer</h2><br />
+                        <p><strong>Answer:</strong></p><p>A central processing unit, also called a central processor, main processor or  processor, is the electronic circuitry that executes instructions comprising a computer program. </p><p></p><p><strong>Explanation:</strong></p><p>pa breinliest po salamt</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-algorithm-pls-answer-and-dont-delete-it">
+                            6. what is algorithm pls answer and don't delete it</h2><br />
+                        <p><strong>Answer:</strong></p><p>An algorithm is a list of rules to follow in order to solve a problem. Algorithms need to have their steps in the right order. Think about an algorithm for getting dressed in the morning.</p><p><strong>Step-by-step explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="study-the-algorithm-below-and-answer-the-questions-which-control-structures-are-used-in-the-algorithm-what-will-the-algorithm-print-when-the-price-of-the-tv-is-2100-how-would-you-modify-the-alg">
+                            7.  Study the algorithm below and answer the questions.  Which control structures are used in the algorithm? What will the algorithm print when the price of the TV is $2,100? How would you modify the algorithm so that it can be used for only the first 10 customers buying a TV? How would you modify the algorithm so that it allows the user to also enter the discount rate and then uses that rate to calculate the discount? ​</h2><br />
+                        <p>Answer:</p><p>$2,100 ÷ 10 = $210</p><p>Explanation:</p><p>PA BRAINLIEST PO</p><br />
+                                            <h2 class="ez-toc-section" id="an-address-generated-by-the-cpu-group-of-answer-choices">
+                            8. An address generated by the cpu. group of answer choices</h2><br />
+                        <p><strong>Answer:</strong></p><p>what is the question here</p><br />
+                                            <h2 class="ez-toc-section" id="answer-the-following-questions1-describe-the-difference-between-abstract-data-type-from-data-structures-2-explain-the-relationship-between-problems-algorithms-and-programs-3-using-your-own-wor">
+                            9. Answer the following questions:
+1. Describe the difference between abstract data type from data structures.
+2. Explain the relationship between problems, algorithms and programs.
+3. Using your own words, list down at least five (5) reasons why you need to study algorithms.</h2><br />
+                        <p><strong>Answer:</strong></p>k put, an ADT (Abstract Data Type) is more of a logical description, while a Data Structure is concrete. Think of an ADT as a picture of the data and the operations to manipulate and change it. A Data Structure is the the real, concrete thing. It can be implemented and used within an algorithm.An algorithm is a self-contained step-by-step set of operations to be performed to solve a specific problem or a class of problems. A computer program is a sequence of instructions that comply the rules of a specific programming language , written to perform a specified task with a computer<p><strong>Explanation:</strong></p><p></p>  We learn by seeing others solve problems and by solving problems by ourselves. Being exposed to different problem-solving techniques and seeing how different algorithms are designed helps us to take on the next challenging problem that we are given. ... One algorithm may use many fewer resources than another.<p></p><p></p><p>yan lng po alam ko eh </p><br />
+                                            <h2 class="ez-toc-section" id="answer-is-needed-and-it-is-an-algorithm">
+                            10. answer is needed and it is an algorithm</h2><br />
+                        <p><strong>Answer:</strong></p><p>a procedure or formula for solving a problem, based on conducting a sequence of specified actions.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-cpu-answer%e2%80%8b">
+                            11. what is the cpu answer​</h2><br />
+                        <p><strong>Answer:The central processing unit (CPU) of a computer is a piece of hardware that carries out the instructions of a computer program. It performs the basic arithmetical, logical, and input/output operations of a computer system</strong></p><p></p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-design-and-analysis-of-algorithms-explain-your-answer-%e2%80%8b">
+                            12. what is design and analysis of algorithms? explain your answer.​</h2><br />
+                        <p></p><p>Design and Analysis of Algorithms: </p><p></p><p>This core course covers good principles of algorithm design, elementary analysis of algorithms, and fundamental data structures. The emphasis is on choosing appropriate data structures and designing correct and efficient algorithms to operate on these data structures.</p><p><strong>Explanation:</strong></p><p>Hi! I hope this helps. Keep safe and godbless</p><p></p><p></p><p>-HelloKittyF</p><br />
+                                            <h2 class="ez-toc-section" id="this-type-of-algorithm-involves-asking-a-question-and-a-choice-is-made">
+                            13. This type of algorithm involves asking a question and a choice is made.</h2><br />
+                        ANSWER:algorithms<p>[tex] \\  \\ [/tex]</p><p>#ShareYourKnowledge ^^ </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-cpu-what-is-the-importance-of-cpu%e2%80%8b">
+                            14. what is cpu? what is The importance of cpu?​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>what is cpu?</strong></p><p>central processing unit (CPU), principal part of any digital computer system, generally composed of the main memory, control unit, and arithmetic-logic unit. ... In modern computers, the CPU is contained on an integrated circuit chip called a microprocessor.</p><p></p><p><strong>what is The importance of cpu?</strong></p><p>The CPU is made up of three main components, the control unit , the immediate access store and the arithmetic and logic unit .</p>What is cpu? Is it important?<p></p><p></p><p>Any <strong>computer</strong> system's brain is the Central Processing Unit (CPU). Every <strong>computer</strong> activity eventually passes via the CPU. The microprocessor, which houses today's CPUs, is a single chip.</p><p></p><p>The original <strong>computers</strong> had transistor-filled circuit boards and were housed in massive steel cabinets. They are now tiny enough to fit in even the tiniest mobile phone or MP3 player, and they may be found in a variety of everyday household items.</p><p></p><p>CPUs are in charge of carrying out the orders given to them by the software. It is the <strong>computer</strong> core logic.</p><p></p><p>The number of "cores" or processors in a single integrated circuit can be used to classify CPUs. Single-core, dual-core, and quad-core CPUs are among them.</p><p></p><p>The speed of a CPU in a <strong>computer</strong> is measured in megahertz (MHz) or gigahertz (GHz) (GHz). The amount of clock cycles the CPU can accomplish in a second is represented by this value.</p><p></p><p></p><p>What is the importance of the CPU to the computer?​</p><p>brainly.ph/question/13986454<br />#LETSSTUDY</p><br />
+                                            <h2 class="ez-toc-section" id="b-puzzle-your-answer-might-be-in-acronym-or-complete-words-1-it-is-the-brain-of-the-computer-2-it-directs-the-cpu-to-transfer-data-from-one-location-to-another-3-it-is-the-heart-of-the-cpu-4">
+                            15. B. PUZZLE. Your answer might be in acronym or complete words. 1. It is the brain of the computer. 2. It directs the CPU to transfer data from one location to another. 3. It is the Heart of the CPU. 4. It is the brain of the CPU. 5. It is CPU architecture that uses a broad set of instructions 4. 1. с​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.CPU</p><p>2.circuit</p><p>3.transistor</p><p>4.Chip</p><p>5.Complex instruction set computer(CISC)</p><br />
+                                            <h2 class="ez-toc-section" id="answer-the-questions-explain-why-a-time-schedule-is-helpful-in-meal-praparation-after-serving-your-soup-evaluate-the-schedule-%e2%80%8b">
+                            16. Answer the questions EXplain why a time schedule is helpful in meal praparation After serving your soup evaluate the schedule.. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>thanks sa point and happy Halloween narin po stay safe everyone&lt;33</p><br />
+                                            <h2 class="ez-toc-section" id="do-you-think-that-algorithm-is-correctly-design-defend-your-answers%e2%80%8b">
+                            17. do you think that algorithm is correctly design defend your answers​</h2><br />
+                        <p>well, for me, YES!</p><p><strong>Explanation:</strong></p><p>In mathematics and computer science, an algorithm is a finite sequence of well-defined, computer-implementable instructions, typically to solve a class of problems or to perform a computation. Algorithms are always unambiguous and are used as specifications for performing calculations, data processing, automated reasoning, and other tasks.</p><p>The concept of algorithm has existed since antiquity. Arithmetic algorithms, such as a division algorithm, was used by ancient Babylonian mathematicians c. 2500 BC and Egyptian mathematicians c. 1550 BC.Greek mathematicians later used algorithms in the sieve of Eratosthenes for finding prime numbers, and the Euclidean algorithm for finding the greatest common divisor of two numbers. Arabic mathematicians such as al-Kindi in the 9th century used cryptographic algorithms for code-breaking, based on frequency analysis.</p><br />
+                                            <h2 class="ez-toc-section" id="brainlist-kopo-maka-answerprocessing-questions-1-what-are-the-important-things-to-be-considered-in-making-algorithm-express-in-flowchart-2-why-is-it-important-to-analyze-the-problem-before-creating">
+                            18. BRAINLIST KOPO MAKA ANSWERProcessing Questions: 1.What are the important things to be considered in making algorithm express in flowchart? 2. Why is it important to analyze the problem before creating flowchart? 3. Why is it important to make algorithm and flowchart in solving thei problem?​​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Algorithm and flowchart are the powerful tools for learning programming. An algorithm is a step-by-step analysis of the process, while a flowchart explains the steps of a program in a graphical way. Algorithm and flowcharts helps to clarify all the steps for solving the problem.</p><p></p><p>2. Flowcharts are better way of communicating the logic of a system to all concerned or involved. Effective analysis: With the help of flowchart, problem can be analysed in more effective way therefore reducing cost and wastage of time.</p><p></p><p>3. </p><p>Algorithm and flowchart are the powerful tools for learning programming. An algorithm is a step-by-step analysis of the process, while a flowchart explains the steps of a program in a graphical way. Algorithm and flowcharts helps to clarify all the steps for solving the problem.</p><p></p><p><strong>Explanation:</strong></p><p>Sana maka tulong^^</p><br />
+                                            <h2 class="ez-toc-section" id="information-of-cpu-type-can-someone-answer-%e2%80%8b">
+                            19. information of  cpu type? can someone answer? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>central processing unit</p><br />
+                                            <h2 class="ez-toc-section" id="directions-write-true-if-the-statement-is-true-and-false-if-not-true-1-computer-is-a-machine-that-perform-only-a-single-task-according-to-specific-instruction-2-hardware-is-the-intangible-part-of">
+                            20. Directions: Write TRUE if the statement is true and FALSE if not. true 1. Computer is a machine that perform only a single task according to specific instruction, 2. Hardware is the intangible part of a computer. 3. CPU is the heart and brain of the computer 4. Systems programs are needed to keep all the hardware and software systems running together smooth. 5. Compiler is a program that converts instruction into a machine code so that they can be read and executed by a computer. 6. Algorithm is a step-by-step instructions used to solve problem.7. An algorithm is an ordered set of unclear executable steps. 8. A set of directions is the algorithm we use when we're looking for the Post Office. 9. A set of directions is the algorithm we use when we're building a wardrobe. 10. Only top software programmers can write an algorithm. 11. A recipe is the algorithm we use when we're making a cake. 12. When you write an algorithm the order of the instructions is very important. 13. Algorithms can be used anytime to design solutions to problems. 14. More than one way of solving problem should be considered when designing an algorithm 15. A program is an illustration of an algorithm designed for computer applications​</h2><br />
+                        <p><strong>Answer:</strong></p><p>false</p><p>true</p><p>true</p><p>true</p><p>true</p><p>true</p><p>true</p><p>true</p><p>false</p><p>true</p><p>true</p><p>true</p><p>true</p><p>true</p><p></p><p></p><p></p><p>#CarryOnLearning</p><p>#StudyHard</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-cpu-and-what-is-cpu-holder">
+                            21. what is CPU ???????? and what is CPU holder?????</h2><br />
+                        CPU-<strong> Central Processing Unit <br /></strong>CPU HOLDER-<strong> used to hold the  CPU or Central Processing Unit</strong><strong><br /></strong>CPU is Central Processing Unit.<br />CPU Holder, Holds The CPU<br />
+                                            <h2 class="ez-toc-section" id="cpu-clean-withplease-answer-it-properlyimproper-answer-automatic-report">
+                            22. CPU clean with?
+Please answer it properly
+Improper answer automatic report!</h2><br />
+                        <p><strong>Answer:</strong></p><strong>C</strong><strong>P</strong><strong>U</strong><p> isopropyl alcohol, cotton swabs, or a cloth.</p><p><strong>Explanation:</strong></p><p>HOPE ITS HELP</p><br />
+                                            <h2 class="ez-toc-section" id="1-it-is-an-operating-system-that-uses-specialized-scheduling-algorithms-in-order-to-achieve-a-deterministic-nature-of-behavior-a-distributed-b-embedded-c-multi-user-d-real-time%e2%80%8b">
+                            23. 1.it is an operating system that uses specialized scheduling algorithms in order to achieve a deterministic nature of behavior  a.distributed b.embedded c.multi-user d.real-time​</h2><br />
+                        <p><strong>d.</strong><strong> </strong><strong>r</strong><strong>e</strong><strong>a</strong><strong>l</strong><strong>-</strong><strong>t</strong><strong>i</strong><strong>m</strong><strong>e</strong></p><p></p><p><strong>-A real-time operating system is an operating system that guaranties to process events or data within a certain short amount of time. A real-time operating system may be single- or multi-tasking, but when multitasking, it uses specialized scheduling algorithms so that a deterministic nature of behavior is achieved.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="ewhat-other-enrichment-activity-can-i-engage-indirection-complete-the-abbreviated-words-write-your-answer-in-the-space-provideddirection-answer-the-following-questions-below-refer-to-the-rubric-p">
+                            24. EWhat Other Enrichment Activity Can I Engage InDirection: Complete the abbreviated words. Write your answer in the space provided,Direction: Answer the following questions below. Refer to the rubric Provided in the next activity.1. How fast does a CPU transfer data?2. Could a GPU be used in place of a CPU?3. Could a computer work without a CPU?1. How Is the CPU Speed Measured?5. What is Clock Speed?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1 49-60 mb per second</p><p>2 yes</p><p>3Without the processor, the computer will turn on, but nothing will be displayed on the monitor. The computer will emit a specific sequence of beeps.</p><p>4The clock speed measures the number of cycles your CPU executes per second, measured in GHz (gigahertz). ... A CPU with a clock speed of 3.2 GHz executes 3.2 billion cycles per second. (Older CPUs had speeds measured in megahertz, or millions of cycles per second.)Clock speed is the rate at which a processor can complete a processing cycle. </p><p>4Clock speed is the rate at which a processor can complete a processing cycle. It is typically measured in megahertz or gigahertz. One megahertz is equal to one million cycles per second, while one gigahertz equals one billion cycles per second. ... This is because different processors often use different architectures.</p><p></p><p><strong>Explanation:</strong></p><p>pa brainliest po baka namen</p><br />
+                                            <h2 class="ez-toc-section" id="how-can-rational-expression-and-equations-be-used-to-answer-questions-about-completion-of-a-job-on-schedule%e2%80%8b">
+                            25. how can rational expression and equations be used to answer questions about completion of a job on schedule?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Rational formulas can be useful tools for representing real-life situations and for finding answers to real problems. Equations representing direct, inverse, and joint variation are examples of rational formulas that can model many real-life situations. As you will see, if you can find a formula, you can usually make sense of a situation.</p><p><strong>Step-by-step explanation:</strong></p><p>sana nakatulong po</p><br />
+                                            <h2 class="ez-toc-section" id="2-what-is-one-way-of-getting-the-gcd-of-two-positive-integers-without-factoring-by-recursive-use-of-division-algorithm-a-eulers-algorithmb-euclidean-algorithmc-division-algorithmd-bezout">
+                            26. 2. What is one way of getting the GCD of two positive integers without factoring, by recursive use of division algorithm? *
+A. Euler's Algorithm
+B. Euclidean Algorithm
+C. Division Algorithm
+D. Bezout's Algorithm</h2><br />
+                        #ANSWER ☁️<p>2. What is one way of getting the GCD of two positive integers without factoring, by recursive use of division algorithm? *</p>A. Euler's Algorithm<strong>B. Euclidean Algorithm</strong>C. Division AlgorithmD. Bezout's Algorithm<p>[tex]____________________________________[/tex]</p>#ANSWER ☁️<p>2. What is one way of getting the GCD of two positive integers without factoring, by recursive use of division algorithm? *</p>A. Euler's Algorithm<strong>B. Euclidean Algorithm</strong>C. Division AlgorithmD. Bezout's Algorithm<p>[tex]____________________________________[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="create-a-algorithm-create-a-algorithm-daw-e-diko-alam-%e2%80%8b">
+                            27. Create a algorithm Create a algorithm daw e diko alam.​</h2><br />
+                        <p></p><p><strong>Answer:</strong></p><p>How to build an algorithm in 6 steps</p><p>Step 1: Determine the goal of the algorithm.</p><p>Step 2: Access historic and current data.</p><p>Step 3: Choose the right models.</p><p>Step 4: Fine tuning.</p><p>Step 5: Visualize your results.</p><p>Step 6: Running your</p><p></p><p>hope its correct❤</p><p></p> pa brainliest kung puwede❤<p><strong>Answer:</strong></p><p>[tex]{ \rule{40pt}{555555pt}}green green{ \rule{40pt}{555555pt}}green[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-advantages-of-the-algorithm-and-why-should-we-use-the-algorithm-in-programming-%e2%80%8b">
+                            28. What are the advantages of the algorithm and why should we use the algorithm in programming ?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>First is we need to know what Algorithms are to identify its advantages in programming. Algorithms is the "Logic", formula or procedure of solving any problem based on regulating a sequence of a specific actions. The following are its advantages and importance in programming:</p>A step-by-step representation of a solution to a problem which makes a program easy to understand.Not dependent on any programming languages. Even anyone that don't have a programming knowledge can understand it.Every step of an algorithm has its own logical sequence that is easy to debug.Is it easier for a programmer to convert it into an actual program.<br />
+                                            <h2 class="ez-toc-section" id="a-use-the-table-to-answer-the-following-questions-belowb-use-the-metro-rail-transit-mrt-schedule-to-answer-the-questions-below-write-your-answer-in-your-notebook%e2%80%8b">
+                            29. A.Use the table to answer the following questions below:B.Use the Metro Rail Transit (MRT) schedule to answer the questions below Write your answer in your notebook​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.)15 minutes</p><p>2.)50 minutes</p><p>3.)45 minutes</p><p>4.)10.417 meter</p><p><strong>Answer:</strong></p><p></p>APPLY YOUR SKILLS! :<p></p><strong>1.</strong><strong>1</strong><strong>5</strong><strong> </strong><strong>MINUTES</strong><strong>2</strong><strong>.</strong><strong>5</strong><strong>0</strong><strong> </strong><strong>minutes</strong><p></p><br />
+                                            <h2 class="ez-toc-section" id="as-a-student-i-learned-that-it-is-important-to-plan-your-time-schedule-on-the-hand-tools-because__________________________________________________________________________please-answer-this-question">
+                            30. As a student, I learned that it is important to plan your time schedule on the hand tools because__________________________________________________________________________please answer this question​</h2><br />
+                        <p><strong>Answer:</strong></p><p>hand tools is very useful anytime</p><p><strong>Explanation:</strong></p><p>what will you do if your hand tools are over use so that it cause damage to them so we need to take care our tools so we can use them in time</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/G1Hs_z72yI4?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>physics</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/valentine-s-booth-ideas-for-school.html">Valentine s Booth Ideas For School</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/seconds-away-harlan-coben.html">Seconds Away Harlan Coben</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/disaster-preparedness-brochure.html">Disaster Preparedness Brochure</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/bakit-mahalaga-ang-pagsunod-sa-batas.html">Bakit Mahalaga Ang Pagsunod Sa Batas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/how-to-do-the-third-layer-of-a-rubik-s-cube.html">How To Do The Third Layer Of A Rubik s Cube</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/baguio-our-awesome-planet.html">Baguio Our Awesome Planet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/wise-man-s-grandchild-season-2-countdown.html">Wise Man s Grandchild Season 2 Countdown</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/city-assessor-s-office.html">City Assessor s Office</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/danger-line-lyrics.html">Danger Line Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ano-ang-demonstration-effect.html">Ano Ang Demonstration Effect</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/basal-gong.html">Basal Gong</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/dole-las-pinas.html">Dole Las Pinas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/petite-salad-appetizer.html">Petite Salad Appetizer</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/can-sealer-before-operation.html">Can Sealer Before Operation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/how-to-wash-clothes-using-signal-words.html">How To Wash Clothes Using Signal Words</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/example-of-case-study-research-in-the-philippines.html">Example Of Case Study Research In The Philippines</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/si-kuneho-at-si-pagong.html">Si Kuneho At Si Pagong</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/toni-guy-price-list.html">Toni Guy Price List</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/lovebug-chords.html">Lovebug Chords</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/beauro-of-correction.html">Beauro Of Correction</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

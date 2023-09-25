@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C Program For Atm System - QnA</title>
+    <meta name="description" content="C Program For Atm System, C Programming Project |ATM Banking, , , , ADV. LEARNING, 2020-07-29T08:21:19.000000Z, 20, ATM Machine C Program With Source Code | VIDEO | 2020, itsourcecode.com, 1366 x 768, png, , 20, c-program-for-atm-system, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="C Program For Atm System - QnA" />
+    <meta property="og:description" content="C Program For Atm System, C Programming Project |ATM Banking, , , , ADV. LEARNING, 2020-07-29T08:21:19.000000Z, 20, ATM Machine C Program With Source Code | VIDEO | 2020, itsourcecode.com, 1366 x 768, png, , 20, c-program-for-atm-system, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="C Program For Atm System - QnA" />
+    <meta name="twitter:description" content="C Program For Atm System, C Programming Project |ATM Banking, , , , ADV. LEARNING, 2020-07-29T08:21:19.000000Z, 20, ATM Machine C Program With Source Code | VIDEO | 2020, itsourcecode.com, 1366 x 768, png, , 20, c-program-for-atm-system, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">C Program For Atm System</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">zking5025</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=C+Program+For+Atm+System" alt="C Program For Atm System">
+                    </div>
+                    <p></p>
+                    <p>what is the motor system of atm machine?​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-motor-system-of-atm-machine%e2%80%8b">1.
+                                            what is the motor system of atm machine?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-does-the-atm-make-the-system-secure">2.
+                                            How does the ATM make the system secure?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-a-balloon-has-a-pressure-of-2-05-atm-and-at-28%c2%b0c-if-the-temperature-is-reduced-to-16%c2%b0c-what-will-be-the-new-pressure-of-the-balloona-3-97-atmb-1-97-atmc-2-97-atmd-4-97-atm">3.
+                                            1. A balloon has a pressure of 2.05 atm and at 28°C. If the temperature is reduced to 16°C, what will be the new pressure of the balloon?
+a. 3.97 atm
+b. 1.97 atm
+c. 2.97 atm
+d. 4.97 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-volume-of-a-gas-at-27-%c2%b0c-is-300-ml-if-the-pressure-remains-constant-what-is-the-new-volume-if-the-temperature-is-raised-to-100-%c2%b0ca-3-0-atmb-2-5-atmc-2-0-atmd-1-5-atm">4.
+                                            The volume of a gas at 27 °C is 300 mL. If the pressure remains constant, what is the new volume if the temperature is raised to 100 °C?
+A. 3.0 atm
+B. 2.5 atm
+C. 2.0 atm
+D. 1.5 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#three-gases-ar-n2-and-h2-are-mixed-in-a-500l-container-ar-has-a-pressure-of-2-atm-n2-has-a-pressure-of-3-atm-and-h2-has-pressure-of-2-atm-what-is-the-total-pressure-in-the-containera-2-atm-b-3">5.
+                                            Three gases, Ar, N2 and H2 are mixed in a 500L container. Ar has a pressure of 2 atm, N2 has a pressure of 3 atm and H2 has pressure of 2 atm. What is the total pressure in the container?a. 2 atm b. 3 atm c. 5 atm d. 7 atm​.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-refers-to-standard-temperature-and-pressure%c2%a00-atm-and-273-k1-atm-and-273-k0-atm-and-273-degrees-c1-atm-and-273-degrees-c%e2%80%8b">6.
+                                            Which of the following refers to standard temperature and pressure? 0 atm and 273 K1 atm and 273 K0 atm and 273 degrees C1 atm and 273 degrees C​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#l-tank-what-is-the-pressure-of-the-compressed-gas-if-the-temperature-remains-constanta-0-15-atmb-4-7-atmc-0-21-atmd-3-4-atm">7.
+                                            L tank. What is the pressure of the compressed gas, if the temperature remains constant?
+a. 0.15 atm
+b. 4.7 atm
+c. 0.21 atm
+d. 3.4 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-confined-quantity-of-gas-has-a-pressure-of-2-50-atm-and-a-temperature-of-22%c2%b0c-what-is-the-new-pressure-if-the-temperature-is-increased-to-22%c2%b0ca-2-1-atm-b-2-5-atmc-2-9-atmd-3-4-atm">8.
+                                            A confined quantity of gas has a pressure of 2.50 atm and a temperature of -22°C. What is the new pressure if the temperature is increased to 22°C?a. 2.1 atm b. 2.5 atmc. 2.9 atmd. 3.4 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-what-is-the-standard-temperature-and-pressure-stp-a-1-k-273-atm-b-100-k-2-atm-c-273-k-1-atm-d-373-k-1-atm%e2%80%8b">9.
+                                            5. What is the Standard Temperature and Pressure (STP)? A. 1 K, 273 atm B. 100 K, 2 atm C. 273 K 1 atm D. 373 K 1 atm​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#at-460c-a-sample-of-ammonia-gas-exerts-a-pressure-of-5-3-atm-what-is-the-pressure-when-the-volume-of-the-gas-is-reduced-to-one-tenth-0-10-of-the-original-value-at-the-same-temperaturea-53-atm-b">10.
+                                            At 460C a sample of ammonia gas exerts a pressure of 5.3 atm. What is the pressure when the volume of the gas is reduced to one-tenth (0.10) of the original value at the same temperature?
+a.53 atm 
+b.71 atm
+c.45 atm
+d.67 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-pressure-of-a-gas-is-750-torr-when-its-volume-is-400-ml-calculate-the-pressure-atm-if-the-gas-is-allowed-to-expand-to-600-ml-at-constant-temperature-a-0-66-atmb-1-48-atmc-500-atmd-1125">11.
+                                            The pressure of a gas is 750 torr when its volume is 400 mL. Calculate the pressure (atm) if the gas is allowed to expand to 600 mL at constant temperature.
+a. 0.66 atm
+b. 1.48 atm
+c. 500 atm
+d. 1125 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-system-contrats-bya-volume-of-300-cubic-with-a-pressure-of-1-5-atm-work-is-equal-to">12.
+                                            A system contrats bya volume of 300 cubic with a pressure of 1.5 atm. Work is equal to</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-how-many-moles-of-nitrogen-are-present-in-the-problema-1-05b-1-06c-1-07d-1-088-what-is-the-total-moles-of-the-mixturea-1-60b-1-61c-1-62d-1-639-what-is-the-total-pressure-of-the-mixture">13.
+                                            7. How many moles of nitrogen are present in the problem?A. 1.05B. 1.06C. 1.07D. 1.088.What is the total moles of the mixture?A. 1.60B. 1.61C. 1. 62D. 1.639. What is the total pressure of the mixture in terms of atm?A. 3.60B. 3.61C. 3.62D. 3.6310. By rearranging the formula for Dalton's law, what is the partial pressure ofoxygen?A. 1.20 atmB. 1.21 atmC. 1.22 atmD. 1.23 atm11. What is the calculated partial pressure of nitrogen?A. 2.40 atmB. 2.41 atmC. 2.42 atmD. 2.43 atmFor items 12-15, refer to this problem: In a laboratory experiment, 98 gof oxygen and 140 g nitrogen are combined in a 5.0 L at 298 K.Calculate for partial pressure of each gas and its total pressure.12. How many moles of oxygen are in the mixture?A. 1.5 molB. 2.5 molC. 3.5 molD. 4.5 mol13. In the problem above, what is the partial pressure of oxygen gas?A. 17.09 atm B. 17.10 atmC. 17.11 atmD. 17.12 atm14. According to the problem, what is partial pressure exerted by a 140 gnitrogen?A. 24.45 atm B. 24.50 atm C. 24.55 atm D. 24.60 atm15. From the given situation, what will be the total pressure of the mixture?A. 41.47 atm B. 41.57 atm C. 41.67 atm D. 41.77 atm​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-phase-of-water-exist-at-100%c2%b0c-and-5-atm-at-200%c2%b0c-and-1-atm%e2%80%8b">14.
+                                            What phase of water exist at 100°c and 5 atm? at 200°c and 1 atm?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#at-460c-a-sample-of-ammonia-gas-exerts-a-pressure-of-5-3-atm-what-is-the-pressure-when-the-volume-of-the-gas-is-reduced-to-one-tenth-0-10-of-the-original-value-at-the-same-temperaturea-53-atmb-7">15.
+                                            At 460C a sample of ammonia gas exerts a pressure of 5.3 atm. What is the pressure when the volume of the gas is reduced to one-tenth (0.10) of the original value at the same temperature?
+a.53 atm
+b.71 atm
+c.45 atm
+d. 67 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pressure-to-3-4-atma-1-29-ld-12-36-atmb-12-36-lc-1-29-atm22-if-i-have-5-6-liters-of-gas-in-a-piston-at-a-pressure-of-1-5-atm-and-compress-the-gas-until-its-volume-is4-8-l-what-will-the-new-pres">16.
+                                            pressure to 3.4 atm?A. 1.29 LD. 12.36 atmB. 12.36 LC. 1.29 atm22. If I have 5.6 liters of gas in a piston at a pressure of 1.5 atm and compress the gas until its volume is4.8 L, what will the new pressure inside the piston be?4. 1.8 atmB.3.27 atmC. 1.8LD. 3.27 atmUning mu car into the river and it implodes,​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-10-liter-sample-of-gas-is-held-in-a-container-under-a-pressure-of-1-5-atm-then-gas-is-then-compressed-to-7-5-liters-find-the-pressure-if-the-temperature-is-kept-unchanged-%e2%80%8ba-1-3-atmb-2-0">17.
+                                            A 10-liter sample of gas is held in a container under a pressure of 1.5 atm. Then gas is then compressed to 7.5 liters. Find the pressure if the temperature is kept unchanged.​A. 1.3 atmB. 2.0 atmC. 1.7 atmD. 50 atm​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-is-used-as-standard-pressure-in-a-gas-equationa-1-atmb-2-atmc-3-atmd-4-atm">18.
+                                            Which of the following is used as standard pressure in a gas equation?
+a. 1 atm
+b. 2 atm
+c. 3 atm
+d. 4 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#at-46c-a-sample-of-ammonia-gas-exerts-a-pressure-of-5-3-atm-what-is-the-pressure-when-the-volume-of-the-gas-is-reduced-to-one-tenth-0-10-of-the-original-value-at-the-same-temperaturea-53-atmb-71">19.
+                                            At 46C a sample of ammonia gas exerts a pressure of 5.3 atm. What is the pressure when the volume of the gas is reduced to one-tenth (0.10) of the original value at the same temperature?
+a.53 atm
+b.71 atm
+c.45 atm
+d. 67 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#each-of-the-following-containers-has-same-size-which-of-following-containers-has-the-most-compressed-gas-molecules-a-10-atm-b-8-atm-c-6-atm-d-4-atm">20.
+                                            each of the following containers has same size. which of following containers has the most compressed gas molecules? 
+A. 10 atm 
+B. 8 atm 
+C. 6 atm 
+D 4 atm </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#report-po-pag-nonsense-and-pls-explain-your-answer-1-elements-and-compounds-exist-as-gases-at-what-standard-temperature-and-pressure-stp-a-1-atm-25%c2%b0c-b-1-atm-26-%c2%b0c-c-1-atm-27">21.
+                                            Report po pag nonsense and pls explain your answer.. 1. elements and compounds exist as gases at what standard temperature and pressure (stp) A. 1 atm, 25°C B. 1 atm, 26 °C C. 1 atm, 27°C D. 1 atm, 28°C​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-simple-of-nitrogen-occupies-87-0ml-at-35%e2%80%a2c-and-1-1-atm-what-will-be-its-volume-at-50%e2%80%a2c-and-4-00-atm">22.
+                                            a simple of nitrogen occupies 87.0mL at 35•C and 1.1 atm. what will be its volume at 50•C and 4.00 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-a-sample-of-neon-has-a-volume-of-225-cm-at-2-atm-of-pressure-what-will-be-the-pressure-of-the-gas-to-have-a-volume-of-500-cm-a-0-2-atm-c-1-atm-b-0-9-atm-d-4-atm%e2%80%8b">23.
+                                            4. A sample of neon has a volume of 225 cm at 2 atm of pressure. What will be the pressure of the gas to have a volume of 500 cm? a. 0.2 atm c. 1 atm b. 0.9 atm d. 4 atm​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-gas-has-an-initial-pressure-and-temperature-of-70-atm-and-350-k-respectively-what-is-the-pressure-of-a-gas-at-500-ka-200-atmb-49-atmc-88-atmd-100-atm">24.
+                                            A gas has an initial pressure and temperature of 70 atm and 350 K, respectively. What is the pressure of a gas at 500 K?
+a. 200 atm
+b. 49 atm
+c. 88 atm
+d. 100 atm </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-a-gas-sample-has-a-volume-of-13-5-l-at-a-pressure-of-1-23-atm-and-a-temperature-of-34%c2%b0c-how-much-pressure-will-the-gas-exert-if-it-is-compressed-into-a-10-5-l-container-at-45%c2%b0ca-3-64">25.
+                                            1. A gas sample has a volume of 13.5 L at a pressure of 1.23 atm and a temperature of 34°C. How much pressure will the gas exert if it is compressed into a 10.5 L container at 45°C?
+a. 3.64 atm
+b. 2.64 atm
+c. 1.64 atm
+d. 4.64 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#report-po-pag-nonsense-and-pls-explain-your-answer-1-elements-and-compounds-exist-as-gases-at-what-standard-temperature-and-pressure-stp-a-1-atm-25%c2%b0c-b-1-atm-26-%c2%b0cc-1-atm-27%c2%b0c">26.
+                                            Report po pag nonsense and pls explain your answer..1. elements and compounds exist as gases at what standard temperature and pressure (stp) A. 1 atm, 25°C B. 1 atm, 26 °CC. 1 atm, 27°CD. 1 atm, 28°C​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-a-gas-sample-has-a-volume-of-13-5-l-at-a-pressure-of-1-23-atm-and-a-temperature-of-34%c2%b0c-how-much-pressure-will-the-gas-exert-if-it-is-compressed-into-a-10-5-l-container-at-45%c2%b0ca-3-64">27.
+                                            1. A gas sample has a volume of 13.5 L at a pressure of 1.23 atm and a temperature of 34°C. How much pressure will the gas exert if it is compressed into a 10.5 L container at 45°C?
+a. 3.64 atm
+b. 2.64 atm
+c. 1.64 atm
+d. 4.64 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-container-holds-600-ml-of-helium-gas-at-a-constant-temperature-and-a-pressure-of-1-8-atm-what-will-be-the-pressure-if-the-volume-decreased-to-350-ml-a-3-58-atm-b-3-09-atm-c-0-8-atm-d-1-96-atm">28.
+                                            A container holds 600 mL of Helium gas at a constant temperature and a pressure of 1.8 atm. What will be the pressure if the volume decreased to 350 mL?
+ A. 3.58 atm B. 3.09 atm C. 0.8 atm D. 1.96 atm</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#800-ml-of-helium-is-at-55-0oc-and-0-55-atm-what-will-the-pressure-be-if-the-temperature-changes-to-100-oc-if-the-volume-remains-the-samea-1-atmb-0-62-atmc-0-48-atmd-0-75">29.
+                                            800. mL of helium is at 55.0ºC and 0.55 atm. What will the pressure be if the temperature changes to 100.ºC if the volume remains the same?
+a. 1 atm
+b. 0.62 atm
+c. 0.48 atm
+d. 0.75</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-if-oxygen-exerts-a-4atm-of-pressure-in-a-mixture-and-the-total-pressure-of-the-system-is-10-atmwhat-would-be-the-mole-fraction-of-oxygen-in-the-mixture2-compute-for-the-mole-fraction-of-neon-e">30.
+                                            1. If oxygen exerts a 4atm of pressure in a mixture and the total pressure of the system is 10 atm,
+what would be the mole fraction of oxygen in the mixture?
+2. Compute for the mole fraction of neon exerting a pressure of 0.28 atm in a gas mixture which
+has a total pressure of 1.15 atm.
+3. If neon exerts 10 atm of pressure in a mixture and the total pressure of the system is 28 atm,
+what would be the mole fraction of neon in the mixture?
+Nonsense answer = report</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="what-is-the-motor-system-of-atm-machine%e2%80%8b">
+                            1. what is the motor system of atm machine?​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>heeh! yan na mga prii heeh!</p><br />
+                                            <h2 class="ez-toc-section" id="how-does-the-atm-make-the-system-secure">
+                            2. How does the ATM make the system secure?</h2><br />
+                        <p><strong>Answer:</strong></p><p>There are guards on there side is that to make sure safe and sound.</p><p><strong>Answer:</strong></p><p>its secured by the  password</p><p></p><p></p><p></p><p>edit:( Atm card or machine?)</p><br />
+                                            <h2 class="ez-toc-section" id="1-a-balloon-has-a-pressure-of-2-05-atm-and-at-28%c2%b0c-if-the-temperature-is-reduced-to-16%c2%b0c-what-will-be-the-new-pressure-of-the-balloona-3-97-atmb-1-97-atmc-2-97-atmd-4-97-atm">
+                            3. 1. A balloon has a pressure of 2.05 atm and at 28°C. If the temperature is reduced to 16°C, what will be the new pressure of the balloon?
+a. 3.97 atm
+b. 1.97 atm
+c. 2.97 atm
+d. 4.97 atm</h2><br />
+                        <p><strong>Answer:</strong></p><p>b. 1.97 atm</p><p><strong>Explanation:</strong></p><p>[tex]\frac{2.05(273+16)}{273+28} = 1.96827 atm = 1.97 atm[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="the-volume-of-a-gas-at-27-%c2%b0c-is-300-ml-if-the-pressure-remains-constant-what-is-the-new-volume-if-the-temperature-is-raised-to-100-%c2%b0ca-3-0-atmb-2-5-atmc-2-0-atmd-1-5-atm">
+                            4. The volume of a gas at 27 °C is 300 mL. If the pressure remains constant, what is the new volume if the temperature is raised to 100 °C?
+A. 3.0 atm
+B. 2.5 atm
+C. 2.0 atm
+D. 1.5 atm</h2><br />
+                        <p><strong>Answer:</strong></p><p>Menurut saya c </p><p><strong>Explanation:</strong></p><p>Saya tidak pernah melakukannya </p><br />
+                                            <h2 class="ez-toc-section" id="three-gases-ar-n2-and-h2-are-mixed-in-a-500l-container-ar-has-a-pressure-of-2-atm-n2-has-a-pressure-of-3-atm-and-h2-has-pressure-of-2-atm-what-is-the-total-pressure-in-the-containera-2-atm-b-3">
+                            5. Three gases, Ar, N2 and H2 are mixed in a 500L container. Ar has a pressure of 2 atm, N2 has a pressure of 3 atm and H2 has pressure of 2 atm. What is the total pressure in the container?a. 2 atm b. 3 atm c. 5 atm d. 7 atm​.</h2><br />
+                        <p><strong>Answer:</strong></p><p>[tex] \therefore [/tex] The total pressure in the container is 7 atm (D.)</p><p><strong>Explanation:</strong></p><p>We have three gases which is [tex] \rm{Ar, \ N_2, \ and \ H_2} [/tex] they all mixed in 500L. So, we want to there total pressure. To know how many total of pressure in the container, we will use Dalton's Equation.</p>[tex] \boxed{\bold{P_{Total} = P_1 + P_2 + P_3...}}[/tex]<p></p><p>[tex] \begin{gathered}\begin{gathered}\begin{aligned} &amp; \bold{Thus, \ the \ given \ are:} \\ &amp; \quad \boxed{\begin{array}{l} \Longrightarrow \rm{P_1} = 2 \ atm \\ \Longrightarrow \rm{P_2} = 3 \ atm \\ \Longrightarrow \rm{P_3} = 2 \ atm \end{array}}\, \\ \end{aligned} \end{gathered}\end{gathered} [/tex]</p><p></p><p>Substitute it to the formula</p>[tex] \rm{P_{Total} = 2 \ atm + 3 \ atm + 2 \ atm} [/tex][tex] \rm{P_{Total} = 4 \ atm + 3 \ atm} [/tex][tex] \rm{P_{Total} = 7 \ atm}[/tex]<p></p><p>[tex] \therefore [/tex] The total pressure in the container is 7 atm (D.)</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-refers-to-standard-temperature-and-pressure%c2%a00-atm-and-273-k1-atm-and-273-k0-atm-and-273-degrees-c1-atm-and-273-degrees-c%e2%80%8b">
+                            6. Which of the following refers to standard temperature and pressure? 0 atm and 273 K1 atm and 273 K0 atm and 273 degrees C1 atm and 273 degrees C​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1 atm at 273 k</p><p><strong>Explanation:</strong></p><p>yan Ang pagkakaalam ko</p><br />
+                                            <h2 class="ez-toc-section" id="l-tank-what-is-the-pressure-of-the-compressed-gas-if-the-temperature-remains-constanta-0-15-atmb-4-7-atmc-0-21-atmd-3-4-atm">
+                            7. L tank. What is the pressure of the compressed gas, if the temperature remains constant?
+a. 0.15 atm
+b. 4.7 atm
+c. 0.21 atm
+d. 3.4 atm</h2><br />
+                        <p>3.4 atm because the neutral formula of L is given </p><br />
+                                            <h2 class="ez-toc-section" id="a-confined-quantity-of-gas-has-a-pressure-of-2-50-atm-and-a-temperature-of-22%c2%b0c-what-is-the-new-pressure-if-the-temperature-is-increased-to-22%c2%b0ca-2-1-atm-b-2-5-atmc-2-9-atmd-3-4-atm">
+                            8. A confined quantity of gas has a pressure of 2.50 atm and a temperature of -22°C. What is the new pressure if the temperature is increased to 22°C?a. 2.1 atm b. 2.5 atmc. 2.9 atmd. 3.4 atm</h2><br />
+                        ANSWER: C. 2.94 L<br /><br />According to Charles' Law:<br />[tex] \frac{pressure1}{temperature1}  =  \frac{pressure2}{temperature2} [/tex]<br />Plugging in the terms: <br />[tex] \frac{2.50}{251}  =  \frac{x}{295}  \\  \frac{2.50(295)}{251}  = 2.94[/tex]<br />The new pressure is 2.9 atm<p>Hello!
+</p><p><strong>
+A confined quantity of gas has a pressure of 2.50 atm and a temperature of -22°C. What is the new pressure if the temperature is increased to 22°C ?</strong>
+</p><p><strong>a. 2.1 atm  </strong></p><p><strong>b. 2.5 atm
+</strong></p><p><strong>c. 2.9 atm
+</strong></p><p><strong>d. 3.4 atm</strong></p><p>We have an isochoric (isometric or isovolumetric) transformation, it is when a certain mass under pressure maintains its volume constant, if we increase the temperature increases the pressure and if we lower the temperature, the pressure also decreases.  </p><p>We have the following data:  </p><p><strong>P1 (initial pressure) = 2.50 atm
+</strong></p><p>T1 (starting temperature) = - 22 ºC  (in Kelvin)</p><p>TK = TºC + 273.15 → TK = - 22 + 273.15 → TK = 251.15 </p><p><strong>T1 (starting temperature) = 251.15 K</strong></p><p>T2 (final temperature) = 22 ºC (in Kelvin)</p><p>TK = TºC + 273.15 → TK = 22 + 273.15 → TK = 295.15</p><p><strong>T2 (final temperature) = 295.15 K</strong></p><p><strong>P2 (final pressure) = ? (atm)  </strong></p><p>We apply the data to the formula of isovolumetric transformation (the Second Law of Charles and Gay-Lussac), let us see:</p><p>[tex]\dfrac{P_1}{T_1} = \dfrac{P_2}{T_2}[/tex]</p><p>[tex]\dfrac{2.50}{251.15} = \dfrac{P_2}{295.15}[/tex]</p><p>multiply the means by the extremes</p><p>[tex]251.15*P_2 = 2.50*295.15[/tex]</p><p>[tex]251.15\:P_2 = 73787.5[/tex]</p><p>[tex]P_2 = \dfrac{737.875}{251.15}[/tex]</p><p>[tex]P_2 = 2.93798... \to \boxed{\boxed{P_2 \approx 2.9\:atm}}\end{array}}\qquad\checkmark[/tex]</p><p><strong>Answer:</strong></p><p><strong>c. 2.9 atm</strong></p><p>______________________________</p><p>I Hope this helps, greetings ... Dexteright02! =)</p><br />
+                                            <h2 class="ez-toc-section" id="5-what-is-the-standard-temperature-and-pressure-stp-a-1-k-273-atm-b-100-k-2-atm-c-273-k-1-atm-d-373-k-1-atm%e2%80%8b">
+                            9. 5. What is the Standard Temperature and Pressure (STP)? A. 1 K, 273 atm B. 100 K, 2 atm C. 273 K 1 atm D. 373 K 1 atm​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1 atm at 273 k</p><p></p><p><strong>Explanation:</strong></p><p></p><p><strong>Answer:</strong></p><p>mali yung nasa taas </p><p><strong>Explanation:</strong></p><p>eto tama sagot wala ako pake</p><br />
+                                            <h2 class="ez-toc-section" id="at-460c-a-sample-of-ammonia-gas-exerts-a-pressure-of-5-3-atm-what-is-the-pressure-when-the-volume-of-the-gas-is-reduced-to-one-tenth-0-10-of-the-original-value-at-the-same-temperaturea-53-atm-b">
+                            10. At 460C a sample of ammonia gas exerts a pressure of 5.3 atm. What is the pressure when the volume of the gas is reduced to one-tenth (0.10) of the original value at the same temperature?
+a.53 atm 
+b.71 atm
+c.45 atm
+d.67 atm</h2><br />
+                        <p><strong>Answer:</strong></p><p>what is the different types of words and cups and cups and mixer accessories for the different options for you and your sentence ☺️ be able and willing and able to do that you something</p><br />
+                                            <h2 class="ez-toc-section" id="the-pressure-of-a-gas-is-750-torr-when-its-volume-is-400-ml-calculate-the-pressure-atm-if-the-gas-is-allowed-to-expand-to-600-ml-at-constant-temperature-a-0-66-atmb-1-48-atmc-500-atmd-1125">
+                            11. The pressure of a gas is 750 torr when its volume is 400 mL. Calculate the pressure (atm) if the gas is allowed to expand to 600 mL at constant temperature.
+a. 0.66 atm
+b. 1.48 atm
+c. 500 atm
+d. 1125 atm</h2><br />
+                        <p><strong>Answer:</strong></p><p>The answer is letter A. </p><p><strong>Explanation:</strong></p><p>Given:</p><p>P1 = 750 torr</p><p>V1 = 400 mL</p><p>V2 = 600 mL</p><p>P2 =?</p><p></p><p>Convertion:</p><p>                     1 atm </p><p>750 torr  x   ________    =  0.99 atm (rounded off) </p><p>                     760 torr</p><p></p><p></p><p>                       1 L</p><p>400 mL  x   ________         =     0.4 L</p><p>                    1000 mL</p><p></p><p></p><p></p><p>                        1 L</p><p>600 mL  x   ________         =     0.6 L</p><p>                    1000 mL</p><p></p><p></p><p>Formula:</p><p>V1 P1  =  V2 P2</p><p></p><p>            V1 P1</p><p>P2  =   _____</p><p>              V2</p><p></p><p>Solution:</p><p>          (0.4 L)(0.99 atm)</p><p>P2  =   ________________</p><p>                   0.6 L</p><p></p><p>          0.39 L atm</p><p>P2  =  __________</p><p>               0.6 L</p><p></p><p></p><p>P2  =  0.66 atm</p><br />
+                                            <h2 class="ez-toc-section" id="a-system-contrats-bya-volume-of-300-cubic-with-a-pressure-of-1-5-atm-work-is-equal-to">
+                            12. A system contrats bya volume of 300 cubic with a pressure of 1.5 atm. Work is equal to</h2><br />
+                        <p><strong>Answer:</strong></p><p>Work is equal to - 13785550.</p><p><strong>Step-by-step explanation:</strong></p><p>no need</p><br />
+                                            <h2 class="ez-toc-section" id="7-how-many-moles-of-nitrogen-are-present-in-the-problema-1-05b-1-06c-1-07d-1-088-what-is-the-total-moles-of-the-mixturea-1-60b-1-61c-1-62d-1-639-what-is-the-total-pressure-of-the-mixture">
+                            13. 7. How many moles of nitrogen are present in the problem?A. 1.05B. 1.06C. 1.07D. 1.088.What is the total moles of the mixture?A. 1.60B. 1.61C. 1. 62D. 1.639. What is the total pressure of the mixture in terms of atm?A. 3.60B. 3.61C. 3.62D. 3.6310. By rearranging the formula for Dalton's law, what is the partial pressure ofoxygen?A. 1.20 atmB. 1.21 atmC. 1.22 atmD. 1.23 atm11. What is the calculated partial pressure of nitrogen?A. 2.40 atmB. 2.41 atmC. 2.42 atmD. 2.43 atmFor items 12-15, refer to this problem: In a laboratory experiment, 98 gof oxygen and 140 g nitrogen are combined in a 5.0 L at 298 K.Calculate for partial pressure of each gas and its total pressure.12. How many moles of oxygen are in the mixture?A. 1.5 molB. 2.5 molC. 3.5 molD. 4.5 mol13. In the problem above, what is the partial pressure of oxygen gas?A. 17.09 atm B. 17.10 atmC. 17.11 atmD. 17.12 atm14. According to the problem, what is partial pressure exerted by a 140 gnitrogen?A. 24.45 atm B. 24.50 atm C. 24.55 atm D. 24.60 atm15. From the given situation, what will be the total pressure of the mixture?A. 41.47 atm B. 41.57 atm C. 41.67 atm D. 41.77 atm​</h2><br />
+                        <p><strong>Answer:</strong></p><p>7.a</p><p>8.b</p><p>9.d</p><p>10.d</p><p>11.b</p><p>12.a</p><p>13.d</p><p>14.a</p><p>15.c</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-phase-of-water-exist-at-100%c2%b0c-and-5-atm-at-200%c2%b0c-and-1-atm%e2%80%8b">
+                            14. What phase of water exist at 100°c and 5 atm? at 200°c and 1 atm?​</h2><br />
+                        <p>The phase of water that exist at 100°c and 5atm is boiling</p><br />
+                                            <h2 class="ez-toc-section" id="at-460c-a-sample-of-ammonia-gas-exerts-a-pressure-of-5-3-atm-what-is-the-pressure-when-the-volume-of-the-gas-is-reduced-to-one-tenth-0-10-of-the-original-value-at-the-same-temperaturea-53-atmb-7">
+                            15. At 460C a sample of ammonia gas exerts a pressure of 5.3 atm. What is the pressure when the volume of the gas is reduced to one-tenth (0.10) of the original value at the same temperature?
+a.53 atm
+b.71 atm
+c.45 atm
+d. 67 atm</h2><br />
+                        <p><strong>Answer:</strong></p><p>a. 53 ATM po thanks me later if correct </p><br />
+                                            <h2 class="ez-toc-section" id="pressure-to-3-4-atma-1-29-ld-12-36-atmb-12-36-lc-1-29-atm22-if-i-have-5-6-liters-of-gas-in-a-piston-at-a-pressure-of-1-5-atm-and-compress-the-gas-until-its-volume-is4-8-l-what-will-the-new-pres">
+                            16. pressure to 3.4 atm?A. 1.29 LD. 12.36 atmB. 12.36 LC. 1.29 atm22. If I have 5.6 liters of gas in a piston at a pressure of 1.5 atm and compress the gas until its volume is4.8 L, what will the new pressure inside the piston be?4. 1.8 atmB.3.27 atmC. 1.8LD. 3.27 atmUning mu car into the river and it implodes,​</h2><br />
+                        22. If you have 5.6 liters of gas in a piston at a pressure of 1.5 atm and compress the gas until it’s volume <br /><br />Correct me if I’m wrong this is my answer:<br /><br /><br />B. 3.27 atm<br />
+                                            <h2 class="ez-toc-section" id="a-10-liter-sample-of-gas-is-held-in-a-container-under-a-pressure-of-1-5-atm-then-gas-is-then-compressed-to-7-5-liters-find-the-pressure-if-the-temperature-is-kept-unchanged-%e2%80%8ba-1-3-atmb-2-0">
+                            17. A 10-liter sample of gas is held in a container under a pressure of 1.5 atm. Then gas is then compressed to 7.5 liters. Find the pressure if the temperature is kept unchanged.​A. 1.3 atmB. 2.0 atmC. 1.7 atmD. 50 atm​</h2><br />
+                        <p><strong>Answer:</strong></p><p>B. 2.0 atm</p><p><strong>Explanation:</strong></p><p>1.5 * 10 = P * 75</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-is-used-as-standard-pressure-in-a-gas-equationa-1-atmb-2-atmc-3-atmd-4-atm">
+                            18. Which of the following is used as standard pressure in a gas equation?
+a. 1 atm
+b. 2 atm
+c. 3 atm
+d. 4 atm</h2><br />
+                        <p><strong>Answer:</strong></p><p>1 atm is the correct answer</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="at-46c-a-sample-of-ammonia-gas-exerts-a-pressure-of-5-3-atm-what-is-the-pressure-when-the-volume-of-the-gas-is-reduced-to-one-tenth-0-10-of-the-original-value-at-the-same-temperaturea-53-atmb-71">
+                            19. At 46C a sample of ammonia gas exerts a pressure of 5.3 atm. What is the pressure when the volume of the gas is reduced to one-tenth (0.10) of the original value at the same temperature?
+a.53 atm
+b.71 atm
+c.45 atm
+d. 67 atm</h2><br />
+                        <p><strong>Answer:</strong></p><p>The answer is <strong>A.</strong><strong> </strong><strong>5</strong><strong>3</strong><strong> </strong><strong>atm</strong></p><p><strong>Explanation:</strong></p><strong>#</strong><strong>C</strong><strong>a</strong><strong>r</strong><strong>r</strong><strong>y</strong><strong>o</strong><strong>n</strong><strong>L</strong><strong>e</strong><strong>a</strong><strong>r</strong><strong>n</strong><strong>i</strong><strong>n</strong><strong>g</strong>Answer:<p></p>A. 53 atm<p></p>Solution:46 degrees=273+47k=320k=t1=t2Let volume1 of gas be vPressure1 = 5.3atmFor second situationTemperature is sameVolume2=1/10vPressure2=?P1v1/t1=p2v2/t2=5.3*v=?*1/10v= 53 atm<p></p><strong>H</strong><strong>o</strong><strong>p</strong><strong>e</strong><strong> </strong><strong>t</strong><strong>h</strong><strong>a</strong><strong>t</strong><strong> </strong><strong>t</strong><strong>h</strong><strong>i</strong><strong>s</strong><strong> </strong><strong>w</strong><strong>i</strong><strong>l</strong><strong>l</strong><strong> </strong><strong>h</strong><strong>e</strong><strong>l</strong><strong>p</strong><strong> </strong><strong>y</strong><strong>o</strong><strong>u</strong><p></p>#Trust Me<br />
+                                            <h2 class="ez-toc-section" id="each-of-the-following-containers-has-same-size-which-of-following-containers-has-the-most-compressed-gas-molecules-a-10-atm-b-8-atm-c-6-atm-d-4-atm">
+                            20. each of the following containers has same size. which of following containers has the most compressed gas molecules? 
+A. 10 atm 
+B. 8 atm 
+C. 6 atm 
+D 4 atm </h2><br />
+                        If all the containers have the same size. the answer must be A.A. 10 ATMOSPHERES becoz you will know it<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="report-po-pag-nonsense-and-pls-explain-your-answer-1-elements-and-compounds-exist-as-gases-at-what-standard-temperature-and-pressure-stp-a-1-atm-25%c2%b0c-b-1-atm-26-%c2%b0c-c-1-atm-27">
+                            21. Report po pag nonsense and pls explain your answer.. 1. elements and compounds exist as gases at what standard temperature and pressure (stp) A. 1 atm, 25°C B. 1 atm, 26 °C C. 1 atm, 27°C D. 1 atm, 28°C​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1 atm</p><p>Under standard temperature and pressure (STP, or 1 atm and 273 K), a substance which exists as a gas is called a pure gas.</p><br />
+                                            <h2 class="ez-toc-section" id="a-simple-of-nitrogen-occupies-87-0ml-at-35%e2%80%a2c-and-1-1-atm-what-will-be-its-volume-at-50%e2%80%a2c-and-4-00-atm">
+                            22. a simple of nitrogen occupies 87.0mL at 35•C and 1.1 atm. what will be its volume at 50•C and 4.00 atm</h2><br />
+                        <p>Answer:V2=25.090 mL</p><p></p><p>Explanation:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="4-a-sample-of-neon-has-a-volume-of-225-cm-at-2-atm-of-pressure-what-will-be-the-pressure-of-the-gas-to-have-a-volume-of-500-cm-a-0-2-atm-c-1-atm-b-0-9-atm-d-4-atm%e2%80%8b">
+                            23. 4. A sample of neon has a volume of 225 cm at 2 atm of pressure. What will be the pressure of the gas to have a volume of 500 cm? a. 0.2 atm c. 1 atm b. 0.9 atm d. 4 atm​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Hence, the pressure of the gas that have a volume of 500cm will be 0.9atm (B.)</p><p><strong>Step-by-step explanation:</strong></p><p>To find out what will be the pressure of a gas that has a volume of 500cm, we must use the Boyle's Equation:</p>[tex] \boxed{\bold{P_1V_1 = P_2V_2}}[/tex]<p></p><p>Since we're finding to the new pressure, we can rewrite the equation:</p>[tex] \boxed{\bold{P_2 = \frac{V_1P_1}{V_2}}}[/tex]<p></p><p>Substitute the given to the formula</p>[tex] P_2 = \frac{(225)(2)}{500} [/tex][tex] P_2 = \frac{450}{500} [/tex][tex] P_2 \approx 0.9 [/tex]<p></p><p>Hence, the pressure of the gas that have a volume of 500cm will be 0.9atm (B.)</p><br />
+                                            <h2 class="ez-toc-section" id="a-gas-has-an-initial-pressure-and-temperature-of-70-atm-and-350-k-respectively-what-is-the-pressure-of-a-gas-at-500-ka-200-atmb-49-atmc-88-atmd-100-atm">
+                            24. A gas has an initial pressure and temperature of 70 atm and 350 K, respectively. What is the pressure of a gas at 500 K?
+a. 200 atm
+b. 49 atm
+c. 88 atm
+d. 100 atm </h2><br />
+                        solution:<br />[tex] \frac{p1}{p2} = \frac{t1}{t2} \\ \frac{71 \: atm}{p2} = \frac{350k}{500k} \\ p2 = \frac{71atm}{ \frac{350k}{500k} } \\ p2 = 101.4 \: atm[/tex]<br />so the answet is letter D. which is the closest. <br /><br />Pls give me feedback! thanks<br />
+                                            <h2 class="ez-toc-section" id="1-a-gas-sample-has-a-volume-of-13-5-l-at-a-pressure-of-1-23-atm-and-a-temperature-of-34%c2%b0c-how-much-pressure-will-the-gas-exert-if-it-is-compressed-into-a-10-5-l-container-at-45%c2%b0ca-3-64">
+                            25. 1. A gas sample has a volume of 13.5 L at a pressure of 1.23 atm and a temperature of 34°C. How much pressure will the gas exert if it is compressed into a 10.5 L container at 45°C?
+a. 3.64 atm
+b. 2.64 atm
+c. 1.64 atm
+d. 4.64 atm</h2><br />
+                        SOLUTION:<p><strong>Step 1:</strong> List the given values.</p><p>To convert the temperature from degree Celsius to kelvin, add 273 to the temperature expressed in degree Celsius.</p><p>[tex]\begin{aligned} P_1 &amp; = \text{1.23 atm} \\ V_1 &amp; = \text{13.5 L} \\ T_1 &amp; = 34^{\circ}\text{C} = \text{307 K} \\ V_2 &amp; = \text{10.5 L} \\ T_2 &amp; = 45^{\circ}\text{C} = \text{318 K} \end{aligned}[/tex]</p><p><strong>Step 2:</strong> Calculate the final pressure using combined gas law.</p><p>[tex]\begin{aligned} P_2 &amp; = \frac{P_1V_1T_2}{V_2T_1} \\ &amp; = \frac{(\text{1.23 atm})(\text{13.5 L})(\text{318 K})}{(\text{10.5 L})(\text{307 K})} \\ &amp; = \boxed{\text{1.64 atm}} \end{aligned}[/tex]</p><p>Hence, the answer is <strong>c. 1.64 atm</strong>.</p><p>[tex]\\[/tex]</p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="report-po-pag-nonsense-and-pls-explain-your-answer-1-elements-and-compounds-exist-as-gases-at-what-standard-temperature-and-pressure-stp-a-1-atm-25%c2%b0c-b-1-atm-26-%c2%b0cc-1-atm-27%c2%b0c">
+                            26. Report po pag nonsense and pls explain your answer..1. elements and compounds exist as gases at what standard temperature and pressure (stp) A. 1 atm, 25°C B. 1 atm, 26 °CC. 1 atm, 27°CD. 1 atm, 28°C​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Under standard temperature and pressure (STP, or 1 atm and 273 K), a substance which exists as a gas is called a pure gas.</p><br />
+                                            <h2 class="ez-toc-section" id="1-a-gas-sample-has-a-volume-of-13-5-l-at-a-pressure-of-1-23-atm-and-a-temperature-of-34%c2%b0c-how-much-pressure-will-the-gas-exert-if-it-is-compressed-into-a-10-5-l-container-at-45%c2%b0ca-3-64">
+                            27. 1. A gas sample has a volume of 13.5 L at a pressure of 1.23 atm and a temperature of 34°C. How much pressure will the gas exert if it is compressed into a 10.5 L container at 45°C?
+a. 3.64 atm
+b. 2.64 atm
+c. 1.64 atm
+d. 4.64 atm</h2><br />
+                        <p><strong>Answer:</strong></p><p>c. 1.64 atm</p><p><strong>Explanation:</strong></p><p>((1.23)(13.5))/273+34 = ((x)(10.5))/273+45</p><p>shift solve</p><p>=1.6381 atm = 1.64 atm</p><br />
+                                            <h2 class="ez-toc-section" id="a-container-holds-600-ml-of-helium-gas-at-a-constant-temperature-and-a-pressure-of-1-8-atm-what-will-be-the-pressure-if-the-volume-decreased-to-350-ml-a-3-58-atm-b-3-09-atm-c-0-8-atm-d-1-96-atm">
+                            28. A container holds 600 mL of Helium gas at a constant temperature and a pressure of 1.8 atm. What will be the pressure if the volume decreased to 350 mL?
+ A. 3.58 atm B. 3.09 atm C. 0.8 atm D. 1.96 atm</h2><br />
+                        SOLUTION:<p><strong>Step 1:</strong> List the given values.</p><p>[tex]\begin{aligned} P_1 &amp; = \text{1.8 atm} \\ V_1 &amp; = \text{600 mL} \\ V_2 &amp; = \text{350 mL} \end{aligned}[/tex]</p><p><strong>Step 2:</strong> Calculate the final pressure by using Boyle's law.</p><p>[tex]\begin{aligned} P_2 &amp; = \frac{P_1V_1}{V_2} \\ &amp; = \frac{(\text{1.8 atm})(\text{600 mL})}{\text{350 mL}} \\ &amp; = \boxed{\text{3.09 atm}} \end{aligned}[/tex]</p><p>Hence, the answer is <strong>B. 3.09 atm</strong></p><p>[tex]\\[/tex]</p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="800-ml-of-helium-is-at-55-0oc-and-0-55-atm-what-will-the-pressure-be-if-the-temperature-changes-to-100-oc-if-the-volume-remains-the-samea-1-atmb-0-62-atmc-0-48-atmd-0-75">
+                            29. 800. mL of helium is at 55.0ºC and 0.55 atm. What will the pressure be if the temperature changes to 100.ºC if the volume remains the same?
+a. 1 atm
+b. 0.62 atm
+c. 0.48 atm
+d. 0.75</h2><br />
+                        <p><strong>The pressure if the temperature changes to 100 ºC  : </strong><strong>1 atm</strong></p>Further explanation<p><strong>Gay-Lussac's Law</strong> states that the pressure of a gas proportional to its absolute temperature of the gas when the volume is kept constant</p><p>The equation can be written :</p><p>[tex]\rm \dfrac{P_1}{T_1}=\dfrac{P_2}{T_2}[/tex]</p><p></p><p>800. mL of helium is at 55.0ºC and 0.55 atm</p><p>temperature changes to 100.ºC</p><p>So :</p><p>V (constant) = 800 ml</p><p>T1 =  55.0ºC</p><p>P1 = 0.55 atm</p><p>T2 = 100.ºC</p><p>Then :</p><p>[tex]\rm P_2=\dfrac{P_1\times T_2}{T_1}\\\\P_2=\dfrac{0.55\times 100}{55}\\\\P_2=\boxed{\bold{1~atm}}[/tex]</p><p></p>Learn more  <p><strong>Example of ideal gas law in real life  </strong></p><p><strong>brainly.ph/question/2117053  </strong></p><p><strong>Example Problem And solution Of combined gas laws  </strong></p><p><strong>brainly.ph/question/2143722  </strong></p><p><strong>applications involving combined gas law  </strong></p><p><strong>brainly.ph/question/2341366  </strong></p><p><strong></strong></p><p><strong>#LetsStudy  </strong></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-if-oxygen-exerts-a-4atm-of-pressure-in-a-mixture-and-the-total-pressure-of-the-system-is-10-atmwhat-would-be-the-mole-fraction-of-oxygen-in-the-mixture2-compute-for-the-mole-fraction-of-neon-e">
+                            30. 1. If oxygen exerts a 4atm of pressure in a mixture and the total pressure of the system is 10 atm,
+what would be the mole fraction of oxygen in the mixture?
+2. Compute for the mole fraction of neon exerting a pressure of 0.28 atm in a gas mixture which
+has a total pressure of 1.15 atm.
+3. If neon exerts 10 atm of pressure in a mixture and the total pressure of the system is 28 atm,
+what would be the mole fraction of neon in the mixture?
+Nonsense answer = report</h2><br />
+                        <p><strong>Answer:</strong></p><p>0.4</p><p><strong>Explanation:</strong></p><p>For example, if oxygen exerts 4 atm of pressure in a mixture and the total pressure of the system is 10 atm, the mole ratio would be 4/10 or 0.4. The mole ratio applies to pressure, volume, and moles as seen by the equation below. This also means that 0.4 moles of the mixture is made up of gas</p><p></p><p><strong>Answer:</strong></p><p><strong>1.</strong></p><p><strong>0.4</strong></p><p><strong>2.</strong></p><p><strong>0.25 atm</strong></p><p><strong>3.</strong></p><p><strong>280</strong></p><p></p><p><strong>Explanation:</strong></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/uBC7Yy_WtOE?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>english</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/st-mary-s-academy-of-sta-ana.html">St Mary s Academy Of Sta Ana</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/borrower-s-log.html">Borrower s Log</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/amparo-s-trading-and-general-merchandise.html">Amparo s Trading And General Merchandise</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/kahalagahan-ng-pag-aaral.html">Kahalagahan Ng Pag Aaral</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/postal-code-tangub-city.html">Postal Code Tangub City</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ano-ang-demonstration-effect.html">Ano Ang Demonstration Effect</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ltom-2nd-edition.html">Ltom 2nd Edition</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/7-dispensations-of-time.html">7 Dispensations Of Time</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/deped-module-grade-2.html">Deped Module Grade 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/xigmatek-scylla-120-water-cooling.html">Xigmatek Scylla 120 Water Cooling</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/republic-act-9155-explanation.html">Republic Act 9155 Explanation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/what-is-the-problem-in-this-activity.html">What Is The Problem In This Activity</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/electrical-cable-gland-size-in-mm.html">Electrical Cable Gland Size In Mm</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/kwantitatib-at-kwalitatib-na-pananaliksik.html">Kwantitatib At Kwalitatib Na Pananaliksik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/sample-of-secretarys-certificate-for-authorized-signatory.html">Sample Of Secretary&#039;s Certificate For Authorized Signatory</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ano-ang-ampalaya.html">Ano Ang Ampalaya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/adam-smith-biography-pdf.html">Adam Smith Biography Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/front-shoulder-to-waist-measurement.html">Front Shoulder To Waist Measurement</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/before-earthquake-poster.html">Before Earthquake Poster</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/sony-component-2017.html">Sony Component 2017</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

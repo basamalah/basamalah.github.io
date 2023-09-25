@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Power System Analysis - QnA</title>
+    <meta name="description" content="Power System Analysis, , , , , , , 0, EE6501 Power System Analysis – EasyEngineering, easyengineering.net, 1056 x 1392, jpeg, , 20, power-system-analysis, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Power System Analysis - QnA" />
+    <meta property="og:description" content="Power System Analysis, , , , , , , 0, EE6501 Power System Analysis – EasyEngineering, easyengineering.net, 1056 x 1392, jpeg, , 20, power-system-analysis, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Power System Analysis - QnA" />
+    <meta name="twitter:description" content="Power System Analysis, , , , , , , 0, EE6501 Power System Analysis – EasyEngineering, easyengineering.net, 1056 x 1392, jpeg, , 20, power-system-analysis, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Power System Analysis</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">arella233</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Power+System+Analysis" alt="Power System Analysis">
+                    </div>
+                    <p></p>
+                    <p>William d stevenson power system analysis</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#william-d-stevenson-power-system-analysis">1.
+                                            William d stevenson power system analysis</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#w-d-stevenson-elements-of-power-system-analysis">2.
+                                            W.d. stevenson elements of power system analysis</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#this-is-the-systematic-analysis-of-various-political-institution-and-processes-sources-and-limits-of-political-power-and-its-manifestation-type-of-legitimate-authority-or-rule-and-systems-of-governme">3.
+                                            this is the systematic analysis of various political institution and processes sources and limits of political power and its manifestation type of legitimate authority or rule, and systems of government ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-process-that-determines-the-distribution-of-power-and-resources___________________-2-the-branch-of-social-science-that-deals-with-systems-of-government-and-analysis-of-political-activity-______">4.
+                                            The process that determines the distribution of power and resources___________________ 2. The branch of social science that deals with systems of government, and analysis of political  activity.___________________ 3. An organized political community living under one government.___________________ 4. The systems that administers or controls the state, and is the instrument through which the  will of the state is made known and implemented.___________________ 5. It refers to all actions and activities related to governing.___________________ 6. A set of ideas and beliefs that define the views and actions of individuals, groups, and  institutions.___________________ 7. This is a government ruled by a single person.___________________ 8. This is the rule of a small group of people.___________________ 9. This government is defined by the direct participation of citizens in all government activities.___________________ 10. In this government, the citizens elect officials who will defend their interests.
+​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#true-and-false-if-the-statement-is-false-write-your-answer-before-each-number-theb-directions-identify-the-statement-if-it-is-true-or-false-write-true-if-the-statement-iswhorg1-whicwpolitics-is-a">5.
+                                            true and FALSE if the statement is false. Write your answer before each number.TheB. Directions: Identify the statement if it is TRUE OR FALSE. Write TRUE if the statement isWhorg1.WhicwPolitics is a mechanism used by the government in order to control, influence, andimplement policies and programs that are deemed important in delivering service to thepeople.2. Politics connotes different meanings. Identifying its common conceptions would give usa clearer understanding of the term. These conceptions can be understood as politicsand government, politics and public affairs, politics as compromise and consensus, andpolitics and power.3. Governance refers to how the government manages the affairs of the state whilegovernment is the entity or organization that carries out governance.4. Good governance is achieved by harmoniously involving the different sectors of thesociety in the implementation of government policies and programs.5. Political science presents a deeper understanding on the mechanisms of politics andgovernance. It is vital in providing an in-depth analysis about the frameworks by whichthe international system and government operate.6. Political science develops critical thinking, nurtures nationalism and patriotism, andprovide alternative solution on the existing problems anchored on research and analysisof existing variables.7. The study of politics and governance is under the helm of anthropology.8. Public administration examines the different philosophies, theories and principles relatedin the study of political science9. Civil society refers to government agencies that advocate certain causes.10. The Municipal Trial Court includes provincial, municipal, city and barangay governmentattached to the central government.11. The state is the essential element in governance12. Governance is an organization that exercises the authority to govern based on theexisting legal frameworks.13. Governant refers to how the government manages the affairs of the state.14. Politics is science concerned with winning and holding control over a government.15. Politics is rooted from the word polis, the city-states that flourished in Germany.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#these-contexts-or-political-science-write-a-for-sociology-b-for-anthropology-and-c-for-political-science-identification-identify-what-is-described-in-each-of-the-items-choose-from-either-sociolo">6.
+                                            these contexts. or Political Science. Write A for Sociology, B for Anthropology and C for Political Science. Identification. Identify what is described in each of the items. Choose from either Sociology, Anthropology 1. Investigates the structure of groups, organizations, and societies and how people interact within 2. Social science that deals with systems of governance, and the analysis of political activities, political thoughts, associated constitutions, and political behavior. 3. Compares humans with other animals (most often, other primates like monkeys and chimpanzees) to see what we have in common with them and what makes us unique. 4. Works in their own societies looking at economics, health, education, law, and policy 5. The study of politics and power from domestic, intemational, and comparative perspectives. 6. Interested in socioeconomic class and mobility, sexuality, law, politics, religion, or linguistics. 7. Interested in the experiences of individuals and how those experiences are shaped by interactions with social groups and society in general. 8. They look at the different ways people dress and communicate in different societies. 9. The discipline deals with the traditional fields of public national life, such as democracy, parliaments, politicians, elections, and the government 10. Ranges from the intimate family to the hostile mob; from organized crime to religious traditions, from the divisions of race, gender, and social class to the shared beliefs of a common culture.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-true-or-false-identify-whether-the-statement-is-a-true-statement-or-a-false-one-write-t-if-it-is-true-and-f-ifotherwise-20-points___11-formalism-is-the-study-of-texart-based-solely-on-an-analys">7.
+                                            B. TRUE OR FALSE, Identify whether the statement is a true statement or a false one Write T if it is true and F ifotherwise (20 points)___11. Formalism is the study of texart based solely on an analysis of its form-the way it is made and what itlooks like.___12. Features of formalism include not only grammar and syntax but also literary devices and literaryinterpretation of a a tone, theme, and literature.___13. Formalism as a critical approach, considers primarily as structure of words in a text studied. ___14. For example in a poem, the formalist is concerned about literary structure suing phonemic device not thephonetic sound.___15. Marxist criticism I concerned with differences between economic classes and implication of capitalist system, such as continuing conflicts between the working class and the elite or rich ___16 For example in the story "Dead Stars" written by Paz Marquez Benitez, the imbalance of societal powerplay is evident in the story in the form of treatment of the theme based on their life.___17. In Marxist criticism, It reviews a work of literature in terms of teh society it presents.___18.Feminism criticism focuses on how literature presents women as subjects of socio-political, psychological and economic oppression or cruelty.___19. It also reveals how aspects of our culture are patriarchal like how our culture views men as superior. ___20. An example of feminism criticism text is entitled "Emma Watson: Gender Inequality is you Issue too".​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#true-or-falsedirection-write-the-word-true-if-the-statement-is-correct-and-false-if-wrong-write-the-letter-only-on-the-space-provided-11-caution-must-be-observed-when-working-with-hot-oil-or-ob">8.
+                                               TRUE OR FALSE:Direction: Write the word TRUE if the statement is correct and FALSE if wrong. Write the letter only on the space provided.11. Caution must be observed when working with hot oil or object.12. Store bleach and ammonia in separate areas, because they can produce a dangerous reactions if they come in contact with oneanother13. Keep small appliances and their power cords away from the sink or other water sources while in used to avoid shock hazards.14. Electric fires are caused by over loaded circuits.15. Molds grow in areas, where dry places accumulates.16. Carbon monoxide is odourless gas that could be hanging around in the kitchen, and this is safe.17. A study by microbiologist Carlos Enriquez at the University of Arizona found salmonella in about 15% of the sponges examined.18. Make sure that all accidents and incidents are recorded and investigated.19. Keeping the premises clean and congestion-free will prevent accident20. Hazard analysis and critical control point is a food safety system that helps identity and control any danger of food contamination.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ii-a-true-or-false-direction-write-t%e2%80%9d-if-the-statement-is-correct-and-%e2%80%9cf%e2%80%9d-if-it-is-wrong-1-there-is-no-best-record-keeping-system-for-all-situations-2-financial-record">9.
+                                            II. A. True Or False. Direction: Write "T” if the statement is correct and “F” if it is wrong.1. There is no "best" record keeping system for all situations.2. Financial Records refers to items that relate to quantities of inputs and levels ofproduction by enterprise and/or by resource type.3. Production Records relate primarily to money or the financial interactions of thefarm.4. Keeping and analyzing accurate production records are important and essentialaspects of farm management5. Both production and financial records are important to the efficient management oftoday's farm business6. Computer System is higher initial out-of-pocket expense.7. Hand system can be a powerful analysis tool8. The person responsible for keeping the records should develop ahabit of regularly and accurately posting transactions.9. Keeping and analyzing accurate production records are importantand essential aspects of farm management10. The person responsible for keeping the records should develop ahabit of regularly and accurately posting transactions​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#orovinceiflytoicasdettrue-16-social-stratification-is-strutted-andhierarchical-ranking-of-individuals-based-on-theirfamily-occupation-income-wealth-and-power-true-17-social-class-refers-to-the-po">10.
+                                            OROVINCEiflytoicasdetTRUE 16. Social stratification is strutted andhierarchical ranking of individuals based on theirfamily, occupation, income, wealth and power.TRUE 17. Social class refers to the position of anindividual or group within a social structureTRUE 18. Authority is the ability to secure one'sends in life, even against opposition.TRUE_19 Conflict perspective views society ascomposed of different groups and interest competingfor power and resources.Palde 20; Slavery is a hereditary endogamoussocial group in which a person's rank and itsaccompanying rights and obligations are ascribed onthe basis of his birth into a particular group.Faise 21. Manifest functions are consequencesthat are unintended and often hidden.true 22. Micro sociology level of sociologicalanalysis that is concerned withthe socialpsychological dynamics of individuals interacting insmall groups.23. In this system a person has little or nopossibility of moving up social ladder called closedsystem.24. Upper class refers to the elite families,who are the most productive and successful.25. Social status it refers to the behaviorexpected of a person who occupies a particularstatus.26.W.I. Thomas emphasized theimportance of definitions and meanings in socialbehavior and its consequences.27. It looks at the big picture of society andsuggests how social problems are affected at theinstitutional level called macro sociology.28. Life chances include the mode ofhousing, residential area, education, means ofrecreation, relation between parent and children,modes of conveyance.29. Social Mobility is the movement ofpersons from one position to another in thestratification system.30. Karl Marx suggested that all societies gothrough stages of economic Development.ph​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-write-the-word-true-if-the-statement-is-correct-and-false-if-wrong-write-the-letter-only-on-the-space-provided-11-caution-must-be-observed-when-working-with-hot-oil-or-object-12-store-bl">11.
+                                            Direction: Write the word TRUE if the statement is correct and FALSE if wrong. Write the letter only on the space provided.11. Caution must be observed when working with hot oil or object.12. Store bleach and ammonia in separate areas, because they can produce a dangerous reactions if they come in contact with oneanother13. Keep small appliances and their power cords away from the sink or other water sources while in used to avoid shock hazards.14. Electric fires are caused by over loaded circuits.15. Molds grow in areas, where dry places accumulates.16. Carbon monoxide is odourless gas that could be hanging around in the kitchen, and this is safe.17. A study by microbiologist Carlos Enriquez at the University of Arizona found salmonella in about 15% of the sponges examined.18. Make sure that all accidents and incidents are recorded and investigated.19. Keeping the premises clean and congestion-free will prevent accident.20. Hazard analysis and critical control point is a food safety system that helps identity and control any danger of food contamination​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ii-write-true-if-the-statement-is-correct-and-false-if-it-is-not-on-the-space-providedbefore-the-number1-market-is-a-place-where-exchange-happens-2-product-is-a-tangible-object-or-system-made-availa">12.
+                                            II.Write True if the statement is correct and False if it is not on the space providedbefore the number1. Market is a place where exchange happens.2. Product is a tangible object or system made available for consumer use.3. Strategy can be considered as a management's game plan.4. Competitors are very important to the success or failure of a new business.5. A market analysis is a quantitative and qualitative assessment of a market.6. Major and minor customers are the same in terms of power and authority.7. Keep adding something new is not a marketing technique or strategy8. Fund Management is a common mistake in creating a business model isunderestimating the costs of funding the business until it becomes profitable.9. A market structure is a company's plan for making a profit. It identifiesthe products or services the business will sell, the target market it has identified, and theexpenses it anticipates.10. Strategy don't ensure effective departmental co-ordination​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#this-is-the-systematic-analysis-of-various-political-institutions-and-processes-sources-and-limits-of-political-power-and-its-manifestation-types-of-legitimate-authority-or-rule-and-systems-of-governm">13.
+                                            this is the systematic analysis of various political institutions and processes sources and limits of political power and its manifestation types of legitimate authority or rule and systems of government ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-these-are-thesteps-that-will-help-you-improve-your-business-of-choice-and-prepare-forchallengesa-swot-analysisc-technologyb-cultured-government2-these-are-inventions-based-on-the-application">14.
+                                            1. These are thesteps that will help you improve your business of choice and prepare forchallenges?A. SWOT AnalysisC. TechnologyB. CultureD. Government2. These are inventions based on the application of science that create new product orprocess improvements?A. SWOT AnalysisC. TechnologyB. CultureD. Government3. Ideas and customs of a set of people or society primarily influence the types of productsthat are acceptable to a particular locality.A. SWOT AnalysisC. TechnologyB. CultureD. Government4. The body with the power to make and enforce the laws to control a country, land area,people or organization.A. SWOT AnalysisC. TechnologyB. CultureD. Government5. This refers to the management of resources and study of the system of production,distribution, and consumption of goods and services.C. TechnologyD. GovernmentFOR EDUCATIONAL PURPOSES ONLY​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#12-crucial-in-the-analysis-of-political-party-dynamics-is-the-identification-of-a-party-system-that-exists-in-every-state-a-traditional-way-of-classifying-party-system-is-on-the-basis-of-the-number">15.
+                                            12. Crucial in the analysis of political party dynamics is the identification of a party system that exists in every State. A traditional way of classifying party system is on the basis of the number of parties vying for power (Duverger, 1954) - one-party, two-party, and multiparty system. In a one-party system, a single party is regarded as a vanguard that controls the power to the extent that its machinery has become fused with the State. The existence of other parties may be allowed so long as they remain compliant with the dominant party. Search for the meaning/definition: vanguard: Dominant party: Machinery:then give an explanation and example of thispa help po need ko lang salamat​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-which-of-the-following-is-true-about-preparing-a-swot-analysis-a-a-swot-analysis-is-objective-b-it-should-be-specific-and-avoid-grey-areas-c-it-should-analyze-the-organization-only-and-ignor">16.
+                                            10. which of the following is true about preparing a swot analysis? a. a swot analysis is objective. b. it should be specific and avoid grey areas. c. it should analyze the organization only and ignore the performance of competitors. d. it should focus on where the organization is today, not where it could be in the future. 11. it is a national accepted guide for safe installation of electrical wiring and equipment. a. almanac c. kit b. dictionary d. philippine electrical code 12. before starting an electrical installation, you must first apply for a. certificate of installation c. service connection b. electrical inspection d. electrical permit 13. the conductors and equipment for delivering energy from meralco to the wiring system of a house. a. fuse c. service b. rigid metallic conduct d. switch 14. when was first edition of the philippine electrical codes published? a. 1960 b. 1961 c. 1962 d. 1963 15. what is the last step in applying of electrical installation? a. apply for electrical permit. b. apply for an electrical inspection. c. checked by the issuing government official if all requirements are complied. d. apply for service connection to the nearest electrical power distribution office. 16. this term came from the greek word "electron" which means amber, a. electricity b. maintenance c. installation d. technology 17. he is known as the "father of electricity". a. michael faraday c. james west b. charles a. coulomb d. george ohm.  pa pls pls pls pls pls pls po.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#power-and-water-providers-have-smart-metering-and-analysis-systems-sophisticated-enough-to-deduce-what-appliances-we-are-using-at-various-times-of-day-e-g-cellphones-charging-and-an-air-conditioner">17.
+                                            Power and water providers have smart metering and analysis systems sophisticated enough to deduce what appliances we are using at various times of day (e.g., cellphones charging and an air conditioner running), when we shower (and for how long), and when we sleep. List several ways you can think of that this information could embarrass or cause problems for a person if leaked, stolen, or acquired by law enforcement agents.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#d-map6-ais-a-graphical-representation-of-datacontrast-numbers-frequencies-or-other-measures-of-distinct-categories-of-data-apie-chart-b-bar-graph-c-line-graph-d-flow-chart7-ashows-the-sequence">18.
+                                            D. map6. Ais a graphical representation of datacontrast numbers, frequencies or other measures of distinct categories of data.Apie chart B. bar graph C. line graph D. flow chart7. Ashows the sequence of movements oractions of people or things involved in a complex system or activityA. pie chart B. flowchartC. line graph D.)bar graph8. A is a collection of data showing the spatial arrangement or distribution of something over an area.A. table B. graph © flowchart9. provide a title, short explanation, or a description accompanying an illustration or a photograph.A.Maps B. Captioned graphics C. Tables D. Surface diagrams10.can show trends and cycles and make the information easier to visualize.A. Graphs and chartsC. Surface diagrams and tablesB. Pictograms and mapsDcaptioned graphics and diagramsFill in the blanks with the correct terms relevant to what you have learned in this lesson. Choose from the vpool below. Write your answers in the space provided.Comprehensionfact-basedvisual-verbal analytical visual thinkingUnderstanding (1)relationships is a powerful tool to improve (2)of concepts, ideas, arother data presented in an expository text. Knowing how to interpret (3).clues provides opportunity fanalysis and critical (4).​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#i-true-or-falseinstructions-write-true-if-the-statement-is-correct-and-false-if-otherwise-1-state-and-government-are-the-same-2-according-to-aristotle-politics-is-something-that-you-cannot-avoid">19.
+                                            I. True or FalseInstructions: Write True if the statement is correct and False if otherwise.1. State and Government are the same.2. According to Aristotle, politics is something that you cannot avoid.3. Politics is meant to achieve a common good.4. Politics refers to the competition between competing interest groups or individuals for5. Government is about influencing the formulation of government policies and competition for power6. According to plato,mMan is a political animal7. You can participate in Politics in governance8. There are 7 major characteristics in governance9. Political science deals extensively with the analysis of political systems,the theoretical and practical applications to politics,and the examination of political behavior10. Absolutism is the belief that the best government is absolutely no govenment​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-which-of-the-following-is-a-negative-characteristic-of-computer-recording-system-for-record-keeping-a-accurate-b-can-be-a-powerful-analysis-toolc-fastd-higher-initial-out-of-pocket-expensehel">20.
+                                            10.) Which of the following is a negative characteristic of computer recording system for record-keeping A. Accurate B. Can be a powerful analysis toolC. FastD. Higher initial out-of-pocket expensehelp me plssssssssssssssssssss_ssssssss HuHuHu​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directionidentify-the-type-of-qualitative-research-best-suited-for-the-following-topics1-analysis-on-the-cancer-survivors-to-develop-a-new-theory-in-psychology-2-responses-of-mothers-whose-childre">21.
+                                            DIRECTION:identify the type of qualitative research best suited for the following topics?1. Analysis on the cancer survivors to develop a new theory in psychology 2. Responses of mothers whose children experienced early pregnancy 3.Mental well-being of patients from ethnic minority groups during critical care4. Social behavior of physically abused children in the classroom 5. Experiences of senior citizens at the LRT/MRT stations 6. Philippines political party system :then and now7. Lived experiences of students with learning disabilities 8. A day in the life of a Gen-Z Teacher. How to survive the daily challenges of distance learning through technology? 9. Speech difficulties of Grade 2 pupils in bongabon central school10. Muslim wedding rites:A means of power and wealth preservation ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-refers-to-a-differentiated-roles-responsibilities-attitudesand-values-of-being-female-and-male-in-the-culture-and-society-c-gender-identityd-gender-sensitivitya-genderb-sex2-it-is-an-org">22.
+                                            1. It refers to a differentiated roles, responsibilities, attitudes,and values of being female and male in the culture and society.C. Gender Identityd. Gender Sensitivitya. Genderb. Sex2. It is an Organization that is incorporated into United Nation1945 protecting the workers' rights, especially the nighttimework of women.a. National Organizationc c. Regional Organizationb. City Organizationd. International Labor Organization3. Do men and women earn the same amount of money forequal work?a. No, men earn morec. Yes, they earn equallyb. Yes, women earn mored. Not at all.4. It refers to a situation on the heavy workload of women andthe overlapping tasks.a. Developmentb. Multiple Burdenc. Gender Discriminationd. Gender Analysis4. It refers to an act of gender-based violence that results inaphysical, sexual, or physiological harm to women.a. Gender Analysisb. Multiple Burden d. Violence against womenc. Gender Discrimination5. It is a social and cultural phenomenon in which there is adiscrimination against people due to their gender.a. Gender Inequalityb. Gender Sensitivityc. Gender Personalityd. Gender -based6. What type of perspectives on Gender that grants greaterpower and privileges to men in a interactive and culturalway.a. Socio Cultural Sphereb. Social SystemC. Social Sphered. Social Security7. This is a man- made cause and a periodic modification ofEarth's climate brought about as a result of changes in theatmosphere.a. Climate Changeb. Climatic periodc. Climated. Weather8. It refers to the violation of workers' rights that recurconsistently throughout the world.a. International Labor Issueb. International Labor OrganizationC. International Traded. International10. It is It is the process by which people are made aware ofhow gender plays a role in life through their treatment ofothers.a. GenderC. Sexb. Gender Identityd. Gender Sensitivity​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-identify-mei-instructions-on-patterns-of-development-choose-from-the-given-options-the-petem-of-development-used-in-each-llem-write-the-letter-only-1-caroline-or-sister-carrie-as-she-had-be">23.
+                                            2: IDENTIFY MEI Instructions: On Patterns of Development, choose from the given options the petem of development used in each llem. Write the letter only. 1. "Caroline, or Sister Carrie, as she had been half affectionately termed by the family, was possessed of a mind rudimentary in its power of observation and analysis. Self-interest with her was high, but not strong. It was nevertheless, her guiding charactenstic. Wam with the fancies of youth, pretty with the insipid prettiness of the formative parod, possessed of a figure promising eventual shapeliness and an eye alight with certain native intelligence, she was a tar example of the middle American class...A. Narration B. Description C. Persuasion D. Definition2. "I took up the river road as hand as I could put. By and by I begin to hearguns a good way of When I came in sight of the log store and the woodpile where the steamboats lands worked along under the trees and brush till I got to a good place, and then i cimbs up into the forks of a cottonwood that was out of reach and watched. There was a wood-rank tour-foot high a little way in front of the trea and frat I was going to hide benind that, but maybe was luckler didn't A. Narration B. Description C. Persuasion D. Definition 3. There are basically two ways to make a web page. The first way is to create the page(s) oftine and than upload them to your memet Service Provider (SP) vin FTP. The second way is to create your wah pagais) online using a Tainot program by accessing your UNOX account, if you have one Nomination.A. Cause and Effect B. ExemplificationC. Problem Solution D. Process Analysis 4. Bacial endocarditis occurs when bacteria in the oodstream (bacteremia) lodge on abnormal heart valves or other damaged heart tissue. Certain bacteria normally live on parts of your body, such as the mouth and upper respiratory system, the intestinal and urinary tracts, and the skin. Some surgical and dental procedures cause a pret hacteremia, Bacteremia is common after many invasive procedures; but only certain bacteria commonly cause endocanttis A. Narration B. Description C. Persuasion D. Definition 5. Modern humans are baclena-killing machines. We assassinate microbes with hand soap mouthwash and bathroom cleaners. It feels clean and night. But some scientists say we're overdoing All this kiling may actually cause diseases ike eczema, iritable bowel syndrome and even diabetes. The answer, they say, is counterintuitive: Foed patients bacteria. (Keim)A. Cause and Effect B. ExemplificationC. ProblemD. Process Analysis Solution​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#multiple-choice-direction-read-each-statement-below-copy-and-answer-in-your-pr-1-notebook-1-all-of-the-following-are-strength-of-qualitative-research-except-a-it-is-instrumental-for-positive-so">24.
+                                            Multiple Choice. Direction: Read each statement below. Copy and answer in your PR-1 notebook. 1.	All of the following are strength of qualitative research EXCEPT. A.	It is instrumental for positive societal changes. B.	It is hard to know the validity/reliability of the data. C.	Offers multiple ways of acquiring and examining knowledge about something. D.	Promotes a full understanding of human behavior/personality traits in their natural setting. 2.	Qualitative research allows you to approach or plan your study in varied ways. Here you are free to combine this with quantitative research and use all gathered data and analysis technique. What characteristic of qualitative research is being referred to? A. Active, powerful, and forceful		B. Contextualization C. Internal Analysis		 	D. Multiple research approach and methods 3.	This refers to a qualitative method where there is an examining of past events to draw conclusions and make predictions about the future.		 A. Case Study					B. Grounded Theory C. Historical Analysis				D. Phenomenology 4.	Which of the following is one of the weaknesses of a qualitative research? A.	It is time-consuming. B.	It adopts a naturalistic approach to its subject matter. C.	It’s a way of understanding &amp; interpreting social interactions. D.	Offers multiple ways of acquiring and examining knowledge about something. 5.	It is the most familiar and applicable type of qualitative research which refers to the investigation of a culture through an in-depth study of the members of the cultural society A. Case Study					B. Ethnography 	 C. Grounded Theory 				D. Phenomenology 6.	It is primarily used to generate theory through relevant information taken from very reliable sources and its focus is theory development. A. Case Study					B. Ethnography 	 C. Grounded Theory 				D. Phenomenology 7.	Which of the following types of qualitative research is designed to focus on the commonality of a “lived experience” with a particular group and its aim is to determine what an experience means for the persons who have had the experience of living in a certain community which is the subject of the research? A. Case Study					B. Ethnography 	 C. Grounded Theory 				D. Phenomenology 8.	“A student really idolizes his English teacher who is very expert in grammar and literature. The former wants to write a scholarly chronicle about the latter’s experiences including his family background, how he achieved his success in life, his likes and dislikes, his achievements and struggles in life.” What type of qualitative research should a student employ? A. Biography		 			B. Discourse Analysis C. Historical Research 				D. Narrative Report 9.	It is a qualitative research which analyzes the language “beyond the sentence”. It is the study of the ways in which language is used by the people, both written and spoken contexts. A. Biography		 			B. Discourse Analysis C. Historical Research 				D. Narrative Report 10.	It is an exploration of a “bounded system” over time through detailed, in-depth data collection involving multiple sources of information rich in interesting stories. A. Case Study					B. Ethnography 	 C. Grounded Theory 				D. Phenomenology​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-_________-is-the-struggle-between-the-segments-of-society-over-valued-resources-2-the-conflict-between-entire-classes-over-the-distribution-of-a-society-wealth-and-power-is-called____________-3-u">25.
+                                            1._________ is the struggle between the segments of society over valued resources. 2. The conflict between entire classes over the distribution of a society wealth and power is called____________.3. Under capitalism,__________are people who own and operate factories and other business in pursuit of profits.4.The worker's recognition of themselves as a class unified in opposition to capitalist and ultimately to capitalism itself is called__________. 5. Classical Marxism is characterized by for related "isms" namely, econonism, determinism,__________, and structuralism.6. the ultimate goal of ________ the was to expose the whole gender based system of sexism and patriarchal power expressed in social, political, and economic structure. 7. with the resurgence of feminism the late 1960's three strands of feminism were predominant, namely, liberal feminism, ________, and radical feminism.8. ____________ feminism is critique as too limited and too accepting of the "system" with its inherent structural inequalities and so, by implication, as elitist. 9. Feminist political scientist sought apply in science derived from feminism in their own analysis by first, mounting a critique of male political science for its virtual________ of women as political actors. 10. Institution are _______ when advantage and disadvantage, exploitation and control, action and emotion, meaning and identity.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#study-each-statement-carefully-write-the-word-true-if-the-statement-is-correct-and-false-if-otherwise-1-reasoning-is-the-core-structure-of-an-argument-2-in-planning-a-speech-or-any-academic-prese">26.
+                                            Study each statement carefully. Write the word TRUE if the statement is correct and FALSE if otherwise. 1. Reasoning is the core structure of an argument. 2. In planning a speech or any academic presentation, one must consider the audience's point of view. 3. Self-confidence is not required in effective communication. 4. Good presentation skill is a powerful tool for effective communication. 5.Eye contact and bodily gestures are not necessary for good communication. 6. "Hazel is a student." This statement is an example of a prescriptive value judgment. 7.Sound analysis is an important skill that helps you remain calm under pressure. 8. A value judgment can refer to a judgment based upon a particular set of values or on a particular value system. 9. The term "moral relativism" pertains to that moral and ethical propositions that are universal truthsand stems from cultural context. 10. Value judgment is limited only in describing a certain situation.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-short-quiz-let-us-refresh-your-knowledge-from-the-previous-discussion-about-the-various-disciplines-in-the-social-sciences-answering-all-the-items-correctly-will-give-you-one-extra-point-fo">27.
+                                            Activity: Short Quiz Let us refresh your knowledge from the previous discussion about the various disciplines in the Social Sciences. Answering ALL the items correctly will give you one extra point for a total of 10 points for this short quiz. Direction: Read the descriptions below and identify which Social Science discipline is described in each item. Write your answers on a coupon bond paper. 1. This discipline seeks to comprehend the origins of human beings, the adaptations, either cultural or biological, that allow people to fit in with their surroundings. 2. It analyzes the different characteristics of the human population, such as the size, the density, the territorial dispersion or spatial distribution, and the structure or composition. 3. It deals with the matters or problems related to the optimal allocation of limited resources, which have alternative uses, in order to satisfy the infinite needs and desires of the people 4. It investigates the distribution and location of the different natural or physical features of the earth. 5. This area of study reconstructs various recorded human events and natural phenomena and explains the different human thoughts and actions in the past and the changes that these had experienced through the analysis of and secondary sources of information 6. This discipline investigates the origins of various natural languages, language acquisition procedures, and the changes that have occurred in different human languages over a period of time. 7. This is the systematic analysis of various political institutions and processes, sources and limits of political power and its manifestations, types of legitimate authority or rule, and systems of govemment.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-true-or-false-identify-whether-the-statement-is-a-true-statement-or-a-false-one-write-t-if-it-is-true-and-f-ifotherwise-10-points___11-formalism-is-the-study-of-texart-based-solely-on-an-analys">28.
+                                            B. TRUE OR FALSE, Identify whether the statement is a true statement or a false one Write T if it is true and F ifotherwise (10 points)___11. Formalism is the study of texart based solely on an analysis of its form-the way it is made and what itlooks like.___12. Features of formalism include not only grammar and syntax but also literary devices and literaryinterpretation of a a tone, theme, and literature.___13. Formalism as a critical approach, considers primarily as structure of words in a text studied. ___14. For example in a poem, the formalist is concerned about literary structure suing phonemic device not thephonetic sound.___15. Marxist criticism I concerned with differences between economic classes and implication of capitalist system, such as continuing conflicts between the working class and the elite or rich ___16 For example in the story "Dead Stars" written by Paz Marquez Benitez, the imbalance of societal powerplay is evident in the story in the form of treatment of the theme based on their life.___17. In Marxist criticism, It reviews a work of literature in terms of teh society it presents.___18.Feminism criticism focuses on how literature presents women as subjects of socio-political, psychological and economic oppression or cruelty.___19. It also reveals how aspects of our culture are patriarchal like how our culture views men as superior. ___20. An example of feminism criticism text is entitled "Emma Watson: Gender Inequality is you Issue too".​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-following-are-the-characteristics-of-computerized-record-kepping-system-except-a-higher-initial-out-of-pocket-expenseb-easy-to-implementc-fastd-can-be-powerful-analysis-tool%e2%80%8b">29.
+                                            The following are the characteristics of computerized - record kepping system except :A. Higher initial out-of-pocket expenseB. Easy to implementC. FastD. Can be powerful analysis tool​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-write-true-or-false1-livestock-production-has-been-recognized-as-a-significant-source-of-food-2-vaccination-is-the-administration-of-a-biological-preparation-to-help-theimmune-system-develop-prote">30.
+                                            1.WRITE TRUE OR FALSE1. Livestock production has been recognized as a significant source of food.2. Vaccination is the administration of a biological preparation to help theImmune system develop protection from a disease.3. Health and safety risk in the animal agriculture industry are influenced heavilyBy animal type.4. Livestock farmers and farm employees are at higher risk of contracting someZoonotic diseases5. Contingency measures are sets of plans devised for the systematic identification,Analysis, assessment, monitoring and control of risk for a possible outcome.6. Personal Protective Equipment (PPE) is equipment wom to minimize exposureTo hazards that cause serious workplace injuries and illnesses.7. Zoonoses and other infectious diseases are able to spread from animals to man.8. The most frequent hazards come from animal handling.9. Careless and untrained electrical and power management puts workers in riskyConditions.10. Noise from livestock, and machinery can affect your hearing.please sagutan nyo yung maayos na sagot po sana​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="william-d-stevenson-power-system-analysis">
+                            1. William d stevenson power system analysis</h2><br />
+                        <p>William Daniel Stevenson (December 11, 1847 – July 30, 1914) was an American politician from New York.</p><br />
+                                            <h2 class="ez-toc-section" id="w-d-stevenson-elements-of-power-system-analysis">
+                            2. W.d. stevenson elements of power system analysis</h2><br />
+                        <p><strong>Answer:</strong></p><p>[tex]\huge\bold\red{y}\huge\bold\red{o}\huge\bold\red{u}\huge\bold\red{have been muted}[/tex]</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="this-is-the-systematic-analysis-of-various-political-institution-and-processes-sources-and-limits-of-political-power-and-its-manifestation-type-of-legitimate-authority-or-rule-and-systems-of-governme">
+                            3. this is the systematic analysis of various political institution and processes sources and limits of political power and its manifestation type of legitimate authority or rule, and systems of government ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>this is the systematic analysis</p><p><strong>Explanation:</strong></p><p>pa paoints haha</p><br />
+                                            <h2 class="ez-toc-section" id="the-process-that-determines-the-distribution-of-power-and-resources___________________-2-the-branch-of-social-science-that-deals-with-systems-of-government-and-analysis-of-political-activity-______">
+                            4. The process that determines the distribution of power and resources___________________ 2. The branch of social science that deals with systems of government, and analysis of political  activity.___________________ 3. An organized political community living under one government.___________________ 4. The systems that administers or controls the state, and is the instrument through which the  will of the state is made known and implemented.___________________ 5. It refers to all actions and activities related to governing.___________________ 6. A set of ideas and beliefs that define the views and actions of individuals, groups, and  institutions.___________________ 7. This is a government ruled by a single person.___________________ 8. This is the rule of a small group of people.___________________ 9. This government is defined by the direct participation of citizens in all government activities.___________________ 10. In this government, the citizens elect officials who will defend their interests.
+​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.  Politics</p><p>2. Political Science</p><p>3. State</p><p>4.Public administration</p><p>5.Governance</p><p>6. Ideology</p><p>7.Monarchy</p><p>8.Oligarchy</p><p>9.Citizen participation</p><p>10.Representative democracy</p><p><strong>Explanation:</strong></p><p>not sure sa ibang number na sagot</p><br />
+                                            <h2 class="ez-toc-section" id="true-and-false-if-the-statement-is-false-write-your-answer-before-each-number-theb-directions-identify-the-statement-if-it-is-true-or-false-write-true-if-the-statement-iswhorg1-whicwpolitics-is-a">
+                            5. true and FALSE if the statement is false. Write your answer before each number.TheB. Directions: Identify the statement if it is TRUE OR FALSE. Write TRUE if the statement isWhorg1.WhicwPolitics is a mechanism used by the government in order to control, influence, andimplement policies and programs that are deemed important in delivering service to thepeople.2. Politics connotes different meanings. Identifying its common conceptions would give usa clearer understanding of the term. These conceptions can be understood as politicsand government, politics and public affairs, politics as compromise and consensus, andpolitics and power.3. Governance refers to how the government manages the affairs of the state whilegovernment is the entity or organization that carries out governance.4. Good governance is achieved by harmoniously involving the different sectors of thesociety in the implementation of government policies and programs.5. Political science presents a deeper understanding on the mechanisms of politics andgovernance. It is vital in providing an in-depth analysis about the frameworks by whichthe international system and government operate.6. Political science develops critical thinking, nurtures nationalism and patriotism, andprovide alternative solution on the existing problems anchored on research and analysisof existing variables.7. The study of politics and governance is under the helm of anthropology.8. Public administration examines the different philosophies, theories and principles relatedin the study of political science9. Civil society refers to government agencies that advocate certain causes.10. The Municipal Trial Court includes provincial, municipal, city and barangay governmentattached to the central government.11. The state is the essential element in governance12. Governance is an organization that exercises the authority to govern based on theexisting legal frameworks.13. Governant refers to how the government manages the affairs of the state.14. Politics is science concerned with winning and holding control over a government.15. Politics is rooted from the word polis, the city-states that flourished in Germany.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1false</p><p>2true</p><p>3true</p><p>4false</p><p>5true</p><p>6true</p><p>7false</p><p>8true</p><p>9true</p><p>10true</p><p>11false</p><p>12true</p><p>13true</p><p>14false</p><p>15true</p><p>1. FALSE</p><p>2. TRUE</p><p>3. TRUE</p><p>4. FALSE</p><p>5. TRUE </p><p>6. TRUE</p><p>7. FALSE</p><p>8. TRUE</p><p>9. TRUE</p><p>10. TRUE</p><p>11. FALSE</p><p>12. TRUE </p><p>13. TRUE</p><p>14. FALSE</p><p>15. TRUE</p><p></p><p>HOPE THIS HELP</p><br />
+                                            <h2 class="ez-toc-section" id="these-contexts-or-political-science-write-a-for-sociology-b-for-anthropology-and-c-for-political-science-identification-identify-what-is-described-in-each-of-the-items-choose-from-either-sociolo">
+                            6. these contexts. or Political Science. Write A for Sociology, B for Anthropology and C for Political Science. Identification. Identify what is described in each of the items. Choose from either Sociology, Anthropology 1. Investigates the structure of groups, organizations, and societies and how people interact within 2. Social science that deals with systems of governance, and the analysis of political activities, political thoughts, associated constitutions, and political behavior. 3. Compares humans with other animals (most often, other primates like monkeys and chimpanzees) to see what we have in common with them and what makes us unique. 4. Works in their own societies looking at economics, health, education, law, and policy 5. The study of politics and power from domestic, intemational, and comparative perspectives. 6. Interested in socioeconomic class and mobility, sexuality, law, politics, religion, or linguistics. 7. Interested in the experiences of individuals and how those experiences are shaped by interactions with social groups and society in general. 8. They look at the different ways people dress and communicate in different societies. 9. The discipline deals with the traditional fields of public national life, such as democracy, parliaments, politicians, elections, and the government 10. Ranges from the intimate family to the hostile mob; from organized crime to religious traditions, from the divisions of race, gender, and social class to the shared beliefs of a common culture.​</h2><br />
+                        AnAnwer1AnAnswer1swer.AnAnswer1.swerswer:<br /><br />1.Sociology<br />2.Political Science <br />3.Sociology<br />4.Anthropology<br />5.political science<br />6.sociology<br />7.sociology<br />8.Anthropology<br />9.Political Science<br />10.Sociology<br /><br />Explanation:<br />Correct niyo Lang Po Kung may Mali ako<br /><br />Pero Yan Po talaga sagot ko sa module Tama Po <br /><br />
+                                            <h2 class="ez-toc-section" id="b-true-or-false-identify-whether-the-statement-is-a-true-statement-or-a-false-one-write-t-if-it-is-true-and-f-ifotherwise-20-points___11-formalism-is-the-study-of-texart-based-solely-on-an-analys">
+                            7. B. TRUE OR FALSE, Identify whether the statement is a true statement or a false one Write T if it is true and F ifotherwise (20 points)___11. Formalism is the study of texart based solely on an analysis of its form-the way it is made and what itlooks like.___12. Features of formalism include not only grammar and syntax but also literary devices and literaryinterpretation of a a tone, theme, and literature.___13. Formalism as a critical approach, considers primarily as structure of words in a text studied. ___14. For example in a poem, the formalist is concerned about literary structure suing phonemic device not thephonetic sound.___15. Marxist criticism I concerned with differences between economic classes and implication of capitalist system, such as continuing conflicts between the working class and the elite or rich ___16 For example in the story "Dead Stars" written by Paz Marquez Benitez, the imbalance of societal powerplay is evident in the story in the form of treatment of the theme based on their life.___17. In Marxist criticism, It reviews a work of literature in terms of teh society it presents.___18.Feminism criticism focuses on how literature presents women as subjects of socio-political, psychological and economic oppression or cruelty.___19. It also reveals how aspects of our culture are patriarchal like how our culture views men as superior. ___20. An example of feminism criticism text is entitled "Emma Watson: Gender Inequality is you Issue too".​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>11. True</p><p>12. False</p><p>13. True</p><p>14. False</p><p>15. True</p><p>16. True</p><p>17. True</p><p>18. False</p><p>19. False</p><p>20. True</p><p></p><p><strong>Explanation:</strong></p><p></p><p><strong>#</strong><strong>C</strong><strong>a</strong><strong>r</strong><strong>r</strong><strong>y</strong><strong>O</strong><strong>n</strong><strong>L</strong><strong>e</strong><strong>a</strong><strong>r</strong><strong>n</strong><strong>i</strong><strong>n</strong><strong>g</strong><strong>!</strong><strong>!</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="true-or-falsedirection-write-the-word-true-if-the-statement-is-correct-and-false-if-wrong-write-the-letter-only-on-the-space-provided-11-caution-must-be-observed-when-working-with-hot-oil-or-ob">
+                            8.    TRUE OR FALSE:Direction: Write the word TRUE if the statement is correct and FALSE if wrong. Write the letter only on the space provided.11. Caution must be observed when working with hot oil or object.12. Store bleach and ammonia in separate areas, because they can produce a dangerous reactions if they come in contact with oneanother13. Keep small appliances and their power cords away from the sink or other water sources while in used to avoid shock hazards.14. Electric fires are caused by over loaded circuits.15. Molds grow in areas, where dry places accumulates.16. Carbon monoxide is odourless gas that could be hanging around in the kitchen, and this is safe.17. A study by microbiologist Carlos Enriquez at the University of Arizona found salmonella in about 15% of the sponges examined.18. Make sure that all accidents and incidents are recorded and investigated.19. Keeping the premises clean and congestion-free will prevent accident20. Hazard analysis and critical control point is a food safety system that helps identity and control any danger of food contamination.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>11.True</p><p>12.True</p><p>13.True</p><p>14.False</p><p>15.True</p><p>16.True</p><p>17.False</p><p>18.False</p><p>19.True</p><p>20.False</p><strong>Hope </strong><strong>it </strong><strong>helps</strong><br />
+                                            <h2 class="ez-toc-section" id="ii-a-true-or-false-direction-write-t%e2%80%9d-if-the-statement-is-correct-and-%e2%80%9cf%e2%80%9d-if-it-is-wrong-1-there-is-no-best-record-keeping-system-for-all-situations-2-financial-record">
+                            9. II. A. True Or False. Direction: Write "T” if the statement is correct and “F” if it is wrong.1. There is no "best" record keeping system for all situations.2. Financial Records refers to items that relate to quantities of inputs and levels ofproduction by enterprise and/or by resource type.3. Production Records relate primarily to money or the financial interactions of thefarm.4. Keeping and analyzing accurate production records are important and essentialaspects of farm management5. Both production and financial records are important to the efficient management oftoday's farm business6. Computer System is higher initial out-of-pocket expense.7. Hand system can be a powerful analysis tool8. The person responsible for keeping the records should develop ahabit of regularly and accurately posting transactions.9. Keeping and analyzing accurate production records are importantand essential aspects of farm management10. The person responsible for keeping the records should develop ahabit of regularly and accurately posting transactions​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.True</p><p>2.True</p><p>3.False</p><p>4.True</p><p>5.True</p><p>6.False</p><p>7.False</p><p>8.True</p><p>9.True</p><p>10.True</p><p><strong>Explanation:</strong></p><p>Hope that's help. Pa brainlies po. </p><br />
+                                            <h2 class="ez-toc-section" id="orovinceiflytoicasdettrue-16-social-stratification-is-strutted-andhierarchical-ranking-of-individuals-based-on-theirfamily-occupation-income-wealth-and-power-true-17-social-class-refers-to-the-po">
+                            10. OROVINCEiflytoicasdetTRUE 16. Social stratification is strutted andhierarchical ranking of individuals based on theirfamily, occupation, income, wealth and power.TRUE 17. Social class refers to the position of anindividual or group within a social structureTRUE 18. Authority is the ability to secure one'sends in life, even against opposition.TRUE_19 Conflict perspective views society ascomposed of different groups and interest competingfor power and resources.Palde 20; Slavery is a hereditary endogamoussocial group in which a person's rank and itsaccompanying rights and obligations are ascribed onthe basis of his birth into a particular group.Faise 21. Manifest functions are consequencesthat are unintended and often hidden.true 22. Micro sociology level of sociologicalanalysis that is concerned withthe socialpsychological dynamics of individuals interacting insmall groups.23. In this system a person has little or nopossibility of moving up social ladder called closedsystem.24. Upper class refers to the elite families,who are the most productive and successful.25. Social status it refers to the behaviorexpected of a person who occupies a particularstatus.26.W.I. Thomas emphasized theimportance of definitions and meanings in socialbehavior and its consequences.27. It looks at the big picture of society andsuggests how social problems are affected at theinstitutional level called macro sociology.28. Life chances include the mode ofhousing, residential area, education, means ofrecreation, relation between parent and children,modes of conveyance.29. Social Mobility is the movement ofpersons from one position to another in thestratification system.30. Karl Marx suggested that all societies gothrough stages of economic Development.ph​</h2><br />
+                        <p><strong>Answer:</strong></p><p>true</p><p>false</p><p>true</p><p>true</p><p>true</p><p>true</p><p>true</p><p>true</p><p>true</p><p><strong>Explanation:</strong></p><p>carry on learning</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="direction-write-the-word-true-if-the-statement-is-correct-and-false-if-wrong-write-the-letter-only-on-the-space-provided-11-caution-must-be-observed-when-working-with-hot-oil-or-object-12-store-bl">
+                            11. Direction: Write the word TRUE if the statement is correct and FALSE if wrong. Write the letter only on the space provided.11. Caution must be observed when working with hot oil or object.12. Store bleach and ammonia in separate areas, because they can produce a dangerous reactions if they come in contact with oneanother13. Keep small appliances and their power cords away from the sink or other water sources while in used to avoid shock hazards.14. Electric fires are caused by over loaded circuits.15. Molds grow in areas, where dry places accumulates.16. Carbon monoxide is odourless gas that could be hanging around in the kitchen, and this is safe.17. A study by microbiologist Carlos Enriquez at the University of Arizona found salmonella in about 15% of the sponges examined.18. Make sure that all accidents and incidents are recorded and investigated.19. Keeping the premises clean and congestion-free will prevent accident.20. Hazard analysis and critical control point is a food safety system that helps identity and control any danger of food contamination​</h2><br />
+                        <p><strong>Answer:</strong></p><p>11.true</p><p>12.true</p><p>13.true</p><p>14.true</p><p>15. true</p><p>16. false</p><p>17.true</p><p>18.true</p><p>19true</p><p>20.true </p><p>correct me if im wrong</p><br />
+                                            <h2 class="ez-toc-section" id="ii-write-true-if-the-statement-is-correct-and-false-if-it-is-not-on-the-space-providedbefore-the-number1-market-is-a-place-where-exchange-happens-2-product-is-a-tangible-object-or-system-made-availa">
+                            12. II.Write True if the statement is correct and False if it is not on the space providedbefore the number1. Market is a place where exchange happens.2. Product is a tangible object or system made available for consumer use.3. Strategy can be considered as a management's game plan.4. Competitors are very important to the success or failure of a new business.5. A market analysis is a quantitative and qualitative assessment of a market.6. Major and minor customers are the same in terms of power and authority.7. Keep adding something new is not a marketing technique or strategy8. Fund Management is a common mistake in creating a business model isunderestimating the costs of funding the business until it becomes profitable.9. A market structure is a company's plan for making a profit. It identifiesthe products or services the business will sell, the target market it has identified, and theexpenses it anticipates.10. Strategy don't ensure effective departmental co-ordination​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1 .True</p><p>2.False</p><p>3.True</p><p>4.True</p><p>5.False</p><p>6.True</p><p>7.False</p><p>8.True</p><p>9.True</p><p>10.False</p><p>I hope nakatabang:&gt;</p><br />
+                                            <h2 class="ez-toc-section" id="this-is-the-systematic-analysis-of-various-political-institutions-and-processes-sources-and-limits-of-political-power-and-its-manifestation-types-of-legitimate-authority-or-rule-and-systems-of-governm">
+                            13. this is the systematic analysis of various political institutions and processes sources and limits of political power and its manifestation types of legitimate authority or rule and systems of government ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The term ” politics ” is generally applied to behavior within civil governments, but politics has been observed in all human group interactions. It consists of social relations involving authority or power, the regulation of political units, and the methods used to formulate and apply social policy.</p><p>Traditionally there have been four main areas of research: the socio-political formation of the modern state; how social inequality influences politics; how social movements outside of the formal institutions affect formal politics; and power relationships within and between social groups.</p><p>There are three major theoretical frameworks: pluralism, elite or managerial theory, and class analysis.</p><p>Pluralism sees politics primarily as a contest among competing interest groups. It holds the view that politics and decision making are located mostly in the framework of government, but many non-governmental groups use their resources to exert influence.</p><p>Elite or managerial theory is sometimes called a state-centered approach. It posits that a small minority—consisting of members of the economic elite and policy-planning networks—holds the most power and that this power is independent of a state’s democratic elections process.</p><p>Social class theory analysis emphasizes the political power of capitalist elites.</p><br />
+                                            <h2 class="ez-toc-section" id="1-these-are-thesteps-that-will-help-you-improve-your-business-of-choice-and-prepare-forchallengesa-swot-analysisc-technologyb-cultured-government2-these-are-inventions-based-on-the-application">
+                            14. 1. These are thesteps that will help you improve your business of choice and prepare forchallenges?A. SWOT AnalysisC. TechnologyB. CultureD. Government2. These are inventions based on the application of science that create new product orprocess improvements?A. SWOT AnalysisC. TechnologyB. CultureD. Government3. Ideas and customs of a set of people or society primarily influence the types of productsthat are acceptable to a particular locality.A. SWOT AnalysisC. TechnologyB. CultureD. Government4. The body with the power to make and enforce the laws to control a country, land area,people or organization.A. SWOT AnalysisC. TechnologyB. CultureD. Government5. This refers to the management of resources and study of the system of production,distribution, and consumption of goods and services.C. TechnologyD. GovernmentFOR EDUCATIONAL PURPOSES ONLY​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1-5) Wla sa nabanggit</p><p></p><p><strong>Explanation:</strong></p><p>who you ka sa sagot ko</p><br />
+                                            <h2 class="ez-toc-section" id="12-crucial-in-the-analysis-of-political-party-dynamics-is-the-identification-of-a-party-system-that-exists-in-every-state-a-traditional-way-of-classifying-party-system-is-on-the-basis-of-the-number">
+                            15. 12. Crucial in the analysis of political party dynamics is the identification of a party system that exists in every State. A traditional way of classifying party system is on the basis of the number of parties vying for power (Duverger, 1954) - one-party, two-party, and multiparty system. In a one-party system, a single party is regarded as a vanguard that controls the power to the extent that its machinery has become fused with the State. The existence of other parties may be allowed so long as they remain compliant with the dominant party. Search for the meaning/definition: vanguard: Dominant party: Machinery:then give an explanation and example of thispa help po need ko lang salamat​</h2><br />
+                        <p><strong>Answer:</strong></p><strong>vanguard:</strong><p><strong>The vanguard (also called the advance guard) is the leading part of an advancing military formation. It has a number of functions, including seeking out the enemy and securing ground in advance of the main force.</strong></p><p></p><strong>Dominant party: </strong><p><strong>ebruary 2021) (Learn how and when to remove this template message) A dominant-party system, or one-party dominant system, is a political occurrence in which a single political party continuously dominates election results over running opposition groups or parties.</strong></p><p></p><strong>Machinery</strong><strong>:</strong><p><strong> a group of large machines or the parts of a machine that make it work: industrial/farm machinery.</strong></p><p></p><strong>E</strong><strong>x</strong><strong>a</strong><strong>m</strong><strong>ples</strong><strong>:</strong><p></p><p><strong>vanguard:</strong></p><p><strong>You might talk about the vanguard of fashion on the red carpet, the vanguard of medical research at a university, or the vanguard of a political movement at a demonstration. a way of regarding situations or topics etc.</strong></p><p></p><p><strong>Dominant party: </strong></p><p><strong>An example of a genuine democratic dominant-party system would be the pre-Emergency India, which was almost universally viewed by all as being a democratic state, even though the only major national party at that time was the Indian National Congress.</strong></p><p></p><p><strong>Machinery</strong><strong>:</strong></p><p><strong>Examples of this are drill presses, cement mixers (agitators), ready-mix concrete trucks, hot steel rolling machines, rock crushers, and band saws. Also included is machinery and equipment used to repair, maintain, or install tangible personal property.</strong></p><p><strong>Explanation:</strong></p><strong>B</strong><strong>r</strong><strong>a</strong><strong>i</strong><strong>n</strong><strong>l</strong><strong>i</strong><strong>e</strong><strong>s</strong><strong>t</strong><strong> </strong><strong>p</strong><strong>l</strong><strong>s</strong><strong> </strong><strong>o</strong><strong>r</strong><strong> </strong><strong>y</strong><strong>o</strong><strong>u</strong><strong>r</strong><strong> </strong><strong>g</strong><strong>o</strong><strong>i</strong><strong>ng </strong><strong>t</strong><strong>o</strong><strong> </strong><strong>b</strong><strong>l</strong><strong>o</strong><strong>c</strong><strong>k</strong><strong>ed </strong><strong>f</strong><strong>o</strong><strong>r</strong><strong>e</strong><strong>v</strong><strong>er </strong><br />
+                                            <h2 class="ez-toc-section" id="10-which-of-the-following-is-true-about-preparing-a-swot-analysis-a-a-swot-analysis-is-objective-b-it-should-be-specific-and-avoid-grey-areas-c-it-should-analyze-the-organization-only-and-ignor">
+                            16. 10. which of the following is true about preparing a swot analysis? a. a swot analysis is objective. b. it should be specific and avoid grey areas. c. it should analyze the organization only and ignore the performance of competitors. d. it should focus on where the organization is today, not where it could be in the future. 11. it is a national accepted guide for safe installation of electrical wiring and equipment. a. almanac c. kit b. dictionary d. philippine electrical code 12. before starting an electrical installation, you must first apply for a. certificate of installation c. service connection b. electrical inspection d. electrical permit 13. the conductors and equipment for delivering energy from meralco to the wiring system of a house. a. fuse c. service b. rigid metallic conduct d. switch 14. when was first edition of the philippine electrical codes published? a. 1960 b. 1961 c. 1962 d. 1963 15. what is the last step in applying of electrical installation? a. apply for electrical permit. b. apply for an electrical inspection. c. checked by the issuing government official if all requirements are complied. d. apply for service connection to the nearest electrical power distribution office. 16. this term came from the greek word "electron" which means amber, a. electricity b. maintenance c. installation d. technology 17. he is known as the "father of electricity". a. michael faraday c. james west b. charles a. coulomb d. george ohm.  pa pls pls pls pls pls pls po.​</h2><br />
+                        <p><strong>1</strong><strong>0</strong><strong>.</strong><strong>)</strong><strong> </strong>C</p><p><strong>1</strong><strong>1</strong><strong>.</strong><strong>)</strong><strong> </strong>D</p><p><strong>1</strong><strong>2</strong><strong>.</strong><strong>)</strong><strong> </strong>B</p><p><strong>1</strong><strong>3</strong><strong>.</strong><strong>)</strong> C</p><p><strong>1</strong><strong>4</strong><strong>.</strong><strong>)</strong><strong> </strong>B</p><p><strong>1</strong><strong>5</strong><strong>.</strong><strong>)</strong><strong> </strong>C</p><p><strong>1</strong><strong>6</strong><strong>.</strong><strong>)</strong><strong> </strong>A</p><p><strong>1</strong><strong>7</strong><strong>.</strong><strong>)</strong> A</p><p></p><p>follow for more right answer </p><p><strong>pa</strong><strong> </strong><strong>brainliest</strong><strong> </strong><strong>naman</strong><strong> </strong><strong>nakama</strong><strong> </strong><strong>:</strong><strong>)</strong><strong>)</strong></p><p></p><p><strong>Explanation:</strong></p><p><strong>#</strong>CARRYonLEARNING</p><br />
+                                            <h2 class="ez-toc-section" id="power-and-water-providers-have-smart-metering-and-analysis-systems-sophisticated-enough-to-deduce-what-appliances-we-are-using-at-various-times-of-day-e-g-cellphones-charging-and-an-air-conditioner">
+                            17. Power and water providers have smart metering and analysis systems sophisticated enough to deduce what appliances we are using at various times of day (e.g., cellphones charging and an air conditioner running), when we shower (and for how long), and when we sleep. List several ways you can think of that this information could embarrass or cause problems for a person if leaked, stolen, or acquired by law enforcement agents.</h2><br />
+                        <p><strong>Answer:</strong></p><p>pa brainlest</p><p><strong>Explanation:</strong></p><p>hi pa heart</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="d-map6-ais-a-graphical-representation-of-datacontrast-numbers-frequencies-or-other-measures-of-distinct-categories-of-data-apie-chart-b-bar-graph-c-line-graph-d-flow-chart7-ashows-the-sequence">
+                            18. D. map6. Ais a graphical representation of datacontrast numbers, frequencies or other measures of distinct categories of data.Apie chart B. bar graph C. line graph D. flow chart7. Ashows the sequence of movements oractions of people or things involved in a complex system or activityA. pie chart B. flowchartC. line graph D.)bar graph8. A is a collection of data showing the spatial arrangement or distribution of something over an area.A. table B. graph © flowchart9. provide a title, short explanation, or a description accompanying an illustration or a photograph.A.Maps B. Captioned graphics C. Tables D. Surface diagrams10.can show trends and cycles and make the information easier to visualize.A. Graphs and chartsC. Surface diagrams and tablesB. Pictograms and mapsDcaptioned graphics and diagramsFill in the blanks with the correct terms relevant to what you have learned in this lesson. Choose from the vpool below. Write your answers in the space provided.Comprehensionfact-basedvisual-verbal analytical visual thinkingUnderstanding (1)relationships is a powerful tool to improve (2)of concepts, ideas, arother data presented in an expository text. Knowing how to interpret (3).clues provides opportunity fanalysis and critical (4).​</h2><br />
+                        <p><strong>Answer:</strong></p><p>10</p><p><strong>Explanation:</strong></p><p>b pictograms and maps</p><br />
+                                            <h2 class="ez-toc-section" id="i-true-or-falseinstructions-write-true-if-the-statement-is-correct-and-false-if-otherwise-1-state-and-government-are-the-same-2-according-to-aristotle-politics-is-something-that-you-cannot-avoid">
+                            19. I. True or FalseInstructions: Write True if the statement is correct and False if otherwise.1. State and Government are the same.2. According to Aristotle, politics is something that you cannot avoid.3. Politics is meant to achieve a common good.4. Politics refers to the competition between competing interest groups or individuals for5. Government is about influencing the formulation of government policies and competition for power6. According to plato,mMan is a political animal7. You can participate in Politics in governance8. There are 7 major characteristics in governance9. Political science deals extensively with the analysis of political systems,the theoretical and practical applications to politics,and the examination of political behavior10. Absolutism is the belief that the best government is absolutely no govenment​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.false</p><p>2.false</p><p>3.true</p><p>4.true</p><p>5.true</p><p>6.false</p><p>7.true</p><p>8.true</p><p>9.true</p><p>10.false</p><p><strong>Answer:</strong></p><p>1 false</p><p>2 false</p><p>3true</p><p>5 true</p><p>6 false</p><p>7 false</p><p>8 true</p><p>9 true</p><p>10 true</p><br />
+                                            <h2 class="ez-toc-section" id="10-which-of-the-following-is-a-negative-characteristic-of-computer-recording-system-for-record-keeping-a-accurate-b-can-be-a-powerful-analysis-toolc-fastd-higher-initial-out-of-pocket-expensehel">
+                            20. 10.) Which of the following is a negative characteristic of computer recording system for record-keeping A. Accurate B. Can be a powerful analysis toolC. FastD. Higher initial out-of-pocket expensehelp me plssssssssssssssssssss_ssssssss HuHuHu​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>D po ang sagot </p><p><strong>Explanation:</strong></p><p>Hope it's help po </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="directionidentify-the-type-of-qualitative-research-best-suited-for-the-following-topics1-analysis-on-the-cancer-survivors-to-develop-a-new-theory-in-psychology-2-responses-of-mothers-whose-childre">
+                            21. DIRECTION:identify the type of qualitative research best suited for the following topics?1. Analysis on the cancer survivors to develop a new theory in psychology 2. Responses of mothers whose children experienced early pregnancy 3.Mental well-being of patients from ethnic minority groups during critical care4. Social behavior of physically abused children in the classroom 5. Experiences of senior citizens at the LRT/MRT stations 6. Philippines political party system :then and now7. Lived experiences of students with learning disabilities 8. A day in the life of a Gen-Z Teacher. How to survive the daily challenges of distance learning through technology? 9. Speech difficulties of Grade 2 pupils in bongabon central school10. Muslim wedding rites:A means of power and wealth preservation ​</h2><br />
+                        <p><strong>Answer:</strong></p>observationindividual interviewfocus groupobservationsindividual interviewonline focus grouponline focus grouplife style emersionjournal or diarylife style emersion<br />
+                                            <h2 class="ez-toc-section" id="1-it-refers-to-a-differentiated-roles-responsibilities-attitudesand-values-of-being-female-and-male-in-the-culture-and-society-c-gender-identityd-gender-sensitivitya-genderb-sex2-it-is-an-org">
+                            22. 1. It refers to a differentiated roles, responsibilities, attitudes,and values of being female and male in the culture and society.C. Gender Identityd. Gender Sensitivitya. Genderb. Sex2. It is an Organization that is incorporated into United Nation1945 protecting the workers' rights, especially the nighttimework of women.a. National Organizationc c. Regional Organizationb. City Organizationd. International Labor Organization3. Do men and women earn the same amount of money forequal work?a. No, men earn morec. Yes, they earn equallyb. Yes, women earn mored. Not at all.4. It refers to a situation on the heavy workload of women andthe overlapping tasks.a. Developmentb. Multiple Burdenc. Gender Discriminationd. Gender Analysis4. It refers to an act of gender-based violence that results inaphysical, sexual, or physiological harm to women.a. Gender Analysisb. Multiple Burden d. Violence against womenc. Gender Discrimination5. It is a social and cultural phenomenon in which there is adiscrimination against people due to their gender.a. Gender Inequalityb. Gender Sensitivityc. Gender Personalityd. Gender -based6. What type of perspectives on Gender that grants greaterpower and privileges to men in a interactive and culturalway.a. Socio Cultural Sphereb. Social SystemC. Social Sphered. Social Security7. This is a man- made cause and a periodic modification ofEarth's climate brought about as a result of changes in theatmosphere.a. Climate Changeb. Climatic periodc. Climated. Weather8. It refers to the violation of workers' rights that recurconsistently throughout the world.a. International Labor Issueb. International Labor OrganizationC. International Traded. International10. It is It is the process by which people are made aware ofhow gender plays a role in life through their treatment ofothers.a. GenderC. Sexb. Gender Identityd. Gender Sensitivity​</h2><br />
+                        ANSWER:<p></p>1. It refers to differentiated roles, responsibilities, attitudes,
+, and values of being female and male in the culture and society.D. Gender Sensitivity<p><strong>Explain why:</strong> Gender sensitivity is the process by which people are made aware of how gender plays a role in life through their treatment of others.</p><p></p>2. It is an organization that is incorporated into United Nation  1945 protecting the workers' rights, especially the night-time  work of women.D. International Labor Organization<p><strong>Explain why: </strong>The United Nations is an international organization founded in 1945 after the Second World War by 51 countries committed to maintaining international peace and security, developing friendly relations among nations, and promoting social progress, better living standards, and human rights.</p><p></p>3. Do men and women earn the same amount of money for  equal work?C. Yes, they earn equally<p><strong>Explain why:</strong> Men and women in the same employment performing equal work must receive equal pay.</p><p></p>4. It refers to a situation on the heavy workload of women and  the overlapping tasks.C. Gender Discrimination<p><strong>Explain why: </strong>Traditional value system, low level of literacy, more household responsibilities lack of awareness, non-availability of proper guidance, low mobility, lack of self-confidence family discouragement, and advanced science and technology are some of the factors responsible to create gender disparity in our society.</p><p></p>5. It is a social and cultural phenomenon in which there is a  discrimination against people due to their gender.A. Gender Inequality<p><strong>Explain why:</strong> Gender inequality is discrimination based on sex or gender causing one sex or gender to be routinely privileged or prioritized over another.</p><p></p>6. What type of perspectives on Gender that grants greater  power and privileges to men in an interactive and cultural  way.A. Socio-Cultural Sphere<p><strong>Explain why</strong>: It is a Culture, information, and art; and public services and amenities.</p><p></p><strong>7. This is a man-made cause and a periodic modification of  Earth's climate brought about as a result of changes in the  atmosphere.</strong>A. Climate change<p><strong>Explain why:</strong> Climate change, periodic modification of Earth's climate brought about as a result of changes in the atmosphere as well as interactions between the atmosphere and various other geologic, chemical, biological, and geographic factors within the Earth system.</p>8. It refers to the violation of workers' rights that recur  consistently throughout the world.B. International Labor Organization (ILO)<p><strong>Explain why:</strong> The International Labour Organization (ILO) is a United Nations (U.N.) agency. The goal of the ILO is to advance social and economic justice by setting international labor standards.</p><p></p>10. It is the process by which people are made aware of  how gender plays a role in life through their treatment of others.D. Gender Sensitivity<p><strong>Explain why: </strong>Gender sensitivity is the process by which people are made aware of how gender plays a role in life through their treatment of others.</p><p></p><p>
+</p><br />
+                                            <h2 class="ez-toc-section" id="2-identify-mei-instructions-on-patterns-of-development-choose-from-the-given-options-the-petem-of-development-used-in-each-llem-write-the-letter-only-1-caroline-or-sister-carrie-as-she-had-be">
+                            23. 2: IDENTIFY MEI Instructions: On Patterns of Development, choose from the given options the petem of development used in each llem. Write the letter only. 1. "Caroline, or Sister Carrie, as she had been half affectionately termed by the family, was possessed of a mind rudimentary in its power of observation and analysis. Self-interest with her was high, but not strong. It was nevertheless, her guiding charactenstic. Wam with the fancies of youth, pretty with the insipid prettiness of the formative parod, possessed of a figure promising eventual shapeliness and an eye alight with certain native intelligence, she was a tar example of the middle American class...A. Narration B. Description C. Persuasion D. Definition2. "I took up the river road as hand as I could put. By and by I begin to hearguns a good way of When I came in sight of the log store and the woodpile where the steamboats lands worked along under the trees and brush till I got to a good place, and then i cimbs up into the forks of a cottonwood that was out of reach and watched. There was a wood-rank tour-foot high a little way in front of the trea and frat I was going to hide benind that, but maybe was luckler didn't A. Narration B. Description C. Persuasion D. Definition 3. There are basically two ways to make a web page. The first way is to create the page(s) oftine and than upload them to your memet Service Provider (SP) vin FTP. The second way is to create your wah pagais) online using a Tainot program by accessing your UNOX account, if you have one Nomination.A. Cause and Effect B. ExemplificationC. Problem Solution D. Process Analysis 4. Bacial endocarditis occurs when bacteria in the oodstream (bacteremia) lodge on abnormal heart valves or other damaged heart tissue. Certain bacteria normally live on parts of your body, such as the mouth and upper respiratory system, the intestinal and urinary tracts, and the skin. Some surgical and dental procedures cause a pret hacteremia, Bacteremia is common after many invasive procedures; but only certain bacteria commonly cause endocanttis A. Narration B. Description C. Persuasion D. Definition 5. Modern humans are baclena-killing machines. We assassinate microbes with hand soap mouthwash and bathroom cleaners. It feels clean and night. But some scientists say we're overdoing All this kiling may actually cause diseases ike eczema, iritable bowel syndrome and even diabetes. The answer, they say, is counterintuitive: Foed patients bacteria. (Keim)A. Cause and Effect B. ExemplificationC. ProblemD. Process Analysis Solution​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.C. Persuasion</p><p>2.B.Description</p><p>3.B. Exemplification</p><p>4.D.Definition</p><p>5.D. Process Analysis Solution</p><p></p><p><strong>Explanation:</strong></p>#CARRYONLEARNINGpa brainlest po plsss need ko lang•°•°•°•°•° ANSWER •°•°•°•°•°<p></p>1. C. PERSUASION<p></p>2. B. DESCRIPTION<p></p>3. B. EXEMPLIFICATION<p></p>4. D. DEFINITION<p></p>5. D. PROCESS ANALYSIS <p></p>            SOLUTION<p></p>       I HOPE IT'S HELP       I NEED BRAINLEST ME PLZ <br />
+                                            <h2 class="ez-toc-section" id="multiple-choice-direction-read-each-statement-below-copy-and-answer-in-your-pr-1-notebook-1-all-of-the-following-are-strength-of-qualitative-research-except-a-it-is-instrumental-for-positive-so">
+                            24. Multiple Choice. Direction: Read each statement below. Copy and answer in your PR-1 notebook. 1.	All of the following are strength of qualitative research EXCEPT. A.	It is instrumental for positive societal changes. B.	It is hard to know the validity/reliability of the data. C.	Offers multiple ways of acquiring and examining knowledge about something. D.	Promotes a full understanding of human behavior/personality traits in their natural setting. 2.	Qualitative research allows you to approach or plan your study in varied ways. Here you are free to combine this with quantitative research and use all gathered data and analysis technique. What characteristic of qualitative research is being referred to? A. Active, powerful, and forceful		B. Contextualization C. Internal Analysis		 	D. Multiple research approach and methods 3.	This refers to a qualitative method where there is an examining of past events to draw conclusions and make predictions about the future.		 A. Case Study					B. Grounded Theory C. Historical Analysis				D. Phenomenology 4.	Which of the following is one of the weaknesses of a qualitative research? A.	It is time-consuming. B.	It adopts a naturalistic approach to its subject matter. C.	It’s a way of understanding &amp; interpreting social interactions. D.	Offers multiple ways of acquiring and examining knowledge about something. 5.	It is the most familiar and applicable type of qualitative research which refers to the investigation of a culture through an in-depth study of the members of the cultural society A. Case Study					B. Ethnography 	 C. Grounded Theory 				D. Phenomenology 6.	It is primarily used to generate theory through relevant information taken from very reliable sources and its focus is theory development. A. Case Study					B. Ethnography 	 C. Grounded Theory 				D. Phenomenology 7.	Which of the following types of qualitative research is designed to focus on the commonality of a “lived experience” with a particular group and its aim is to determine what an experience means for the persons who have had the experience of living in a certain community which is the subject of the research? A. Case Study					B. Ethnography 	 C. Grounded Theory 				D. Phenomenology 8.	“A student really idolizes his English teacher who is very expert in grammar and literature. The former wants to write a scholarly chronicle about the latter’s experiences including his family background, how he achieved his success in life, his likes and dislikes, his achievements and struggles in life.” What type of qualitative research should a student employ? A. Biography		 			B. Discourse Analysis C. Historical Research 				D. Narrative Report 9.	It is a qualitative research which analyzes the language “beyond the sentence”. It is the study of the ways in which language is used by the people, both written and spoken contexts. A. Biography		 			B. Discourse Analysis C. Historical Research 				D. Narrative Report 10.	It is an exploration of a “bounded system” over time through detailed, in-depth data collection involving multiple sources of information rich in interesting stories. A. Case Study					B. Ethnography 	 C. Grounded Theory 				D. Phenomenology​</h2><br />
+                        <p><strong>Answer:</strong></p><p>bumuo ng saliya sa tulong ng panlapi at salitang - ugat 1. hiwalay na- </p><br />
+                                            <h2 class="ez-toc-section" id="1-_________-is-the-struggle-between-the-segments-of-society-over-valued-resources-2-the-conflict-between-entire-classes-over-the-distribution-of-a-society-wealth-and-power-is-called____________-3-u">
+                            25. 1._________ is the struggle between the segments of society over valued resources. 2. The conflict between entire classes over the distribution of a society wealth and power is called____________.3. Under capitalism,__________are people who own and operate factories and other business in pursuit of profits.4.The worker's recognition of themselves as a class unified in opposition to capitalist and ultimately to capitalism itself is called__________. 5. Classical Marxism is characterized by for related "isms" namely, econonism, determinism,__________, and structuralism.6. the ultimate goal of ________ the was to expose the whole gender based system of sexism and patriarchal power expressed in social, political, and economic structure. 7. with the resurgence of feminism the late 1960's three strands of feminism were predominant, namely, liberal feminism, ________, and radical feminism.8. ____________ feminism is critique as too limited and too accepting of the "system" with its inherent structural inequalities and so, by implication, as elitist. 9. Feminist political scientist sought apply in science derived from feminism in their own analysis by first, mounting a critique of male political science for its virtual________ of women as political actors. 10. Institution are _______ when advantage and disadvantage, exploitation and control, action and emotion, meaning and identity.​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>1. <strong>Class </strong><strong>Conflict</strong></p><p>2. <strong>Class </strong><strong>Conflict</strong></p><p>3. <strong>Capitalists</strong></p><p>4. <strong>Class </strong><strong>Consciousness</strong></p><p>5. <strong>Feminism</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="study-each-statement-carefully-write-the-word-true-if-the-statement-is-correct-and-false-if-otherwise-1-reasoning-is-the-core-structure-of-an-argument-2-in-planning-a-speech-or-any-academic-prese">
+                            26. Study each statement carefully. Write the word TRUE if the statement is correct and FALSE if otherwise. 1. Reasoning is the core structure of an argument. 2. In planning a speech or any academic presentation, one must consider the audience's point of view. 3. Self-confidence is not required in effective communication. 4. Good presentation skill is a powerful tool for effective communication. 5.Eye contact and bodily gestures are not necessary for good communication. 6. "Hazel is a student." This statement is an example of a prescriptive value judgment. 7.Sound analysis is an important skill that helps you remain calm under pressure. 8. A value judgment can refer to a judgment based upon a particular set of values or on a particular value system. 9. The term "moral relativism" pertains to that moral and ethical propositions that are universal truthsand stems from cultural context. 10. Value judgment is limited only in describing a certain situation.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.F</p><p>2.T</p><p>3.F</p><p>4.T</p><p>5.F</p><p>6-10 I don't know</p><br />
+                                            <h2 class="ez-toc-section" id="activity-short-quiz-let-us-refresh-your-knowledge-from-the-previous-discussion-about-the-various-disciplines-in-the-social-sciences-answering-all-the-items-correctly-will-give-you-one-extra-point-fo">
+                            27. Activity: Short Quiz Let us refresh your knowledge from the previous discussion about the various disciplines in the Social Sciences. Answering ALL the items correctly will give you one extra point for a total of 10 points for this short quiz. Direction: Read the descriptions below and identify which Social Science discipline is described in each item. Write your answers on a coupon bond paper. 1. This discipline seeks to comprehend the origins of human beings, the adaptations, either cultural or biological, that allow people to fit in with their surroundings. 2. It analyzes the different characteristics of the human population, such as the size, the density, the territorial dispersion or spatial distribution, and the structure or composition. 3. It deals with the matters or problems related to the optimal allocation of limited resources, which have alternative uses, in order to satisfy the infinite needs and desires of the people 4. It investigates the distribution and location of the different natural or physical features of the earth. 5. This area of study reconstructs various recorded human events and natural phenomena and explains the different human thoughts and actions in the past and the changes that these had experienced through the analysis of and secondary sources of information 6. This discipline investigates the origins of various natural languages, language acquisition procedures, and the changes that have occurred in different human languages over a period of time. 7. This is the systematic analysis of various political institutions and processes, sources and limits of political power and its manifestations, types of legitimate authority or rule, and systems of govemment.​</h2><br />
+                        <p>pa follow Sana and thank you </p><br />
+                                            <h2 class="ez-toc-section" id="b-true-or-false-identify-whether-the-statement-is-a-true-statement-or-a-false-one-write-t-if-it-is-true-and-f-ifotherwise-10-points___11-formalism-is-the-study-of-texart-based-solely-on-an-analys">
+                            28. B. TRUE OR FALSE, Identify whether the statement is a true statement or a false one Write T if it is true and F ifotherwise (10 points)___11. Formalism is the study of texart based solely on an analysis of its form-the way it is made and what itlooks like.___12. Features of formalism include not only grammar and syntax but also literary devices and literaryinterpretation of a a tone, theme, and literature.___13. Formalism as a critical approach, considers primarily as structure of words in a text studied. ___14. For example in a poem, the formalist is concerned about literary structure suing phonemic device not thephonetic sound.___15. Marxist criticism I concerned with differences between economic classes and implication of capitalist system, such as continuing conflicts between the working class and the elite or rich ___16 For example in the story "Dead Stars" written by Paz Marquez Benitez, the imbalance of societal powerplay is evident in the story in the form of treatment of the theme based on their life.___17. In Marxist criticism, It reviews a work of literature in terms of teh society it presents.___18.Feminism criticism focuses on how literature presents women as subjects of socio-political, psychological and economic oppression or cruelty.___19. It also reveals how aspects of our culture are patriarchal like how our culture views men as superior. ___20. An example of feminism criticism text is entitled "Emma Watson: Gender Inequality is you Issue too".​</h2><br />
+                        <p><strong>Answer:</strong></p><p>11.t 12.t 13.f 14.f 15 f 16.f 17f 18. f 19. f 20 t</p><p><strong>Explanation:</strong></p><p>pa heart po </p><br />
+                                            <h2 class="ez-toc-section" id="the-following-are-the-characteristics-of-computerized-record-kepping-system-except-a-higher-initial-out-of-pocket-expenseb-easy-to-implementc-fastd-can-be-powerful-analysis-tool%e2%80%8b">
+                            29. The following are the characteristics of computerized - record kepping system except :A. Higher initial out-of-pocket expenseB. Easy to implementC. FastD. Can be powerful analysis tool​</h2><br />
+                        <p><strong>Answer:</strong></p><p>d hope it's help</p><p><strong>Explanation:</strong></p><p>hope it's help</p><br />
+                                            <h2 class="ez-toc-section" id="1-write-true-or-false1-livestock-production-has-been-recognized-as-a-significant-source-of-food-2-vaccination-is-the-administration-of-a-biological-preparation-to-help-theimmune-system-develop-prote">
+                            30. 1.WRITE TRUE OR FALSE1. Livestock production has been recognized as a significant source of food.2. Vaccination is the administration of a biological preparation to help theImmune system develop protection from a disease.3. Health and safety risk in the animal agriculture industry are influenced heavilyBy animal type.4. Livestock farmers and farm employees are at higher risk of contracting someZoonotic diseases5. Contingency measures are sets of plans devised for the systematic identification,Analysis, assessment, monitoring and control of risk for a possible outcome.6. Personal Protective Equipment (PPE) is equipment wom to minimize exposureTo hazards that cause serious workplace injuries and illnesses.7. Zoonoses and other infectious diseases are able to spread from animals to man.8. The most frequent hazards come from animal handling.9. Careless and untrained electrical and power management puts workers in riskyConditions.10. Noise from livestock, and machinery can affect your hearing.please sagutan nyo yung maayos na sagot po sana​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.True</p><p>2.true</p><p>3true</p><p>4true</p><p>5.true</p><p>6.true</p><p>7true</p><p>8.false</p><p>9.true</p><p>10.maybe true maybe false</p><p></p><p><strong>Answer:</strong></p><p>1.TRUE</p><p>2.TRUE</p><p>3.FALSE</p><p>4.FALSE</p><p>5.FALSE</p><p>6.TRUE</p><p>7.TRUE</p><p>8.FALSE</p><p>9.TRUE</p><p>10.TRUE</p><p><strong>Explanation:</strong></p><p>THAT ANSWER IS CORRECT</p><p>HOPE IT HELPS</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>english</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/donor-s-tax-in-the-philippines.html">Donor s Tax In The Philippines</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/author-s-intention-of-the-story-of-keesh.html">Author s Intention Of The Story Of Keesh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/murphy-s-law-and-other-reasons-why-things-go-wrong-pdf.html">Murphy s Law And Other Reasons Why Things Go Wrong Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/fergie-s-villa-private-resort.html">Fergie s Villa Private Resort</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/brooklyn-tabernacle-choir-he-s-been-faithful-lyrics.html">Brooklyn Tabernacle Choir He s Been Faithful Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/kahalagahan-ng-pag-aaral.html">Kahalagahan Ng Pag Aaral</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/infer-the-speaker-s-tone-mood-and-purpose.html">Infer The Speaker s Tone Mood And Purpose</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/mercury-drug-planner-2023.html">Mercury Drug Planner 2023</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/maikling-dula-halimbawa.html">Maikling Dula Halimbawa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/cignal-remote-control-replacement.html">Cignal Remote Control Replacement</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/gsis-emergency-loan-40k.html">Gsis Emergency Loan 40k</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/poems-about-self-worth.html">Poems About Self Worth</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/agrikultura-sa-pilipinas.html">Agrikultura Sa Pilipinas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/condolence-in-bisaya.html">Condolence In Bisaya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/joy-in-serving-jesus-lyrics.html">Joy In Serving Jesus Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/marriage-settlement.html">Marriage Settlement</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/amay.html">Amay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/absite-surgery-pdf.html">Absite Surgery Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/caterpillar-c15-engine.html">Caterpillar C15 Engine</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/a320-memory-items.html">A320 Memory Items</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

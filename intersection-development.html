@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intersection Development - QnA</title>
+    <meta name="description" content="Intersection Development, , , , , , , 0, Intersection Design Elements - National Association of City, nacto.org, 4234 x 1438, jpeg, , 20, intersection-development, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Intersection Development - QnA" />
+    <meta property="og:description" content="Intersection Development, , , , , , , 0, Intersection Design Elements - National Association of City, nacto.org, 4234 x 1438, jpeg, , 20, intersection-development, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Intersection Development - QnA" />
+    <meta name="twitter:description" content="Intersection Development, , , , , , , 0, Intersection Design Elements - National Association of City, nacto.org, 4234 x 1438, jpeg, , 20, intersection-development, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Intersection Development</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">akolangito55</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Intersection+Development" alt="Intersection Development">
+                    </div>
+                    <p></p>
+                    <p>what is intersection of social political economic cultural sexual factors that influence the development of person&#039;s identity​​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-intersection-of-social-political-economic-cultural-sexual-factors-that-influence-the-development-of-persons-identity%e2%80%8b%e2%80%8b">1.
+                                            what is intersection of social political economic cultural sexual factors that influence the development of person's identity​​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-intersection-of-social-political-economic-cultural-sexual-factors-that-influence-the-development-of-persons-identity%e2%80%8b">2.
+                                            what is intersection of social political economic cultural sexual factors that influence the development of person's identity​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#venn-diagram-draw-two-circles-that-will-intersect-at-the-center-in-the-left-part-of-two-circles-list-down-the-changes-and-development-that-you-observed-for-the-boys-only-in-the-right-part-of-the-t">3.
+                                            venn diagram: draw two circles that will intersect at the center. in the left part of two circles, list down the changes and development that you observed for the boys only. in the right part of the two circles, list down the changes and developments for the girls only. in the part of intersected circles,list down common growth and development changes of boys and girls.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-is-formed-by-the-intersection-of-a-row-and-a-column-2-it-is-used-to-access-the-worksheets-in-the-workbook-3-this-type-of-spreadsheet-uses-a-pencil-a-calculator-an-eraser-4-thi">4.
+                                            1. It is formed by the intersection of a row and a column. 2. It is used to access the worksheets in the workbook. . 3. This type of spreadsheet uses a pencil , a calculator &amp; an eraser. .. 4. This is the data entered into the cell. . 5. This is a selection of multiple cells. . 6.He is one of the developers of VisiCalc. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-which-of-the-following-is-a-linear-inequality-in-two-variablesa-10-4a-2bb-3x-x-5c-7y-14-d-6x-y-82-the-geometric-representation-of-a-linear-inequality-is-a-intersecting">5.
+                                            1. which of the following is a linear inequality in two variables?A. 10 + 4a &gt; 2bB. 3x &lt; x - 5C. 7y &gt; 14 D. 6x + y = 82. the geometric representation of a linear inequality is A. intersecting linesB. plane or half-plane C. coinciding linesD. parallel lines3. which of the following is not a solution to the inequality 2x + 3y &lt; 6?A. (3,2)B. (0,0)C. (3,0)D none of the above4. the type of line use in graphing inequalities if the given inequality is &lt; or &gt;A. solid line B. broken lineC. curve lineD. straight line5. what is the best inequality statement to represent the expression: "To get a "developing" (passing maek) in School, a student must have a grade (G) of at least 75"?A. G &gt; 75B. G &lt; 75C. G ≥ 75B. G ≤ 75​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#let-us-appreciate-activity-no-3-venn-diagram-draw-two-circles-that-will-intersect-at-the-center-in-the-left-part-of-the-two-circles-list-down-the-changes-and-development-that-you-observed-for-the-b">6.
+                                            LET US APPRECIATE Activity No.3 Venn diagram: Draw two circles that will intersect at the center. In the left part of the two circles, list down the changes and development that you observed for the boys only. In the right part of the two circles, list down the changes and development for the girls only. In the part of intersected circles, list down common growth and development changes of boys and girls. Example Boys Girls Boys and Girlsneed ko na po Yung answer( ･ั﹏･ั) pede po ba pasagot Ng maayos:((​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ven-diagram-draw-two-circles-that-will-intersect-at-the-center-in-the-left-part-of-the-two-circles-list-down-the-changes-and-development-that-you-observed-for-the-boys-only-in-the-right-part-of-th">7.
+                                            ven diagram :draw two circles that will intersect at the center. in the left part of the two circles list down the changes and development that you observed for the boys only . in the right part of the two circles ,list down the changes and development for the girls only .in the part of intersected circles , list down common growth and development changes of boy ang girls ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-the-intersection-between-a-column-and-a-row-2-an-electronic-spreadsheet-program-developed-by-microsoft-3-a-new-feature-of-ms-excel-that-allows-the-user-to-make-three-dimensional-visualization-o">8.
+                                            1. The intersection between a column and a row.2. An electronic spreadsheet program developed by Microsoft. 3. A new feature of MS Excel that allows the user to make three- dimensional visualization of data. 4. This tab, when clicked, will take the user to the Backstage view. 5. The vertical division in a worksheet and named after a letter. 6. A bar that displays the value or formula entered in the active cell. 7. The buttons used to view the workbook in Normal, Page layout or page break preview. 8. The tab that contains the objects that can be inserted to a worksheet. 9. A collection of buttons that provides one-click access to commonly used commands. 10. Displays the active name of the workbook and the Excel program name.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-which-of-the-following-is-a-linear-inequality-in-two-variablesa-10-4a-2bb-3x-x-5c-6x-y-8d-7y-142-the-geometric-representation-of-a-linear-inequality-isa-intersecting">9.
+                                            1) Which of the following is a linear inequality in two variables?A) 10 + 4a &gt; 2bB. 3x &lt; x - 5C. 6x + y = 8D. 7y &gt;= 142) The geometric representation of a linear inequality isA) Intersecting lines B. Plane or half-plane C. Coinciding lines D. Parallel lines3) Which of the following is not a solution to the inequality 2x + 3y &lt; 6 degreesA) (3,2)B. (0, 0)C. (3,0)D. None of the above4) The type of line use in graphing inequalities if the given inequality is &lt;or&gt;A) Solid lineB. Broken lineC. Curve lineD. Straight line5) What is the best inequality statement to represent the expression:"To get a "developing" (passing mark) in school, a student must have a grade (G) of at least 75^ prime primeG &gt; 75G &lt; 75G &gt; 75D G &lt; 75​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#development-learning-task-4-show-the-proof-using-the-two-column-proof-2-given-ae-and-de-intersect-at-e-prove-ae-be-de-ce%e2%80%8b">10.
+                                            Development-Learning Task 4. Show the proof using the Two Column Proof.2. Given: AE and DE intersect at E.Prove: AE + BE = DE + CE​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-development-lesson-1-how-to-bisect-segments-and-angles-to-do-measurements-and-constructions-appropriate-tools-are-needed-below-are-tools-you-need-for-this-lesson-clmd-15-minutes-straightedge-to">11.
+                                            B. Development LESSON 1 How to Bisect Segments and Angles To do measurements and constructions, appropriate tools are needed. Below are tools you need for this lesson. CLMD 15 minutes Straightedge -tool used to draw lines, segments and rays YON TV. CALAP Task: Construct the bisector of JK. Procedure Activity 1: How to Bisect a Segment J K STEP 1: Set-up your compass such that the tips cover slightly more than half the length of JK. At point J, draw an arc as shown. STEP 2. Using the same set-up of the compass, at point K, repeat STEP 1. compass -tool used to construct angles STEP 3: Connect the points of intersection of the two arcs. Name this segment - LN. of (N K K 1 of 4​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#nasa-30-tao-kada-araw-ang-namamatay-sa-buong-bansa-dahil-sa-mga-banggaan-sa-daan-ayon-sa-philippine-global-road-safety-partnership-nangunguna-sa-mga-dahilan-ang-human-error-kabilang-ang-pagmamaneh">12.
+                                            Nasa 30 tao kada araw ang namamatay sa buong bansa dahil sa mga banggaan sa daan, ayon sa Philippine Global Road Safety Partnership. Nangunguna sa mga dahilan ang "human error" kabilang ang pagmamaneho nang antok o lasing na nasa 75 porsiyento. Kaya naman, nagpayo ang pinuno ng grupo na si Alberto Suansing ukol sa ligtas na pagmamaneho. Una, hindi dapat nagte-tailgate o tumutok sa sasakyan sa harap. Sundin ang "one vehicle distance" sa sinusundang sasakyan sa kada 10 kilometro kada oras na bilis. Ikalawa, sundin din dapat ang speed limit sa mga kalsada, lalo't ito ang pinakatalamak na sanhi ng mga aksidente sa daan. Ikatlo, manatili sa tamang lane at ugaling magdahan dahan ng sasakyan habang papalapit ng intersection. Ikaapat. obserbahan ang "right of way" sa pagintersect at panghuli, dapat siguruhing nasa tamang kondisyon ang mga katawan at isipan bago bumiyaheA. Maka-develop ng episyenteng instrumento, kagamitan o produkto. B. Makadiskubre ng mga bagong kaalaman hinggil sa mga batid naC. Makakita ng mga sagot sa mga suliraning hindi pa ganap na nalutasD. Makatuklas ng mga bagong sabstans o elemento (komposisyon o kabuoan ng isang bagay)E. Matugunan ang kyuryusidad, interes at pagtatangka ng isang mananaliksik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-the-covid-19-virus-is-a-new-virus-linked-to-the-same-family-of-viruses-as-severe-acute-respiratory-syndrome-andor-some-types-of-common-colds-andor2-quarantine-can-lead-to-loneliness-especia">13.
+                                            1.The COVID-19 virus is a new virus linked to the same family of viruses as severe acute respiratory syndrome {and\or} some types of common colds.
+{and\or}
+2.Quarantine can lead to loneliness (especially\chiefy) for older people who live one.
+(especially\chiefy)
+3. If someone you know if feeling hopeless and having throughts of harming them selves (because\subsequently) of COVID-19, talk to them
+(because\subsequently)
+4. Many companies offer their employees professional development opportunities. (althrough\in other words), the companies give the employees money to take classes so they can learn more about their current job.
+(Althrough\In other words)
+5. The government had given the social amelioration aid (yet\despite) many still complain of not receiving for it.
+(yet\despite}
+6.I couldnt bring myself to give up my thermal vest, (however\thus) tired I was of being teased for it.
+(however\thus)
+7.The asians won most of the trac and field events(similarity\where as), in boxing, the top three places went to asians
+(similarity\ where as)
+8.These young students live in {adjacent\behind) rooms.
+(adjacent\behind) 
+9. we enjoyed a large dinner and (before\afterwards) had coffe and grocery dessert.
+(before\ afterwards)
+10. The traffic jam was(in effect\ due to) a terrible accident at the intersection.
+(in effect\ due to)
+PLEASE ANSWER IT</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hallyu-the-tidal-wavebr-hallyu-or-korean-wave-refers-to-the-inceaase-in-global-prominencebr-of-korean-culture-this-wave-first-swept-in-the-philippines-back-in-2003br-wh">14.
+                                            Hallyu: The Tidal Wave&lt;br /&gt;Hallyu, or Korean Wave, refers to the inceaase in global prominence&lt;br /&gt;of Korean culture. This wave first swept in the Philippines back in 2003,&lt;br /&gt;when Korean dramas started airing in the country with the show entitled&lt;br /&gt;"Bright Girt". Since then, Filipinos developed a great liking of watching&lt;br /&gt;Korean dramas that even their lifestyle is influenced by Korean culture&lt;br /&gt;from food, clothes and language to every other aspect one could ever think&lt;br /&gt;of.&lt;br /&gt;A, B and C are sets of Korean dramas watched by Dianne, Joy and&lt;br /&gt;lan respectively.&lt;br /&gt;A = (Descendants of the Sun, Hotel del Luna, My Love from the&lt;br /&gt;Stars, Boys over Flowers, Crash Landing on You}&lt;br /&gt;B = {Legend of the Blue Sea, Crash Landing on You, Secretary Kim,&lt;br /&gt;Boys over Flowers, Goblin, Love Alarm}&lt;br /&gt;C = { Secretary Kim, My Love from the Stars, Goblin, Crash Landing&lt;br /&gt;on You, My Girlfriend is a Gumiho, Love Alarm)&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;LET'S ANALYZE&lt;br /&gt;1. Find the union of A and B.&lt;br /&gt;______________________&lt;br /&gt;2. Find the union of B and C.&lt;br /&gt;______________________&lt;br /&gt;3. Find the intersection of A and B.&lt;br /&gt;______________________&lt;br /&gt;4. Find the intersection of A, B and C.&lt;br /&gt;_______________________&lt;br /&gt;5. Find the difference between A and C.&lt;br /&gt;______________________&lt;br /&gt;6. Find the difference between B and C.&lt;br /&gt;______________________​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#20-what-idea-assumes-to-solve-the-problem-of-scarcityi-to-make-unlimited-stuffii-figuring-how-to-distribute-scarceiii-unlimited-stuff-in-the-best-way-to-meet-wantsiv-to-see-how-people-satisf">15.
+                                            20. What idea assumes to solve the problem of scarcity?
+I. to make unlimited stuff
+II. figuring how to distribute scarce
+III. unlimited stuff in the best way to meet wants
+IV. to see how people satisfy needs and wants
+a. I, II, III and IV c. I, II, and III
+b. II, III and IV d. I, II, and IV
+21. Capital is one of the factors in production, but under this factor
+what idea that best categorize as Physical Capital?
+a. non-human assets by real humans in production
+b. Natural resources used to produce goods and services
+c. The education, experience, abilities, and knowledge of an employee
+d. Work people get paid for
+22. What idea can we inspect out from the statement “most economic
+activity (but not all) requires money to spend for infrastructure
+development” as one of the crucial factors in economic affairs?
+a. Consumption c. Finance
+b. Environment d. Investment
+23. What idea that examines the statement “Everything we do in the
+economy requires space, air, and inputs of natural materials”.
+a. Consumption c. Finance
+b. Environment d. Investment
+24. How price quantity determined?
+a. The equilibrium price is the market price where the quantity of goods
+supplied is equal to quantity of goods demanded.
+b. The equilibrium price is the market price where the quantity of goods
+supplied is greater than or equal to quantity of goods demanded.
+c. The equilibrium price is the market price where the quantity of goods
+supplied is less than or equal to quantity of goods demanded.
+d. The equilibrium price is the market price where the quantity of goods
+supplied is greater than to quantity of goods demanded.
+25. How equilibrium price determined?
+Learning Materials are for nonprofit educational purposes which are exclusively used for
+Schools Division of Digos City only. Copies are not for sale.
+7
+a. To figure out at what price the demand and supply curve intersect.
+b. To figure out at what price the demand and supply curve interchange.
+c. To figure out at what price the demand and supply curve overlap.
+d. To figure out at what price the demand and supply curve break
+26. What idea that make up the demand of Perfect Competition?
+a. The individual firm will view its demand as perfectly elastic.
+b. The individual firm will view its demand as perfect but not totally
+perfect elastic.
+c. The individual firm will view its demand as imperfectly elastic.
+d. The individual firm will view its demand as downward sloping.
+27. What scheme that will arise in the demand curve of Pure
+Monopoly?
+a. Monopoly demand is the industry or market demand and is therefore
+downward sloping.
+b. Monopoly demand is the industry or market demand and is therefore
+upward sloping.
+c. Monopoly demand is the industry or market demand and is therefore
+either upward or downward sloping.
+d. Monopoly demand is the industry or market demand and is therefore
+above the marginal revenue.
+28. When the government decides on how goods should be produced,
+what economic system is being used?
+a. Black
+b. Command
+c. Market
+d. Traditional
+29. People enjoy freedom of choice in arriving at decisions on what to
+buy, what economic system is being employed?
+a. Black
+b. Command
+c. Market
+d. Traditional</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-national-policies-do-developed-countries-have-that-the-philippines-do-not-have-in-addressing-the-pandemic-crisis-relate-this-with-the-concept-on-intersection-and-union-of-sets-draw-a-venn-diagr">16.
+                                            What national policies do developed countries have that the Philippines do not have in addressing the pandemic crisis? Relate this with the concept on intersection and union of sets. Draw a Venn Diagram to illustrate your claim.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-which-statement-does-not-provide-the-correct-understanding-of-the-theoretical-frameworks-and-models-a-tpack-is-the-theoretical-framework-that-shows-the-intersect-of-teachers-content-pedagogica">17.
+                                            -8. Which statement does NOT provide the correct understanding of the theoretical frameworks and models. A. TPACK is the theoretical framework that shows the intersect of teacher's content, pedagogical and technological knowledge needed to be relevant in the 21" century teaching, B. Redefinition in SAMR is a transformative attempt by guiding students to create something out of something not perceived before. C. The iPadagogy Wheel provides the mutually exclusive tools and applications that are integrated in instruction. D. Bloom's Revised taxonomy is a rehashed focus on more active perspective of cognitive activity with conversion of the previously nominative term to the use of a verb. Which is an appropriate tool that can be employed if the students need to develop their competency to create​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-reflection-what-national-policies-do-developed-countries-have-that-the-philippines-do-not-have-in-addressing-the-pandemic-crisis-relate-this-with-the-concept-on-intersection-and-union-of-sets-dra">18.
+                                            B. REFLECTION What national policies do developed countries have that the Philippines do not have in addressing the pandemic crisis? Relate this with the concept on intersection and union of sets. Draw a Venn Diagram to illustrate your claim.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-can-do-you-are-part-of-a-writing-team-that-is-working-on-an-academic-article-about-the-intersection-between-faith-and-literature-as-viewed-in-asian-poetry-your-role-in-the-team-is-to-prepare">19.
+                                            What I Can Do You are part of a writing team that is working on an academic article about the intersection between faith and literature, as viewed in Asian poetry. Your role in the team is to prepare a full, sentence-level outline that makes a central statement about the way Asian poetry reflects various religious beliefs. The central statement must be developed through three main supporting points, each supported by at least one primary source and at least one secondary source. Using available resources, you may watch any video online or on television about the said topic to help you gather important details.pa helpnonsense-report​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#answer-please1st-questionthe-measurement-of-earthly-objects-are-called-1_______________-but-euclid-gave-it-a-new-definition-and-developed-it-into-a-formal-study-of-statements-that-involve-reasoning">20.
+                                            answer please1st questionThe measurement of earthly objects are called (1)_______________. But Euclid gave it a new definition and developed it into a formal study of statements that involve reasoning. He later introduced that mathematical system with four parts. The first one are terms which cannot be defined but can be described, this is called as the (2)_____________. It is composed with the point, line and plane. Second, are terms that have a proper definition and can be defined by means of other geometrical terms, this is called as the (3)____________. It is composed with the line segment, ray, opposite ray and angles. Third, are statements that are assumed to be true without any proof, this is called as the (4)_____________. And last, are basic geometric principle which are proven to be true, which is called as (5)___________.2nd question1. Points J, K, L and N are collinear points.2. Point A is the midpoint of line CP.3. Line x intersect parallel lines m and n.4. Point C lies in plane K5. Plane F and plane H intersects at line XY.6. </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#c-seamsc-seamsc-seamsnel-sud1-it-is-a-cylinder-that-has-the-end-cut-off-by-an-inclined-surface-a-surface-development-b-truncated-cylinderd-wired-edge2-it-is-also-known-as-stretch-outsa-surfac">21.
+                                            C. seamsc. seamsC. seamsnel sud1. It is a cylinder that has the end cut off by an inclined surface.a. surface development b. Truncated cylinderd. wired edge2. It is also known as stretch-outsa. surface developmentb. patternd. wired edge3. A pattern created by drawing the edges of an object as parallel lines.a. Parallel line development b. patternC. seams d. wired edge4.A pattern created by drawing the edges of an object radiating from a single point.a. Hemb. pattern c. Radial line developmentd. wired edge5. It is used to strengthen the lips of sheet metal objects. It is made in standard sizes, 40.0mm,6.Omm, 10,0mm, etc.a. hemb. patternd. Radial line development6. It is an orthographic view taken in such a manner that the lines of sight are not parallel to theprincipal projection planes (frontal, horizontal, or profile).a. Inclined Line b. Auxiliary View c. Orthographic projection d. Pattern7. Means to extend from.a. Projectb. Hemc. Parallel d. Cylinder_8. It is a 45-degree line which is used in projection. It serves as guide in keeping up drawing lines straight.a. Hemb. Pattern/Stretch-out c. Parallel d. Miter Line9. It is a line that does not intersect in the plane, but goes to the limit of infinity.a. Projectb. Hemc. Parallel d. Cylinder10. It is a geometric figure with a uniform circular cross section through its entire length.a. Projectb. Hemc. Paralleld. Cylinder11. Development of an object that is rolled or folded.a. Stretched out b. Patternc. Seamsd. Hem12. Used to strengthen sheet metal sections. They are usually joined by soldering and / or riveting process.a. Seamsb. Truncated cylinderc. Hemd. Wired Edge13. The distance around a circle.a. Stretch-out b. Radial line development c. Surface developments d. Circumference14. A flat pattem or development used in laying out, cutting and folding lines on flat stock.a. Surface developments b. Pattern c. Stretch-outd. Circumference15. It gives extra strength and rigidity to sheet metal edges.b. Patternc. Wired Edged. Seamsa. Hem​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#consider-the-intersection-of-two-roads-in-a-rapidly-expanding-suburban-area-both-roads-have-two-traffic-lanes-because-of-the-development-of-the-area-the-volume-of-traffic-flow-at-this-intersection">22.
+                                            Consider the intersection of two roads in a rapidly expanding suburban area. Both roads have two traffic lanes. Because of the development of the area, the volume of traffic flow at this intersection has dramatically increased and so have the number of accidents. A large proportion of the accidents involve vehicles making a left turn which suggests that the ‘simple’ traffic lights at the intersection are no longer adequate because they do not provide a left turn priority interval. The city’s traffic department is evaluating alternatives for upgrading these traffic signals so that such priority intervals are provided to assist left-turning drivers. The need is especially urgent for traffic that is flowing in the north and south directions. If the upgrade is implemented, then a particular parameter value that will need to be determined is the proportion of time allocated to the priority interval. 
+The planning department has decided to explore solution alternatives for the problem by undertaking a modelling and simulation study.
+Scenario to be undertaken.
+Give the best possible solution for the above scenario? Explain the solution about the scenario</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-write-the-letter-of-the-best-answer-on-the-space-before-each-number-d-q-c-m-15-which-line-has-a-zero-slope-a-s-b-z-16-what-is-the-equation-of-the-line-if-the-slope-is-1-and-y-interce">23.
+                                            Direction: Write the letter of the best answer on the space before each number. D. q C. m 15. Which line has a zero slope? A s B. z 16. What is the equation of the line if the slope is 1 and y-intercept is -8? A. y = x + 8 B. y = x - 8 C. y = - x + 8 D. y = - x - 8 17. Find the slope of the line 2y - 3 = 8x + 7 B. -4 C. 5 A. 4 D. - 5 18. What is the y-intercept of 3x - y = - 5! 5/3 B. 5 C. D. 19. Find the slope of y = 2/3 * x - 3/4 B. - 2/3 20. What is the linear equation that has a y- intercept of and a slope of 3? - 1/2 1. In which of the following statements describes Rectangular Coordinate System? A. It is used for naming points in a plane. B. It is a plane containing the coordinates and ordinates. C. It is used to determine the location of a point by using a single number. D. It is a two-dimensional plane which is divided by the axes into four regions called quadrants. 2. Who developed the Cartesian Coordinate Plane? A. Jean-Paul Sartre B. Rene Descartes D. Thomas Edison C. Voltaire 3. What is the point of intersection of the two axes? A. Base B. origin C. edge D. plane 4. Give the coordinates of the point 2 units to the left of y-axis and 7 units below the x-axis. A. (2,7) B. (7,2) C. (- 2, - 7) D. (- 7, - 2) 5. In what quadrant does the point (-5,-8) lies? A. QI C. QII D. QIV B. QIII 6. What is the abscissa in the ordered pair (4,5)? A. 4 B. 5 C. -4 D (-5) 7. Which of the following is an example of linear equation in two variables? A. x ^ 2 - 5 = 20 C. 8 = - 7y D. x + y &lt; 5 B. x + y = 5 8. Which of the following is a solution for the equation 2x - y = 87 A. (2, - 4) B. (- 2, - 4) C. (2,4) D. (2,4) 9. What is the standard form fy =4x-7? A. 4x - y = - 7 B. 4x - y = 7 C. 4x + y = - 7 D. 4x + y = 7 10. What is the slope intercept form f * 3x - 5y = 6 ? A. y = - 1/2 * x + 3 B. D. y = - 3x + 1/2 21. Which of the following illustrates a system y = 1/2 * x - 3 of linear equations in two variables? A. 2x - y &gt; 1; y = x ^ 2 + 1 Cx - y = 1; x + y = 7 B. 8y &gt; x - 64; x - y = 6 x - 7 &lt; y 22. Which of the following ordered pairs is the solution of the system x + y = 5 and | x + 2y = 7? A. (3,2) C. (4,1) B. (5,0) D. (- 6, 1) 23. Which system of linear equation has graphs that show parallel lines? A. Consistent C. Inconsistent D. Independent B. Dependent 24. How many solutions will a system have if the graph of the solution is coinciding lines? A. 1 B. None C. 2 D. infinitely many 25. Which system of equations is a graph that shows intersecting lines? A. - 2x - y = 1 Lx - y = 1 2x - y = 2 4x - 2y = 5 * x + y = 2 [ 2x + 2y = 4 x + y = 4 x + y = 2 A. y = - 3/5 * x + 6/5 B. y = 3/5 * x + 6/5 D. y = 3/5 * x - 6/5 11. What is the value of A in the standard form 6x + 7y =-8? A. 6 B. 7 C. 8 D. -8 For numbers 12-15, refer to the figure below 12. Which line has a positive slope? A. 2/3 - 5/3 y = 3x - 1/2 c. 3/4 0 * (- 3/4) A, 3 Cy = - 3/5 * x + 6/5 py = 5x - 1​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#let-us-appreciate-activity-no3-venn-diagram-draw-two-circles-that-will-intersea-at-the-center-in-the-left-part-of-the-two-circles-list-down-the-changes-and-development-that-you-observed-for-the-boy">24.
+                                            LET US APPRECIATE Activity No3 Venn diagram: Draw two circles that will intersea at the center. In the left part of the two circles, list down the changes and development that you observed for the boys only. In the right part of the two circles, list down the changes and development for the girls only. In the part of intersected circles, list down common growth and development changes of boys and girls. Example Boys Girls Boys and Girlspls answer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#of-23-3-which-means-learning-by-investigation-4-history-traces-the-traces-the-progress-progress-and-development-of-5-from-the-ancient-to-the-modern-time-largely-based-on-6-the-7-were-the-first-to-vi">25.
+                                            OF 23 3 which means learning by investigation 4 History traces the traces the progress progress and development of 5 from the ancient to the modern time, "largely based on 6 The 7 were the first to view history with an acquiring mind. Herodotus "the 8. * introduced a and 10 way of writing events. History can also be defined as the continuous intersection between the historians and his facts and unending 11. between the past and the present. History is not just a 12 but it must also have a meaning on it, if one finds meaning in in will history changing it 13 gain ► set the 14 (Ambeth Ocampo 2001) 15." model of writing history, he analyzed and verified the facts​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-according-to-mystery-writer-gloria-repp-a-characters-main-problem-must-intersect-with-the-mystery-true-false2-writing-a-mystery-is-easier-than-any-other-type-of-writing-true-false3-the-fol">26.
+                                            1.According to mystery writer Gloria Repp, a character's main problem must intersect with the mystery.
+ True
+ False
+2.Writing a mystery is easier than any other type of writing.
+ True
+ False
+3.The following excerpt from “Shipwrecked” means that it is hard to sleep when you are hoping that something good is going to happen or when you are anxious that something bad might happen.
+ “The next morning at daybreak we were all awake, for hope as well as care is no friend to sleep.”
+ True
+ False
+4.Daniel Defoe’s Robinson Crusoe is autobiographical.
+ True
+ False
+5.In “The Quisling Hunt” Chris’s struggles are man against man, man against self, and man against nature.
+ True
+ False
+6.A plot-driven story depends on the action more than on character development.
+ True
+ False
+7.An interviewer should never write down the questions that he intends to ask the person being interviewed.
+ True
+ False</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hallyu-or-korean-wave-relers-to-the-inceaase-in-global-prominenceof-korean-culture-this-wave-hrst-swept-in-the-philippines-back-in-2003when-korean-dramas-started-airing-in-the-country-with-the-show">27.
+                                            Hallyu, or Korean Wave, relers to the inceaase in global prominenceof Korean culture. This wave hrst swept in the Philippines back in 2003when Korean dramas started airing in the country with the show entitled"Bnght Girl". Since then, Filipinos developed a great liking of watchingKorean dramas that even their lifestyle is influenced by Korean culturefrom food, clothes and language to every other aspect one could ever thinkOFA B and C are sets of Korean dramas watched by Dianne, Joy andlan respectivelyA = {Descendants of the Sun, Hotel del Luna, My Love from theStars, Boys Over Flowers, Slash Landing on You}B = (Legend of the Blue Sea, Crash Landing on You, Secretary Kim,Boys over Flowers, Goblin, Love Alarm)C = {Secretary Kim, My Love from the Stars, Goblin, Crash Landingon You, My Girlfriend is a Gumiho, Love Alarm)LET'S ANALYZE1. Find the Union of A and B.2. Find the union of B and C.3 Find the intersection of A and B.4. Find the intersection of A, B and5. Find the difference between A and C.6. Find the difference between B and C​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-a-tool-used-whenever-you-need-to-perform-calculation-that-relate-to-mathematical-financial-or-scientific-dataa-ms-excel-b-ms-word-c-spreadsheet-d-spreadsheet-program-2-the-following-are-the-exa">28.
+                                            1. a tool used whenever you need to perform calculation that relate to mathematical financial or scientific dataa.ms excel b. ms word c. spreadsheet d. spreadsheet program 2. the following are the examples of task that can be done in microsoft excel except a. making inventory b. paying loan c.publication d. calculating taxes 3. developer of VisiCalc, a program for apple II computera. bill gates b. augusta byron c. mitch kapor d. dan bricklin 4. this is a horizontal block of cells numbered sequentially from the top a. column b.row c. cell d. cell reference5. it is also called cell added it is a combination of specific column and a number for specific row in a spreadsheet a.  cell referenceb. cell indicator c. cell d. cell content 6. list of related data related information are called records and columns of data are called fields a. database b. range c. worksheet d. workbooks 7. this is a triangular formed by intersection of a row and a column a. active cell indicator b. navigation buttons c. cell d. cell reference 8. this is the block of selected cells or a selection of multiple cells a. workbook b. cell address c. worksheets tabs d. range 9. a mouse pointer that is used to edit data in any text box or list box a. thick cross b. fill handle c. arrow d. I-beam10. a mouse pointer in ms excel that is used to copy the contents of the cell a. double headed arrow b. take crossc. fill handle d. i beam pasagot po ASAP pagdi matino report na​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#you-are-part-of-a-writing-team-that-is-working-on-an-academic-article-about-the-intersection-between-faith-and-literature-as-viewed-in-asian-poetry-your-role-in-the-team-is-to-prepare-a-full-senten">29.
+                                            You are part of a writing team that is working on an academic article about the intersection between faith and literature as viewed in Asian poetry. Your role in the team is to prepare a full , sentence-level outline that makes a central statement that must be developed through three main supporting points. each supported by one primary source and at least one secondary source. Using available resources, you may watch videos online or on television or a book about the said topic to help you gather important details.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-_______________-are-water-waves-generated-by-earthquakes-undersea-volcaniceruptions-or-landslides-that-hit-bodies-of-water-a-tsunamis-b-tidal-waves-c-wind-waves-d-wind-surges2-___________">30.
+                                            1. _______________ are water waves generated by earthquakes, undersea volcanic
+eruptions, or landslides that hit bodies of water.
+A. Tsunamis B. Tidal waves C. Wind waves D. Wind surges
+2. _________________ is the disruptive up, down, and sideways vibration caused by
+passing seismic waves through the ground.
+A. Folding B. Ground shaking C. Ground rupture D. Ground subsidence
+3. _________________ is the deformation on the ground that marks the intersection
+of the fault with the earth’s surface.
+A. Faulting B. Landslide C. Liquefaction D. Ground rupture
+4. ________________ is a phenomenon that occurs when loosely packed, water-logged
+sediments near the ground surface lose their strength in response to strong
+ground shaking.
+A. Liquefaction B. Sedimentation C. Stratification D. Weathering
+5. Earthquake-induced landslide is the down slope movement of rocks, soil, and
+other debris commonly triggered by intense _____________.
+A. irrigation B. mining C. rain D. shaking
+6. Debris avalanche is usually caused by ________________, a strong earthquake, or
+the movements of faults beneath the cone-shaped structure of a volcano.
+A. lahar flow B. lava flows C. liquefaction D. magma intrusion
+4
+7. ___________ flows are stream-like flows of incandescent molten rock erupted from
+a crater or fissure.
+A. Lahar B. Lava C. Magma D. Pyroclastic
+8. ______________ are blankets of fragmented volcanic particles less than 2 mm in
+diameter propelled through the atmosphere and eventually settle on surfaces.
+A. Ashfall B. Landfall C. Rockfall D. Tephra fall
+9. _______________ flows and surges are mixtures of hot volcanic broken fragments,
+hot gases, and ashes rapidly rushing down the slope from a source vent.
+A. Lahar B. Lava C. Magma D. Pyroclastic
+10._________________ is an example of debris flow which can become a long-term
+problem if there are large deposits of volcanic debris.
+A. Lahar B. Lava flow C. Magma flow D. Pyroclastic flows and surges
+11.__________________ are considered the most lethal of all volcanic hazards.
+A. Lava flows C. Ballistic projectiles
+B. Tephra falls D. Pyroclastic flows and surges
+12._________ are large particle tephra that are ejected straight out of volcanic vents.
+A. Ashfall B. Tephra fall C. Volcanic gases D. Ballistic projectiles
+13.Principal volcanic gases include ___________, hydrogen sulfide, sulfur dioxide,
+______________, carbon monoxide, hydrogen chloride, and hydrogen fluoride.
+A. ozone, ammonia C. water vapor, carbon dioxide
+B. nitrogen, helium D. sulfur hexafluoride, nitrous oxide
+14._______________ refer to a wide variety of processes that result in the downward
+and outward movement of slope-forming materials including rock, soil, artificial
+fill, or a combination of these.
+A. Landslides B. Slope failure C. Slope avalanche D. Surface deformation
+15.Landslides can be caused by _____________ phenomena or _____________ activities.
+A. natural; human C. psychological; animal
+B. artificial; natural D. man-made; development</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="what-is-intersection-of-social-political-economic-cultural-sexual-factors-that-influence-the-development-of-persons-identity%e2%80%8b%e2%80%8b">
+                            1. what is intersection of social political economic cultural sexual factors that influence the development of person's identity​​</h2><br />
+                        <strong>QUESTION</strong><strong>:</strong><p></p>what is intersection of social political economic cultural sexual factors that influence the development of person's identity<p></p><strong>ANSWER</strong><strong>:</strong><p></p>Intersectionality is a framework for understanding the complex way that the many aspects of people's identities overlap, including their race, gender, sexual orientation, class, and more. ... Some women face more serious harm and injustices because of how their other identities intersect with their womanhood<p></p><p></p><p></p>BRAINLIEST PLS<p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-intersection-of-social-political-economic-cultural-sexual-factors-that-influence-the-development-of-persons-identity%e2%80%8b">
+                            2. what is intersection of social political economic cultural sexual factors that influence the development of person's identity​</h2><br />
+                        <p><strong>Answer:</strong></p><p>n  nn n n n n n n bn bbn nn n n n n n n nn nn nnnnnn   nnnn n  nn n  nn  nn n n n  nn n n n n n n nn n n n n  nn n n n n n n n  nn n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n n nn n n n n n n n n n nn n n n  nn n n n n n n n n n n n n n n n n n n  n n nn  n nn n n n n n n n n n n n n n n n n </p><br />
+                                            <h2 class="ez-toc-section" id="venn-diagram-draw-two-circles-that-will-intersect-at-the-center-in-the-left-part-of-two-circles-list-down-the-changes-and-development-that-you-observed-for-the-boys-only-in-the-right-part-of-the-t">
+                            3. venn diagram: draw two circles that will intersect at the center. in the left part of two circles, list down the changes and development that you observed for the boys only. in the right part of the two circles, list down the changes and developments for the girls only. in the part of intersected circles,list down common growth and development changes of boys and girls.​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong></strong></p><p><strong>What is Venn Diagram?</strong></p><p>A Venn diagram is a graphical representation that employs circles to depict relationships between objects or bounded groups of objects. Circles that overlap share characteristics, whereas circles that do not overlap do not. Venn diagrams are used to depict the relationship between different concepts visually.</p><p></p><p><strong>Changes and development in the human body</strong></p><p>Physical Changes in a human body or puberty is divided into distinct stages that affect the skeletal, muscular, reproductive, and practically all other body systems. During puberty, physical changes are slower and more stable. This is reassuring to many parents who believe their children's childhoods pass them by far too swiftly.</p><p>When and how much a child develops is determined by a number of factors, including how soon the child is to puberty. Between the ages of 6 and 8, there is usually a phase of slightly accelerated growth rate. A little amount of pubic hair, armpit hair, moderate acne, and/or body odor may occur as a result of this.</p><p><strong></strong></p><p><strong>Changes and Development on Boys</strong></p>Boys are typically a year behind girls when it comes to puberty. The initial indicator is the growth of the testes, as well as thinning and reddening of the scrotum, which occurs at an average age of eleven years but can occur at any age between nine and fourteen. If a boy begins puberty before the age of nine, he should see a pediatrician. The peak growing period for boys occurs about two years after puberty begins. Consult your pediatrician if a guy is not showing indications of puberty by the age of 14.<p><strong></strong></p><p><strong>Changes and Development on Girls</strong></p>Breast budding in females begins at the age of 10, while some girls begin as early as eight years old and others do not begin until they are thirteen years old.If a girl begins puberty before the age of eight, she should see a pediatrician.Girls reach their peak development period (in terms of height, weight, muscle mass, and other factors) roughly a year after puberty begins.Menstruation often begins 18 months to two years after puberty begins. The first menses usually begin just before a female reaches the age of thirteen.Consult your pediatrician if a girl is not showing indications of puberty by the age of 13.<p><strong></strong></p><p><strong>Changes and Development on both Boys and Girls</strong></p>Both girls and boys develop pubic hair in the same way. Hair grows in a limited area surrounding the genitals, and the first growth is long, soft hair. As the hair becomes longer and thicker, it becomes darker and coarser. Over time, pubic hair takes on the appearance of adult hair, although in a smaller region. It has the potential to expand to the thighs. It can occasionally make you feel sick to your stomach.Both boys and girls increase in height depending on  the genes and hormones<p></p><p>To know more about puberty, click here</p><p>https://brainly.ph/question/6040205</p><p>To know more about development during adolescence, click here</p><p>https://brainly.in/question/7527652?tbs_match=1</p><p></p><p>Hope this helps! :)
+</p><p><strong>#BRAINLYFAST</strong></p><br />
+                                            <h2 class="ez-toc-section" id="1-it-is-formed-by-the-intersection-of-a-row-and-a-column-2-it-is-used-to-access-the-worksheets-in-the-workbook-3-this-type-of-spreadsheet-uses-a-pencil-a-calculator-an-eraser-4-thi">
+                            4. 1. It is formed by the intersection of a row and a column. 2. It is used to access the worksheets in the workbook. . 3. This type of spreadsheet uses a pencil , a calculator &amp; an eraser. .. 4. This is the data entered into the cell. . 5. This is a selection of multiple cells. . 6.He is one of the developers of VisiCalc. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. The INTERSECTION</p><p>2a giant table that allows you to organize information</p><p>3. simple tables, Excel tables and pivot tables</p><p>4 The three types of data you can enter into a cell are data, labels and formulas. </p><br />
+                                            <h2 class="ez-toc-section" id="1-which-of-the-following-is-a-linear-inequality-in-two-variablesa-10-4a-2bb-3x-x-5c-7y-14-d-6x-y-82-the-geometric-representation-of-a-linear-inequality-is-a-intersecting">
+                            5. 1. which of the following is a linear inequality in two variables?A. 10 + 4a &gt; 2bB. 3x &lt; x - 5C. 7y &gt; 14 D. 6x + y = 82. the geometric representation of a linear inequality is A. intersecting linesB. plane or half-plane C. coinciding linesD. parallel lines3. which of the following is not a solution to the inequality 2x + 3y &lt; 6?A. (3,2)B. (0,0)C. (3,0)D none of the above4. the type of line use in graphing inequalities if the given inequality is &lt; or &gt;A. solid line B. broken lineC. curve lineD. straight line5. what is the best inequality statement to represent the expression: "To get a "developing" (passing maek) in School, a student must have a grade (G) of at least 75"?A. G &gt; 75B. G &lt; 75C. G ≥ 75B. G ≤ 75​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.D</p><p>2.A</p><p>3.C</p><p>4.B</p><p>5?</p><p><strong>Step-by-step explanation:</strong></p><p>sorry po Yan lang alam ko</p><p>#I hope helps</p><p>#Carrylerning</p><br />
+                                            <h2 class="ez-toc-section" id="let-us-appreciate-activity-no-3-venn-diagram-draw-two-circles-that-will-intersect-at-the-center-in-the-left-part-of-the-two-circles-list-down-the-changes-and-development-that-you-observed-for-the-b">
+                            6. LET US APPRECIATE Activity No.3 Venn diagram: Draw two circles that will intersect at the center. In the left part of the two circles, list down the changes and development that you observed for the boys only. In the right part of the two circles, list down the changes and development for the girls only. In the part of intersected circles, list down common growth and development changes of boys and girls. Example Boys Girls Boys and Girlsneed ko na po Yung answer( ･ั﹏･ั) pede po ba pasagot Ng maayos:((​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>B</strong><strong>o</strong><strong>y</strong><strong>s</strong></p><p><strong>-</strong><strong>T</strong><strong>h</strong><strong>e</strong><strong>y</strong><strong> </strong><strong>g</strong><strong>r</strong><strong>o</strong><strong>w</strong><strong> </strong><strong>a</strong><strong>n</strong><strong> </strong><strong>a</strong><strong>d</strong><strong>d</strong><strong>a</strong><strong>m</strong><strong>'</strong><strong>s</strong><strong> </strong><strong>a</strong><strong>p</strong><strong>p</strong><strong>l</strong><strong>e</strong><strong> </strong><strong>o</strong><strong>n</strong><strong> </strong><strong>t</strong><strong>h</strong><strong>e</strong><strong>i</strong><strong>r</strong><strong> </strong><strong>n</strong><strong>e</strong><strong>c</strong><strong>k</strong></p><p><strong>-</strong><strong>T</strong><strong>h</strong><strong>e</strong><strong>i</strong><strong>r</strong><strong> </strong><strong>v</strong><strong>o</strong><strong>i</strong><strong>c</strong><strong>e</strong><strong> </strong><strong>c</strong><strong>h</strong><strong>a</strong><strong>n</strong><strong>g</strong><strong>e</strong><strong>s</strong></p><p><strong>-</strong><strong> </strong><strong>T</strong><strong>h</strong><strong>e</strong><strong>y</strong><strong> </strong><strong>e</strong><strong>x</strong><strong>p</strong><strong>e</strong><strong>r</strong><strong>i</strong><strong>e</strong><strong>n</strong><strong>c</strong><strong>e</strong><strong> </strong>tuli (jusq diko alam english non)</p><p></p><p><strong>G</strong><strong>i</strong><strong>r</strong><strong>l</strong><strong>s</strong></p><p><strong>-</strong><strong>T</strong><strong>h</strong><strong>e</strong><strong>y</strong><strong> </strong><strong>e</strong><strong>x</strong><strong>p</strong><strong>e</strong><strong>r</strong><strong>i</strong><strong>e</strong><strong>n</strong><strong>c</strong><strong>e</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>n</strong><strong>s</strong><strong>t</strong><strong>r</strong><strong>a</strong><strong>t</strong><strong>i</strong><strong>o</strong><strong>n</strong><strong> </strong></p><p><strong>-</strong><strong>T</strong><strong>h</strong><strong>e</strong><strong>y</strong><strong> </strong><strong>g</strong><strong>r</strong><strong>o</strong><strong>w</strong><strong> </strong><strong>b</strong><strong>r</strong><strong>e</strong><strong>a</strong><strong>s</strong><strong>t</strong><strong>s</strong></p><p></p><p><strong>B</strong><strong>o</strong><strong>y</strong><strong>s</strong><strong> </strong><strong>a</strong><strong>n</strong><strong>d</strong><strong> </strong><strong>G</strong><strong>i</strong><strong>r</strong><strong>l</strong><strong>s</strong></p><p><strong>-</strong><strong>T</strong><strong>h</strong><strong>e</strong><strong>y</strong><strong> </strong><strong>b</strong><strong>o</strong><strong>t</strong><strong>h</strong><strong> </strong><strong>e</strong><strong>x</strong><strong>p</strong><strong>e</strong><strong>r</strong><strong>i</strong><strong>e</strong><strong>n</strong><strong>c</strong><strong>e</strong><strong> </strong><strong>s</strong><strong>u</strong><strong>d</strong><strong>d</strong><strong>e</strong><strong>n</strong><strong> </strong><strong>h</strong><strong>e</strong><strong>i</strong><strong>g</strong><strong>h</strong><strong>t</strong><strong> </strong><strong>c</strong><strong>h</strong><strong>a</strong><strong>n</strong><strong>g</strong><strong>e</strong></p><p><strong>-</strong><strong>T</strong><strong>h</strong><strong>e</strong><strong>i</strong><strong>r</strong><strong> </strong><strong>f</strong><strong>a</strong><strong>c</strong><strong>e</strong><strong>s</strong><strong> </strong><strong>s</strong><strong>t</strong><strong>a</strong><strong>r</strong><strong>t</strong><strong>s</strong><strong> </strong><strong>t</strong><strong>o</strong><strong> </strong><strong>l</strong><strong>o</strong><strong>o</strong><strong>k</strong><strong> </strong><strong>m</strong><strong>o</strong><strong>r</strong><strong>e</strong><strong> </strong><strong>m</strong><strong>a</strong><strong>t</strong><strong>u</strong><strong>r</strong><strong>e</strong></p><p><strong>-</strong><strong>T</strong><strong>h</strong><strong>e</strong><strong>i</strong><strong>r</strong><strong> </strong><strong>p</strong><strong>e</strong><strong>r</strong><strong>s</strong><strong>o</strong><strong>n</strong><strong>a</strong><strong>l</strong><strong>i</strong><strong>t</strong><strong>y</strong><strong> </strong><strong>c</strong><strong>h</strong><strong>a</strong><strong>n</strong><strong>g</strong><strong>e</strong><strong>s</strong><strong> </strong><strong>i</strong><strong>n</strong><strong>t</strong><strong>o</strong><strong> </strong><strong>s</strong><strong>o</strong><strong>m</strong><strong>e</strong><strong>t</strong><strong>h</strong><strong>i</strong><strong>n</strong><strong>g</strong><strong> </strong><strong>m</strong><strong>o</strong><strong>r</strong><strong>e</strong><strong> </strong><strong>m</strong><strong>a</strong><strong>t</strong><strong>u</strong><strong>r</strong><strong>e</strong></p><p><strong>-</strong><strong>T</strong><strong>h</strong><strong>e</strong><strong>y</strong><strong> </strong><strong>b</strong><strong>o</strong><strong>t</strong><strong>h</strong><strong> </strong><strong>c</strong><strong>h</strong><strong>o</strong><strong>o</strong><strong>s</strong><strong>e</strong><strong> </strong><strong>t</strong><strong>h</strong><strong>e</strong><strong>i</strong><strong>r</strong><strong> </strong><strong>f</strong><strong>r</strong><strong>i</strong><strong>e</strong><strong>n</strong><strong>d</strong><strong>s</strong><strong> </strong><strong>t</strong><strong>o</strong><strong> </strong><strong>b</strong><strong>e</strong><strong> </strong><strong>w</strong><strong>i</strong><strong>t</strong><strong>h</strong></p><p></p><p><strong>Explanation:</strong></p><p></p><p>HAY BASTA DIKO ALAM ENGLISH NG TULI</p><p></p><p>hope it helps tho&lt;3</p><br />
+                                            <h2 class="ez-toc-section" id="ven-diagram-draw-two-circles-that-will-intersect-at-the-center-in-the-left-part-of-the-two-circles-list-down-the-changes-and-development-that-you-observed-for-the-boys-only-in-the-right-part-of-th">
+                            7. ven diagram :draw two circles that will intersect at the center. in the left part of the two circles list down the changes and development that you observed for the boys only . in the right part of the two circles ,list down the changes and development for the girls only .in the part of intersected circles , list down common growth and development changes of boy ang girls ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>step by step angulo po ng sinulat nyu sayang lang po pagod nyu </p><br />
+                                            <h2 class="ez-toc-section" id="1-the-intersection-between-a-column-and-a-row-2-an-electronic-spreadsheet-program-developed-by-microsoft-3-a-new-feature-of-ms-excel-that-allows-the-user-to-make-three-dimensional-visualization-o">
+                            8. 1. The intersection between a column and a row.2. An electronic spreadsheet program developed by Microsoft. 3. A new feature of MS Excel that allows the user to make three- dimensional visualization of data. 4. This tab, when clicked, will take the user to the Backstage view. 5. The vertical division in a worksheet and named after a letter. 6. A bar that displays the value or formula entered in the active cell. 7. The buttons used to view the workbook in Normal, Page layout or page break preview. 8. The tab that contains the objects that can be inserted to a worksheet. 9. A collection of buttons that provides one-click access to commonly used commands. 10. Displays the active name of the workbook and the Excel program name.​</h2><br />
+                        <p><strong>Answer:</strong></p><strong>CELL</strong><strong>MICROSOFT</strong><strong> </strong><strong>EXCEL</strong><strong>MICROSOFT</strong><strong> </strong><strong>3</strong><strong>D</strong><strong> </strong><strong>MAPS</strong><strong>FILE</strong><strong> </strong><strong>TAB</strong><strong>COLUMN</strong><strong>FORMULA</strong><strong> </strong><strong>BAR</strong><strong>VIEW</strong><strong> </strong><strong>TAB</strong><strong>INSERT</strong><strong> </strong><strong>TAB</strong><strong> </strong><strong>QUICK</strong><strong> </strong><strong>ACCESS</strong><strong> </strong><strong>TOOLBAR</strong><strong>TITLE</strong><strong> </strong><strong>BAR</strong><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-which-of-the-following-is-a-linear-inequality-in-two-variablesa-10-4a-2bb-3x-x-5c-6x-y-8d-7y-142-the-geometric-representation-of-a-linear-inequality-isa-intersecting">
+                            9. 1) Which of the following is a linear inequality in two variables?A) 10 + 4a &gt; 2bB. 3x &lt; x - 5C. 6x + y = 8D. 7y &gt;= 142) The geometric representation of a linear inequality isA) Intersecting lines B. Plane or half-plane C. Coinciding lines D. Parallel lines3) Which of the following is not a solution to the inequality 2x + 3y &lt; 6 degreesA) (3,2)B. (0, 0)C. (3,0)D. None of the above4) The type of line use in graphing inequalities if the given inequality is &lt;or&gt;A) Solid lineB. Broken lineC. Curve lineD. Straight line5) What is the best inequality statement to represent the expression:"To get a "developing" (passing mark) in school, a student must have a grade (G) of at least 75^ prime primeG &gt; 75G &lt; 75G &gt; 75D G &lt; 75​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.A</p><p>2.B</p><p>3.D</p><p>4.C</p><p><strong>Step-by-step explanation:</strong></p><p>plss po i brainliss mo ko plss</p><br />
+                                            <h2 class="ez-toc-section" id="development-learning-task-4-show-the-proof-using-the-two-column-proof-2-given-ae-and-de-intersect-at-e-prove-ae-be-de-ce%e2%80%8b">
+                            10. Development-Learning Task 4. Show the proof using the Two Column Proof.2. Given: AE and DE intersect at E.Prove: AE + BE = DE + CE​</h2><br />
+                        <p><strong>Answer:</strong></p><p>ctto› to the owner of this answered tsym</p><p>but sharing is caring</p><p>HOPE IT HELPS</p><p>CARRY ON LEARNING</p><br />
+                                            <h2 class="ez-toc-section" id="b-development-lesson-1-how-to-bisect-segments-and-angles-to-do-measurements-and-constructions-appropriate-tools-are-needed-below-are-tools-you-need-for-this-lesson-clmd-15-minutes-straightedge-to">
+                            11. B. Development LESSON 1 How to Bisect Segments and Angles To do measurements and constructions, appropriate tools are needed. Below are tools you need for this lesson. CLMD 15 minutes Straightedge -tool used to draw lines, segments and rays YON TV. CALAP Task: Construct the bisector of JK. Procedure Activity 1: How to Bisect a Segment J K STEP 1: Set-up your compass such that the tips cover slightly more than half the length of JK. At point J, draw an arc as shown. STEP 2. Using the same set-up of the compass, at point K, repeat STEP 1. compass -tool used to construct angles STEP 3: Connect the points of intersection of the two arcs. Name this segment - LN. of (N K K 1 of 4​</h2><br />
+                        <p><strong>Answer:</strong></p><p>thankyou</p><p><strong>Step-by-step explanation:</strong></p><p>because I don't know </p><br />
+                                            <h2 class="ez-toc-section" id="nasa-30-tao-kada-araw-ang-namamatay-sa-buong-bansa-dahil-sa-mga-banggaan-sa-daan-ayon-sa-philippine-global-road-safety-partnership-nangunguna-sa-mga-dahilan-ang-human-error-kabilang-ang-pagmamaneh">
+                            12. Nasa 30 tao kada araw ang namamatay sa buong bansa dahil sa mga banggaan sa daan, ayon sa Philippine Global Road Safety Partnership. Nangunguna sa mga dahilan ang "human error" kabilang ang pagmamaneho nang antok o lasing na nasa 75 porsiyento. Kaya naman, nagpayo ang pinuno ng grupo na si Alberto Suansing ukol sa ligtas na pagmamaneho. Una, hindi dapat nagte-tailgate o tumutok sa sasakyan sa harap. Sundin ang "one vehicle distance" sa sinusundang sasakyan sa kada 10 kilometro kada oras na bilis. Ikalawa, sundin din dapat ang speed limit sa mga kalsada, lalo't ito ang pinakatalamak na sanhi ng mga aksidente sa daan. Ikatlo, manatili sa tamang lane at ugaling magdahan dahan ng sasakyan habang papalapit ng intersection. Ikaapat. obserbahan ang "right of way" sa pagintersect at panghuli, dapat siguruhing nasa tamang kondisyon ang mga katawan at isipan bago bumiyaheA. Maka-develop ng episyenteng instrumento, kagamitan o produkto. B. Makadiskubre ng mga bagong kaalaman hinggil sa mga batid naC. Makakita ng mga sagot sa mga suliraning hindi pa ganap na nalutasD. Makatuklas ng mga bagong sabstans o elemento (komposisyon o kabuoan ng isang bagay)E. Matugunan ang kyuryusidad, interes at pagtatangka ng isang mananaliksik​</h2><br />
+                        <p><strong>Answer:</strong></p><p>C. is the answer</p><p><strong>Explanation:</strong></p><p>hope this helps </p><br />
+                                            <h2 class="ez-toc-section" id="1-the-covid-19-virus-is-a-new-virus-linked-to-the-same-family-of-viruses-as-severe-acute-respiratory-syndrome-andor-some-types-of-common-colds-andor2-quarantine-can-lead-to-loneliness-especia">
+                            13. 1.The COVID-19 virus is a new virus linked to the same family of viruses as severe acute respiratory syndrome {and\or} some types of common colds.
+{and\or}
+2.Quarantine can lead to loneliness (especially\chiefy) for older people who live one.
+(especially\chiefy)
+3. If someone you know if feeling hopeless and having throughts of harming them selves (because\subsequently) of COVID-19, talk to them
+(because\subsequently)
+4. Many companies offer their employees professional development opportunities. (althrough\in other words), the companies give the employees money to take classes so they can learn more about their current job.
+(Althrough\In other words)
+5. The government had given the social amelioration aid (yet\despite) many still complain of not receiving for it.
+(yet\despite}
+6.I couldnt bring myself to give up my thermal vest, (however\thus) tired I was of being teased for it.
+(however\thus)
+7.The asians won most of the trac and field events(similarity\where as), in boxing, the top three places went to asians
+(similarity\ where as)
+8.These young students live in {adjacent\behind) rooms.
+(adjacent\behind) 
+9. we enjoyed a large dinner and (before\afterwards) had coffe and grocery dessert.
+(before\ afterwards)
+10. The traffic jam was(in effect\ due to) a terrible accident at the intersection.
+(in effect\ due to)
+PLEASE ANSWER IT</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.and</p><p>2.especially</p><p>3.because-subsequently</p><p>4.in other words</p><p>5.yet</p><p>6.however</p><p>7.similarity</p><p>8.behind</p><p>9.afterward</p><p>10.due to</p><br />
+                                            <h2 class="ez-toc-section" id="hallyu-the-tidal-wavebr-hallyu-or-korean-wave-refers-to-the-inceaase-in-global-prominencebr-of-korean-culture-this-wave-first-swept-in-the-philippines-back-in-2003br-wh">
+                            14. Hallyu: The Tidal Wave&lt;br /&gt;Hallyu, or Korean Wave, refers to the inceaase in global prominence&lt;br /&gt;of Korean culture. This wave first swept in the Philippines back in 2003,&lt;br /&gt;when Korean dramas started airing in the country with the show entitled&lt;br /&gt;"Bright Girt". Since then, Filipinos developed a great liking of watching&lt;br /&gt;Korean dramas that even their lifestyle is influenced by Korean culture&lt;br /&gt;from food, clothes and language to every other aspect one could ever think&lt;br /&gt;of.&lt;br /&gt;A, B and C are sets of Korean dramas watched by Dianne, Joy and&lt;br /&gt;lan respectively.&lt;br /&gt;A = (Descendants of the Sun, Hotel del Luna, My Love from the&lt;br /&gt;Stars, Boys over Flowers, Crash Landing on You}&lt;br /&gt;B = {Legend of the Blue Sea, Crash Landing on You, Secretary Kim,&lt;br /&gt;Boys over Flowers, Goblin, Love Alarm}&lt;br /&gt;C = { Secretary Kim, My Love from the Stars, Goblin, Crash Landing&lt;br /&gt;on You, My Girlfriend is a Gumiho, Love Alarm)&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;LET'S ANALYZE&lt;br /&gt;1. Find the union of A and B.&lt;br /&gt;______________________&lt;br /&gt;2. Find the union of B and C.&lt;br /&gt;______________________&lt;br /&gt;3. Find the intersection of A and B.&lt;br /&gt;______________________&lt;br /&gt;4. Find the intersection of A, B and C.&lt;br /&gt;_______________________&lt;br /&gt;5. Find the difference between A and C.&lt;br /&gt;______________________&lt;br /&gt;6. Find the difference between B and C.&lt;br /&gt;______________________​</h2><br />
+                        <p><strong>Answer:</strong></p><p>we same</p><p><strong>Step-by-step explanation:</strong></p><p>same question srry heehe </p><br />
+                                            <h2 class="ez-toc-section" id="20-what-idea-assumes-to-solve-the-problem-of-scarcityi-to-make-unlimited-stuffii-figuring-how-to-distribute-scarceiii-unlimited-stuff-in-the-best-way-to-meet-wantsiv-to-see-how-people-satisf">
+                            15. 20. What idea assumes to solve the problem of scarcity?
+I. to make unlimited stuff
+II. figuring how to distribute scarce
+III. unlimited stuff in the best way to meet wants
+IV. to see how people satisfy needs and wants
+a. I, II, III and IV c. I, II, and III
+b. II, III and IV d. I, II, and IV
+21. Capital is one of the factors in production, but under this factor
+what idea that best categorize as Physical Capital?
+a. non-human assets by real humans in production
+b. Natural resources used to produce goods and services
+c. The education, experience, abilities, and knowledge of an employee
+d. Work people get paid for
+22. What idea can we inspect out from the statement “most economic
+activity (but not all) requires money to spend for infrastructure
+development” as one of the crucial factors in economic affairs?
+a. Consumption c. Finance
+b. Environment d. Investment
+23. What idea that examines the statement “Everything we do in the
+economy requires space, air, and inputs of natural materials”.
+a. Consumption c. Finance
+b. Environment d. Investment
+24. How price quantity determined?
+a. The equilibrium price is the market price where the quantity of goods
+supplied is equal to quantity of goods demanded.
+b. The equilibrium price is the market price where the quantity of goods
+supplied is greater than or equal to quantity of goods demanded.
+c. The equilibrium price is the market price where the quantity of goods
+supplied is less than or equal to quantity of goods demanded.
+d. The equilibrium price is the market price where the quantity of goods
+supplied is greater than to quantity of goods demanded.
+25. How equilibrium price determined?
+Learning Materials are for nonprofit educational purposes which are exclusively used for
+Schools Division of Digos City only. Copies are not for sale.
+7
+a. To figure out at what price the demand and supply curve intersect.
+b. To figure out at what price the demand and supply curve interchange.
+c. To figure out at what price the demand and supply curve overlap.
+d. To figure out at what price the demand and supply curve break
+26. What idea that make up the demand of Perfect Competition?
+a. The individual firm will view its demand as perfectly elastic.
+b. The individual firm will view its demand as perfect but not totally
+perfect elastic.
+c. The individual firm will view its demand as imperfectly elastic.
+d. The individual firm will view its demand as downward sloping.
+27. What scheme that will arise in the demand curve of Pure
+Monopoly?
+a. Monopoly demand is the industry or market demand and is therefore
+downward sloping.
+b. Monopoly demand is the industry or market demand and is therefore
+upward sloping.
+c. Monopoly demand is the industry or market demand and is therefore
+either upward or downward sloping.
+d. Monopoly demand is the industry or market demand and is therefore
+above the marginal revenue.
+28. When the government decides on how goods should be produced,
+what economic system is being used?
+a. Black
+b. Command
+c. Market
+d. Traditional
+29. People enjoy freedom of choice in arriving at decisions on what to
+buy, what economic system is being employed?
+a. Black
+b. Command
+c. Market
+d. Traditional</h2><br />
+                        <p><strong>Answer:</strong></p><p>20.C</p><p>21.B</p><p>22.D</p><p>23.D</p><p>24.B</p><p>25.A</p><p>26.A</p><p>27.B</p><p>28.A</p><p>29.C</p><p><strong>Explanation:</strong></p><p>Yan po Ang answer ko Tama po ako lahat</p><p>PakiBrainlest nalang po </p><br />
+                                            <h2 class="ez-toc-section" id="what-national-policies-do-developed-countries-have-that-the-philippines-do-not-have-in-addressing-the-pandemic-crisis-relate-this-with-the-concept-on-intersection-and-union-of-sets-draw-a-venn-diagr">
+                            16. What national policies do developed countries have that the Philippines do not have in addressing the pandemic crisis? Relate this with the concept on intersection and union of sets. Draw a Venn Diagram to illustrate your claim.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>_________________galit a ko sa'yo</p><br />
+                                            <h2 class="ez-toc-section" id="8-which-statement-does-not-provide-the-correct-understanding-of-the-theoretical-frameworks-and-models-a-tpack-is-the-theoretical-framework-that-shows-the-intersect-of-teachers-content-pedagogica">
+                            17. -8. Which statement does NOT provide the correct understanding of the theoretical frameworks and models. A. TPACK is the theoretical framework that shows the intersect of teacher's content, pedagogical and technological knowledge needed to be relevant in the 21" century teaching, B. Redefinition in SAMR is a transformative attempt by guiding students to create something out of something not perceived before. C. The iPadagogy Wheel provides the mutually exclusive tools and applications that are integrated in instruction. D. Bloom's Revised taxonomy is a rehashed focus on more active perspective of cognitive activity with conversion of the previously nominative term to the use of a verb. Which is an appropriate tool that can be employed if the students need to develop their competency to create​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="b-reflection-what-national-policies-do-developed-countries-have-that-the-philippines-do-not-have-in-addressing-the-pandemic-crisis-relate-this-with-the-concept-on-intersection-and-union-of-sets-dra">
+                            18. B. REFLECTION What national policies do developed countries have that the Philippines do not have in addressing the pandemic crisis? Relate this with the concept on intersection and union of sets. Draw a Venn Diagram to illustrate your claim.​</h2><br />
+                        <p>same problem po.. sorry to disturb you sa mga nagclick neto paanswer neto please</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-i-can-do-you-are-part-of-a-writing-team-that-is-working-on-an-academic-article-about-the-intersection-between-faith-and-literature-as-viewed-in-asian-poetry-your-role-in-the-team-is-to-prepare">
+                            19. What I Can Do You are part of a writing team that is working on an academic article about the intersection between faith and literature, as viewed in Asian poetry. Your role in the team is to prepare a full, sentence-level outline that makes a central statement about the way Asian poetry reflects various religious beliefs. The central statement must be developed through three main supporting points, each supported by at least one primary source and at least one secondary source. Using available resources, you may watch any video online or on television about the said topic to help you gather important details.pa helpnonsense-report​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Your role in the team is to prepare a full, sentence-level outline that makes a</p><p>central statement about the way Asian poetry reflects various religious beliefs. The</p><p>central statement must be developed through three main supporting points, each</p><p>supported by at least one primary source and at least one secondary source.</p><br />
+                                            <h2 class="ez-toc-section" id="answer-please1st-questionthe-measurement-of-earthly-objects-are-called-1_______________-but-euclid-gave-it-a-new-definition-and-developed-it-into-a-formal-study-of-statements-that-involve-reasoning">
+                            20. answer please1st questionThe measurement of earthly objects are called (1)_______________. But Euclid gave it a new definition and developed it into a formal study of statements that involve reasoning. He later introduced that mathematical system with four parts. The first one are terms which cannot be defined but can be described, this is called as the (2)_____________. It is composed with the point, line and plane. Second, are terms that have a proper definition and can be defined by means of other geometrical terms, this is called as the (3)____________. It is composed with the line segment, ray, opposite ray and angles. Third, are statements that are assumed to be true without any proof, this is called as the (4)_____________. And last, are basic geometric principle which are proven to be true, which is called as (5)___________.2nd question1. Points J, K, L and N are collinear points.2. Point A is the midpoint of line CP.3. Line x intersect parallel lines m and n.4. Point C lies in plane K5. Plane F and plane H intersects at line XY.6. </h2><br />
+                        <p><strong>Answer;</strong></p><p><strong>1st questions answer;</strong></p><p><strong>1. geometry</strong></p><p><strong>2. defined terms</strong></p><p></p><p>axiomatic system</p><p>1.consistency po ata</p><p>2.undefined terms</p><p>3. defined terms</p><p>6.consistency</p><p>7.independence</p><p>8.completeness</p><p> </p><p>yan lang po alam ko sana po nakatulong pasensya na po diko po alam ung iba hihi</p><p></p><p>btw ung sa second question po is kayo po sarili gagawa or mag iillustrate non</p><br />
+                                            <h2 class="ez-toc-section" id="c-seamsc-seamsc-seamsnel-sud1-it-is-a-cylinder-that-has-the-end-cut-off-by-an-inclined-surface-a-surface-development-b-truncated-cylinderd-wired-edge2-it-is-also-known-as-stretch-outsa-surfac">
+                            21. C. seamsc. seamsC. seamsnel sud1. It is a cylinder that has the end cut off by an inclined surface.a. surface development b. Truncated cylinderd. wired edge2. It is also known as stretch-outsa. surface developmentb. patternd. wired edge3. A pattern created by drawing the edges of an object as parallel lines.a. Parallel line development b. patternC. seams d. wired edge4.A pattern created by drawing the edges of an object radiating from a single point.a. Hemb. pattern c. Radial line developmentd. wired edge5. It is used to strengthen the lips of sheet metal objects. It is made in standard sizes, 40.0mm,6.Omm, 10,0mm, etc.a. hemb. patternd. Radial line development6. It is an orthographic view taken in such a manner that the lines of sight are not parallel to theprincipal projection planes (frontal, horizontal, or profile).a. Inclined Line b. Auxiliary View c. Orthographic projection d. Pattern7. Means to extend from.a. Projectb. Hemc. Parallel d. Cylinder_8. It is a 45-degree line which is used in projection. It serves as guide in keeping up drawing lines straight.a. Hemb. Pattern/Stretch-out c. Parallel d. Miter Line9. It is a line that does not intersect in the plane, but goes to the limit of infinity.a. Projectb. Hemc. Parallel d. Cylinder10. It is a geometric figure with a uniform circular cross section through its entire length.a. Projectb. Hemc. Paralleld. Cylinder11. Development of an object that is rolled or folded.a. Stretched out b. Patternc. Seamsd. Hem12. Used to strengthen sheet metal sections. They are usually joined by soldering and / or riveting process.a. Seamsb. Truncated cylinderc. Hemd. Wired Edge13. The distance around a circle.a. Stretch-out b. Radial line development c. Surface developments d. Circumference14. A flat pattem or development used in laying out, cutting and folding lines on flat stock.a. Surface developments b. Pattern c. Stretch-outd. Circumference15. It gives extra strength and rigidity to sheet metal edges.b. Patternc. Wired Edged. Seamsa. Hem​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.D-WIRED EDGE</p><p>2.B-PATTERN</p><p>3.B-PATTERN</p><p>4.A-HEM</p><p>5.D-RADIAL LINE DEVELOPMENT</p><p>6.B-PATTERM</p><p>7.C-PARALLEL</p><p>8.D-MITER LINE</p><p>9.D-CYLINEDER</p><p>10.A-PROJECT</p><p>11.A-STRETCHED OUT</p><p>12.A-SEAMS</p><p>13.B-RADIAL LINE </p><p>14.A-SURFACE OUT</p><p>15.A-HEM</p><p></p><p><strong>Explanation:</strong></p><p>SANA MAKATULONG </p><p>PAG MALI SENSYA NA LODYKAKES</p><br />
+                                            <h2 class="ez-toc-section" id="consider-the-intersection-of-two-roads-in-a-rapidly-expanding-suburban-area-both-roads-have-two-traffic-lanes-because-of-the-development-of-the-area-the-volume-of-traffic-flow-at-this-intersection">
+                            22. Consider the intersection of two roads in a rapidly expanding suburban area. Both roads have two traffic lanes. Because of the development of the area, the volume of traffic flow at this intersection has dramatically increased and so have the number of accidents. A large proportion of the accidents involve vehicles making a left turn which suggests that the ‘simple’ traffic lights at the intersection are no longer adequate because they do not provide a left turn priority interval. The city’s traffic department is evaluating alternatives for upgrading these traffic signals so that such priority intervals are provided to assist left-turning drivers. The need is especially urgent for traffic that is flowing in the north and south directions. If the upgrade is implemented, then a particular parameter value that will need to be determined is the proportion of time allocated to the priority interval. 
+The planning department has decided to explore solution alternatives for the problem by undertaking a modelling and simulation study.
+Scenario to be undertaken.
+Give the best possible solution for the above scenario? Explain the solution about the scenario</h2><br />
+                        <p>lvosleo8070</p><p>;@0</p><p><strong>Explanation:</strong></p><p>bababoi</p><br />
+                                            <h2 class="ez-toc-section" id="direction-write-the-letter-of-the-best-answer-on-the-space-before-each-number-d-q-c-m-15-which-line-has-a-zero-slope-a-s-b-z-16-what-is-the-equation-of-the-line-if-the-slope-is-1-and-y-interce">
+                            23. Direction: Write the letter of the best answer on the space before each number. D. q C. m 15. Which line has a zero slope? A s B. z 16. What is the equation of the line if the slope is 1 and y-intercept is -8? A. y = x + 8 B. y = x - 8 C. y = - x + 8 D. y = - x - 8 17. Find the slope of the line 2y - 3 = 8x + 7 B. -4 C. 5 A. 4 D. - 5 18. What is the y-intercept of 3x - y = - 5! 5/3 B. 5 C. D. 19. Find the slope of y = 2/3 * x - 3/4 B. - 2/3 20. What is the linear equation that has a y- intercept of and a slope of 3? - 1/2 1. In which of the following statements describes Rectangular Coordinate System? A. It is used for naming points in a plane. B. It is a plane containing the coordinates and ordinates. C. It is used to determine the location of a point by using a single number. D. It is a two-dimensional plane which is divided by the axes into four regions called quadrants. 2. Who developed the Cartesian Coordinate Plane? A. Jean-Paul Sartre B. Rene Descartes D. Thomas Edison C. Voltaire 3. What is the point of intersection of the two axes? A. Base B. origin C. edge D. plane 4. Give the coordinates of the point 2 units to the left of y-axis and 7 units below the x-axis. A. (2,7) B. (7,2) C. (- 2, - 7) D. (- 7, - 2) 5. In what quadrant does the point (-5,-8) lies? A. QI C. QII D. QIV B. QIII 6. What is the abscissa in the ordered pair (4,5)? A. 4 B. 5 C. -4 D (-5) 7. Which of the following is an example of linear equation in two variables? A. x ^ 2 - 5 = 20 C. 8 = - 7y D. x + y &lt; 5 B. x + y = 5 8. Which of the following is a solution for the equation 2x - y = 87 A. (2, - 4) B. (- 2, - 4) C. (2,4) D. (2,4) 9. What is the standard form fy =4x-7? A. 4x - y = - 7 B. 4x - y = 7 C. 4x + y = - 7 D. 4x + y = 7 10. What is the slope intercept form f * 3x - 5y = 6 ? A. y = - 1/2 * x + 3 B. D. y = - 3x + 1/2 21. Which of the following illustrates a system y = 1/2 * x - 3 of linear equations in two variables? A. 2x - y &gt; 1; y = x ^ 2 + 1 Cx - y = 1; x + y = 7 B. 8y &gt; x - 64; x - y = 6 x - 7 &lt; y 22. Which of the following ordered pairs is the solution of the system x + y = 5 and | x + 2y = 7? A. (3,2) C. (4,1) B. (5,0) D. (- 6, 1) 23. Which system of linear equation has graphs that show parallel lines? A. Consistent C. Inconsistent D. Independent B. Dependent 24. How many solutions will a system have if the graph of the solution is coinciding lines? A. 1 B. None C. 2 D. infinitely many 25. Which system of equations is a graph that shows intersecting lines? A. - 2x - y = 1 Lx - y = 1 2x - y = 2 4x - 2y = 5 * x + y = 2 [ 2x + 2y = 4 x + y = 4 x + y = 2 A. y = - 3/5 * x + 6/5 B. y = 3/5 * x + 6/5 D. y = 3/5 * x - 6/5 11. What is the value of A in the standard form 6x + 7y =-8? A. 6 B. 7 C. 8 D. -8 For numbers 12-15, refer to the figure below 12. Which line has a positive slope? A. 2/3 - 5/3 y = 3x - 1/2 c. 3/4 0 * (- 3/4) A, 3 Cy = - 3/5 * x + 6/5 py = 5x - 1​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>5/12 and 35/N</p><p></p><p>39/2 and N/4</p><p></p><p>27/N and 9/5</p><p></p><p>N/4 and 24/6</p><p></p><p>3/N and 24 5.6</p><p></p><p>N/52 and 180/120</p><p></p><p>18/N and 21/28</p><p></p><p>10/16 and N/56</p><p></p><p>1.4/1.05 and 4/N</p><p></p><p>7/N and 0.6/3</p><p></p><p>5/12 and 35/N</p><p>5/12 = 35/N</p><p>N = 35 * 12/5</p><p>N = 8.4</p><p></p><p>39/2 and N/4</p><p>39/2 = N/4</p><p>4 * 39 = 2 * N</p><p>156 = N</p><p></p><p>27/N and 9/5</p><p>27/N = 9/5</p><p>5 * 27 = 9 * N</p><p>135 = N</p><p></p><p>N/4 and 24/6</p><p>N/4 = 24/6</p><p>4 * 24 = 6 * N</p><p>96 = N</p><p></p><p>3/N and 24 5.6</p><p>3/N = 24 5.6</p><p>24 5.6 * 3 = N</p><p>73.68 = N</p><p></p><p>N/52 and 180/120</p><p>N/52 = 180/120</p><p>120 * 52 = 180 * N</p><p>6240 = 180 * N</p><p>34.66666666666666666666666666667 = N</p><p></p><p>18/N and 21/28</p><p>18/N = 21/28</p><p>28 * 18 = 21 * N</p><p>504 = 21 * N</p><p>24 = N</p><p></p><p>10/16 and N/56</p><p>10/16 = N/56</p><p>56 * 10 = 16 * N</p><p>560 = 16 * N</p><p>35 = N</p><p></p><p></p><p></p><p></p><p>Try again</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="let-us-appreciate-activity-no3-venn-diagram-draw-two-circles-that-will-intersea-at-the-center-in-the-left-part-of-the-two-circles-list-down-the-changes-and-development-that-you-observed-for-the-boy">
+                            24. LET US APPRECIATE Activity No3 Venn diagram: Draw two circles that will intersea at the center. In the left part of the two circles, list down the changes and development that you observed for the boys only. In the right part of the two circles, list down the changes and development for the girls only. In the part of intersected circles, list down common growth and development changes of boys and girls. Example Boys Girls Boys and Girlspls answer​</h2><br />
+                        <p><strong>Answer:</strong></p><p>girls</p><p>puberty/menstruation </p><p>having acnes during puberty </p><p>breast will start developing </p><p>boys</p><p>adams apple will become more obvious </p><p>their voice will become deeper </p><p>both</p><p>growing of public hair</p><p>body shape will become bigger </p><p>hair will start growing under arms </p><p><strong>Explanation:</strong></p><p>pa brainliest po</p><br />
+                                            <h2 class="ez-toc-section" id="of-23-3-which-means-learning-by-investigation-4-history-traces-the-traces-the-progress-progress-and-development-of-5-from-the-ancient-to-the-modern-time-largely-based-on-6-the-7-were-the-first-to-vi">
+                            25. OF 23 3 which means learning by investigation 4 History traces the traces the progress progress and development of 5 from the ancient to the modern time, "largely based on 6 The 7 were the first to view history with an acquiring mind. Herodotus "the 8. * introduced a and 10 way of writing events. History can also be defined as the continuous intersection between the historians and his facts and unending 11. between the past and the present. History is not just a 12 but it must also have a meaning on it, if one finds meaning in in will history changing it 13 gain ► set the 14 (Ambeth Ocampo 2001) 15." model of writing history, he analyzed and verified the facts​</h2><br />
+                        <strong>History is the study and the documentation of the past. Events before the invention of writing systems are considered prehistory. "History" is an umbrella ...</strong><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-according-to-mystery-writer-gloria-repp-a-characters-main-problem-must-intersect-with-the-mystery-true-false2-writing-a-mystery-is-easier-than-any-other-type-of-writing-true-false3-the-fol">
+                            26. 1.According to mystery writer Gloria Repp, a character's main problem must intersect with the mystery.
+ True
+ False
+2.Writing a mystery is easier than any other type of writing.
+ True
+ False
+3.The following excerpt from “Shipwrecked” means that it is hard to sleep when you are hoping that something good is going to happen or when you are anxious that something bad might happen.
+ “The next morning at daybreak we were all awake, for hope as well as care is no friend to sleep.”
+ True
+ False
+4.Daniel Defoe’s Robinson Crusoe is autobiographical.
+ True
+ False
+5.In “The Quisling Hunt” Chris’s struggles are man against man, man against self, and man against nature.
+ True
+ False
+6.A plot-driven story depends on the action more than on character development.
+ True
+ False
+7.An interviewer should never write down the questions that he intends to ask the person being interviewed.
+ True
+ False</h2><br />
+                        <p><strong>Answer:</strong></p><p>true </p><p>true</p><p>true</p><p>true</p><p>false</p><p>true </p><p>false</p><br />
+                                            <h2 class="ez-toc-section" id="hallyu-or-korean-wave-relers-to-the-inceaase-in-global-prominenceof-korean-culture-this-wave-hrst-swept-in-the-philippines-back-in-2003when-korean-dramas-started-airing-in-the-country-with-the-show">
+                            27. Hallyu, or Korean Wave, relers to the inceaase in global prominenceof Korean culture. This wave hrst swept in the Philippines back in 2003when Korean dramas started airing in the country with the show entitled"Bnght Girl". Since then, Filipinos developed a great liking of watchingKorean dramas that even their lifestyle is influenced by Korean culturefrom food, clothes and language to every other aspect one could ever thinkOFA B and C are sets of Korean dramas watched by Dianne, Joy andlan respectivelyA = {Descendants of the Sun, Hotel del Luna, My Love from theStars, Boys Over Flowers, Slash Landing on You}B = (Legend of the Blue Sea, Crash Landing on You, Secretary Kim,Boys over Flowers, Goblin, Love Alarm)C = {Secretary Kim, My Love from the Stars, Goblin, Crash Landingon You, My Girlfriend is a Gumiho, Love Alarm)LET'S ANALYZE1. Find the Union of A and B.2. Find the union of B and C.3 Find the intersection of A and B.4. Find the intersection of A, B and5. Find the difference between A and C.6. Find the difference between B and C​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1) AuB={Descendants of the Sun, Hotel del Luna, My Love from the Stars, Boys Over Flowers, Crash Landing on You, Legend of the Blue Sea, Secretary Kim, Goblin, Love Alarm}</p><p></p><p>2) BuC={Crash landing on you, Secretary Kim, Love Alarm, Legend of the Blue Sea, Boys Over Flowers, Goblin, My love From the Stars, My girlfriend is a gumiho}</p><p></p><p>3) AnB={Boys over Flowers, Crash landing on you}</p><p></p><p>4) AnBnC={Crash landing on you}</p><p></p><p>5) A∆B={Descendants of the Sun, Hotel del Luna, My Love from the Stars, Legend of the Blue Sea, Secretary Kim, Goblin, Love Alarm}</p><p></p><p>6) B∆C={Legend of the Blue Sea, Boys over Flowers, My Love from the Stars, My Girlfriend is a Gumiho}</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-a-tool-used-whenever-you-need-to-perform-calculation-that-relate-to-mathematical-financial-or-scientific-dataa-ms-excel-b-ms-word-c-spreadsheet-d-spreadsheet-program-2-the-following-are-the-exa">
+                            28. 1. a tool used whenever you need to perform calculation that relate to mathematical financial or scientific dataa.ms excel b. ms word c. spreadsheet d. spreadsheet program 2. the following are the examples of task that can be done in microsoft excel except a. making inventory b. paying loan c.publication d. calculating taxes 3. developer of VisiCalc, a program for apple II computera. bill gates b. augusta byron c. mitch kapor d. dan bricklin 4. this is a horizontal block of cells numbered sequentially from the top a. column b.row c. cell d. cell reference5. it is also called cell added it is a combination of specific column and a number for specific row in a spreadsheet a.  cell referenceb. cell indicator c. cell d. cell content 6. list of related data related information are called records and columns of data are called fields a. database b. range c. worksheet d. workbooks 7. this is a triangular formed by intersection of a row and a column a. active cell indicator b. navigation buttons c. cell d. cell reference 8. this is the block of selected cells or a selection of multiple cells a. workbook b. cell address c. worksheets tabs d. range 9. a mouse pointer that is used to edit data in any text box or list box a. thick cross b. fill handle c. arrow d. I-beam10. a mouse pointer in ms excel that is used to copy the contents of the cell a. double headed arrow b. take crossc. fill handle d. i beam pasagot po ASAP pagdi matino report na​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. d.</p><p>2.c.</p><p>3.b.</p><p>4.a.</p><p>5.a.</p><p>6.b.</p><p>7.b </p><p>8.b.</p><p>9.d.</p><p>10.a.</p><p></p><p><strong>Explanation:</strong></p><p>paki corect lang po kung mali</p><br />
+                                            <h2 class="ez-toc-section" id="you-are-part-of-a-writing-team-that-is-working-on-an-academic-article-about-the-intersection-between-faith-and-literature-as-viewed-in-asian-poetry-your-role-in-the-team-is-to-prepare-a-full-senten">
+                            29. You are part of a writing team that is working on an academic article about the intersection between faith and literature as viewed in Asian poetry. Your role in the team is to prepare a full , sentence-level outline that makes a central statement that must be developed through three main supporting points. each supported by one primary source and at least one secondary source. Using available resources, you may watch videos online or on television or a book about the said topic to help you gather important details.​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>writing expanded outline</p><br />
+                                            <h2 class="ez-toc-section" id="1-_______________-are-water-waves-generated-by-earthquakes-undersea-volcaniceruptions-or-landslides-that-hit-bodies-of-water-a-tsunamis-b-tidal-waves-c-wind-waves-d-wind-surges2-___________">
+                            30. 1. _______________ are water waves generated by earthquakes, undersea volcanic
+eruptions, or landslides that hit bodies of water.
+A. Tsunamis B. Tidal waves C. Wind waves D. Wind surges
+2. _________________ is the disruptive up, down, and sideways vibration caused by
+passing seismic waves through the ground.
+A. Folding B. Ground shaking C. Ground rupture D. Ground subsidence
+3. _________________ is the deformation on the ground that marks the intersection
+of the fault with the earth’s surface.
+A. Faulting B. Landslide C. Liquefaction D. Ground rupture
+4. ________________ is a phenomenon that occurs when loosely packed, water-logged
+sediments near the ground surface lose their strength in response to strong
+ground shaking.
+A. Liquefaction B. Sedimentation C. Stratification D. Weathering
+5. Earthquake-induced landslide is the down slope movement of rocks, soil, and
+other debris commonly triggered by intense _____________.
+A. irrigation B. mining C. rain D. shaking
+6. Debris avalanche is usually caused by ________________, a strong earthquake, or
+the movements of faults beneath the cone-shaped structure of a volcano.
+A. lahar flow B. lava flows C. liquefaction D. magma intrusion
+4
+7. ___________ flows are stream-like flows of incandescent molten rock erupted from
+a crater or fissure.
+A. Lahar B. Lava C. Magma D. Pyroclastic
+8. ______________ are blankets of fragmented volcanic particles less than 2 mm in
+diameter propelled through the atmosphere and eventually settle on surfaces.
+A. Ashfall B. Landfall C. Rockfall D. Tephra fall
+9. _______________ flows and surges are mixtures of hot volcanic broken fragments,
+hot gases, and ashes rapidly rushing down the slope from a source vent.
+A. Lahar B. Lava C. Magma D. Pyroclastic
+10._________________ is an example of debris flow which can become a long-term
+problem if there are large deposits of volcanic debris.
+A. Lahar B. Lava flow C. Magma flow D. Pyroclastic flows and surges
+11.__________________ are considered the most lethal of all volcanic hazards.
+A. Lava flows C. Ballistic projectiles
+B. Tephra falls D. Pyroclastic flows and surges
+12._________ are large particle tephra that are ejected straight out of volcanic vents.
+A. Ashfall B. Tephra fall C. Volcanic gases D. Ballistic projectiles
+13.Principal volcanic gases include ___________, hydrogen sulfide, sulfur dioxide,
+______________, carbon monoxide, hydrogen chloride, and hydrogen fluoride.
+A. ozone, ammonia C. water vapor, carbon dioxide
+B. nitrogen, helium D. sulfur hexafluoride, nitrous oxide
+14._______________ refer to a wide variety of processes that result in the downward
+and outward movement of slope-forming materials including rock, soil, artificial
+fill, or a combination of these.
+A. Landslides B. Slope failure C. Slope avalanche D. Surface deformation
+15.Landslides can be caused by _____________ phenomena or _____________ activities.
+A. natural; human C. psychological; animal
+B. artificial; natural D. man-made; development</h2><br />
+                        <p><strong>Answer:</strong></p><p>1)A</p><p>2)C</p><p>3)B</p><p>4)B</p><p>5)B</p><p>6)A</p><p>7)C</p><p>8)A</p><p>9)B</p><p>10C</p><p>11)A</p><p>12)B</p><p>13)C</p><p>14)C</p><p>15)C</p><p><strong>Explanation:</strong></p><p>This is base on my re-search. </p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/opulOjqQ8nU?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>biology</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/conti-s-menu-cakes.html">Conti s Menu Cakes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-sun-s-rays-are-observed-to-focus.html">The Sun s Rays Are Observed To Focus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-magician-s-twin-cs-lewis-and-the-case-against-scientism.html">The Magician s Twin Cs Lewis And The Case Against Scientism</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/lagrima-psicodelica.html">Lagrima Psicodelica</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-billionaire-s-heir.html">The Billionaire s Heir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/lucky-for-you-that-s-what-i-like-lyrics.html">Lucky For You That s What I Like Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/love-s-sorrow-violin.html">Love s Sorrow Violin</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-letter-in-nathaniel-hawthorne-s-work.html">The Letter In Nathaniel Hawthorne s Work</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/j-t-bontoc-mountain-province.html">J t Bontoc Mountain Province</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/mama-s-baby-boy-comic.html">Mama s Baby Boy Comic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/frankenstein-summary-pdf.html">Frankenstein Summary Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/krasenkow-chess.html">Krasenkow Chess</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/informative-speech-about-gaming.html">Informative Speech About Gaming</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/perfect-pet-story.html">Perfect Pet Story</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/repleksyong-sanaysay-halimbawa.html">Repleksyong Sanaysay Halimbawa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ano-ang-katekismo.html">Ano Ang Katekismo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/beechcraft-baron-58-fuel-consumption.html">Beechcraft Baron 58 Fuel Consumption</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/masdm.html">Masdm</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/suliranin-sa-likas-na-yaman.html">Suliranin Sa Likas Na Yaman</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/epekto-sa-pamumuhay-ng-mga-asyano.html">Epekto Sa Pamumuhay Ng Mga Asyano</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meshlab Plugins - QnA</title>
+    <meta name="description" content="Meshlab Plugins, , , , , , , 0, How to install MeshLab on Ubuntu 15.04 - Tutorial and Full Version Software, gamblisfx.com, 1301 x 744, png, , 20, meshlab-plugins, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Meshlab Plugins - QnA" />
+    <meta property="og:description" content="Meshlab Plugins, , , , , , , 0, How to install MeshLab on Ubuntu 15.04 - Tutorial and Full Version Software, gamblisfx.com, 1301 x 744, png, , 20, meshlab-plugins, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Meshlab Plugins - QnA" />
+    <meta name="twitter:description" content="Meshlab Plugins, , , , , , , 0, How to install MeshLab on Ubuntu 15.04 - Tutorial and Full Version Software, gamblisfx.com, 1301 x 744, png, , 20, meshlab-plugins, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Meshlab Plugins</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">emmanueljr262009</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Meshlab+Plugins" alt="Meshlab Plugins">
+                    </div>
+                    <p></p>
+                    <p>device plugin in computer were on head​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#device-plugin-in-computer-were-on-head%e2%80%8b">1.
+                                            device plugin in computer were on head​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-plugins-are-used-in-sketchup-to-achieve-a-realistic-look-%e2%80%8b">2.
+                                            what plugins are used in sketchUp to achieve a realistic look? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#device-plugin-in-computer-wore-in-head-what-is-the-answerreal-answer-sana%e2%80%8b">3.
+                                            DEVICE PLUGIN IN COMPUTER WORE IN HEAD WHAT IS THE ANSWER?REAL ANSWER SANA​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-read-each-question-carefully-and-choose-the-letter-of-the-correct-answer-write-theletter-of-the-correct-answer-on-your-answer-sheet-1-this-type-of-machine-does-not-require-squatting-or-b">4.
+                                            Directions. Read each question carefully and choose the letter of the correct answer. Write theLETTER of the correct answer on your answer sheet.1. This type of machine does not require squatting or bending to put clothes in or to take themout, which is an added convenience for some users.A. Drying cabinetC. Front load washing machineB Heat Pump DryerD. Top load washing machine2. It is an electrical machine designed to expedite the drying of items usually clothing that areunsullable for traditional clothes dryer.A. Drying cabinetC. Front load washing machineB. Heat Pump DryerD. Top load washing machine3. These are used in the first part of the wash cycle to neutralize the solls in the linen prior to themain washing process.A AlkallsB. Buildersc. Detergents D. StarchThese are used to wash the linen, allowing water to penetrate the soil and hold it insuspension before nnsing.A. AlkalisB. BuildersC. Detergents D. StarchTLE 9/10 - HOUSEKEEPINGQuaner Week 2wiler Dr. Morlan H. AlejandinoToomLeodor: Romediosv.MontebonPage 25. li is the longest cyca with the most agliation, wilh a combination ol high-speed wash action andhigh-speed spin making it harsher on clothes, but also cleans your clothes very wall:A DelicaleB: Permaniant. Presse G Regular D. Speedy6. Mug perlechter syaihete fabrics, gal rid ol unpleauant smell and parled for colored itemsA DelicateB: Permanent PressC. Regular DSpaddy7. Which of the following DOES NOT belong to lroning idols and equipment?!A. ClapperB DiddleCloning Board D Steam lion6. The following are preliminares on how to iron a shiit EXCEPT?A. Ensure the stron has water in, if not then pour some water and pluginB. Flatten and smooth the shin on the folding surface with the front of the shinlating downC. Read the label on your shin to get to know what lype ollabng the shirt is made ol.D. Prepare the iron and make sure the ran'a basa stalness and not dirty at all9. The correct procedure in folding inted and lat sheetsA. III, III, IVBREIV CVT D. 1, II, II, IVWith the fitted sheet inside out place one hand in gach of two adjacent corners.Bring your right hand to your left and told the corner on your night hand over the one inyour left, so the corner on top loght side out,al Next, reach down and pick up the comer that is adjacent to the one that was in your righthand it will be hanging in front), and told over the other two comers, this third comer willbe inside out1. Bring the last comer up and told it over the others so it is night side put. Lay the sheet ona flat surface with the curved edges toward the center of the fabric to form a square shape.Fold the two outer edoen in alle olistic is hidden10. This is the first to iron in Ironing shirtA CultsB. Collarc. Shirt's frontoke​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tle-true-or-false-need-lng-po1dextrinization-is-the-process-of-forming-dextrin2-restart-cereals-are-excellent-source-of-tm-sim-wrabel-plugin-in-iron%e2%80%8b">5.
+                                            tle TRUE or FALSE need lng po1Dextrinization is the process of forming dextrin2 restart cereals are excellent source of tm sim wrabel plugin in iron​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#audi-notice-that-the-electric-fan-is-not-working-when-plugin-what-should-he-do-reuserecyclerepairrebuild">6.
+                                            . Audi notice that the electric fan is not working when plugin. What should he do? *
+Reuse
+Recycle
+Repair
+Rebuild</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#this-blur-plugins-doesn%e2%80%99t-act-on-all-pixels-it-is-used-to-blur-the-background-so-that-the-foreground-object-will-stand-out-better">7.
+                                            This blur plugins doesn’t act on all pixels; it is used to blur the background so that the foreground object will stand out better.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-are-you-leaving-when-you-read-someones-post-then-you-submit-your-own-opinion-a-a-postb-an-opinionc-a-commentd-a-collaboration2-what-is-the-front-page-of-a-blog-called-a-titleb-themec">8.
+                                            1.What are you leaving when you read someone's post, then you submit your own opinion? A. A postB. An opinionC. A commentD. A Collaboration2.What is the front page of a blog called? A. TitleB. ThemeC. HeaderD. Index page3.When you login to your blogging account, what is the first screen with all controls, tools and functions?A. pluginB. archiveC. timelineD. DashboardNonsense=Report⚠Not Nonsense=Brainliest❤Can you answer my question?btw if you don't know the answer please don't answer thank you! and if you answer correctly i will gonna brainliest you but its okay if what is your opinion just give me the answer i will gonna brainliest you!and stay safe and healthy.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#our-weekend-task-from-school-is-to-clean-the-clothes-iron-the-first-thing-to-do-is-to-make-sure-that-the-iron-is-_________-from-the-power-source-since-ours-is-a-stem-type-iron-i-have-to-fill-it-wit">9.
+                                            Our weekend task from school is to clean the clothes iron. The first thing to do is to make sure that the iron is _________ from the power source. Since ours is a stem type iron, I have to fill it with __________in a maximum level and set the __________ in a minimum. Plugin the iron and apply the ___________ function. When the light indicator stops, hold the unit and __________ the water. Wipe the outside part with a clo​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#read-each-question-carefully-and-choose-the-letter-of-the-correct-answer-write-the-1-these-are-used-in-the-first-part-of-the-wash-cycle-to-neutralize-the-soils-in-the-linen-prior-to-the-main-washing">10.
+                                            Read each question carefully and choose the letter of the correct answer. Write the 1. These are used in the first part of the wash cycle to neutralize the soils in the linen prior to the main washing process.  A. Alkalis B. Builders C. Detergents D. Starch2. These are used to wash the linen, allowing water to penetrate the soil and hold it in suspension before rinsing.A. Alkalis B. Builders C. Detergents D. Starch3. It is the longest cycle with the most agitation, with a combination of high-speed wash actionand high-speed spin making it harsher on clothes, but also cleans your clothes very well.A. Delicate B. Permanent Press C. Regular D. Speedy4. It is perfect for synthetic fabrics, get rid of unpleasant smell and perfect for colored items.A. Delicate B. Permanent Press C. Regular D. Speedy5. Which of the following DOES NOT belong to ironing tools and equipment?A. Clapper B Diddle C Ironing Board D. Steam Iron6. This type of machine does not require squatting or bending to put clothes in or to take them out, which is an added convenience for some users.A. Drying cabinet C. Front load washing machineB. Heat Pump Dryer D. Top load washing machine7.It is an electrical machine designed to expedite the drying of items - usually clothing - that are unsuitable for traditional clothes dryer.A. Drying cabinet C. Front load washing machineB. Heat Pump Dryer D. Top load washing machine8. The following are preliminaries on how to iron a shirt EXCEPT?A. Ensure the iron has water in it, if not then pour some water and plugin B. Flatten and smooth the shirt on the folding surface with the front of the shirt facing down.C. Read the label on your shirt to get to know what type of fabric the shirt is made of.D. Prepare the iron and make sure the iron’s base is stainless and not dirty at all.9. The correct procedure in folding fitted and flat sheets. A. II, I, III, IV B. I, II, III, IV C. IV, III, II, I D. I, III, II, IVI. With the fitted sheet inside out, place one hand in each of two adjacent corners.II. Bring your right hand to your left and fold the corner on your right hand over the one in your left, so the corner on top is right side out.III. Next, reach down and pick up the corner that is adjacent to the one that was in your right hand (it will be hanging in front), and fold it over the other two corners; this third corner will be inside out.IV. Bring the last corner up and fold it over the others so it is right-side out. Lay the sheet on a flat surface with the curved edges toward the center of the fabric to form a square shape. Fold the two outer edges in, so all the elastic is hidden.10. This is the first to iron in ironing shirt.A. Cuffs B. Collar C. Shirt’s front D. Yoke​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#techniques-make-use-of-a-wooden-wish-to-support-a-plugin-stands-out-of-the-wire-at-the-start-the-process-involves-using-a-stencil-to-apply-in-on-to-another-material-fabric-patches-or-any-material-can">11.
+                                            techniques make use of a wooden wish to support a plugin stands out of the wire at the start the process involves using a stencil to apply in on to another material fabric patches or any material can get the image on its surfacepasagot po ng tama​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-how-frequently-should-you-post-messagesa-once-a-year-b-once-in-five-years-c-more-than-50-in-a-dayd-at-least-three-to-four-times-a-week7-what-is-an-archive-on-a-bloga-linksb-feedsc-all-t">12.
+                                            6. How frequently should you post messages?A. once a year.B. once in five years.C. more than 50 in a dayD. at least three to four times a week7. What is an "archive" on a blog?A. linksB. feedsC. all the stuff in a blogD. a collection of all your past posts8. What are you leaving when you read someone's post, then you submit yourown opinion?A. a postB. an opinionC. a commentD. a collaboration9. What is the front page of a blog called?A. titleB. themeC. headerD. index page10. When you login to your blogging account, what is the first screen with allcontrols, tools and functions?A. pluginB. archiveC. timelineD. dashboard​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#recommendation-date-com-lab-pe-6-po-2-pc3-unitsperipherals-pel-physical-dirt-cpu-is-working-monitor-is-working-unit-ventilation-cables-and-connectors-ports-are-functioning-optical-disc-drive-ups-an">13.
+                                            Recommendation Date Com Lab # Pe 6 Po 2 Pc3 Units/Peripherals Pel Physical dirt CPU is working Monitor is working Unit Ventilation Cables and connectors Ports are functioning Optical disc drive UPS and AVR Power source Devices: input &amp; output Table 1 SAMPLE MONITORING PLAN (for PC Hardware ) Com. Lab. # Date: Recommendation Activity Pc1 Po 2 Pc3 Pc4 P05 Anti-virus Empty recycle bin Disk and Application/Software Cleanup Defragment Configure startup Update plugins and basic applications Check file backup plan Table 2 SAMPLE MONITORING PLAN ( for PC Software )​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-this-type-of-machine-does-not-require-squatting-or-bending-to-put-clothes-in-or-to-take-themout-which-is-an-added-convenience-for-some-users-a-drying-cabinetc-front-load-washing-machineb-heat-p">14.
+                                            1. This type of machine does not require squatting or bending to put clothes in or to take themout, which is an added convenience for some users.A. Drying cabinetC. Front load washing machineB. Heat Pump DryerD. Top load washing machine2. It is an electrical machine designed to expedite the drying of Items - usually clothing that areunsultable for traditional clothes dryer.A. Drying cabinetC. Front load washing machineB. Heat Pump DryerD. Top load washing machine3. These are used in the first part of the wash cycle to neutralize the soils in the linen prior to themain washing process.A. AlkalisB. BulldersC. Detergents D. Starch4. These are used to wash the linen, allowing water to penetrate the soll and hold it insuspension before rinsing.A. AlkalisB. BuildersC. Detergents D. Starch5. It is the longest cycle with the most agitation, with a combination of high-speed wash action andhigh-speed spin making it harsher on clothes, but also cleans your clothes very well.A. DelicateB. Permanent Press C. Regular D. Speedy6. It is perfect for synthetic fabrics, get rid of unpleasant smell and perfect for colored items.A. DelicateB. Permanent Press C. Regular D. Speedy7. Which of the following DOES NOT belong to Ironing tools and equipment?A. ClapperB DiddleC Ironing Board D. Steam Iron8. The following are preliminarles on how to Iron a shirt EXCEPT?A. Ensure the Iron has water in it, If not then pour some water and pluginB. Flatten and smooth the shirt on the folding surface with the front of the shin facing down.C. Read the label on your shirt to get to know what type of fabric the shirt is made of.D. Prepare the Iron and make sure the Iron's base is stainless and not dirty at all,9. The correct procedure in folding fitted and flat sheets.A. II, I, III, IVB. I, II, III, IVC. IV. II, II, I D. I, III, II, IVl. With the fitted sheet Inside out, place one hand in each of two adjacent corners.II. Bring your right hand to your left and told the comer on your right hand over the one inyour left, so the corner on top is right side out,III. Next, reach down and pick up the corner that is adjacent to the one that was in your righthand (t will be hanging in front), and fold ll over the other two comers, this third corner willbe inside outIV. Bring the last comer up and fold it over the others so it is right-side out. Lay the sheet ona flat surface with the curved edges toward the center of the fabric to form a square shape.Fold the two outer edges in, so all the elastic is hidden.10. This is the first to Iron In Ironing shin.A. CuttsB. Collar0. Shirts front D. Yoke​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ibu-uus-3-our-weekend-task-from-school-is-to-clean-the-clothes-iron-the-first-thing-to-do-is-to-make-sure-that-the-iron-is-from-the-power-source-since-ours-is-a-stem-type-tron-have-to-fill-it-with">15.
+                                            IBU UUS 3. Our weekend task from school is to clean the clothes iron. The first thing to do is to make sure that the iron is from the power source. Since ours is a stem type tron, have to fill it with in a maximum level and set the in a minimum Plugin the Iron and apply the function. When the light Indicator stops, hold the unit and the water. Wipe the outside part with a cloth and let it cool down.[tex](7.94 {3116}^{204 + 731} [/tex]​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-is-the-bamboo-guitar-of-the-igorots2-coldeliera-music-is-c_____________3-what-is-the-seventh-largest-island-in-the-country-4-what-is-a-boat-shaped-plugin-string-instrument-in-mindoro-5-pala">16.
+                                            1.what is the bamboo guitar of the igorots?2. coldeliera music is c_____________3.what is the seventh largest island in the country? 4.what is a boat shaped plugin string instrument in mindoro? 5.palawan traditional song is called k________. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-will-you-use-in-notepad-if-you-want-place-the-current-date-and-time-on-the-pages-of-your-documentits-not-press-f5-not-that-i-meant-and-not-this-if-your-notepad-shipped-with-textfx-you-can-fi">17.
+                                            Which will you use in notepad if you want place the current date and time on the pages of your document
+ITS NOT PRESS F5 NOT THAT I MEANT AND NOT THIS If your Notepad++ shipped with TextFX, you can find this in TextFX &gt; TextFX Insert &gt; Date &amp; Time - short format, which will insert a string in the exact same format. If you don't see a TextFX menu, install it via the plugin manager and it will appear.
+right= brainiest
+wrong= no brainiest
+I MEANT IT IS IN THE PICTURE IS IT IN HEADER AND FOOTER, IS IT ORIENTATION, IS IT THE SIZE? IS IT THE MARGIN, IS IT THE PREVIEW</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#before-starting-up-your-computer-make-sure-that-all-cables-are-properly-plugin-true-or-false%e2%80%8b">18.
+                                            before starting up your computer make sure that all cables are properly plugin true or false​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-fill-in-the-sentences-below-with-an-appropriate-words-to-complete-the-idea-of-the-sentence-1-before-cleaning-the-clothes-dryer-i-will-the-unit-i-will-clean-the-and-change-it-as-needed">19.
+                                            Directions: Fill-in the sentences below with an appropriate word/s to complete the idea of the sentence. 1. Before cleaning the clothes dryer, I will the unit. I will clean the and change it as needed to avoid drying problems in the future. I will use a soft and a small amount of detergent to wipe away the dirt. I will check the door and hose to remove the build-up of dirt. I should not the dryer more than its drying capacity to prolong the life of this device. 2. In using a stethoscope, the teacher told us to She reminded us not to, first the parts of the thermometer. and the it in water to protect the unit. The_ should be removed for thorough cleaning but we have to return it back together the stethoscope in its safety case holder safely. Moreover, she told us to always when not in use. 3. Our weekend task from school is to clean the clothes iron. The first thing to do is to make from the power source. Since ours is a stem type iron, I have in a maximum level and set the in a minimum. Plugin sure that the iron is to fill it with the iron and apply the and function. When the light indicator stops, hold the unit the water. Wipe the outside part with a cloth and let it cool down. 4. I was assigned to be a washer in our group. I had a problem regarding the food processor and so I decided to approach our teacher. She gave me tips on how to clean it. First, I have to make sure that the unit is Second, Take all the accessories. Fourth, return it back to the box. the parts carefully. Third, wash the all the parts and 5. When cleaning the aneroid type sphygmomanometer, parts must be considered in order to avoid damage. Remove the screw and the inflatable. Use a 70% and the other them back together. Lastly, and an antiseptic pad to sanitize it. In laundering. make sure that the tube port is close and gently wash it with hand.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-read-the-sentence-below-and-identity-from-what-step-it-is-included-1offering-new-content-or-products-on-a-regular-basis-2-the-designer-will-take-your-content-and-distribute-it-throughout-the-si">20.
+                                            A. Read the sentence below and Identity from what step It Is Included.
+1
+Offering new content or products on a regular basis.
+2.
+The designer will take your content and distribute it throughout the site,
+in the appropriate areas.
+FTP program
+used to upload the web site files to your server.
+4.
+Identity what you want to accomplish.
+5.
+Creating of prototype for your web site
+Developing of sitemap and wireframe.
+7. Writing the homepage.
+8.
+Attending to the final details and test of web site.
+9
+It includes include regular site backups, WordPress upgrades,
+additional plugin installation
+Phase where you determine the look and feel of your site.
+10.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#these-are-software-that-adds-functionality-to-a-browsera-pluginsb-uploadingc-filtersd-providing14-select-alhexample-of-search-engine5-points">21.
+                                            These are software that adds functionality to a browser
+A. plugins
+B. uploading
+C. filters
+D. providing
+14) Select alhexample of search engine
+5 points</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#write-the-letter-of-the-menu-in-which-the-options-in-columna-fall-under-note-that-the-answers-in-column-b-could-be-usedthan-once-moreab1-newa-file-2-full-screenb-edit3-add-filesc-view4-go-to">22.
+                                            Write the letter of the menu in which the options in columnA fall under. (Note that the answers in Column B could be usedthan once.)moreAB1. NewA. File 2.Full ScreenB. Edit3. Add FilesC. View4. Go to DeclarationD. Search5. Save asE. Project6. CommentF. Build7. Close allG. Debug8. RunH. Tools9. Step Out10. AboutI. PluginsJ. HelpK. Settings11. Notes12. Replace13. To Do List14. Remove Files15. Errors​psagot po nakahalo po yung pag pipiliis nyu</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="device-plugin-in-computer-were-on-head%e2%80%8b">
+                            1. device plugin in computer were on head​</h2><br />
+                        <p>filipino po ang subject hindi english</p><p></p><p><strong>Answer:</strong></p><p>were on head?...baka headset</p><br />
+                                            <h2 class="ez-toc-section" id="what-plugins-are-used-in-sketchup-to-achieve-a-realistic-look-%e2%80%8b">
+                            2. what plugins are used in sketchUp to achieve a realistic look? ​</h2><br />
+                        <p>SketchUp is a powerful 3D modeling software that allows users to create a wide range of 3D designs, from architectural models to product prototypes. To achieve a realistic look in SketchUp, there are several plugins that can be used. Here are a few examples:</p><p></p><p>1. V-Ray: V-Ray is a popular rendering plugin that can be used to create photorealistic images and animations within SketchUp. It provides advanced lighting tools, materials, and textures that can help users create realistic scenes.</p><p></p><p>2. Enscape: Enscape is another popular rendering plugin that can be used to create realistic visualizations of SketchUp models. It allows users to create real-time walkthroughs, as well as high-quality still images.</p><p></p><p>3. Twilight Render: Twilight Render is a rendering plugin that offers a range of lighting and material options to help users create realistic scenes. It also includes a wide range of pre-set environments and backgrounds that can be used to add depth and realism to a design.</p><p></p><p>4. Podium: Podium is a rendering plugin that is designed to be easy to use, even for beginners. It offers a range of lighting and material options, and includes a library of pre-set materials and textures that can be applied to a design.</p><p></p><p>5. SketchFX: SketchFX is a plugin that can be used to create a range of artistic effects within SketchUp, including watercolor, pencil, and ink. While not specifically designed for photorealistic rendering, it can be a useful tool for creating stylized and artistic visualizations of a design.</p><p></p><p>These are just a few examples of the many plugins available for SketchUp that can help users achieve a realistic look in their designs. Each plugin has its own set of features and capabilities, so it's important to choose the one that best fits your needs and workflow.</p><br />
+                                            <h2 class="ez-toc-section" id="device-plugin-in-computer-wore-in-head-what-is-the-answerreal-answer-sana%e2%80%8b">
+                            3. DEVICE PLUGIN IN COMPUTER WORE IN HEAD WHAT IS THE ANSWER?REAL ANSWER SANA​</h2><br />
+                        <p>Answer:</p><p>Headphones</p><p>Explanation:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="directions-read-each-question-carefully-and-choose-the-letter-of-the-correct-answer-write-theletter-of-the-correct-answer-on-your-answer-sheet-1-this-type-of-machine-does-not-require-squatting-or-b">
+                            4. Directions. Read each question carefully and choose the letter of the correct answer. Write theLETTER of the correct answer on your answer sheet.1. This type of machine does not require squatting or bending to put clothes in or to take themout, which is an added convenience for some users.A. Drying cabinetC. Front load washing machineB Heat Pump DryerD. Top load washing machine2. It is an electrical machine designed to expedite the drying of items usually clothing that areunsullable for traditional clothes dryer.A. Drying cabinetC. Front load washing machineB. Heat Pump DryerD. Top load washing machine3. These are used in the first part of the wash cycle to neutralize the solls in the linen prior to themain washing process.A AlkallsB. Buildersc. Detergents D. StarchThese are used to wash the linen, allowing water to penetrate the soil and hold it insuspension before nnsing.A. AlkalisB. BuildersC. Detergents D. StarchTLE 9/10 - HOUSEKEEPINGQuaner Week 2wiler Dr. Morlan H. AlejandinoToomLeodor: Romediosv.MontebonPage 25. li is the longest cyca with the most agliation, wilh a combination ol high-speed wash action andhigh-speed spin making it harsher on clothes, but also cleans your clothes very wall:A DelicaleB: Permaniant. Presse G Regular D. Speedy6. Mug perlechter syaihete fabrics, gal rid ol unpleauant smell and parled for colored itemsA DelicateB: Permanent PressC. Regular DSpaddy7. Which of the following DOES NOT belong to lroning idols and equipment?!A. ClapperB DiddleCloning Board D Steam lion6. The following are preliminares on how to iron a shiit EXCEPT?A. Ensure the stron has water in, if not then pour some water and pluginB. Flatten and smooth the shin on the folding surface with the front of the shinlating downC. Read the label on your shin to get to know what lype ollabng the shirt is made ol.D. Prepare the iron and make sure the ran'a basa stalness and not dirty at all9. The correct procedure in folding inted and lat sheetsA. III, III, IVBREIV CVT D. 1, II, II, IVWith the fitted sheet inside out place one hand in gach of two adjacent corners.Bring your right hand to your left and told the corner on your night hand over the one inyour left, so the corner on top loght side out,al Next, reach down and pick up the comer that is adjacent to the one that was in your righthand it will be hanging in front), and told over the other two comers, this third comer willbe inside out1. Bring the last comer up and told it over the others so it is night side put. Lay the sheet ona flat surface with the curved edges toward the center of the fabric to form a square shape.Fold the two outer edoen in alle olistic is hidden10. This is the first to iron in Ironing shirtA CultsB. Collarc. Shirt's frontoke​</h2><br />
+                        <p><strong>Answer:</strong></p>1.C.2.D.3.B.4.B.5.A.6.C.7.C.8.D.9.A.10.B.<br />
+                                            <h2 class="ez-toc-section" id="tle-true-or-false-need-lng-po1dextrinization-is-the-process-of-forming-dextrin2-restart-cereals-are-excellent-source-of-tm-sim-wrabel-plugin-in-iron%e2%80%8b">
+                            5. tle TRUE or FALSE need lng po1Dextrinization is the process of forming dextrin2 restart cereals are excellent source of tm sim wrabel plugin in iron​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.true</p><p>2.true</p><p>3.false</p><p>4 false</p><p><strong>Explanation:</strong></p><p>yan lang alam ko</p><p>TRUE FALSE FALSE TRUE TRUE FALSE TRUE FALES FALES TRUE</p><p><strong>Explanation:</strong></p><p>IT HOPE ITS HELP</p><br />
+                                            <h2 class="ez-toc-section" id="audi-notice-that-the-electric-fan-is-not-working-when-plugin-what-should-he-do-reuserecyclerepairrebuild">
+                            6. . Audi notice that the electric fan is not working when plugin. What should he do? *
+Reuse
+Recycle
+Repair
+Rebuild</h2><br />
+                        <p><strong>Answer:</strong></p><p>repair</p><p><strong>Step-by-step explanation:</strong></p><p>HOPE IS HELPS :&gt;</p><br />
+                                            <h2 class="ez-toc-section" id="this-blur-plugins-doesn%e2%80%99t-act-on-all-pixels-it-is-used-to-blur-the-background-so-that-the-foreground-object-will-stand-out-better">
+                            7. This blur plugins doesn’t act on all pixels; it is used to blur the background so that the foreground object will stand out better.</h2><br />
+                        <p><strong>Answer:</strong></p><p>Iris Blur Effect</p><p><strong>Explanation:</strong></p><p>Yan po sagot ko sana makatulong</p><p>Pa brainliest din kung gusto mo</p><br />
+                                            <h2 class="ez-toc-section" id="1-what-are-you-leaving-when-you-read-someones-post-then-you-submit-your-own-opinion-a-a-postb-an-opinionc-a-commentd-a-collaboration2-what-is-the-front-page-of-a-blog-called-a-titleb-themec">
+                            8. 1.What are you leaving when you read someone's post, then you submit your own opinion? A. A postB. An opinionC. A commentD. A Collaboration2.What is the front page of a blog called? A. TitleB. ThemeC. HeaderD. Index page3.When you login to your blogging account, what is the first screen with all controls, tools and functions?A. pluginB. archiveC. timelineD. DashboardNonsense=Report⚠Not Nonsense=Brainliest❤Can you answer my question?btw if you don't know the answer please don't answer thank you! and if you answer correctly i will gonna brainliest you but its okay if what is your opinion just give me the answer i will gonna brainliest you!and stay safe and healthy.​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1</strong><strong>.</strong><strong> </strong><strong>C.</strong><strong> </strong><strong>a </strong><strong>comment</strong></p><p><strong>2</strong><strong>.</strong><strong> </strong><strong>B.</strong><strong> </strong><strong>theme</strong></p><p><strong>3</strong><strong>.</strong><strong> </strong><strong>D.</strong><strong> </strong><strong>dashboard</strong></p><p><strong>Explanation:</strong></p><p>Hope it's help you</p><p></p><p>stay safe</p><br />
+                                            <h2 class="ez-toc-section" id="our-weekend-task-from-school-is-to-clean-the-clothes-iron-the-first-thing-to-do-is-to-make-sure-that-the-iron-is-_________-from-the-power-source-since-ours-is-a-stem-type-iron-i-have-to-fill-it-wit">
+                            9. Our weekend task from school is to clean the clothes iron. The first thing to do is to make sure that the iron is _________ from the power source. Since ours is a stem type iron, I have to fill it with __________in a maximum level and set the __________ in a minimum. Plugin the iron and apply the ___________ function. When the light indicator stops, hold the unit and __________ the water. Wipe the outside part with a clo​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Plugged</p><p>2.Water</p><p>3.Time</p><p>4.Clothes</p><p>5.Stop</p><p><strong>Explanation:</strong></p><p>this is the answer correct me if im wrong</p><br />
+                                            <h2 class="ez-toc-section" id="read-each-question-carefully-and-choose-the-letter-of-the-correct-answer-write-the-1-these-are-used-in-the-first-part-of-the-wash-cycle-to-neutralize-the-soils-in-the-linen-prior-to-the-main-washing">
+                            10. Read each question carefully and choose the letter of the correct answer. Write the 1. These are used in the first part of the wash cycle to neutralize the soils in the linen prior to the main washing process.  A. Alkalis B. Builders C. Detergents D. Starch2. These are used to wash the linen, allowing water to penetrate the soil and hold it in suspension before rinsing.A. Alkalis B. Builders C. Detergents D. Starch3. It is the longest cycle with the most agitation, with a combination of high-speed wash actionand high-speed spin making it harsher on clothes, but also cleans your clothes very well.A. Delicate B. Permanent Press C. Regular D. Speedy4. It is perfect for synthetic fabrics, get rid of unpleasant smell and perfect for colored items.A. Delicate B. Permanent Press C. Regular D. Speedy5. Which of the following DOES NOT belong to ironing tools and equipment?A. Clapper B Diddle C Ironing Board D. Steam Iron6. This type of machine does not require squatting or bending to put clothes in or to take them out, which is an added convenience for some users.A. Drying cabinet C. Front load washing machineB. Heat Pump Dryer D. Top load washing machine7.It is an electrical machine designed to expedite the drying of items - usually clothing - that are unsuitable for traditional clothes dryer.A. Drying cabinet C. Front load washing machineB. Heat Pump Dryer D. Top load washing machine8. The following are preliminaries on how to iron a shirt EXCEPT?A. Ensure the iron has water in it, if not then pour some water and plugin B. Flatten and smooth the shirt on the folding surface with the front of the shirt facing down.C. Read the label on your shirt to get to know what type of fabric the shirt is made of.D. Prepare the iron and make sure the iron’s base is stainless and not dirty at all.9. The correct procedure in folding fitted and flat sheets. A. II, I, III, IV B. I, II, III, IV C. IV, III, II, I D. I, III, II, IVI. With the fitted sheet inside out, place one hand in each of two adjacent corners.II. Bring your right hand to your left and fold the corner on your right hand over the one in your left, so the corner on top is right side out.III. Next, reach down and pick up the corner that is adjacent to the one that was in your right hand (it will be hanging in front), and fold it over the other two corners; this third corner will be inside out.IV. Bring the last corner up and fold it over the others so it is right-side out. Lay the sheet on a flat surface with the curved edges toward the center of the fabric to form a square shape. Fold the two outer edges in, so all the elastic is hidden.10. This is the first to iron in ironing shirt.A. Cuffs B. Collar C. Shirt’s front D. Yoke​</h2><br />
+                        <p><strong>Answer:</strong></p> accc<p><strong>Explanation:</strong></p><p> yan lang po alam ko.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="techniques-make-use-of-a-wooden-wish-to-support-a-plugin-stands-out-of-the-wire-at-the-start-the-process-involves-using-a-stencil-to-apply-in-on-to-another-material-fabric-patches-or-any-material-can">
+                            11. techniques make use of a wooden wish to support a plugin stands out of the wire at the start the process involves using a stencil to apply in on to another material fabric patches or any material can get the image on its surfacepasagot po ng tama​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Prepare electrical supplies, material and tools
+</p><p>LO1:  identify electrical supplies, materials, and tools;
+</p><p>LO2:  request appropriate supplies, materials, and tools for a specific job
+</p><p>LO3:  receive and inspect electrical supplies, materials and tools.  </p><p>
+</p><p>​DEFINITION OF TERMS
+</p><p>Ampere - a unit of measure of electric current
+</p><p>Circuit - the path of electric current from the source to the components and goes back to the source
+</p><p>Kilowatt - a unit of power which is equivalent to 1000w
+</p><p>Conductor - a wire or a cord which provides path for current flow
+</p><p>Resistance - the quality of electric current measured in ohms that resist the flow of current
+</p><p>Hot wire - a wire through which current flows
+</p><p>Insulator – material used to cover electric wires which may be made from plastic, rubber, or asbestos.
+</p><p>Tools - are implements used to modify raw materials for human use
+</p><p>Corrugated plastic conduit (CPC) - commonly known as flexible non-metallic conduit or the “moldflex”
+</p><p>Metallic Conduits- metal raceways that was classified into four; rigid steel conduit (RSC), intermediate metallic conduit or tubing (IMC or IMT), electrical metallic conduit or tubing (EMC or EMT) and the flexible metallic conduit (FMC)
+</p><p>Non-metallic conduits- plastic conduits or raceways designed to be a channel of wire that are classified as; rigid non-metallic conduit or the PVC, the flexible nonmetallic or CPC, and the surface plastic molding
+</p><p> Connectors and Adapters - accessories that are used to connect from boxes to conduits or raceways to the other boxes in the electrical system  </p><p>​
+</p><p>
+</p><p>​LEARNING OUTCOME 1
+</p><p>​
+</p><p>Prepare electrical supplies, materials, and tools ​  </p><p>
+</p><p>
+</p><p>Performance Standards
+</p><p>​Tools and materials are identified as per job requirement.  </p><p>Tools are classified according to its function as per job requirement.
+</p><p> Materials are classified according to its uses on a specific project.
+</p><p>Tools and materials are selected.
+</p><p>
+</p><p>Materials/ Resources
+</p><p>
+</p><p>​1. Utility box                   8. Electrical Wires                                                       15. Switch Plates
+</p><p>2. Connectors                9. Corrugated Plastic Conduit (CPC)               16. Cut-out boxes
+</p><p>3. Male Plug                    10. Receptacles
+</p><p>4. Fuse                                11. Fuse Panel/ Safety switch
+</p><p> 5. Junction Box             12. Square boxes
+</p><p>6. Conduits                      13. PVC conduit
+</p><p>7. Circuit Breaker         14. Switches  </p><p>
+</p><p>Tools
+</p><p>
+</p><p>1. Long Nose Pliers                                  9. Hacksaw
+</p><p>2. Stubby Screw Driver                         10. Diagonal cutting pliers
+</p><p>3. Wire Stripper                                         11. Half-round file
+</p><p>4. Portable Electric Drill                        12. Round file
+</p><p>5. Philips Screw Driver                            13. Spirit level
+</p><p>6. Combination Pliers
+</p><p>7. Hammer
+</p><p>8. Electrician’s Knife  </p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="6-how-frequently-should-you-post-messagesa-once-a-year-b-once-in-five-years-c-more-than-50-in-a-dayd-at-least-three-to-four-times-a-week7-what-is-an-archive-on-a-bloga-linksb-feedsc-all-t">
+                            12. 6. How frequently should you post messages?A. once a year.B. once in five years.C. more than 50 in a dayD. at least three to four times a week7. What is an "archive" on a blog?A. linksB. feedsC. all the stuff in a blogD. a collection of all your past posts8. What are you leaving when you read someone's post, then you submit yourown opinion?A. a postB. an opinionC. a commentD. a collaboration9. What is the front page of a blog called?A. titleB. themeC. headerD. index page10. When you login to your blogging account, what is the first screen with allcontrols, tools and functions?A. pluginB. archiveC. timelineD. dashboard​</h2><br />
+                        <p>6.D 7.A? 8.C 9.D 10.A explanation: none</p><p><strong>Answer:</strong></p><p>6.D</p><p>7.D</p><p>8.C</p><p>9.C</p><p>10.C</p><p></p><p>I think that's the answer </p><p>(hope it helps you)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="recommendation-date-com-lab-pe-6-po-2-pc3-unitsperipherals-pel-physical-dirt-cpu-is-working-monitor-is-working-unit-ventilation-cables-and-connectors-ports-are-functioning-optical-disc-drive-ups-an">
+                            13. Recommendation Date Com Lab # Pe 6 Po 2 Pc3 Units/Peripherals Pel Physical dirt CPU is working Monitor is working Unit Ventilation Cables and connectors Ports are functioning Optical disc drive UPS and AVR Power source Devices: input &amp; output Table 1 SAMPLE MONITORING PLAN (for PC Hardware ) Com. Lab. # Date: Recommendation Activity Pc1 Po 2 Pc3 Pc4 P05 Anti-virus Empty recycle bin Disk and Application/Software Cleanup Defragment Configure startup Update plugins and basic applications Check file backup plan Table 2 SAMPLE MONITORING PLAN ( for PC Software )​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Recommendation Date Com Lab # Pe 6 Po 2 Pc3 Units/Peripherals Pel Physical dirt CPU is working Monitor is working Unit Ventilation Cables and connectors Ports are functioning Optical disc drive UPS and AVR Power source Devices: input &amp; output Table 1 SAMPLE MONITORING PLAN (for PC Hardware ) Com. Lab. # Date: Recommendation Activity Pc1 Po 2 Pc3 Pc4 P05 Anti-virus Empty recycle bin Disk and Application/Software Cleanup Defragment Configure startup Update plugins and basic applications Check file backup plan Table 2 SAMPLE MONITORING PLAN ( for PC Software )</p><p><strong>Explanation:</strong></p><p>CPU is working Monitor is working Unit Ventilation Cables and connectors Ports are functioning Optical disc drive UPS and AVR Power source Devices: input &amp; output Table 1 SAMPLE MONITORING PLAN (for PC Hardware ) Com. Lab. # Date: Recommendation Activity Pc1 Po 2 Pc3 Pc4 P05 Anti-virus Empty recycle bin Disk and Application/Software Cleanup Defragment Configure startup Update plugins and basic applications Check file backup plan Table 2 SAMPLE MONITORING PLAN ( for PC Software )</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>Recommendation Date Com Lab # Pe 6 Po 2 Pc3 Units/Peripherals Pel Physical dirt CPU is working Monitor is working Unit Ventilation Cables and connectors Ports are functioning Optical disc drive UPS and AVR Power source Devices: input &amp; output Table 1 SAMPLE MONITORING PLAN (for PC Hardware ) Com. Lab. # Date: Recommendation Activity Pc1 Po 2 Pc3 Pc4 P05 Anti-virus Empty recycle bin Disk and Application/Software Cleanup Defragment Configure startup Update plugins and basic applications Check file backup plan Table 2 SAMPLE MONITORING PLAN ( for PC Software )</p><p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-this-type-of-machine-does-not-require-squatting-or-bending-to-put-clothes-in-or-to-take-themout-which-is-an-added-convenience-for-some-users-a-drying-cabinetc-front-load-washing-machineb-heat-p">
+                            14. 1. This type of machine does not require squatting or bending to put clothes in or to take themout, which is an added convenience for some users.A. Drying cabinetC. Front load washing machineB. Heat Pump DryerD. Top load washing machine2. It is an electrical machine designed to expedite the drying of Items - usually clothing that areunsultable for traditional clothes dryer.A. Drying cabinetC. Front load washing machineB. Heat Pump DryerD. Top load washing machine3. These are used in the first part of the wash cycle to neutralize the soils in the linen prior to themain washing process.A. AlkalisB. BulldersC. Detergents D. Starch4. These are used to wash the linen, allowing water to penetrate the soll and hold it insuspension before rinsing.A. AlkalisB. BuildersC. Detergents D. Starch5. It is the longest cycle with the most agitation, with a combination of high-speed wash action andhigh-speed spin making it harsher on clothes, but also cleans your clothes very well.A. DelicateB. Permanent Press C. Regular D. Speedy6. It is perfect for synthetic fabrics, get rid of unpleasant smell and perfect for colored items.A. DelicateB. Permanent Press C. Regular D. Speedy7. Which of the following DOES NOT belong to Ironing tools and equipment?A. ClapperB DiddleC Ironing Board D. Steam Iron8. The following are preliminarles on how to Iron a shirt EXCEPT?A. Ensure the Iron has water in it, If not then pour some water and pluginB. Flatten and smooth the shirt on the folding surface with the front of the shin facing down.C. Read the label on your shirt to get to know what type of fabric the shirt is made of.D. Prepare the Iron and make sure the Iron's base is stainless and not dirty at all,9. The correct procedure in folding fitted and flat sheets.A. II, I, III, IVB. I, II, III, IVC. IV. II, II, I D. I, III, II, IVl. With the fitted sheet Inside out, place one hand in each of two adjacent corners.II. Bring your right hand to your left and told the comer on your right hand over the one inyour left, so the corner on top is right side out,III. Next, reach down and pick up the corner that is adjacent to the one that was in your righthand (t will be hanging in front), and fold ll over the other two comers, this third corner willbe inside outIV. Bring the last comer up and fold it over the others so it is right-side out. Lay the sheet ona flat surface with the curved edges toward the center of the fabric to form a square shape.Fold the two outer edges in, so all the elastic is hidden.10. This is the first to Iron In Ironing shin.A. CuttsB. Collar0. Shirts front D. Yoke​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1</strong><strong>.</strong><strong>B</strong></p><p><strong>2.</strong><strong>C</strong></p><p><strong>3</strong><strong>.</strong><strong>A</strong></p><p><strong>4</strong><strong>.</strong><strong>A</strong></p><p><strong>5</strong><strong>.</strong><strong>B</strong></p><p><strong>6</strong><strong>.</strong><strong>A</strong><strong>.</strong></p><p><strong>7</strong><strong>.</strong><strong>C</strong></p><p><strong>8</strong><strong>.</strong><strong>A</strong></p><p><strong>9</strong><strong>.</strong><strong>D</strong></p><p><strong>10</strong><strong>.</strong><strong>D</strong><strong> </strong></p><br />
+                                            <h2 class="ez-toc-section" id="ibu-uus-3-our-weekend-task-from-school-is-to-clean-the-clothes-iron-the-first-thing-to-do-is-to-make-sure-that-the-iron-is-from-the-power-source-since-ours-is-a-stem-type-tron-have-to-fill-it-with">
+                            15. IBU UUS 3. Our weekend task from school is to clean the clothes iron. The first thing to do is to make sure that the iron is from the power source. Since ours is a stem type tron, have to fill it with in a maximum level and set the in a minimum Plugin the Iron and apply the function. When the light Indicator stops, hold the unit and the water. Wipe the outside part with a cloth and let it cool down.[tex](7.94 {3116}^{204 + 731} [/tex]​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Plugged</p><p>2.Water</p><p>3.Time</p><p>4.Clothes</p><p>5.Stop</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-what-is-the-bamboo-guitar-of-the-igorots2-coldeliera-music-is-c_____________3-what-is-the-seventh-largest-island-in-the-country-4-what-is-a-boat-shaped-plugin-string-instrument-in-mindoro-5-pala">
+                            16. 1.what is the bamboo guitar of the igorots?2. coldeliera music is c_____________3.what is the seventh largest island in the country? 4.what is a boat shaped plugin string instrument in mindoro? 5.palawan traditional song is called k________. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1.Tongatong</strong></p><p><strong>2.</strong></p><p><strong>3. largest country are</strong></p><p><strong>      1.Honshu</strong></p><p><strong>      2.Sumatra</strong></p><p>     <strong> 3.Baffin Island</strong></p><p><strong>      4. Madagascar</strong></p><p>      <strong>5.Borneo</strong></p><p><strong>      6.New Guinea</strong></p><p>     <strong> 7.Greenland</strong></p><p><strong>4.Kudlong-The kutiyapi, or kudlong, is a boat-shaped plucked string instrument from the Phillipines. It has frets and is often heavily carved.</strong></p><p><strong>5.Kulial</strong></p><p></p><p><strong>Explanation:</strong></p>i hope its helps you!!<p></p><br />
+                                            <h2 class="ez-toc-section" id="which-will-you-use-in-notepad-if-you-want-place-the-current-date-and-time-on-the-pages-of-your-documentits-not-press-f5-not-that-i-meant-and-not-this-if-your-notepad-shipped-with-textfx-you-can-fi">
+                            17. Which will you use in notepad if you want place the current date and time on the pages of your document
+ITS NOT PRESS F5 NOT THAT I MEANT AND NOT THIS If your Notepad++ shipped with TextFX, you can find this in TextFX &gt; TextFX Insert &gt; Date &amp; Time - short format, which will insert a string in the exact same format. If you don't see a TextFX menu, install it via the plugin manager and it will appear.
+right= brainiest
+wrong= no brainiest
+I MEANT IT IS IN THE PICTURE IS IT IN HEADER AND FOOTER, IS IT ORIENTATION, IS IT THE SIZE? IS IT THE MARGIN, IS IT THE PREVIEW</h2><br />
+                        <p><strong>Answer:</strong></p><p>thanks for the update and for the record I have a few questions</p><br />
+                                            <h2 class="ez-toc-section" id="before-starting-up-your-computer-make-sure-that-all-cables-are-properly-plugin-true-or-false%e2%80%8b">
+                            18. before starting up your computer make sure that all cables are properly plugin true or false​</h2><br />
+                        <p><strong>Answer:</strong></p><p>true</p><p><strong>Explanation:</strong></p><p>kase kung hinde nakasaksak ng maayos ung cables maaari kang maground.</p><p>True</p><p></p><p>Hope it helps! Pa-brainliest po&lt;3</p><br />
+                                            <h2 class="ez-toc-section" id="directions-fill-in-the-sentences-below-with-an-appropriate-words-to-complete-the-idea-of-the-sentence-1-before-cleaning-the-clothes-dryer-i-will-the-unit-i-will-clean-the-and-change-it-as-needed">
+                            19. Directions: Fill-in the sentences below with an appropriate word/s to complete the idea of the sentence. 1. Before cleaning the clothes dryer, I will the unit. I will clean the and change it as needed to avoid drying problems in the future. I will use a soft and a small amount of detergent to wipe away the dirt. I will check the door and hose to remove the build-up of dirt. I should not the dryer more than its drying capacity to prolong the life of this device. 2. In using a stethoscope, the teacher told us to She reminded us not to, first the parts of the thermometer. and the it in water to protect the unit. The_ should be removed for thorough cleaning but we have to return it back together the stethoscope in its safety case holder safely. Moreover, she told us to always when not in use. 3. Our weekend task from school is to clean the clothes iron. The first thing to do is to make from the power source. Since ours is a stem type iron, I have in a maximum level and set the in a minimum. Plugin sure that the iron is to fill it with the iron and apply the and function. When the light indicator stops, hold the unit the water. Wipe the outside part with a cloth and let it cool down. 4. I was assigned to be a washer in our group. I had a problem regarding the food processor and so I decided to approach our teacher. She gave me tips on how to clean it. First, I have to make sure that the unit is Second, Take all the accessories. Fourth, return it back to the box. the parts carefully. Third, wash the all the parts and 5. When cleaning the aneroid type sphygmomanometer, parts must be considered in order to avoid damage. Remove the screw and the inflatable. Use a 70% and the other them back together. Lastly, and an antiseptic pad to sanitize it. In laundering. make sure that the tube port is close and gently wash it with hand.​</h2><br />
+                        <p>cause I have no ideal to the best nieghbour I have a lot nday naa man Siya og bonding2x to my work schedule ok I'll see what country you too mahal KY ni resign daw ka ingon ana gusto nga drive thru near you too  you.</p><br />
+                                            <h2 class="ez-toc-section" id="a-read-the-sentence-below-and-identity-from-what-step-it-is-included-1offering-new-content-or-products-on-a-regular-basis-2-the-designer-will-take-your-content-and-distribute-it-throughout-the-si">
+                            20. A. Read the sentence below and Identity from what step It Is Included.
+1
+Offering new content or products on a regular basis.
+2.
+The designer will take your content and distribute it throughout the site,
+in the appropriate areas.
+FTP program
+used to upload the web site files to your server.
+4.
+Identity what you want to accomplish.
+5.
+Creating of prototype for your web site
+Developing of sitemap and wireframe.
+7. Writing the homepage.
+8.
+Attending to the final details and test of web site.
+9
+It includes include regular site backups, WordPress upgrades,
+additional plugin installation
+Phase where you determine the look and feel of your site.
+10.</h2><br />
+                        <p><strong>Answer:</strong></p><p>1</p><p><strong>Explanation:</strong></p><p>Offering new content or products on a regular basis.</p><br />
+                                            <h2 class="ez-toc-section" id="these-are-software-that-adds-functionality-to-a-browsera-pluginsb-uploadingc-filtersd-providing14-select-alhexample-of-search-engine5-points">
+                            21. These are software that adds functionality to a browser
+A. plugins
+B. uploading
+C. filters
+D. providing
+14) Select alhexample of search engine
+5 points</h2><br />
+                        <p><strong>Answer:</strong></p><p>A. Plugins</p><p><strong>Explanation:</strong></p><p><strong>"uploading" is not a software</strong></p><p><strong>"Filters" is not a software</strong></p><p><strong>"providing" is not a software</strong></p><br />
+                                            <h2 class="ez-toc-section" id="write-the-letter-of-the-menu-in-which-the-options-in-columna-fall-under-note-that-the-answers-in-column-b-could-be-usedthan-once-moreab1-newa-file-2-full-screenb-edit3-add-filesc-view4-go-to">
+                            22. Write the letter of the menu in which the options in columnA fall under. (Note that the answers in Column B could be usedthan once.)moreAB1. NewA. File 2.Full ScreenB. Edit3. Add FilesC. View4. Go to DeclarationD. Search5. Save asE. Project6. CommentF. Build7. Close allG. Debug8. RunH. Tools9. Step Out10. AboutI. PluginsJ. HelpK. Settings11. Notes12. Replace13. To Do List14. Remove Files15. Errors​psagot po nakahalo po yung pag pipiliis nyu</h2><br />
+                        <p><strong>Answer:</strong></p><p>ʕ ꈍᴥꈍʔʕ ꈍᴥꈍʔʕ ꈍᴥꈍʔʕ ꈍᴥꈍʔʕ ꈍᴥꈍʔʕ ꈍᴥꈍʔʕ ꈍᴥꈍʔ(=^･ｪ･^=)(=｀ェ´=)ʕ·ᴥ·ʔʕ ꈍᴥꈍʔ(*￣(ｴ)￣*)ʕ ꈍᴥꈍʔ(*￣(ｴ)￣*)(´(ｪ)｀）ʕ·ᴥ·ʔ(´(ｪ)｀）(*￣(ｴ)￣*)ʕ´•ᴥ•`ʔ(*￣(ｴ)￣*)(・(ｪ)・）(=^･ｪ･^=)(ᵔᴥᵔ)(≧(ｴ)≦ )(ᵔᴥᵔ)(≧(ｴ)≦ )(ᵔᴥᵔ)ʕ´•ᴥ•`ʔ(*￣(ｴ)￣*)(*￣(ｴ)￣*)(*￣(ｴ)￣*)ʕ ꈍᴥꈍʔ(ᵔᴥᵔ)(*￣(ｴ)￣*)(ᵔᴥᵔ)(*￣(ｴ)￣*)(ᵔᴥᵔ)ʕ º ᴥ ºʔ(ᵔᴥᵔ)ʕ º ᴥ ºʔ(ᵔᴥᵔ)ʕ º ᴥ ºʔ(ᵔᴥᵔ)ʕ º ᴥ ºʔ(ᵔᴥᵔ)(✪㉨✪)(ᵔᴥᵔ)(✪㉨✪)ʕ ꈍᴥꈍʔ</p><p><strong>Explanation:</strong></p><p>(ᵔᴥᵔ)(✪㉨✪)(ᵔᴥᵔ)(ᵔᴥᵔ)(ᵔᴥᵔ)(◕ᴥ◕)ʕ ꈍᴥꈍʔʕ ꈍᴥꈍʔʕ º ᴥ ºʔʕ º ᴥ ºʔ</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>filipino</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/discovery-puzzlemaker-crossword.html">Discovery Puzzlemaker Crossword</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/cagayan-de-oro-2019.html">Cagayan De Oro 2019</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/jerome-s-bungalow.html">Jerome s Bungalow</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/gl-monolights-cs-1-6.html">Gl monolights Cs 1 6</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/peza-citizen-s-charter.html">Peza Citizen s Charter</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/requirements-for-professional-driver-s-license-2016.html">Requirements For Professional Driver s License 2016</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/how-does-the-girl-misinterpret-her-father-s-words.html">How Does The Girl Misinterpret Her Father s Words</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/baguio-our-awesome-planet.html">Baguio Our Awesome Planet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-only-necessary-knowledge-is.html">The Only Necessary Knowledge Is</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ano-ang-ibig-sabihin-ng-mahahagilap.html">Ano Ang Ibig Sabihin Ng Mahahagilap</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/iflex2.html">Iflex2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/interested-applicants-for-gpb-clients-must-apply-personally-at-poea.html">Interested Applicants For Gpb Clients Must Apply Personally At Poea</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ecashpay-asia-inc.html">Ecashpay Asia Inc</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/panimula-ng-el-filibusterismo.html">Panimula Ng El Filibusterismo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/bahal-na-tuba-lyrics.html">Bahal Na Tuba Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/deped-module-grade-2.html">Deped Module Grade 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/joy-in-serving-jesus-lyrics.html">Joy In Serving Jesus Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/feo-system-email.html">Feo System Email</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ilang-rehiyon-meron-ang-pilipinas.html">Ilang Rehiyon Meron Ang Pilipinas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/timbercoat.html">Timbercoat</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

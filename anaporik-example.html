@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anaporik Example - QnA</title>
+    <meta name="description" content="Anaporik Example, , , , , , , 0, Solved Disturbance D(S) Controller Plant G(S) Y(S) 260=9720) | Chegg.com, www.chegg.com, 939 x 592, png, , 20, anaporik-example, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anaporik Example - QnA" />
+    <meta property="og:description" content="Anaporik Example, , , , , , , 0, Solved Disturbance D(S) Controller Plant G(S) Y(S) 260=9720) | Chegg.com, www.chegg.com, 939 x 592, png, , 20, anaporik-example, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Anaporik Example - QnA" />
+    <meta name="twitter:description" content="Anaporik Example, , , , , , , 0, Solved Disturbance D(S) Controller Plant G(S) Y(S) 260=9720) | Chegg.com, www.chegg.com, 939 x 592, png, , 20, anaporik-example, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Anaporik Example</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">blakeroderick8901</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Anaporik+Example" alt="Anaporik Example">
+                    </div>
+                    <p></p>
+                    <p>anaporik at kataporik examples</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-at-kataporik-examples">1.
+                                            anaporik at kataporik examples</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-and-kataporik-example">2.
+                                            Anaporik and kataporik example</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#example-anaporikanaphora%e2%80%8b">3.
+                                            example Anaporik/Anaphora​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-meaning-of-anaporik">4.
+                                            what is meaning of anaporik</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#halimbawa-ng-anaporik%e2%80%8b">5.
+                                            halimbawa ng anaporik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-an-example-of-anaporik-and-kataporik%e2%80%8b">6.
+                                            Give an example of anaporik and kataporik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ipahayag-ang-iyong-kaisipan-at-damdamin-tungkol-sa-anaporik-at-kataporikanaporikkataporik%e2%80%8b">7.
+                                            Ipahayag ang iyong kaisipan at damdamin tungkol sa anaporik at kataporik?!ANAPORIK:KATAPORIK:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-halimbawa-pangungusap">8.
+                                            anaporik halimbawa pangungusap</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#meaning-of-anaporikand-kataporik">9.
+                                            Meaning of Anaporik
+And kataporik</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#halimbawa-ng-anaporik">10.
+                                            halimbawa ng anaporik</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-at-kataporik-meaning">11.
+                                            anaporik at kataporik meaning</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bumuo-ng-pangungusap-mula-sa-mga-salita-ayon-sa-hinihinging-gamit-1-anaporik-pangasinan-2-kataporik-kanila-3-anaporik-mga-tao-4-kataporik-ito-5-anaporik-kasamahan-6-kataporik-sila-7-anapori">12.
+                                            Bumuo ng pangungusap mula sa mga salita ayon sa  hinihinging gamit. 1. Anaporik- pangasinan. 2. Kataporik - Kanila 3. Anaporik - mga tao 4.kataporik-ito 5.anaporik-kasamahan 6.kataporik-sila 7.anaporik-mga pulis​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#example-of-anaporik-about-teacher%e2%80%8b">13.
+                                            example of anaporik about teacher​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-tungkol-sa-covid-give-2-examples-%e2%80%8b">14.
+                                            anaporik tungkol sa covid. (give 2 examples) ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-example-of-anaporik-and-kataporik">15.
+                                            Give example of anaporik and kataporik </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-at-kataporik-pahingi-ng-example-sa-bagay-tao-lugar%e2%80%8b">16.
+                                            anaporik at kataporik pahingi ng example sa bagay tao Lugar​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-anaporik-and-kataporik%e2%80%8b">17.
+                                            what is anaporik and kataporik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-at-kataporik-meaning-with-examples%e2%80%8b">18.
+                                            Anaporik at Kataporik meaning with examples​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gumawa-nang-3-pangungusap-ng-anaporik-at-kataporik-kung-saan-ipapakita-ang-anaporik-at-kataporik-salungguhitan-ang-mga-salitang-anaporik-at-kataporik-puweding-gumamit-ng-pangngalan-mula-sa-iyong-mga">19.
+                                            Gumawa nang 3 pangungusap ng anaporik at kataporik kung saan ipapakita ang anaporik at kataporik. Salungguhitan ang mga salitang anaporik at kataporik. Puweding gumamit ng pangngalan mula sa iyong mga kakilala.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-at-kataporik-picture%e2%80%8b">20.
+                                            anaporik at Kataporik picture​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-at-kataporik%e2%80%8b">21.
+                                            anaporik at kataporik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-halimbawa-pangungusap">22.
+                                            anaporik halimbawa pangungusap</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-o-kataporik%e2%80%8b">23.
+                                            Anaporik o kataporik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#meaning-ng-anaporik-at-kataporik-with-examples-po">24.
+                                            Meaning ng Anaporik at Kataporik with Examples po</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-at-kataporik%e2%80%8b">25.
+                                            anaporik at kataporik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pangungusap-anaporik%e2%80%8b">26.
+                                            pangungusap anaporik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#panandang-ng-anaporik-at-kataporik-paki-example-po-at-paki-explain-na-rin-po-%e2%80%8b">27.
+                                            panandang ng anaporik at kataporik.paki example po at paki explain na rin po. :&lt;​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#masayang-pamilya-anaporik%e2%80%8b">28.
+                                             masayang pamilya, anaporik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-me-3-examples-of-anaporik-at-kataporik">29.
+                                            Give me 3 examples of anaporik at kataporik</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#anaporik-at-kataporik-pagsasanay">30.
+                                            anaporik at kataporik pagsasanay</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="anaporik-at-kataporik-examples">
+                            1. anaporik at kataporik examples</h2><br />
+                        ANAPORIK<p>Ang <strong>Anaphora</strong> ay isang <strong>pigura ng pagsasalita kung saan inuulit ang mga salita sa simula ng sunud-sunod na mga sugnay, parirala, o pangungusap.</strong> </p><p></p>HALIMBAWA <p>ang tanyag na pagsasalita na "I Have a Dream" ni Martin Luther King ay naglalaman ng anaphora: <strong>"Kaya't hayaang mag-ring ang kalayaan mula sa mga kamangha-manghang tuktok ng New Hampshire".</strong> </p><p></p>KATAPORIK<p>Ang <strong>Cataphora</strong> ay isang uri ng <strong>anaphora, bagaman ang mga term na anaphora at anaphor</strong> ay minsan ginagamit sa isang <strong>mas mahigpit na kahulugan, na nangangahulugang mga kaso lamang kung saan ang pagkakasunud-sunod ng mga expression</strong> ay ang pabaliktad ng matatagpuan sa cataphora.</p><p></p>HALIMBAWA  <p>ng <strong>cataphora</strong> ay ang sumusunod na pangungusap: <strong>Pagdating niya sa bahay, natulog si John.</strong></p><p></p><strong>_</strong><strong>TTEOKBOKKI123</strong><br />
+                                            <h2 class="ez-toc-section" id="anaporik-and-kataporik-example">
+                            2. Anaporik and kataporik example</h2><br />
+                        Anaporik   ang tawag sa panandang pangalan kapag  ang elementong pinalitan ng panghalip  ay mas naunang  nabanggit sa unahan ng pahayag o panghalip sa hulihan bilang pananda sa pinalitang pangngalan na nabanggit sa unahan. Halimbawa:<br />a. Patuloy na dinarayo ng mga turista ang Sta. Fe sa  Bantayan Island dahil sila’y totoong nagagandahan dito.<br /><br />Kataporik naman kung ang elementong pinalitan ay nabanggit pagkatapos ng panghalip na ipinalit.<br />Halimbawa:<br />a. Patuloy nilang dinarayo ang Sta. Fe sa  Bantayan Island dahil ang mga turista’y totoong nagagandahan dito.<br />
+                                            <h2 class="ez-toc-section" id="example-anaporikanaphora%e2%80%8b">
+                            3. example Anaporik/Anaphora​</h2><br />
+                        Anapora<p></p>Ang anapora ay isang pares ng pangungusap o isang pangungusap na kung saan ang mga tinutukoy ay nasa unahan, samantalang ang larawan sa tinutukoy ay nasa hulihan. Ito ay sumalungit sa katapora, na nakabaligtad ang tinutukoy at ang larawan nito.<p></p>Halimbawa<p></p><p> &gt; Si Jose Rizal ay ang pambansang bayani ng mga Pilipino. Siya ay matapang sa paghahayag ng mga maling gawain sa kapwa niyang Pilipino.</p><p></p><p>Si “Jose Rizal” ang tinutukoy at ang nasa hulihan na “matapang sa paghahayag ng mga maling gawain sa kapwa niyang Pilipino ay ang larawan kay Jose Rizal</p><p></p>Iba pang Mga Halimbawa<p></p><p>&gt; Sina Chloe at Cassandra ang mga batang nangunguna sa klase. Sila ay mahilig mag-aral.</p><p></p><p>Sina Chloe at Cassandra ang mga batang nangunguna sa klase. Sila ay mahilig mag-aral.&gt; Ang kwago at paniki ay pawang mga hayop sa gabi subalit magkaiba sila sa anyo at katangian.</p><p></p><p>Sina Chloe at Cassandra ang mga batang nangunguna sa klase. Sila ay mahilig mag-aral.&gt; Ang kwago at paniki ay pawang mga hayop sa gabi subalit magkaiba sila sa anyo at katangian.&gt; Ang kultura ay nagbibigay sa atin ng pagkakakilanlan. Ito ay maituturing na kayamanan ng isang bansa.</p><p><strong>Answer:</strong></p><p></p><p>ANAPHORA</p><p></p><p></p><p>ang paggamit ng salitang tumutukoy o pagpapalit ng salitang ginamit nang mas maaga sa isang pangungusap, upang maiwasan ang pag-uulit, tulad ng gawin sa gusto ko ito at ganoon din sila.</p><p></p><p></p><p></p><p></p><p></p><p>Keep safe!</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-meaning-of-anaporik">
+                            4. what is meaning of anaporik</h2><br />
+                         of or relating to anaphora &lt;an anaphoric usage&gt;; especially :  being a word or phrase that takes its reference from another word or phrase and especially from a preceding word or phrase — compare cataphoric<br />
+                                            <h2 class="ez-toc-section" id="halimbawa-ng-anaporik%e2%80%8b">
+                            5. halimbawa ng anaporik​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>HALIMBAWANG PAHAYAG SA ANYONG ANAPORIK
+</strong></p><p><strong>May agarang bisita si Magda kaya hindi siya magkamayaw sa paghahanda.
+</strong></p><p><strong>Nakalimutang iligpit ni Senyang ang kanyang mga labahin kahapon.
+</strong></p><p><strong>Nahuli sa klase sina Bert at Paul kanina kaya napagsabihan sila ng guro.
+</strong></p><p><strong>Paborito ko ang bag na bigay ni Ate kaya lagi ko itong ginagamit araw-araw.
+</strong></p><p><strong>Nangungulila ako sa aking ina. Matagal ko na siyang hindi nakikita.
+</strong></p><p><strong>LIMANG HALIMBAWANG PAHAYAG SA ANYONG KATAPORIK
+</strong></p><p><strong>Wala ka na ba talagang pakialam sa kanya? Siya pa rin ang iyong ina.
+</strong></p><p><strong>Mapalad ka sapagkat ikaw ay anak ng isang mayamang angkan.
+</strong></p><p><strong>Dapat lang na alagaan natin itong mabuti dahil wala ng ibang mundo ang maaari nating tirhan.
+</strong></p><p><strong>Iwanan mo na siya sapagkat isa siyang lalakeng walang paninindigan.
+</strong></p><p><strong>Ingatan natin sila dahil ayon sa ating pambansang bayani, ang kabataan ang pag-asa ng bayan.
+</strong></p><p><strong>ANAPORIK AT KATAPORIK
+</strong></p><p><strong>ANAPORIK
+</strong></p><p><strong>Ang isang pahayag ay nasa anyong anaporik kung ang panghalip ay lumalabas sa hulihan bilang pananda sa pangngalan sa unahan. Ibig sabihin, kung unang nabanggit ang pangalan bago ang panghalip nito , ito ay nasa anyong anaporik.
+</strong></p><p><strong>Halimbawa:
+</strong></p><p><strong>
+</strong></p><p><strong>Natatakot akong magpunta ng Maynila sapagkat hindi ko kabisado ang lugar na ito.
+</strong></p><p><strong>
+</strong></p><p><strong>Dalawa sa mga salita sa pahayag na ito ang tumutukoy sa iisang lugar – Maynila at ito. Dahil nauuna ang pangngalang Maynila sa panghalip na tumutukoy rito na walang iba kundi ito, ang pahayag ay nasa anyong anaporik.
+</strong></p><p><strong>
+</strong></p><p><strong>KATAPORIK
+</strong></p><p><strong>Ang isang pahayag ay nasa anyong kataporik kung ang panghalip ay lumalabas sa unahan bilang pananda sa pangngalang binanggit sa hulihan. Ibig sabihin kung ang panghalip ay mas naunang nabanggit kaysa pangngalan, ang pahayag ay nasa anyong kataporik.
+</strong></p><p><strong>Halimbawa:
+</strong></p><p><strong>
+</strong></p><p><strong>Sila ay dapat nating igalang at alagaang mabuti sapagkat sila ay ating mga magulang.
+</strong></p><p><strong>
+</strong></p><p><strong>Sa pahayag na ito, dalawa sa mga salita ang tumutukoy sa iisang bagay lamang – magulang at sila. Nauuna sa pahayag ang panghalip na “sila”bago pa binanggit ang magulang kaya ang pahayag na ito ay nasa anyong kataporik.
+</strong></p><p><strong>
+</strong></p><p><strong>Para sa karagdagang kaalman, buksan ang:
+</strong></p><p><strong>
+</strong></p><p><strong>brainly.ph/question/270975
+</strong></p><p><strong>
+</strong></p><p><strong>brainly.ph/question/502810
+</strong></p><p><strong>
+</strong></p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-an-example-of-anaporik-and-kataporik%e2%80%8b">
+                            6. Give an example of anaporik and kataporik​</h2><br />
+                        <p><strong>Answer:</strong></p><strong>Example </strong><strong>of </strong><strong>anaporik</strong><p></p><p><strong>1</strong><strong>.</strong><strong> </strong><strong>Nangungulila ako sa aking ina. Matagal ko na siyang hindi nakikita. </strong></p><p></p><p><strong>2</strong><strong>.</strong><strong> </strong><strong>Nahuli sa klase sina Bert at Paul kanina kaya napagsabihan sila ng guro. </strong></p><p></p><strong>Example </strong><strong>of </strong><strong>kataporik</strong><p></p><p><strong>1</strong><strong>.</strong><strong> </strong><strong>Wala ka na ba talagang pakialam sa kanya? Siya pa rin ang iyong ina. </strong></p><p></p><p><strong>2</strong><strong>.</strong><strong> </strong><strong>Ingatan natin sila dahil ayon sa ating pambansang bayani, ang kabataan ang pag-asa ng bayan. </strong></p><p></p><p><strong>Explanation:</strong></p><p></p>AnaporikAng isang pahayag ay nasa anyong anaporik kung ang panghalip ay lumalabas sa hulihan bilang pananda sa pangngalan sa unahan. Ibig sabihin, kung unang nabanggit ang pangalan bago ang panghalip nito , ito ay nasa anyong anaporik. <p></p>KataporikAng isang pahayag ay nasa anyong kataporik kung ang panghalip ay lumalabas sa unahan bilang pananda sa pangngalang binanggit sa hulihan. Ibig sabihin kung ang panghalip ay mas naunang nabanggit kaysa pangngalan, ang pahayag ay nasa anyong kataporik. Hope it helps!<p></p><strong>Answer:</strong>LIMANG HALIMBAWANG PAHAYAG SA ANYONG ANAPORIK<p></p><p></p><p>1. May agarang bisita si Magda kaya hindi siya magkamayaw sa paghahanda.</p><p></p><p>2. Nakalimutang iligpit ni Senyang ang kanyang mga labahin kahapon.</p><p></p><p>3. Nahuli sa klase sina Bert at Paul kanina kaya napagsabihan sila ng guro.</p><p></p><p>4. Paborito ko ang bag na bigay ni Ate kaya lagi ko itong ginagamit araw-araw.</p><p></p><p>5. Nangungulila ako sa aking ina. Matagal ko na siyang hindi nakikita.</p><p></p>LIMANG HALIMBAWANG PAHAYAG SA ANYONG KATAPORIK<p></p><p></p><p>1. Wala ka na ba talagang pakialam sa kanya? Siya pa rin ang iyong ina.</p><p></p><p>2. Mapalad ka sapagkat ikaw ay anak ng isang mayamang angkan.</p><p></p><p>3. Dapat lang na alagaan natin itong mabuti dahil wala ng ibang mundo ang maaari nating tirhan.</p><p></p><p>4. Iwanan mo na siya sapagkat isa siyang lalakeng walang paninindigan.</p><p></p><p>5. Ingatan natin sila dahil ayon sa ating pambansang bayani, ang kabataan ang pag-asa ng bayan.</p><p></p>ANAPORIK AT KATAPORIK<p></p>ANAPORIK<p></p><p>Ang isang pahayag ay nasa anyong anaporik kung ang panghalip ay lumalabas sa hulihan bilang pananda sa pangngalan sa unahan. Ibig sabihin, kung unang nabanggit ang pangalan bago ang panghalip nito, ito ay nasa anyong anaporik.</p><p></p>Halimbawa:<p></p><p>Natatakot akong magpunta ng Maynila sapagkat hindi ko kabisado ang lugar na ito.</p><p></p><p>Dalawa sa mga salita sa pahayag na ito ang tumutukoy sa iisang lugar – Maynila at ito. Dahil nauuna ang pangngalang Maynila sa panghalip na tumutukoy rito na walang iba kundi ito, ang pahayag ay nasa anyong anaporik.</p><p></p><p>KATAPORIK</p><p></p><p>Ang isang pahayag ay nasa anyong kataporik kung ang panghalip ay lumalabas sa unahan bilang pananda sa pangngalang binanggit sa hulihan. Ibig sabihin kung ang panghalip ay mas naunang nabanggit kaysa pangngalan, ang pahayag ay nasa anyong kataporik.</p><p></p>Halimbawa:<p></p><p>Sila ay dapat nating igalang at alagaang mabuti sapagkat sila ay ating mga magulang.</p><p></p><p>Sa pahayag na ito, dalawa sa mga salita ang tumutukoy sa iisang bagay lamang - magulang at sila. Nauuna sa pahayag ang panghalip na “sila”bago pa binanggit ang magulang kaya ang pahayag na ito ay nasa anyong kataporik.</p><p></p><p><strong>Explanation:</strong></p>&gt;Hope it helps&gt;Keep Safe&gt;Carry on learning<br />
+                                            <h2 class="ez-toc-section" id="ipahayag-ang-iyong-kaisipan-at-damdamin-tungkol-sa-anaporik-at-kataporikanaporikkataporik%e2%80%8b">
+                            7. Ipahayag ang iyong kaisipan at damdamin tungkol sa anaporik at kataporik?!ANAPORIK:KATAPORIK:​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>ang anapora ito ay panghalip na ginagamitan sa hulihan bilang pananda sa pinalitang pangalan sa unahan </p><p></p><p></p><p></p><p></p><p>ang katapora naman ay panghalip na ginagamit sa unahan bilang pananda sa pinalitang pangngalan sa hulihan</p><br />
+                                            <h2 class="ez-toc-section" id="anaporik-halimbawa-pangungusap">
+                            8. anaporik halimbawa pangungusap</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>A</strong><strong>ɴ</strong><strong>ᴀ</strong><strong>ᴘ</strong><strong>ᴏ</strong><strong>ʀ</strong><strong>ᴀ</strong><strong>/</strong><strong> </strong><strong>A</strong><strong>ɴ</strong><strong>ᴏ</strong><strong>ᴘ</strong><strong>ᴏ</strong><strong>ʀ</strong><strong>ɪ</strong><strong>ᴋ</strong><strong> </strong><strong>-</strong><strong> </strong>Iᴛᴏ ᴀʏ ᴘᴀɴɢʜᴀʟɪᴘ ɴᴀ ɢɪɴᴀɢᴀᴍɪᴛ sᴀ ʜᴜʟɪʜᴀɴ ʙɪʟᴀɴɢ ᴘᴀɴᴀɴᴅᴀ sᴀ ᴘɪɴᴀʟɪᴛᴀɴɢ ᴘᴀɴɢɴɢᴀʟᴀɴ sᴀ ᴜɴᴀʜᴀɴ</p><p></p><p>Hᴀʟɪᴍʙᴀᴡᴀ:</p><p></p><p>Mᴀsᴀ ɪs Lɪᴛᴏ. Lᴀɢɪsɪʏᴀɴɢ ᴍᴀʏ ᴋᴀʟᴀʀᴏ ᴀᴛ ʟᴀɢɪɴɢ ᴍᴀsᴀʏᴀ</p><p></p><p><strong>Explanation:</strong></p><p></p><p>Nᴀsᴀ ᴍᴏᴅᴜʟᴇ ᴋᴏ ᴘᴏ ʏᴀɴ</p><p></p><p>#CᴀʀʀʏOɴLᴇᴀʀɴɪɴɢ</p><p></p><p>Vɪsɪᴛ ᴛʜɪs ʟɪɴᴋ:</p><p>https://brainly.ph/question/553986</p><br />
+                                            <h2 class="ez-toc-section" id="meaning-of-anaporikand-kataporik">
+                            9. Meaning of Anaporik
+And kataporik</h2><br />
+                        <p>Anaporik-sa anaporik Ang iyong pinaguusapan ay nasa unahan o samadaling salita ay sulyap na pabalik</p><p>Example:</p><p>         Ang ating mga magulang ay dapat nating galangin dahil sila Ang nagpalaki sa atin</p><p>"Ang ating mga magulang"ayon Ang reperensiya dahil it ay nangaling sa unahan Kaya it tinawag na anaporik Ana for una.</p><p>Kataporik-sa kataporik Ang pinaguusapan naman ay nasa hulihan o sa madaling salita sulyap na pasulong dahil NASA hulihan ito</p><p>Example:</p><p>           Sila Ang iginagalang ko dahil sila Ang nagalaga sa akin Mula pagkabata at sila ay ang aking mga magulang.</p><p>"Ang aking mga magulang"ayon Ang reperensiya dito dahil siya lang naman Ang pwedeng maging reperensiya o pinaguusapan dito naging kataporik siya dahil nakikita mo siya sa hulihan ng paksa.</p><br />
+                                            <h2 class="ez-toc-section" id="halimbawa-ng-anaporik">
+                            10. halimbawa ng anaporik</h2><br />
+                        Si Miriam Defensor Santiago ay tumutulong sa mga matatanda. Ang senadora ay may malasakit sa matatanda.<br />
+                                            <h2 class="ez-toc-section" id="anaporik-at-kataporik-meaning">
+                            11. anaporik at kataporik meaning</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p></p><p>Ang <strong>kataporik o katapora</strong> ay ang panghalip na ginagamit sa unahan bilang pananda sa pinalitang pangalan sa hulihan samantalang ang <strong>anaporik o anapora</strong> ay ang panghalip na ginagamit sa hulihan bilang pananda sa pinalitang pangalan sa unahan. Ginagamit ang katapora at anapora upang hindi na paulit-ulit na banggitin ng nagsasalita o ng manunulat ang isang pangngalan. Layunin ng katapora at anapora na maiwasan ang nakakasawang pagbanggit ng tinutukoy na pangngalan sa isang talata. Samakatuwid, ang anapora at katapora ay pawang mga panghalip na sumusunod o sinusundan ang pangngalang tinutukoy sa magkaibang paraan at puwesto. Sa ordinaryo nating pakikipagpanayam, nagagamit natin ang anapora at katapora nang hindi sinasadya.</p><br />
+                                            <h2 class="ez-toc-section" id="bumuo-ng-pangungusap-mula-sa-mga-salita-ayon-sa-hinihinging-gamit-1-anaporik-pangasinan-2-kataporik-kanila-3-anaporik-mga-tao-4-kataporik-ito-5-anaporik-kasamahan-6-kataporik-sila-7-anapori">
+                            12. Bumuo ng pangungusap mula sa mga salita ayon sa  hinihinging gamit. 1. Anaporik- pangasinan. 2. Kataporik - Kanila 3. Anaporik - mga tao 4.kataporik-ito 5.anaporik-kasamahan 6.kataporik-sila 7.anaporik-mga pulis​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.	Sa aking pagbisita sa Pangasinan, natuklasan ko ang kahulugan ng salitang "anaporik".</p><p>2.	Kanila ang nasa posisyon ng "kataporik" sa proyektong ito.</p><p>3.	Ang "anaporik" ay binubuo ng mga tao na may iba't ibang karanasan sa buhay.</p><p>4.	Ito ang "kataporik" na ginagamit sa kasalukuyang usapan.</p><p>5.	Ang mga kasamahan ko sa trabaho ay ang mga "anaporik" na nakatulong sa akin sa aking proyekto.</p><p>6.	Sila ang tinutukoy kong "kataporik" na dapat nating tularan.</p><p>7.	Dahil sa kanilang pagsisikap, mas ligtas na ang komunidad natin mula sa mga krimen na naisugod ng "anaporik" na grupo.</p><p></p><p></p><p><strong>Answer:</strong></p><p>1.Sa Pangasinan, ang salitang "anaporik" ay ginagamit upang tumukoy sa mga tao. Halimbawa: "Anaporik dagiti nainom iti bar?" (Sino ang mga uminom sa bar?)</p><p></p><p>2.Ang salitang "kataporik" sa Kanila ay ginagamit upang tumukoy sa kanila. Halimbawa: "Kataporik dagiti agtutubo iti daya" (Ito ay para sa kanila na nagtatanim sa bukid.)</p><p></p><p>3.Sa Pangasinan, ang salitang "anaporik" ay ginagamit upang tumukoy sa mga tao. Halimbawa: "Anaporik ti nagsasao kadagiti tao ditoy lugar mi?" (Sino ang nagsasalita sa mga tao sa lugar namin?)</p><p></p><p>4.Ang salitang "kataporik" na "ito" ay ginagamit upang magpakilala o magtukoy sa isang bagay. Halimbawa: "Kataporik daytoy a libro." (Ito ay para sa libro.)</p><p></p><p>5.Sa Pangasinan, ang salitang "anaporik" ay ginagamit upang tumukoy sa mga kasamahan. Halimbawa: "Anaporik dagiti kasapulan tayo iti trabaho?" (Sino ang mga kasamahan natin sa trabaho?)</p><p></p><p>6.Ang salitang "kataporik" na "sila" ay ginagamit upang tumukoy sa mga taong hindi kasama sa pakikipag-usap. Halimbawa: "Kataporik dagiti naglaklaka iti damag." (Sila ay naglalakad sa gabi.)</p><p></p><p>7.Sa Pangasinan, ang salitang "anaporik" ay ginagamit upang tumukoy sa mga pulis. Halimbawa: "Anaporik dagiti pulis iti nabiit nga lugar?" (Sino ang mga pulis sa nasabing lugar?)</p><p><strong>Brainliest  is Appreciated</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="example-of-anaporik-about-teacher%e2%80%8b">
+                            13. example of anaporik about teacher​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Anarobik po answer dyan</p><br />
+                                            <h2 class="ez-toc-section" id="anaporik-tungkol-sa-covid-give-2-examples-%e2%80%8b">
+                            14. anaporik tungkol sa covid. (give 2 examples) ​</h2><br />
+                        <p>Answer:</p><p></p><p>Explanation:</p><p>Ang pamahalaan ay gumagawa ng mga paraan upang malampasan ang covid-19.Sinikap nila na gumawa ng mga protocols upang maiwasan ang pagdami nito. </p><br />
+                                            <h2 class="ez-toc-section" id="give-example-of-anaporik-and-kataporik">
+                            15. Give example of anaporik and kataporik </h2><br />
+                        <p>Anaporik </p><p>Ang bata ay masaya dahil ibinili siya ng bagong laruan. </p><p>Kataporik</p><p>Siya ay mabait pero minsan makulit. Si Pepe ang aking matalik na kaibigan. </p><br />
+                                            <h2 class="ez-toc-section" id="anaporik-at-kataporik-pahingi-ng-example-sa-bagay-tao-lugar%e2%80%8b">
+                            16. anaporik at kataporik pahingi ng example sa bagay tao Lugar​</h2><br />
+                        <p>Anaporik Si Juliana ay pumunta sa lawa upang Siya ay maligo </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-anaporik-and-kataporik%e2%80%8b">
+                            17. what is anaporik and kataporik​</h2><br />
+                        <p><strong>Answer:</strong></p><p>asan po Yung picture Sana po na screen shot</p><p><strong>Answer:</strong></p><p>Ang Anaporik - ay ang pagtukoy sa isang salita o parirala na ginagamit sa hulihan ng pangungusap.Ang salita o pariralang pamalit ay maaaring ginagamit bilang panghalip o pangngalan.</p><p></p><p>Halimbawa: </p><p>Itinuro ng guro ang aralin niya sa mga estudyante. </p><p></p><p>Ang Kataporik - ay paggamit ng isang salita o parirala kadalasan ang panghalip na binabanggit ay nasa unahan. </p><p></p><p>Halimbawa:</p><p>Ito ang sapatos na gusto ko. </p><p></p><p><strong>A</strong><strong> </strong><strong>s</strong><strong>p</strong><strong>e</strong><strong>c</strong><strong>i</strong><strong>a</strong><strong>l</strong><strong> </strong><strong>c</strong><strong>r</strong><strong>e</strong><strong>d</strong><strong>i</strong><strong>t</strong><strong>s</strong><strong> </strong><strong>t</strong><strong>o</strong><strong> </strong><strong>c</strong><strong>o</strong><strong>u</strong><strong>r</strong><strong>s</strong><strong>e</strong><strong>h</strong><strong>e</strong><strong>r</strong><strong>o</strong><strong> </strong><strong>:</strong><strong>)</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="anaporik-at-kataporik-meaning-with-examples%e2%80%8b">
+                            18. Anaporik at Kataporik meaning with examples​</h2><br />
+                        <p><strong>Answer:</strong></p><p>[tex] \: \: \: \: \: \: [/tex]</p><p><strong>Explanation:</strong></p><strong>Ano </strong><strong>ang </strong><strong>anaporik?</strong><p><strong>ang </strong><strong>anaporik</strong><strong> </strong><strong>ay </strong><strong>isang </strong><strong>pagtukoy </strong><strong>sa </strong><strong>isang </strong><strong>salita </strong><strong>o </strong><strong>parirala </strong><strong>ginagamit </strong><strong>sa </strong><strong>hulihan </strong><strong>Ng </strong><strong>pangungusap</strong><strong>.</strong></p><strong>Ano </strong><strong>ang </strong><strong>kataporik?</strong><p><strong>Ang </strong><strong>kataporik </strong><strong>o </strong><strong>sulyap </strong><strong>na </strong><strong>pasulong </strong><strong>ay </strong><strong>ang </strong><strong>reprensya </strong><strong>na </strong><strong>binanggit </strong><strong>sa </strong><strong>dakong </strong><strong>hulihan.</strong></p><p></p><p></p><strong>Mga </strong><strong>halimbawa</strong><strong> </strong><strong>Ng </strong><strong>anaporik.</strong><p></p><p><strong>1</strong><strong>.</strong><strong> </strong><strong>Karamihan </strong><strong>sa </strong><strong>mga </strong><strong>tao </strong><strong>ay </strong><strong>ikinakabit </strong><strong>Ang </strong><strong>kultura</strong><strong>Ng </strong><strong>pranses </strong><strong>sa </strong><strong>Paris</strong><strong>,</strong><strong> </strong><strong>ito </strong><strong>ang </strong><strong>sentro </strong><strong>Ng </strong><strong>Moda,</strong><strong>pagluluto </strong><strong>o </strong><strong>sining</strong><strong> </strong><strong>at </strong><strong>artitektur</strong><strong>a</strong><strong>.</strong></p><p></p><p></p><p></p><p></p><strong>Mga </strong><strong>halimbawa</strong><strong> </strong><strong>Ng </strong><strong>kataporik</strong><strong>:</strong><p></p><p></p><p></p><p><strong>1</strong><strong>.</strong><strong> </strong><strong>Ano </strong><strong>ang </strong><strong>ma</strong><strong>w</strong><strong>awala </strong><strong>saakin </strong><strong>kung </strong><strong>pintasan </strong><strong>man </strong><strong>Nila </strong><strong>ako?</strong></p><p></p><p></p><p></p><p></p><strong>Sana </strong><strong>po</strong><strong> makatulong</strong><p> </p><p>ang anaporik o sulyap pabalik ang reperensiya kung binanggit na sa unahan ang salita</p><p></p><p>Halimbawa :</p><p></p><p>ang mga matatanda sa pamilya ay dapat nating pahalagahan. Utang natin sa ating magulabg, lolo at lola ang ating buhay at kinabukasan. Sila ang kumalinga sa atin noong bata pa tayo. Suklian natin ang kabutihan nila sa atin.</p><p></p><p> </p><p>Samantalang ang Kataporik o sulyap pasulong ang reperensya sa dakonf hulihan na nagdudulot ng kasabikan o interes sa pahayag.</p><p></p><p>Halimbawa : </p><p></p><p>Sila ay aking iginagalang, sila ang nagtaguyod at nagpaaral sa akin, sila ang laging nariyan nung ako'y bata pa. Sila ang mga magulang ko na aking iniidolo.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="gumawa-nang-3-pangungusap-ng-anaporik-at-kataporik-kung-saan-ipapakita-ang-anaporik-at-kataporik-salungguhitan-ang-mga-salitang-anaporik-at-kataporik-puweding-gumamit-ng-pangngalan-mula-sa-iyong-mga">
+                            19. Gumawa nang 3 pangungusap ng anaporik at kataporik kung saan ipapakita ang anaporik at kataporik. Salungguhitan ang mga salitang anaporik at kataporik. Puweding gumamit ng pangngalan mula sa iyong mga kakilala.​</h2><br />
+                        <p><strong>Answer:</strong></p>1.Si ANA ay isang mahusay na doktor.Kaya siya ay ipinapagmalaki ng lahat.2.Si JENIFFER ay isang mabuting bata.Kaya mahal na mahal siya ng kanyang mga magulang.3.Siya ay isang bayani na nagligtas sa lahat ng mamamayan noong nananakop ang mga kastila.Siya ay si Doctor Jose Rizal.<p>4.</p><p>5.</p><p></p><p><strong>Explanation:</strong></p><p> Sorry hindi ko na nasagutan yung 4-5.</p><br />
+                                            <h2 class="ez-toc-section" id="anaporik-at-kataporik-picture%e2%80%8b">
+                            20. anaporik at Kataporik picture​</h2><br />
+                        <p><strong>Answer:</strong></p><p>nasaan po yung picture? </p><br />
+                                            <h2 class="ez-toc-section" id="anaporik-at-kataporik%e2%80%8b">
+                            21. anaporik at kataporik​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Anaporik</p><p><strong>Explanation:</strong></p><p>I hope help us..</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="anaporik-halimbawa-pangungusap">
+                            22. anaporik halimbawa pangungusap</h2><br />
+                        <p>Answer:</p><p>In the picture below</p><p>Explanation:</p><p>Stan SB19</p><br />
+                                            <h2 class="ez-toc-section" id="anaporik-o-kataporik%e2%80%8b">
+                            23. Anaporik o kataporik​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Anoporik</p><p>2.kataporik</p><p>3.Anoporik</p><p>4.Anoporik</p><p>5.kataporik</p><p>6.Anoporik</p><p>7.kataporik</p><p>8.Anoporik</p><p>9.Anoporik</p><p>10.kataporik</p><p><strong>Explanation:</strong></p><p>Carry on Learning :)</p><br />
+                                            <h2 class="ez-toc-section" id="meaning-ng-anaporik-at-kataporik-with-examples-po">
+                            24. Meaning ng Anaporik at Kataporik with Examples po</h2><br />
+                        Answer And Example:<p>Ang kataporik o katapora ay ang panghalip na ginagamit sa unahan bilang pananda sa pinalitang pangalan sa hulihan samantalang ang anaporik o anapora ay ang panghalip na ginagamit sa hulihan bilang pananda sa pinalitang pangalan sa unahan. Ginagamit ang katapora at anapora upang hindi na paulit-ulit na banggitin ng nagsasalita o ng manunulat ang isang pangngalan. Layunin ng katapora at anapora na maiwasan ang nakakasawang pagbanggit ng tinutukoy na pangngalan sa isang talata. Samakatuwid, ang anapora at katapora ay pawang mga panghalip na sumusunod o sinusundan ang pangngalang tinutukoy sa magkaibang paraan at puwesto. Sa ordinaryo nating pakikipagpanayam, nagagamit natin ang anapora at katapora nang hindi sinasadya.</p><p></p>Pa brainliest po at follow thanks;)<br />
+                                            <h2 class="ez-toc-section" id="anaporik-at-kataporik%e2%80%8b">
+                            25. anaporik at kataporik​</h2><br />
+                        <p><strong>Explanation:</strong></p><p><strong>#</strong><strong> </strong><strong>Sana</strong><strong> po</strong><strong> makatulong</strong></p><p><strong>#</strong><strong> </strong><strong>Follo</strong><strong>w</strong><strong> and</strong><strong> brainliests</strong><strong> ty</strong></p><p><strong>Answer:</strong></p><p>Anaporik: Ang tawag kung pangngalan ang ginagamit sa unahan ng pangungusap at nasa hulihan ang panghalip. </p><p></p><p>Kataporik: Ang tawag kung ang nasa unahan ng pangungusap ay panghalip at sa bandang hulihan ay pangngalan. </p><p><strong>Explanation:</strong></p><p>Sana makatulong</p><br />
+                                            <h2 class="ez-toc-section" id="pangungusap-anaporik%e2%80%8b">
+                            26. pangungusap anaporik​</h2><br />
+                        Limang Halimbawa ng Pangungusap na Anaporik1.May agarang bisita si Magda kaya hindi siya magkamayaw sa paghahanda.                                                                           2.Nakalimutang iligpit ni Senyang ang kanyang mga labahin kahapon.3.Nahuli sa klase sina Bert at Paul kanina kaya napagsabihan sila ng guro.
+4.Paborito ko ang bag na bigay ni Ate kaya lagi ko itong ginagamit araw-araw.5.Nangungulila ako sa aking ina. Matagal ko na siyang hindi nakikita.<p>hope it helps</p><p>pa brainliest</p>
+<br />
+                                            <h2 class="ez-toc-section" id="panandang-ng-anaporik-at-kataporik-paki-example-po-at-paki-explain-na-rin-po-%e2%80%8b">
+                            27. panandang ng anaporik at kataporik.paki example po at paki explain na rin po. :&lt;​</h2><br />
+                        <p><strong>Answer:</strong></p><p>ang katapori.   ay ISA SA dalawa at tatlo SA apat.  naging Lima. </p><p><strong>Answer:</strong></p><p>Ang kataporik o katapora ay ang panghalip na ginagamit sa unahan bilang pananda sa pinalitang pangalan sa hulihan samantalang ang anaporik o anapora ay ang panghalip na ginagamit sa hulihan bilang pananda sa pinalitang pangalan sa unahan. Ginagamit ang katapora at anapora upang hindi na paulit-ulit na banggitin ng nagsasalita o ng manunulat ang isang pangngalan. Layunin ng katapora at anapora na maiwasan ang nakakasawang pagbanggit ng tinutukoy na pangngalan sa isang talata. Samakatuwid, ang anapora at katapora ay pawang mga panghalip na sumusunod o sinusundan ang pangngalang tinutukoy sa magkaibang paraan at puwesto. Sa ordinaryo nating pakikipagpanayam, nagagamit natin ang anapora at katapora nang hindi sinasadya.</p><p>Halimbawa ng pangungusap na may katapora ay “ Ito ang aking payong.”  at ang halimbawa naman ng pangungusap na may anapora ay “ Ang payong ko ay pula. Ito ang lagi kong ginagamit araw-araw.” Paano nga ba nagiging katapora at anapora ang mga panghalip dito?  </p><p>PALIWANAG: " Ito ang aking payong".</p><p>Ang panghalip natin ay ito. ang ito ay tumutukoy sa payong. dahil nauuna ang panghalip na ito sa pangngalan na payong, ito ay isang katapora.</p><p>“ Ang payong ko ay pula. Ito ang lagi kong ginagamit araw-araw.”</p><p>Ang panghalip ay ito na tumutukoy sa payong. Sa pahayag na ito, ang panghalip na tumutukoy sa payong ay nasa hulihan, kaya ito ay isang anapora.</p><p></p><p>IBA PANG HALIMBAWA NG ANAPORA AT KATAPORA</p><p></p><p>Si Gil ang aking minamahal. Siya lamang ang aking mamahalin habambuhay.</p><p></p><p>Ang paghalip na siya ay tumutukoy kay Gil. Ang salitang Gil ay nasa unahan samantalang ang panghalip na tumutukoy sa kanya ay nasa hulihan. Ito ay halimbawa ng anapora.</p><p>    2. Dito na kami lumaki at nagkamulat sa bayan ng San Agustin.</p><p>Ang panghalip ay dito na tumutukoy sa San Agustin. Dahil nauuna ang panghalip sa tinutukoy na pangngalan, ibig sabihin ito ay katapora.  </p><p>Upang mapadali ang pagtukoy sa anapora at katapora, tandaan lamang ang mga sumusunod.</p><p></p><p>Ang anapora at katapora ay mga panghalip (alam na natin kung ano ang panghalip)</p><p></p><p>Ang katapora ay nasa unahan ng tinutukoy</p><p></p><p>Ang anapora ay nasa hulihan ng tinutukoy</p><p><strong>Explanation:</strong></p><p>hope it help :)</p><br />
+                                            <h2 class="ez-toc-section" id="masayang-pamilya-anaporik%e2%80%8b">
+                            28.  masayang pamilya, anaporik​</h2><br />
+                        <p><strong>Answer:</strong></p><p>ano Pong tanong dyan wala po namn</p><br />
+                                            <h2 class="ez-toc-section" id="give-me-3-examples-of-anaporik-at-kataporik">
+                            29. Give me 3 examples of anaporik at kataporik</h2><br />
+                        <p><strong>Answer:</strong></p><p>Anaphoric and cataphoric references are types of pronoun references used to refer back or forward to nouns or phrases in a text.</p><p></p><p>Here are 3 examples of anaphoric references and 3 examples of cataphoric references:</p><p></p><p>Anaphoric References:</p><p></p><p>John went to the store, and he bought some milk. (The pronoun "he" refers back to "John".)</p><p>The car was parked outside, and its windows were fogged up. (The pronoun "its" refers back to "the car".)</p><p>Sarah studied hard for her test, so she got an A. (The pronoun "she" refers back to "Sarah".)</p><p>Cataphoric References:</p><p></p><p>If you want to be a doctor, you need to study hard. This requires dedication and effort. (The pronoun "this" refers forward to the upcoming explanation of what it takes to become a doctor.)</p><p>She walked to the door, opened it, and what she saw was surprising. (The pronoun "what" refers forward to the upcoming explanation of what the woman saw.)</p><p>The chef is known for his special recipe. It is a secret that he guards closely. (The pronoun "it" refers forward to the upcoming explanation </p><br />
+                                            <h2 class="ez-toc-section" id="anaporik-at-kataporik-pagsasanay">
+                            30. anaporik at kataporik pagsasanay</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>click the image</p><p><strong>Explanation:</strong></p><p></p><p><strong>#</strong><strong>Car</strong><strong>r</strong><strong>yOnLearning</strong></p><p><strong>#</strong><strong>MarkAsBrainliest</strong></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/lryg8S_CFEA?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>filipino</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/lack-ofeducation.html">Lack OfEducation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/extemporaneous-speech-about-early-pregnancy.html">Extemporaneous Speech About Early Pregnancy</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/seconds-away-harlan-coben.html">Seconds Away Harlan Coben</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/how-to-prevent-premarital.html">How To Prevent Premarital</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/lucky-for-you-that-s-what-i-like-lyrics.html">Lucky For You That s What I Like Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/peza-citizen-s-charter.html">Peza Citizen s Charter</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/shakespeare-s-sister-virginia-woolf-summary.html">Shakespeare s Sister Virginia Woolf Summary</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/valentine-s-stories.html">Valentine s Stories</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/he-s-been-faithful-sandi-patty.html">He s Been Faithful Sandi Patty</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/nylander-s-test.html">Nylander s Test</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/bakit-tumitilaok-ang-manok-kwento.html">Bakit Tumitilaok Ang Manok Kwento</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/benedictine-monastery-in-bukidnon.html">Benedictine Monastery In Bukidnon</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/pangunahing-tulong-na-naidulot-sa-ekonomiya-ng-pilipinas-ng-apec.html">Pangunahing Tulong Na Naidulot Sa Ekonomiya Ng Pilipinas Ng Apec</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/5-halimbawa-ng-kasabihan-brainly.html">5 Halimbawa Ng Kasabihan Brainly</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/c-program-for-atm-system.html">C Program For Atm System</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/jose-rizal-in-london.html">Jose Rizal In London</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/bmcart-international-recruitment-placement-services-inc.html">Bmcart International Recruitment Placement Services Inc</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/alulod-sa-bubong.html">Alulod Sa Bubong</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/example-of-liquidation-report.html">Example Of Liquidation Report</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/ipaliwanag-ang-pagkakaiba-ng-kamangmangang-madaraig-at-kamangmangang-di-madaraig.html">Ipaliwanag Ang Pagkakaiba Ng Kamangmangang Madaraig At Kamangmangang Di Madaraig</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

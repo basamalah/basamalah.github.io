@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mariadb Arch Wiki - QnA</title>
+    <meta name="description" content="Mariadb Arch Wiki, , , , , , , 0, About MariaDB - MariaDB.org, mariadb.org, 960 x 540, png, , 20, mariadb-arch-wiki, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mariadb Arch Wiki - QnA" />
+    <meta property="og:description" content="Mariadb Arch Wiki, , , , , , , 0, About MariaDB - MariaDB.org, mariadb.org, 960 x 540, png, , 20, mariadb-arch-wiki, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mariadb Arch Wiki - QnA" />
+    <meta name="twitter:description" content="Mariadb Arch Wiki, , , , , , , 0, About MariaDB - MariaDB.org, mariadb.org, 960 x 540, png, , 20, mariadb-arch-wiki, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://basamalah.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://basamalah.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://basamalah.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://basamalah.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://basamalah.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://basamalah.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://basamalah.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Mariadb Arch Wiki</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">mudjilonhabiba</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Mariadb+Arch+Wiki" alt="Mariadb Arch Wiki">
+                    </div>
+                    <p></p>
+                    <p>A. Write TRUE if the statement is true. Otherwise, write FALSE.1. phpMyAdmin is a front-end tool to your MariaDB database.2. With phpMyAdmin, it is easier to add, edit, delete, and display recordsfrom the MariaDB database since I can use the mouse to click tabs andbuttons that perform the operations.3. Landline and cellphone should be given an INT datatype since they are8numbers.i4. If I want MariaDB to handle the numbering of my field, then myfieldshould have the Autoincrement propertyenabled.see the5. To display all records in the table, I should click the Structure tab.​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-write-true-if-the-statement-is-true-otherwise-write-false-1-phpmyadmin-is-a-front-end-tool-to-your-mariadb-database-2-with-phpmyadmin-it-is-easier-to-add-edit-delete-and-display-recordsfrom">1.
+                                            A. Write TRUE if the statement is true. Otherwise, write FALSE.1. phpMyAdmin is a front-end tool to your MariaDB database.2. With phpMyAdmin, it is easier to add, edit, delete, and display recordsfrom the MariaDB database since I can use the mouse to click tabs andbuttons that perform the operations.3. Landline and cellphone should be given an INT datatype since they are8numbers.i4. If I want MariaDB to handle the numbering of my field, then myfieldshould have the Autoincrement propertyenabled.see the5. To display all records in the table, I should click the Structure tab.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-roof-in-the-form-of-an-arch-or-a-series-of-arches%e2%80%8b">2.
+                                            a roof in the form of an arch or a series of arches​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-roof-in-the-form-of-an-arch-or-a-series-of-arches%e2%80%8b">3.
+                                            a roof in the form of an arch or a series of arches​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#_____-are-apps-that-are-directly-installed-in-a-computer-or-a-device-select-one-a-web-applications-b-native-applications-c-web-1-0-d-wiki">4.
+                                            _____ are apps that are directly installed in a computer or a device Select one: a. Web applications b. Native applications c. Web 1.0 d. Wiki</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#parabolic-arches-in-the-philippines">5.
+                                            parabolic arches in the philippines</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-does-the-blood-in-the-pulmocutaneous-arch-differ-from-that-in-the-higher-two-aortic-arches">6.
+                                            How does the blood in the pulmocutaneous arch differ from that in the higher two aortic arches</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#an-arch-over-an-entrance-is-semi-circle-with-an-opening-that-is-5-feet-wide-write-an-equation-that-models-the-arch">7.
+                                            An arch over an entrance is semi-circle with an opening that is 5 feet wide write an equation that models the arch</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#when-continental-plates-move-apart-the-plates-arches-upward-what-causes-the-plates-ti-arched%e2%80%8b">8.
+                                            when continental plates move apart the plates arches upward. what causes the plates ti arched?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-gateway-arch-a-plane-is-flying-within-the-sight-of-the-gateway-arch-in-st-louis-missouri-at-an-elevation-of-35000ft-the-pilot-would-like-to-estimate-her-distance-from-the-gateway-arch-she-finds-t">9.
+                                            a gateway arch A plane is flying within the sight of the gateway arch in St. Louis Missouri at an elevation of 35000ft. the pilot would like to estimate her distance from the gateway arch. she finds the angle of depression to a part on the ground below the arch is 22 degree. (a) what is the distance between the plane and the arch. (b). what is the distance a point on the ground directed below the plane and the arch​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-apps-in-your-smart-phone-are-examples-of-a-native-applications-b-web-applications-c-web-1-0-d-wiki-select-one">10.
+                                            The apps in your smart phone are examples of a. Native applications b. Web applications c. Web 1.0 d. Wiki select one</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#_____-are-programs-that-are-directly-installed-in-a-computer-or-device-select-one-a-web-applications-b-wiki-c-social-media-d-native-applications">11.
+                                            _____ are programs that are directly installed in a computer or device Select one: a. Web applications b. Wiki c. Social media d. Native applications</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pointed-arch-and-vaulting">12.
+                                            Pointed arch and vaulting</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-meaning-of-arch%e2%80%8b">13.
+                                            what is the meaning of arch​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#_____-is-practically-an-internet-powered-telephone-service-select-one-a-wiki-b-email-c-online-chat-d-voip">14.
+                                            _____ is practically an Internet-powered telephone service. Select one: a. Wiki b. Email c. Online Chat{ d. VoIP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#decorated-bamboo-arch%e2%80%8b">15.
+                                            decorated bamboo arch​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#decorated-bamboo-arch">16.
+                                            decorated bamboo arch</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-is-not-an-example-of-a-digital-sourcea-wikisb-newspaperc-blogsd-web-pages">17.
+                                            Which of the following is not an example of a digital source?
+a. wikis
+b. newspaper
+c. blogs
+d. web pages  </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-other-name-given-to-forumsselect-onea-wikisb-chat-roomsc-message-boardsd-shared-calendar">18.
+                                            What is the other name given to forums?
+Select one:
+a. Wikis
+b. Chat rooms
+c. Message boards
+d. Shared Calendar</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-meaning-of-arch%e2%80%8b">19.
+                                            what is the meaning of arch​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-arch-of-a-bridge-is-a-semi-ellipse-with-the-horizontal-major-axis-the-span-is-30-ft-and-the-top-of-the-arch-is-10-ft-above-the-major-axis-the-roadway-is-horizontal-and-2-ft-above-the-top-of-the">20.
+                                            The arch of a bridge is a semi-ellipse with the horizontal major axis. The span is 30 ft, and the top of the arch is 10 ft above the major axis, the roadway is horizontal and 2 ft above the top of the arch . Find the vertical distance from the roadway to the arch at 5-foot intervals along the roadway. What is the standard equation of the ellipse that models the arch of the bridge​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#_____-allows-people-to-make-voice-calls-through-the-internet-a-voipb-online-chatc-videoconferencingd-wiki">21.
+                                            _____ allows people to make voice calls through the Internet.
+a. VoIP
+b. Online Chat
+c. Videoconferencing
+d. Wiki</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#asap-precal3-a-parabolic-arch-has-a-height-of-16m-and-a-width-of-28m-at-the-base-if-the-vertex-of-the-parabola-is-at-the-top-of-the-arch-how-wide-is-the-arch-at-the-point-11m-above-its-base">22.
+                                            ASAP PRECAL3. A parabolic arch has a height of 16m and a width of 28m at the base. If the vertex of the parabola is at the top of the arch, how wide is the arch at the point 11m above its base?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-_____-page-is-about-a-single-topic-and-can-be-edited-by-anyone-with-the-right-credentials-select-one-a-home-b-web-3-0-c-wiki-d-cloud">23.
+                                            A _____ page is about a single topic and can be edited by anyone with the right credentials Select one: a. Home b. Web 3.0 c. Wiki d. Cloud</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#online-forums-are-also-called-_____-select-one-a-wikis-b-message-boards-c-shared-calendar-d-chat-rooms">24.
+                                            Online forums are also called _____ Select one: a. Wikis b. Message boards c. Shared Calendar d. Chat rooms</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#an-arch-over-an-entrance-is-semicircular-with-an-opening-that-is-5-feet-wide-write-an-equation-that-models-that-arch">25.
+                                            An arch over an entrance is semicircular with an opening that is 5 feet wide. Write an equation that models that arch.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#online-forums-are-also-called-_____-select-one-a-wikis-b-chat-rooms-c-message-boards-d-shared-calendar">26.
+                                            Online forums are also called _____ Select one: a. Wikis b. Chat rooms c. Message boards d. Shared Calendar</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#asap-precal-a-parabolic-arch-has-a-height-of-16-m-and-a-width-of-28-m-and-the-base-if-the-vertex-of-the-parabola-is-at-the-top-of-the-arch-how-wide-is-the-arch-at-the-point-11-m-above-its-base">27.
+                                            ASAP PRECAL a parabolic arch has a height of 16 m and a width of 28 m and the base if the vertex of the parabola is at the top of the arch how wide is the arch at the point 11 m above its base​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#myanmar-arched-harpp%e2%80%8b">28.
+                                            Myanmar arched Harpp​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-famous-parabolic-arches-with-the-name-who-build-it-and-what-is-the-names-of-that-arches%e2%80%8b">29.
+                                            3 Famous parabolic arches with the name who build it and what is the names of that arches​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#designs-and-archs-are%e2%80%8b">30.
+                                            designs and archs are?​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="a-write-true-if-the-statement-is-true-otherwise-write-false-1-phpmyadmin-is-a-front-end-tool-to-your-mariadb-database-2-with-phpmyadmin-it-is-easier-to-add-edit-delete-and-display-recordsfrom">
+                            1. A. Write TRUE if the statement is true. Otherwise, write FALSE.1. phpMyAdmin is a front-end tool to your MariaDB database.2. With phpMyAdmin, it is easier to add, edit, delete, and display recordsfrom the MariaDB database since I can use the mouse to click tabs andbuttons that perform the operations.3. Landline and cellphone should be given an INT datatype since they are8numbers.i4. If I want MariaDB to handle the numbering of my field, then myfieldshould have the Autoincrement propertyenabled.see the5. To display all records in the table, I should click the Structure tab.​</h2><br />
+                        <p><strong>Answer:</strong></p>falsetruetruefalsetruefalsefalsetruefalsetrue<p><strong>Explanation:</strong></p>i think follow please free to correct if wrong.babuhh<br />
+                                            <h2 class="ez-toc-section" id="a-roof-in-the-form-of-an-arch-or-a-series-of-arches%e2%80%8b">
+                            2. a roof in the form of an arch or a series of arches​</h2><br />
+                        <p><strong>Answer:</strong></p><p>asan PO Yung tanong  </p><p><strong>Explanation:</strong></p><p>wala pong tanong</p><br />
+                                            <h2 class="ez-toc-section" id="a-roof-in-the-form-of-an-arch-or-a-series-of-arches%e2%80%8b">
+                            3. a roof in the form of an arch or a series of arches​</h2><br />
+                        <p><strong>Answer:</strong></p><strong>Vault</strong><p></p><p></p><strong>What </strong><strong>is </strong><strong>Vault?</strong>A vault is a roof in the for of an arch or a series of arches.<p></p><p></p><p></p><p><strong>Note:</strong></p><p>In case Po na may Mali Ako paki-correct nalang Po, Salamat Po and Godbless!☺️❤️</p><br />
+                                            <h2 class="ez-toc-section" id="_____-are-apps-that-are-directly-installed-in-a-computer-or-a-device-select-one-a-web-applications-b-native-applications-c-web-1-0-d-wiki">
+                            4. _____ are apps that are directly installed in a computer or a device Select one: a. Web applications b. Native applications c. Web 1.0 d. Wiki</h2><br />
+                        I think b.  native application<br />
+                                            <h2 class="ez-toc-section" id="parabolic-arches-in-the-philippines">
+                            5. parabolic arches in the philippines</h2><br />
+                        <p>1. Main Building – University of Santo Tomas
+</p><br /><p>
+</p><p>2. Quezon Hall – University of the Philippines Diliman
+</p><br /><p>3. Nicanor Reyes Hall – Far Eastern University Complex
+</p><br /><p>
+</p><p>4. Philippine International Convention Center
+</p><br /><p>
+</p><p>5. National Theater – Cultural Center of the Philippines Complex
+</p><br /><p>6. Tanghalang Mariang Makiling – National Arts Center
+</p><br /><p>
+</p><p>7. San Miguel Corporation Building
+</p><br /><p>8. Pearl Farm Beach Resort
+</p><br /><p>9. Philam Life Building – Manila
+</p><br /><p>
+</p><p>10. The Mind Museum
+</p><br /><p>
+</p><p>11. Zuellig Building
+</p><br /><p>12. G.T. International Tower
+</p><p> </p><p>13. Mall of Asia Arena
+</p><br /><p>
+</p><br /><p>14. SM Aura Premier
+</p><br /><p>
+</p><p>15. Pacific Plaza Towers
+</p><br /><p>16. Proscenium
+</p><br /><br />
+                                            <h2 class="ez-toc-section" id="how-does-the-blood-in-the-pulmocutaneous-arch-differ-from-that-in-the-higher-two-aortic-arches">
+                            6. How does the blood in the pulmocutaneous arch differ from that in the higher two aortic arches</h2><br />
+                        <p><strong>Answer:</strong></p><p>The skin and lungs receive nearly pure blood from the right atrium through pulmocutaneous arteries. From the skin and lungs, fresh oxygen can be picked up. The blood that passes through the aortic arches is very mixed up, but still has a lot of oxygen in it.</p><br />
+                                            <h2 class="ez-toc-section" id="an-arch-over-an-entrance-is-semi-circle-with-an-opening-that-is-5-feet-wide-write-an-equation-that-models-the-arch">
+                            7. An arch over an entrance is semi-circle with an opening that is 5 feet wide write an equation that models the arch</h2><br />
+                        <p><strong>Answer:</strong></p>If the opening is 5 feet wide, I assume you mean from the center point of the straight edge to the top of the arch. Thus the radius of the arch is 5 feet. Since it is on top, I assume the arch points upward and so the equation is y = √(25-x2)
+<p>
+</p>This equation can be found from the equation of a circle (x-h)2+(y-k)2=r2. The point (h,k) is the center of the circle (here we defined the center to be (0,0)) and r=5 so r2=25. Thus x2+y2=25. Then you solve for y but only use the positive answer since we're talking about the top semicircle.<p></p><br />
+                                            <h2 class="ez-toc-section" id="when-continental-plates-move-apart-the-plates-arches-upward-what-causes-the-plates-ti-arched%e2%80%8b">
+                            8. when continental plates move apart the plates arches upward. what causes the plates ti arched?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>When two continental plates diverge, a valleylike rift develops. This rift is a dropped zone where the plates are pulling apart. As the crust widens and thins, valleys form in and around the area, as do volcanoes, which may become increasingly active.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-gateway-arch-a-plane-is-flying-within-the-sight-of-the-gateway-arch-in-st-louis-missouri-at-an-elevation-of-35000ft-the-pilot-would-like-to-estimate-her-distance-from-the-gateway-arch-she-finds-t">
+                            9. a gateway arch A plane is flying within the sight of the gateway arch in St. Louis Missouri at an elevation of 35000ft. the pilot would like to estimate her distance from the gateway arch. she finds the angle of depression to a part on the ground below the arch is 22 degree. (a) what is the distance between the plane and the arch. (b). what is the distance a point on the ground directed below the plane and the arch​</h2><br />
+                        <p><strong>Answer:</strong></p><p>THE ANSWER IS A. </p><p><strong>Step-by-step explanation:</strong></p><p>HOPE IT HELPS :P</p><br />
+                                            <h2 class="ez-toc-section" id="the-apps-in-your-smart-phone-are-examples-of-a-native-applications-b-web-applications-c-web-1-0-d-wiki-select-one">
+                            10. The apps in your smart phone are examples of a. Native applications b. Web applications c. Web 1.0 d. Wiki select one</h2><br />
+                        It has to say that the answer is (a) Native applications because they are designed for use on a particular platform or device.<br />
+                                            <h2 class="ez-toc-section" id="_____-are-programs-that-are-directly-installed-in-a-computer-or-device-select-one-a-web-applications-b-wiki-c-social-media-d-native-applications">
+                            11. _____ are programs that are directly installed in a computer or device Select one: a. Web applications b. Wiki c. Social media d. Native applications</h2><br />
+                        <p>I think is it web apps...</p><br />
+                                            <h2 class="ez-toc-section" id="pointed-arch-and-vaulting">
+                            12. Pointed arch and vaulting</h2><br />
+                        <p>ßæßæßæßæßæganda ßæaloNzo</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-meaning-of-arch%e2%80%8b">
+                            13. what is the meaning of arch​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>Arch</strong><strong> </strong><strong>in</strong><strong> </strong><strong>person</strong><strong> </strong><strong>is</strong><strong> </strong><strong>any of various parts or structures of the body having a curved or archlike outline, such as the transverse portion of the aorta (arch of the aorta) or the raised bony vault formed by the tarsal and metatarsal bones (arch of the foot)</strong></p><p><strong>Explanation:</strong></p><p><strong>Arch</strong><strong> </strong><strong>in</strong><strong> </strong><strong>noun</strong><strong> </strong><strong>is</strong><strong> </strong><strong>a curved symmetrical structure spanning an opening and typically supporting the weight of a bridge, roof, or wall above it.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="_____-is-practically-an-internet-powered-telephone-service-select-one-a-wiki-b-email-c-online-chat-d-voip">
+                            14. _____ is practically an Internet-powered telephone service. Select one: a. Wiki b. Email c. Online Chat{ d. VoIP</h2><br />
+                        c. online chat because of it you send a message to someone<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="decorated-bamboo-arch%e2%80%8b">
+                            15. decorated bamboo arch​</h2><br />
+                        <p><strong>Answer:</strong></p><p>“Singkaban,” Filipino word for decorated bamboo arch, is used as a welcome signage of a town, city or village in the country. It is widely used as decoration during town fiestas in Bulacan. ... “The bamboo, like the Filipino, will stand up against the wind. It is stronger than steel and harder than rock.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="decorated-bamboo-arch">
+                            16. decorated bamboo arch</h2><br />
+                        The answer is in the image <br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-is-not-an-example-of-a-digital-sourcea-wikisb-newspaperc-blogsd-web-pages">
+                            17. Which of the following is not an example of a digital source?
+a. wikis
+b. newspaper
+c. blogs
+d. web pages  </h2><br />
+                        Answer: B. Newspapers<br />.<br />Wikis, blogs, and web are examples of digital sources. Newspaper is not a digital source because it is printed.<br />
+                                            <h2 class="ez-toc-section" id="what-is-the-other-name-given-to-forumsselect-onea-wikisb-chat-roomsc-message-boardsd-shared-calendar">
+                            18. What is the other name given to forums?
+Select one:
+a. Wikis
+b. Chat rooms
+c. Message boards
+d. Shared Calendar</h2><br />
+                        <p><strong>Answer:</strong></p><p>c.Message boards</p><p></p><p></p><p>because it is an idea that someone tries to communicate to people, or a piece of information or a request that you send someone or leave for them.</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-meaning-of-arch%e2%80%8b">
+                            19. what is the meaning of arch​</h2><br />
+                        <p><strong>Answer:</strong></p><p>a curved symmetrical structure spanning an opening and typically supporting the weight of a bridge, roof, or wall above it.</p><p><strong>Explanation:</strong></p><p>#SANA MAKA TULONG</p><br />
+                                            <h2 class="ez-toc-section" id="the-arch-of-a-bridge-is-a-semi-ellipse-with-the-horizontal-major-axis-the-span-is-30-ft-and-the-top-of-the-arch-is-10-ft-above-the-major-axis-the-roadway-is-horizontal-and-2-ft-above-the-top-of-the">
+                            20. The arch of a bridge is a semi-ellipse with the horizontal major axis. The span is 30 ft, and the top of the arch is 10 ft above the major axis, the roadway is horizontal and 2 ft above the top of the arch . Find the vertical distance from the roadway to the arch at 5-foot intervals along the roadway. What is the standard equation of the ellipse that models the arch of the bridge​</h2><br />
+                        <p><strong>Answer:</strong></p><p>pa brainliest po hehe sorry</p><br />
+                                            <h2 class="ez-toc-section" id="_____-allows-people-to-make-voice-calls-through-the-internet-a-voipb-online-chatc-videoconferencingd-wiki">
+                            21. _____ allows people to make voice calls through the Internet.
+a. VoIP
+b. Online Chat
+c. Videoconferencing
+d. Wiki</h2><br />
+                        <p><strong>Letter A</strong></p><p><strong>VoIP </strong>or <strong>Voice Over IP </strong>is the one that allows people to make voice calls through the internet. It is the transmission of voice and other contents like multimedia (videos and pictures) over IP or internet protocol networks. Some VoIP allows people to call others using the same technology (VoIP) while others allow people to call someone who is using a telephone number, whether it is mobile, long distance or even long distance number. </p><p>VoIP serves as a converter in the network. In order for the information to be transmitted, VoIP changes the data into digital data. The use of another device is needed to bring back the information to its standard form (e.i., voice which is an analog data).</p><p>For other references, you may also visit the following:</p><p>https://brainly.ph/question/971895</p><p>https://brainly.ph/question/1789801</p><p>https://brainly.ph/question/956267</p><br />
+                                            <h2 class="ez-toc-section" id="asap-precal3-a-parabolic-arch-has-a-height-of-16m-and-a-width-of-28m-at-the-base-if-the-vertex-of-the-parabola-is-at-the-top-of-the-arch-how-wide-is-the-arch-at-the-point-11m-above-its-base">
+                            22. ASAP PRECAL3. A parabolic arch has a height of 16m and a width of 28m at the base. If the vertex of the parabola is at the top of the arch, how wide is the arch at the point 11m above its base?​</h2><br />
+                        Problem:A parabolic arch has a height of 16m and a width of 28m at the base. If the vertex of the parabola is at the top of the arch, how wide is the arch at the point 11m above its base?<p>​</p>Solution:<p>x² = -4ay</p><p>(x, y)</p><p>(14, -16)</p><p>14² = -4a(-16)</p><p>196 = 64a</p><p>196/64 = a</p><p>a = 3.0625</p><p></p><p>x² = -4ay</p><p>x² = -4(3.0625)y</p><p>x² = -12.25y</p><p></p><p>x² = -12.25(-5)</p><p>x² = 61.25</p><p>x = √61.25</p><p>x = 7.826 m</p><p></p><p>Width of arch at the pt 11m above the base:</p><p>W = 7.826(2)</p><p>W = 15.652 m</p><p></p>#CarryOnLearning<br />
+                                            <h2 class="ez-toc-section" id="a-_____-page-is-about-a-single-topic-and-can-be-edited-by-anyone-with-the-right-credentials-select-one-a-home-b-web-3-0-c-wiki-d-cloud">
+                            23. A _____ page is about a single topic and can be edited by anyone with the right credentials Select one: a. Home b. Web 3.0 c. Wiki d. Cloud</h2><br />
+                        <p><strong>Answer:</strong></p><p>A <strong>wiki </strong>is a type of website that is collaboratively generated from multiple users. It is a knowledge base website that allows it users to do collaborative editing and updating of its content and structure, per topic. There is no single author for a <strong>Wiki </strong>page or website.</p><p><strong>Explanation:</strong></p><p>The term "<strong>wiki</strong>" came from a local Hawaiian phrase, "wiki wiki," which means "super fast."  </p><p>
+</p>How does Wiki works
+<p>A <strong>wiki </strong>is usually run using a <strong>wiki </strong>software, otherwise known as the <strong>wiki </strong>engine. A <strong>wiki </strong>engine is a type of content management system in that the content is produced without any defined owner or leader, and <strong>wikis </strong>have little intrinsic structure, allowing structure to emerge according to the needs of the users.
+</p><p>
+</p>Types of Wiki Engines
+Bug Tracking Systems
+Open Source
+Proprietary
+<p>
+</p>Example of a Wiki website
+<p>One best example of a large <strong>wiki </strong>is the Wikipedia, a free encyclopedia in many languages that anyone can edit. Wikipedia is not a single <strong>wiki</strong>, as what people might assume, but rather a collection of thousands of <strong>wikis</strong>, with each one pertaining to a specific language. Wikipedia provides one <strong>wiki </strong>page for each topic.
+</p><p>
+</p>WikiHow: a public <strong>wiki </strong>page on how to do anything
+SAP Community Network
+Catawiki: a <strong>wiki </strong>of catalogs for collectors
+Open Street Map: creates and provides free geographic data and mapping
+Wikitionary: a multi-language dictionary
+<p>
+</p><p>Know the advantages and disadvantages of using <strong>Wikis</strong>: https://brainly.ph/question/2201307
+</p><p>
+</p><p>Know the meaning of other choices:
+</p><p><strong>Cloud</strong>: https://brainly.ph/question/1676009
+</p><p><strong>Web 3.0</strong>: https://brainly.ph/question/1568186
+</p><p>
+</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="online-forums-are-also-called-_____-select-one-a-wikis-b-message-boards-c-shared-calendar-d-chat-rooms">
+                            24. Online forums are also called _____ Select one: a. Wikis b. Message boards c. Shared Calendar d. Chat rooms</h2><br />
+                        Online forums are also called _____ Select one: a. Wikis b. Message boards c. Shared Calendar d. Chat rooms
+<p>
+</p><p><strong>The answer is b. Message boards
+</strong></p><p>
+</p><p><strong>Online forums</strong> is another type of communication platform when using the internet. It is also known as Message boards because users can post messages to each other like what they are doing when they chat in the chatroom. The difference is, you can do the message posting even when the user is online or offline. Your message will be left there until the user reads your message and then he could post a reply. The messages are normally called <strong>"posts".</strong> And posts can be found in a <strong>"Thread"</strong> which could consists of messages and replies pertaining to the thread title. Normally, messages in the message boards are posted from old to new. The whole board could be managed by moderators and administrators, who can monitor user's and thread's activities.
+</p><p>
+</p><p>To know more about forums, read on the following:
+</p><strong>Masamang epeketo sa paggamit ng online forum at chat : </strong>https://brainly.ph/question/2371993
+<strong>Epekto ng Paggamit ng ICT(Online forum at chat)Positibo at Negatibo : </strong>https://brainly.ph/question/2129941
+<strong>Ano ang mga hakbang para makagawa ng disscusion thread sa isang online forum : </strong>https://brainly.ph/question/759343
+<p>
+</p><p><strong>#LetsStudy</strong></p><br />
+                                            <h2 class="ez-toc-section" id="an-arch-over-an-entrance-is-semicircular-with-an-opening-that-is-5-feet-wide-write-an-equation-that-models-that-arch">
+                            25. An arch over an entrance is semicircular with an opening that is 5 feet wide. Write an equation that models that arch.</h2><br />
+                        <p><strong>Answer:</strong></p><p>If the opening is 5 feet wide, I assume you mean from the center point of the straight edge to the top of the arch. Thus the radius of the arch is 5 feet. Since it is on top, I assume the arch points upward and so the equation is y = √(25-x2)
+</p><p>
+This equation can be found from the equation of a circle (x-h)2+(y-k)2=r2. The point (h,k) is the center of the circle (here we defined the center to be (0,0)) and r=5 so r2=25. Thus x2+y2=25. Then you solve for y but only use the positive answer since we're talking about the top semicircle.</p><p><strong>Step-by-step explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="online-forums-are-also-called-_____-select-one-a-wikis-b-chat-rooms-c-message-boards-d-shared-calendar">
+                            26. Online forums are also called _____ Select one: a. Wikis b. Chat rooms c. Message boards d. Shared Calendar</h2><br />
+                        <p>The answer is <strong>C. Message Boards</strong>. <strong>Online forums</strong> are also called C. Message Boards. <strong>Online forums </strong>are also called internet forums or message boards. These are sites where online discussions are being held through the act of posting messages. It is to be noted that online forums or message boards are different from chat rooms. </p>Online Forums or "Message Boards" Online forums are also called message boards or internet forums. Online forums are sites where online discussions happen by posting messages. Sometimes, messages that are posted still need to be approved by a moderator before they can be seen by other people. Online Forums vs. Chat Rooms <p>Online forums are different from chat rooms. Here is the difference between the two: </p>Online forums - Messages are usually longer than a single line of text. Posts sometimes need to be approved by a moderator. Chat rooms - Messages in chat rooms are usually short, with a few number of words only. There is no approval needed for a message to be sent in chat rooms. <p>Those are the details about <strong>online forums or message boards</strong>. If you want to read more about this, you may click on the following links below: </p>Positive effects of discussion forums: <strong>https://brainly.ph/question/640426 </strong>What is chat? <strong>https://brainly.ph/question/1338835</strong> What is a chat conversation? <strong>https://brainly.ph/question/2127438 </strong><br />
+                                            <h2 class="ez-toc-section" id="asap-precal-a-parabolic-arch-has-a-height-of-16-m-and-a-width-of-28-m-and-the-base-if-the-vertex-of-the-parabola-is-at-the-top-of-the-arch-how-wide-is-the-arch-at-the-point-11-m-above-its-base">
+                            27. ASAP PRECAL a parabolic arch has a height of 16 m and a width of 28 m and the base if the vertex of the parabola is at the top of the arch how wide is the arch at the point 11 m above its base​</h2><br />
+                        Problem:A parabolic arch has a height of 16m and a width of 28m at the base. If the vertex of the parabola is at the top of the arch, how wide is the arch at the point 11m above its base?<p>​</p>Solution:<p>x² = -4ay</p><p>(x, y)</p><p>(14, -16)</p><p>14² = -4a(-16)</p><p>196 = 64a</p><p>196/64 = a</p><p>a = 3.0625</p><p></p><p>x² = -4ay</p><p>x² = -4(3.0625)y</p><p>x² = -12.25y</p><p></p><p>x² = -12.25(-5)</p><p>x² = 61.25</p><p>x = √61.25</p><p>x = 7.826 m</p><p></p><p>Width of arch at the pt 11m above the base:</p><p>W = 7.826(2)</p><p>W = 15.652 m</p><p></p>#CarryOnLearning<br />
+                                            <h2 class="ez-toc-section" id="myanmar-arched-harpp%e2%80%8b">
+                            28. Myanmar arched Harpp​</h2><br />
+                        <p><strong>Answer:</strong></p>harpSaùng-Gauk 19th century. This richly decorated arched harp has 13 twisted silk strings of varying diameter. Each string connects to a gold-painted stringholder which runs the length of the gold-lacquered deerskin belly.<br />
+                                            <h2 class="ez-toc-section" id="3-famous-parabolic-arches-with-the-name-who-build-it-and-what-is-the-names-of-that-arches%e2%80%8b">
+                            29. 3 Famous parabolic arches with the name who build it and what is the names of that arches​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>Arc de Triomphe, Paris, France</strong>– One of the most famous monuments in Paris. It stands in the  western end of the Champs-Élysées and honors those who fought and died for France in the French Revolutionary and the Napoleonic Wars, with the names of all French victories and generals inscribed on its inner and outer surfaces. It was constructed in 1806-1836 and is 50 meters (164 ft) in high.The monument was designed by<strong> Jean Chalgrin</strong>. </p><p><strong>The Gateway Arch, St. Louis, United States</strong> – A 630-foot (190 m) monument in St. Louis, Missouri. Clad in stainless steel and built in the form of an arch, it is the tallest man-made monument in the United States, and the world’s tallest arch. To go to the top of the Arch, there’s a tram in each leg of the arch. Each tram is a chain of eight egg-shaped compartments, each capable of holding five passengers. The trip to the top takes four minutesThe Gateway Arch was designed by Finnish-American architect Eero Saarinen in 1947; construction began on February 12, 1963, and was completed on October 28, 1965, for $13 million (equivalent to $180 million in 2013). The monument opened to the public on June 10, 1967.<strong>Eero Saarinen, a Finnish-American    </strong></p><p> <strong>Arch of Cinquantenaire, Brussles</strong>, Belgium – The Arch was planned for the world exhibition of 1880 to commemorate the 50th anniversary of Belgium as an independent country. However, the construction was not completed in time. It took many more years but the construction was finally completed in 1905, just in time for the 75th anniversary of the independence of Belgium. The original pavilions of the 1880 exhibition, designed by <strong>Gédéon Bordiau</strong>, were largely replaced with the triumphal arcade designed by Charles Girault in 1904 and the large halls on both sides.Arc de Triomf, Barcelona, Spain – The Arc de Triomf in the capital of Catalonia was built as the main access gate for the 1888 Barcelona World Fair. It was built as the main access gate for the 1888 Barcelona World Fair by architect Josep Vilaseca i Casanovas</p><p><strong>Step-by-step explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="designs-and-archs-are%e2%80%8b">
+                            30. designs and archs are?​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>Designs</strong><strong>:</strong><strong>a plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made.</strong></p><p></p><p><strong>Archs:</strong><strong>used in names of moths with curving arch-shaped patterns on the wings, such as dark arches.</strong></p><p></p><p><strong>Hope </strong><strong>It </strong><strong>Helps(</strong><strong>Mark </strong><strong>Me </strong><strong>As </strong><strong>Brainliest</strong><strong>)</strong></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Fee_F1dPOuc?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>technology_and_home_economics</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/lesbian-teacher.html">Lesbian Teacher</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/j-b-black.html">J b Black</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/god-s-plan-movie.html">God s Plan Movie</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/jerome-s-bungalow.html">Jerome s Bungalow</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/lizi-s-adventurers-banana-granola.html">Lizi s Adventurers Banana Granola</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/short-poem-with-indefinite-pronouns.html">Short Poem With Indefinite Pronouns</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/potter-s-hand-lyrics-and-chords.html">Potter s Hand Lyrics And Chords</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/aril-daine-soft-copies.html">Aril daine Soft Copies</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/leaves-ben-ben-ukulele.html">Leaves Ben ben Ukulele</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/astra-marine-international-inc.html">Astra Marine International Inc</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/boyle-s-law-worksheet-pdf.html">Boyle s Law Worksheet Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/the-sublime-paralytic.html">The Sublime Paralytic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/tagalog-of-niece.html">Tagalog Of Niece</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/grandmas-80th-birthday-cake.html">Grandma&#039;s 80th Birthday Cake</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/pabx-panasonic.html">Pabx Panasonic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/osborne-checklist.html">Osborne Checklist</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/oet-exam-sample-questions-for-nurses.html">Oet Exam Sample Questions For Nurses</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/di-na-mag-iisa-chords.html">Di Na Mag Iisa Chords</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/green-building-code-of-the-philippines.html">Green Building Code Of The Philippines</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://basamalah.github.io/denotatibo-at-konotatibo-kahulugan.html">Denotatibo At Konotatibo Kahulugan</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://basamalah.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://basamalah.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://basamalah.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
